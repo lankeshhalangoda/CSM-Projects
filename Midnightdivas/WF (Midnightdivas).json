@@ -1,0 +1,361 @@
+{
+  "reportNamePrefix": "Midnightdivas Customer Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "type": {
+    "name": "Channel",
+    "readOnly": true,
+    "type": "enum",
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
+      },
+      {
+        "id": "googleMap",
+        "name": "Google"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open"
+      },
+      {
+        "id": "In progress",
+        "name": "In progress",
+        "triggers": [
+          {
+            "channel": "fieldChange",
+            "condition": {
+              "and": [
+                {
+                  "==": [
+                    {
+                      "var": "status"
+                    },
+                    "In progress"
+                  ]
+                }
+              ]
+            },
+            "changingFields": [
+              {
+                "id": "priority",
+                "value": "Medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In progress"
+        ]
+      },
+      {
+        "sourceState": "In progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      },
+      {
+        "sourceState": "Resolved",
+        "targetStates": []
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time spent",
+    "type": "time_accumulation"
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "Midnightdivas Kollupitiya",
+          "name": "Midnightdivas Kollupitiya"
+        },
+        {
+          "id": "Midnightdivas Kirulapone",
+          "name": "Midnightdivas Kirulapone"
+        },
+        {
+          "id": "Midnightdivas Nawala",
+          "name": "Midnightdivas Nawala"
+        },
+        {
+          "id": "Midnightdivas Negombo",
+          "name": "Midnightdivas Negombo"
+        },
+        {
+          "id": "Midnightdivas Kandy",
+          "name": "Midnightdivas Kandy"
+        },
+        {
+          "id": "Online",
+          "name": "Online"
+        }
+      ]
+    },
+    "complaintType": {
+      "name": "Complaint Type",
+      "type": "enum",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "customerSatisfactionSurvey",
+          "name": "Customer Satisfaction Survey"
+        },
+        {
+          "id": "googleMap",
+          "name": "Google"
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook"
+        }
+      ]
+    },
+    "comment": {
+      "name": "Comment",
+      "readOnly": true,
+      "type": "textArea"
+    },
+    "customerAttachment": {
+      "name": "Customer Attachment",
+      "readOnly": true,
+      "type": "file"
+    },
+    "reviewId": {
+      "name": "Review Id",
+      "type": "string",
+      "hidden": true,
+      "readOnly": true
+    },
+    "rating": {
+      "name": "Rating",
+      "hidden": true,
+      "readOnly": true,
+      "type": "string"
+    },
+    "author": {
+      "name": "Author",
+      "hidden": true,
+      "type": "string",
+      "readOnly": true
+    },
+    "reviewLocation": {
+      "name": "Review Location",
+      "type": "string",
+      "hidden": true,
+      "readOnly": true
+    }
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "condition": {
+          "==": [
+            {
+              "var": "complaintType"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm",
+        "target": "admin",
+        "condition": {
+          "!=": [
+            {
+              "var": "complaintType"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1725955463708_6242281",
+    "lastGroupId": 1
+  },
+  "name": "Midnightdivas WF",
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "complaintType"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "complaintType"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "timeZone": -330
+}
