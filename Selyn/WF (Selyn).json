@@ -1,0 +1,267 @@
+{
+  "reportNamePrefix": "Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "type": {
+    "name": "Channel",
+    "readOnly": true,
+    "type": "enum",
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
+      },
+      {
+        "id": "googleMap",
+        "name": "Google"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": {
+                "==": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
+              },
+              "rules": [
+                {
+                  "field": "type",
+                  "operator": "eq",
+                  "value": "$type$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "rules": [
+                {
+                  "field": "type",
+                  "operator": "eq",
+                  "value": "$type$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time spent",
+    "type": "time_accumulation",
+    "hidden": true
+  },
+  "customFields": {
+    "rating": {
+      "name": "Rating",
+      "readOnly": true,
+      "hidden": true,
+      "type": "string"
+    },
+    "comment": {
+      "name": "Comment",
+      "readOnly": true,
+      "type": "textArea"
+    },
+    "location": {
+      "name": "Location",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "Colombo",
+          "name": "Colombo"
+        },
+        {
+          "id": "Crescat",
+          "name": "Crescat"
+        },
+        {
+          "id": "Kurunegala",
+          "name": "Kurunegala"
+        }
+      ]
+    },
+    "author": {
+      "name": "Author",
+      "type": "string",
+      "hidden": true,
+      "readOnly": true
+    }
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm",
+        "target": "admin",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1720446904000_1234569876"
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "name": "selyn_wf",
+  "nameTemplate": "Online Review Complaint: $type$"
+}

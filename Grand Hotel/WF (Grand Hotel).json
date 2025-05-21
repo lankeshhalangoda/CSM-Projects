@@ -1,0 +1,172 @@
+{
+  "descriptionFormat": "text",
+  "reportNamePrefix": "The Grand Hotel N'Eliya ORM Ticket",
+  "name": "The Grand Hotel N'Eliya",
+  "nameTemplate": "User Review From: $type$",
+  "descriptionTemplate": "Channel - $type$ ",
+  "type": {
+    "name": "Channel",
+    "readOnly": true,
+    "type": "enum",
+    "values": [
+      {
+        "id": "googleMap",
+        "name": "Google"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook"
+      },
+      {
+        "id": "booking",
+        "name": "Booking.com"
+      },
+      {
+        "id": "expedia",
+        "name": "Expedia"
+      },
+      {
+        "id": "agoda",
+        "name": "Agoda"
+      },
+      {
+        "id": "tripadvisor",
+        "name": "Tripadvisor"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "readOnly": false,
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open"
+      },
+      {
+        "id": "In progress",
+        "name": "In progress",
+        "triggers": [
+          {
+            "channel": "fieldChange",
+            "condition": {
+              "and": [
+                {
+                  "==": [
+                    {
+                      "var": "status"
+                    },
+                    "In progress"
+                  ]
+                }
+              ]
+            },
+            "changingFields": [
+              {
+                "id": "priority",
+                "value": "Medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Closed",
+        "name": "Closed",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm",
+            "target": "admin",
+            "contacts": [
+              "lankeshh@emojot.com",
+              "fobdm@grandhotel.lk",
+              "afom2@grandhotel.lk",
+              "gm@grandhotel.lk",
+              "rm@grandhotel.lk",
+              "ldm@grandhotel.lk",
+              "sustainability@grandhotel.lk"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low",
+        "level": 1
+      },
+      {
+        "id": "Medium",
+        "name": "Medium",
+        "level": 2
+      },
+      {
+        "id": "High",
+        "name": "High",
+        "level": 3
+      }
+    ]
+  },
+  "customFields": {
+    "author": {
+      "name": "Guest Name",
+      "type": "string",
+      "readOnly": true
+    },
+    "location": {
+      "name": "Location",
+      "type": "string",
+      "readOnly": true
+    },
+    "rating": {
+      "name": "Rating",
+      "type": "string",
+      "readOnly": true
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "hidden": true
+    }
+  },
+  "timeSpent": {
+    "name": "Time spent",
+    "type": "time_accumulation",
+    "hidden": true
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm",
+        "target": "employee"
+      }
+    ]
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm",
+        "target": "admin",
+        "contacts": [
+          "lankeshh@emojot.com",
+          "fobdm@grandhotel.lk",
+          "afom2@grandhotel.lk",
+          "gm@grandhotel.lk",
+          "rm@grandhotel.lk",
+          "ldm@grandhotel.lk",
+          "sustainability@grandhotel.lk"
+        ]
+      }
+    ]
+  }
+}

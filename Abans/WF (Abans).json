@@ -1,0 +1,643 @@
+{
+  "reportNamePrefix": "Complaint",
+  "name": "Abans Complaint Management",
+  "descriptionFormat": "text",
+  "timeZone": -330,
+  "timeSpent": {
+    "name": "Time spent",
+    "type": "time_accumulation"
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open"
+      },
+      {
+        "id": "In progress",
+        "name": "In progress",
+        "triggers": [
+          {
+            "channel": "fieldChange",
+            "condition": {
+              "and": [
+                {
+                  "==": [
+                    {
+                      "var": "status"
+                    },
+                    "In progress"
+                  ]
+                }
+              ]
+            },
+            "changingFields": [
+              {
+                "id": "priority",
+                "value": "Medium"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolution",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": {
+                "==": [
+                  {
+                    "var": "complaintType"
+                  },
+                  "complaintManagementSurvey"
+                ]
+              },
+              "rules": [
+                {
+                  "field": "complaintType",
+                  "operator": "eq",
+                  "value": "$complaintType$"
+                }
+              ]
+            }
+          },
+          {
+            "template": "complaintResolution_customer",
+            "channel": "email",
+            "target": "customer",
+            "appendEditUrl": false,
+            "adminUserQuery": {
+              "condition": {
+                "==": [
+                  {
+                    "var": "complaintType"
+                  },
+                  "complaintManagementSurvey"
+                ]
+              },
+              "rules": [
+                {
+                  "field": "complaintType",
+                  "operator": "eq",
+                  "value": "$complaintType$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In progress"
+        ]
+      },
+      {
+        "sourceState": "In progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      },
+      {
+        "sourceState": "Resolved",
+        "targetStates": []
+      }
+    ]
+  },
+  "type": {
+    "name": "Channel",
+    "readOnly": true,
+    "type": "enum",
+    "values": [
+      {
+        "id": "complaintManagementSurvey",
+        "name": "Complaint Management Survey"
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "Abans Elite - Colombo 03 (Main Showroom)",
+          "name": "Abans Elite - Colombo 03 (Main Showroom)"
+        },
+        {
+          "id": "Abans Elite - Rajagiriya",
+          "name": "Abans Elite - Rajagiriya"
+        },
+        {
+          "id": "Abans Elite - Katunayake",
+          "name": "Abans Elite - Katunayake"
+        },
+        {
+          "id": "Abans Elite - Maharagama",
+          "name": "Abans Elite - Maharagama"
+        },
+        {
+          "id": "Abans Elite - Welisara",
+          "name": "Abans Elite - Welisara"
+        },
+        {
+          "id": "Abans Service Center - Wellawatta",
+          "name": "Abans Service Center - Wellawatta"
+        },
+        {
+          "id": "Abans IT Service Center",
+          "name": "Abans IT Service Center"
+        },
+        {
+          "id": "Apple Authorised Service Provider - Abans - Colombo",
+          "name": "Apple Authorised Service Provider - Abans - Colombo"
+        },
+        {
+          "id": "Abans Service Center - Kandy",
+          "name": "Abans Service Center - Kandy"
+        },
+        {
+          "id": "Abans Service Center - Negombo",
+          "name": "Abans Service Center - Negombo"
+        },
+        {
+          "id": "Abans Elite - Anuradhapura",
+          "name": "Abans Elite - Anuradhapura"
+        },
+        {
+          "id": "Abans Elite - Badulla",
+          "name": "Abans Elite - Badulla"
+        },
+        {
+          "id": "Abans Elite - Colombo City Centre",
+          "name": "Abans Elite - Colombo City Centre"
+        },
+        {
+          "id": "Abans Elite - Dalugama (Kiribathgoda)",
+          "name": "Abans Elite - Dalugama (Kiribathgoda)"
+        },
+        {
+          "id": "Abans Elite - Dehiwala",
+          "name": "Abans Elite - Dehiwala"
+        },
+        {
+          "id": "Abans Elite - Galle",
+          "name": "Abans Elite - Galle"
+        },
+        {
+          "id": "Abans Elite - Gampaha",
+          "name": "Abans Elite - Gampaha"
+        },
+        {
+          "id": "Abans Elite - Havelock City Mall",
+          "name": "Abans Elite - Havelock City Mall"
+        },
+        {
+          "id": "Abans Elite - Homagama",
+          "name": "Abans Elite - Homagama"
+        },
+        {
+          "id": "Abans Elite - Ja-Ela",
+          "name": "Abans Elite - Ja-Ela"
+        },
+        {
+          "id": "Abans Elite - Jaffna",
+          "name": "Abans Elite - Jaffna"
+        },
+        {
+          "id": "Abans Elite - Kadawatha",
+          "name": "Abans Elite - Kadawatha"
+        },
+        {
+          "id": "Abans Elite - Kaduruwela",
+          "name": "Abans Elite - Kaduruwela"
+        },
+        {
+          "id": "Abans Elite - Kalutara",
+          "name": "Abans Elite - Kalutara"
+        },
+        {
+          "id": "Abans Elite - Kandy",
+          "name": "Abans Elite - Kandy"
+        },
+        {
+          "id": "Abans Elite - Katugastota",
+          "name": "Abans Elite - Katugastota"
+        },
+        {
+          "id": "Abans Elite - Kurunegala",
+          "name": "Abans Elite - Kurunegala"
+        },
+        {
+          "id": "Abans Elite - Liberty Plaza",
+          "name": "Abans Elite - Liberty Plaza"
+        },
+        {
+          "id": "Abans Elite - Malabe",
+          "name": "Abans Elite - Malabe"
+        },
+        {
+          "id": "Abans Elite - Matara",
+          "name": "Abans Elite - Matara"
+        },
+        {
+          "id": "Abans Elite - Moratuwa",
+          "name": "Abans Elite - Moratuwa"
+        },
+        {
+          "id": "Abans Elite - Mount Lavinia",
+          "name": "Abans Elite - Mount Lavinia"
+        },
+        {
+          "id": "Abans Elite - Nawala (Nugegoda)",
+          "name": "Abans Elite - Nawala (Nugegoda)"
+        },
+        {
+          "id": "Abans Elite - Negombo",
+          "name": "Abans Elite - Negombo"
+        },
+        {
+          "id": "Abans Elite - Panadura",
+          "name": "Abans Elite - Panadura"
+        },
+        {
+          "id": "Abans Elite - Pelawatta",
+          "name": "Abans Elite - Pelawatta"
+        },
+        {
+          "id": "Abans Elite - Piliyandala",
+          "name": "Abans Elite - Piliyandala"
+        },
+        {
+          "id": "Abans Elite - Ratmalana",
+          "name": "Abans Elite - Ratmalana"
+        },
+        {
+          "id": "Abans Elite - Ratnapura",
+          "name": "Abans Elite - Ratnapura"
+        },
+        {
+          "id": "Abans Elite - Thalawathugoda",
+          "name": "Abans Elite - Thalawathugoda"
+        },
+        {
+          "id": "Abans Elite - Vavuniya",
+          "name": "Abans Elite - Vavuniya"
+        },
+        {
+          "id": "Abans Elite B - Maharagama",
+          "name": "Abans Elite B - Maharagama"
+        },
+        {
+          "id": "Social",
+          "name": "Social"
+        }
+      ],
+      "wfd_mappedQuestion": "q9644"
+    },
+    "category": {
+      "name": "Category",
+      "type": "enum",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Other",
+          "name": "Other",
+          "wfd_mappedFromQuestion": true
+        },
+        {
+          "id": "Customer Care",
+          "name": "Customer Care",
+          "wfd_mappedFromQuestion": true
+        },
+        {
+          "id": "Website Issue",
+          "name": "Website Issue",
+          "wfd_mappedFromQuestion": true
+        },
+        {
+          "id": "Delivery Issue",
+          "name": "Delivery Issue",
+          "wfd_mappedFromQuestion": true
+        },
+        {
+          "id": "Billing/Payment Issue",
+          "name": "Billing/Payment Issue",
+          "wfd_mappedFromQuestion": true
+        },
+        {
+          "id": "Product Issue",
+          "name": "Product Issue",
+          "wfd_mappedFromQuestion": true
+        }
+      ],
+      "wfd_mappedQuestion": "q5957"
+    },
+    "customerComment": {
+      "name": "Customer Comment",
+      "type": "textArea",
+      "readOnly": true,
+      "wfd_boundComment": {
+        "page": {
+          "pageID": "p196",
+          "pageName": "feedback"
+        },
+        "comment": {
+          "commentID": "c1",
+          "commentName": "Please help us understand your issue"
+        }
+      }
+    },
+    "customerAttachment": {
+      "name": "Customer Attachment",
+      "readOnly": true,
+      "type": "file"
+    },
+    "resolved": {
+      "name": "Resolved",
+      "type": "enum",
+      "values": [
+        {
+          "id": "Yes",
+          "name": "Yes"
+        },
+        {
+          "id": "No",
+          "name": "No"
+        }
+      ]
+    },
+    "caseManagerAttachment": {
+      "name": "Case Manager Attachment",
+      "type": "file"
+    }
+  },
+  "incidentCreationCondition": [
+    {
+      "question": "q5957",
+      "operator": "anyEmote",
+      "answer": ""
+    }
+  ],
+  "nameTemplate": "Abans Complaint Management",
+  "descriptionTemplate": "Abans Complaint Management is a system designed to handle customer complaints received through online and social media channels. It allows users to view, manage, assign, and resolve complaints efficiently, ensuring prompt responses and improved customer satisfaction.",
+  "initialAssignee": "lankeshh@emojot.com",
+  "wfd_inputSensor": "6791fde7f5c5cab0c3a09c44",
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreation",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": {
+            "==": [
+              {
+                "var": "complaintType"
+              },
+              "complaintManagementSurvey"
+            ]
+          },
+          "rules": [
+            {
+              "field": "complaintType",
+              "operator": "eq",
+              "value": "$complaintType$"
+            }
+          ]
+        }
+      },
+      {
+        "template": "complaintCreation_customer",
+        "channel": "email",
+        "target": "customer",
+        "appendEditUrl": false
+      }
+    ]
+  },
+  "wfd_flowElements": [
+    {
+      "id": "start-node",
+      "type": "startNode",
+      "position": {
+        "x": 579,
+        "y": 24
+      }
+    },
+    {
+      "id": "end-node",
+      "type": "endNode",
+      "position": {
+        "x": 572,
+        "y": 601
+      }
+    },
+    {
+      "id": "custom-node-1",
+      "type": "customNode",
+      "position": {
+        "x": 507.6953101158142,
+        "y": 191.88280296325684
+      },
+      "data": {
+        "label": "Open",
+        "nodeID": "custom-node-1"
+      }
+    },
+    {
+      "id": "custom-node-2",
+      "type": "customNode",
+      "position": {
+        "x": 301.1953101158142,
+        "y": 339.63280296325684
+      },
+      "data": {
+        "label": "Review",
+        "nodeID": "custom-node-2"
+      }
+    },
+    {
+      "id": "custom-node-3",
+      "type": "customNode",
+      "position": {
+        "x": 722.1953101158142,
+        "y": 326.63280296325684
+      },
+      "data": {
+        "label": "In progress",
+        "nodeID": "custom-node-3"
+      }
+    },
+    {
+      "id": "custom-node-4",
+      "type": "customNode",
+      "position": {
+        "x": 454.1953101158142,
+        "y": 466.13280296325684
+      },
+      "data": {
+        "label": "Closed",
+        "nodeID": "custom-node-4"
+      }
+    },
+    {
+      "id": "Edge-1",
+      "source": "start-node",
+      "target": "custom-node-1",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": null,
+      "targetHandle": "a",
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "top"
+      }
+    },
+    {
+      "id": "Edge-2",
+      "source": "custom-node-1",
+      "target": "custom-node-2",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": "d",
+      "targetHandle": "a",
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "top"
+      }
+    },
+    {
+      "id": "Edge-3",
+      "source": "custom-node-1",
+      "target": "custom-node-3",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": "d",
+      "targetHandle": "a",
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "top"
+      }
+    },
+    {
+      "id": "Edge-4",
+      "source": "custom-node-3",
+      "target": "custom-node-4",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": "d",
+      "targetHandle": "a",
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "top"
+      }
+    },
+    {
+      "id": "Edge-5",
+      "source": "custom-node-2",
+      "target": "custom-node-4",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": "d",
+      "targetHandle": "a",
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "top"
+      }
+    },
+    {
+      "id": "Edge-6",
+      "source": "custom-node-4",
+      "target": "end-node",
+      "arrowHeadType": "arrow",
+      "type": "customEdge",
+      "animated": true,
+      "sourceHandle": "d",
+      "targetHandle": null,
+      "data": {
+        "sourcePosition": "bottom",
+        "targetPosition": "bottom"
+      }
+    }
+  ],
+  "assignment": {
+    "triggers": [
+      {
+        "template": "complaintAssignment",
+        "channel": "email",
+        "target": "employee",
+        "appendEditUrl": false
+      }
+    ]
+  },
+  "createdByDesigner": true,
+  "wfd_engagementRuleID": "67b7f500785bdf1c3f05785e",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_:1740051641491_6242281",
+    "lastGroupId": 1
+  },
+  "reporterNamePrefix": "Customer"
+}
