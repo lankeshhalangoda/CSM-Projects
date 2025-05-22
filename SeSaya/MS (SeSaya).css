@@ -230,7 +230,7 @@
 
 .sensor-title {
   color: #000000;
-  font-size: 15pt;
+  font-size: 18pt;
   padding: 10px 10px 10px 10px;
   font-family: "Playfair Display", serif;
   background: rgba(255, 255, 255, 0);
@@ -240,6 +240,7 @@
   display: block;
   position: relative;
   text-align: center !important;
+  margin-bottom: 15px !important;
 }
 
 .sensor-title::after {
@@ -276,7 +277,8 @@ form-control:focus {
 }
 
 .flex {
-    display: inline !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .panel {
@@ -454,8 +456,8 @@ form-control:focus {
 .pdGroupTitle {
   font-family: "Inter", sans-serif !important;
   color: #000000 !important;
-  font-size: 9pt;
-  margin-left: 0 !important;
+  font-size: 15pt;
+  margin-left: 10px !important;
   margin-right: 0 !important;
 }
 
@@ -479,7 +481,7 @@ div.col-xs-7.ng-scope {
   
 
   .footer {
-    background: #f9a392 !important;
+    background: #a39382 !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     display: flex;
@@ -644,7 +646,7 @@ div.col-xs-7.ng-scope {
   }
 
   .sensor-title {
-    font-size: 14pt;
+    font-size: 17pt;
   }
 
   .emote-title {
@@ -665,6 +667,8 @@ div.col-xs-7.ng-scope {
   }
 
   .pdGroupTitle {
-    font-size: 10pt;
+    font-family: "Inter", sans-serif !important;
+    font-size: 15pt;
+    padding-left: 9px !important;
   }
 }
