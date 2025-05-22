@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<cepRules>
+    <cepRule id="1" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q2029"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <name>emoteNumericValue</name>
+                <operator>gd</operator>
+                <value>-1</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>incident</type>
+                <data>
+                    <workflowID>67c527a80e779fbb42b08368</workflowID>
+                    <name>Customer Satisfaction Survey Complaint> $$emoSignature_Location_value$$</name>
+                    <assignee>defaultassignee@emojot.com</assignee>
+                    <type>Customer Satisfaction Survey</type>
+                    <priority>High</priority>
+                    <status>Open</status>
+                    <description>
+                        Customer Name: $$loyalty_Name_value$$
+                        Customer Telephone: $$loyalty_Telephone_value$$
+                        Experience : $$q2029_emote$$
+                        Rating: $$q8502_emote$$
+                        Location: $$emoSignature_Location_value$$
+                        Category: $$q3924_emote$$
+                        Comment: $$gp5529_c1_comment_value$$
+                    </description>
+                    <customFields>
+                        <field>
+                            <key>location</key>
+                            <value>$$emoSignature_Location_value$$</value>
+                        </field>
+                        <field>
+                            <key>satisfactionValue</key>
+                            <value>$$q2029_emote$$</value>
+                        </field>
+                        <field>
+                            <key>complaintType</key>
+                            <value>Customer Satisfaction Survey</value>
+                        </field>
+                        <field>
+                            <key>rating</key>
+                            <value>$$q8502_emote$$</value>
+                        </field>
+                        <field>
+                            <key>customerComment</key>
+                            <value>$$gp5529_c1_comment_value$$</value>
+                        </field>
+                        <field>
+                            <key>category</key>
+                            <value>$$q3924_emote$$</value>
+                        </field>
+                        <field>
+                            <key>media</key>
+                            <value>$$mediafile_p6424$$</value>
+                        </field>
+                    </customFields>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="2" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q2029"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <name>emoteNumericValue</name>
+                <operator>ld</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+      <action>
+        <type>sms</type>
+        <data>
+          <smsType>smsbody</smsType>
+          <smsTo>$$emoter$$</smsTo>
+          <smsbody>Thank you for sharing your experience! We value your feedback and your input helps us improve and grow. Review Us on Google : $$emoSignature_Google Review_value$$. Review Us on Facebook: $$emoSignature_Facebook Link_value$$. Review Us on Tripadvisor: $$emoSignature_Trip Advisor Link_value$$</smsbody>
+          <timeZone>+330</timeZone>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+    </cepRule>
+</cepRules>
