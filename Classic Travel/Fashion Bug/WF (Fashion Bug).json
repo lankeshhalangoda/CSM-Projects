@@ -1,0 +1,272 @@
+{
+  "reportNamePrefix": "Fashion Bug Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "Customer Satisfaction Survey",
+  "nameTemplate": "Customer Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "type": "enum",
+
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Colpetty",
+          "name": "Colpetty"
+        },
+        {
+          "id": "Wellawatte",
+          "name": "Wellawatte"
+        },
+        {
+          "id": "Nugegoda",
+          "name": "Nugegoda"
+        },
+        {
+          "id": "Maharagama",
+          "name": "Maharagama"
+        },
+        {
+          "id": "Moratuwa",
+          "name": "Moratuwa"
+        },
+        {
+          "id": "Kotahena",
+          "name": "Kotahena"
+        },
+        {
+          "id": "Borella",
+          "name": "Borella"
+        },
+        {
+          "id": "Wattala",
+          "name": "Wattala"
+        },
+        {
+          "id": "Negombo",
+          "name": "Negombo"
+        },
+        {
+          "id": "Kandy (Dalada Veediya)",
+          "name": "Kandy (Dalada Veediya)"
+        },
+        {
+          "id": "Katugastota",
+          "name": "Katugastota"
+        },
+        {
+          "id": "Kurunegala",
+          "name": "Kurunegala"
+        },
+        {
+          "id": "Matara",
+          "name": "Matara"
+        },
+        {
+          "id": "Bandarawela",
+          "name": "Bandarawela"
+        },
+        {
+          "id": "Pepiliyana",
+          "name": "Pepiliyana"
+        }
+      ]
+    },
+    "nps": {
+      "name": "NPS Rating",
+      "type": "string",
+      "readOnly": true
+    },
+    "staff_rating": {
+      "name": "Staff Rating",
+      "type": "string",
+      "readOnly": true
+    },
+    "product_quality_rating": {
+      "name": "Product Quality Rating",
+      "type": "string",
+      "readOnly": true
+    },
+    "value_for_money": {
+      "name": "Value for Money",
+      "type": "string",
+      "readOnly": true
+    },
+    "mobile_update": {
+      "name": "Receive Mobile Updates?",
+      "type": "string",
+      "readOnly": true
+    },
+    "csat": {
+      "name": "CSAT",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "readOnly": true,
+      "hidden": true
+    }
+  },
+  "timeZone": -330,
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1748314604287_650448319"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "template": "complaintAssignment_email",
+        "channel": "email",
+        "target": "employee",
+        "appendEditUrl": false
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "number"
+  }
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q2091"</value>
+      </param>
+      <joinOperator>and</joinOperator>
+      <joinParam>
+        <name>emoteNumericValue</name>
+        <operator>gd</operator>
+        <value>0</value>
+      </joinParam>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>6835331089942867d58407ec</workflowID>
+          <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Customer Satisfaction Survey</type>
+          <priority>High</priority>
+          <status>Open</status>
+          <description>
+Customer Name: $$loyalty_Name_value$$
+Customer Email: $$loyalty_Email_value$$
+Customer Telephone: $$loyalty_Telephone_value$$
+Customer Age: $$q4907_emote$$
+Satisfaction Level: $$q2091_emote$$
+Comment: "$$gp2651_c1_comment_value$$"
+          </description>
+          <customFields>
+            <field>
+            <key>location</key>
+              <value>$$emoSignature_Location_value$$</value>
+            </field>
+            <field>
+            <key>nps</key>
+              <value>$$q8426_emote$$</value>
+            </field>
+            <field>
+              <key>staff_rating</key>
+              <value>$$q7930_emote$$</value>
+            </field>
+            <field>
+              <key>value_for_money</key>
+              <value>$$q6796_emote$$</value>
+            </field>
+            <field>
+              <key>product_quality_rating</key>
+              <value>$$q5817_emote$$</value>
+            </field>
+            <field>
+              <key>mobile_update</key>
+              <value>$$q8667_emote$$</value>
+            </field>
+            <field>
+              <key>comment</key>
+              <value>$$gp2651_c1_comment_value$$</value>
+            </field>
+            <field>
+              <key>csat</key>
+              <value>$$q2091_emote$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+</cepRules>
