@@ -1,0 +1,172 @@
+{
+  "type": "onlineReviewManagement",
+  "companyID": "661ff4d4507538eb60267952",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    }
+  },
+  "ORMConfigs": {
+    "targetedKeywords": {
+      "Outlet": [
+        "outlet",
+        "location",
+        "branch",
+        "space"
+      ],
+      "Food": [
+        "food",
+        "taste",
+        "quality",
+        "presentation",
+        "menu",
+        "breakfast",
+        "lunch",
+        "dinner",
+        "snack",
+        "healthy",
+        "vegan",
+        "pastry"
+      ],
+      "Beverages": [
+        "beverages",
+        "hot",
+        "cold",
+        "coffee",
+        "espresso",
+        "latte",
+        "cappuccino",
+        "tea",
+        "smoothie",
+        "juice",
+        "hot chocolate",
+        "brew",
+        "drinks"
+      ],
+      "Service": [
+        "service",
+        "staff",
+        "order",
+        "customer service"
+      ],
+      "Ambience": [
+        "ambience",
+        "lighting",
+        "music",
+        "atmosphere",
+        "vibe",
+        "comfortable",
+        "space",
+        "noise"
+      ],
+      "Facilities": [
+        "wifi",
+        "restroom",
+        "washroom",
+        "power outlets",
+        "seating"
+      ],
+      "Parking": [
+        "parking",
+        "parking slots",
+        "street"
+      ]
+    },
+    "reviewFetchLimit": {
+      "nonAdmin": 200,
+      "admin": 200
+    },
+    "ORMWeeklyReportEnabled": true,
+    "nextInvocationWeekly": 1748826000000,
+    "superAdmins": [
+      "theekshana@barista.lk",
+      "vinuri@barista.lk",
+      "dulinika@barista.lk",
+      "manura@emojot.com",
+      "gagan@emojot.com"
+    ],
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list -  Healthy,Lunch,Outdoor,dining,Price,Karaoke,Bar,Room,Staff,Service,Food,Dinner,Atmosphere,Drinks,Buffet \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    },
+    "nextInvocationDaily": null
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflow": "66209df293e08385a8307365",
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "Low",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Hospital",
+        "dataField": "locationId"
+      }
+    ]
+  }
+}

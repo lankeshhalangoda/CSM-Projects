@@ -2,7 +2,7 @@
   "reportNamePrefix": "Fashion Bug Complaint",
   "reporterNamePrefix": "Customer",
   "descriptionFormat": "text",
-  "name": "Customer Satisfaction Survey",
+  "name": "Fashion Bug WF v1",
   "nameTemplate": "Customer Complaint: $type$",
   "descriptionTemplate": "Customer Complaint from $type$",
   "type": {
@@ -102,7 +102,6 @@
     "location": {
       "name": "Location",
       "type": "enum",
-
       "readOnly": true,
       "values": [
         {
@@ -160,10 +159,6 @@
         {
           "id": "Bandarawela",
           "name": "Bandarawela"
-        },
-        {
-          "id": "Pepiliyana",
-          "name": "Pepiliyana"
         }
       ]
     },
@@ -172,8 +167,41 @@
       "type": "string",
       "readOnly": true
     },
+    "items": {
+      "name": "Shopped Categories",
+      "type": "multiselect",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Men's",
+          "name": "Men's"
+        },
+        {
+          "id": "Women's",
+          "name": "Women's"
+        },
+        {
+          "id": "Kids'",
+          "name": "Kids'"
+        },
+        {
+          "id": "Lifestyle",
+          "name": "Lifestyle"
+        }
+      ]
+    },
+    "items_not_found": {
+      "name": "Unfound Items",
+      "type": "textArea",
+      "readOnly": true
+    },
     "staff_rating": {
       "name": "Staff Rating",
+      "type": "string",
+      "readOnly": true
+    },
+    "staff_member": {
+      "name": "Recommended Team Member",
       "type": "string",
       "readOnly": true
     },
@@ -184,11 +212,6 @@
     },
     "value_for_money": {
       "name": "Value for Money",
-      "type": "string",
-      "readOnly": true
-    },
-    "mobile_update": {
-      "name": "Receive Mobile Updates?",
       "type": "string",
       "readOnly": true
     },
@@ -206,6 +229,7 @@
     }
   },
   "timeZone": -330,
+  "reportSensor": "fashionb",
   "adminHierarchy": {
     "list": "admin",
     "headers": [

@@ -1,0 +1,418 @@
+{
+  "type": "onlineReviewManagement",
+  "companyID": "67887645655a4be87d8e61fc",
+  "aiModel": "gpt-4",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location.  Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    }
+  },
+  "ORMConfigs": {
+    "reviewFetchLimit": {
+      "nonAdmin": 500,
+      "admin": 500
+    },
+    "targetedKeywords": {
+      "Cleanliness": [
+        "clean",
+        "tidy",
+        "neat",
+        "hygiene",
+        "dirt",
+        "garbage",
+        "bug"
+      ],
+      "Facilities": [
+        "amenities",
+        "accommodation ",
+        "parking",
+        "Price",
+        "wifi",
+        "bar",
+        "restaurant",
+        "pool",
+        "gym",
+        "facilities"
+      ],
+      "Food and Dining": [
+        "delicious",
+        "tasty",
+        "chef",
+        "cook",
+        "menu",
+        "dining",
+        "buffet",
+        "lunch",
+        "dinner",
+        "breakfast",
+        "restaurant",
+        "food",
+        "drinks",
+        "bar",
+        "salad",
+        "dessert",
+        "soup",
+        "rice",
+        "curries",
+        "curry"
+      ],
+      "Location": [
+        "accessible",
+        "nature",
+        "location",
+        "view"
+      ],
+      "Booking Process": [
+        "online",
+        "website",
+        "mobile app",
+        "reservation",
+        "booking"
+      ],
+      "Overall Experience": [
+        "unforgettable",
+        "superb",
+        "wonderful",
+        "hospitality",
+        "experience",
+        "friendly",
+        "experience"
+      ],
+      "Room Quality": [
+        "comfortable",
+        "ambience",
+        "amenities",
+        "quality",
+        "bathroom",
+        "bed",
+        "television",
+        "air condition",
+        "room"
+      ],
+      "Room Service": [
+        "Housekeeping",
+        "room service",
+        "in-room"
+      ],
+      "Service": [
+        "Staff",
+        "professional",
+        "Customer service",
+        "helpful",
+        "receiption",
+        "reception",
+        "front office",
+        "service"
+      ],
+      "Value for Money": [
+        "room rates",
+        "rates",
+        "Price",
+        "deal",
+        "offers",
+        "Value for Money"
+      ]
+    },
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list -  Service, Cleanliness, Location, Room Quality, Food and Dining, Facilities, Value for Money, Room Service, Online Booking/Reservation Experience, Overall Experience \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflow": "679065bf5671a252b9a8fdfb",
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "High",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      },
+      {
+        "fieldId": "author",
+        "dataField": "author"
+      },
+      {
+        "fieldId": "comment",
+        "dataField": "reviewText"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  },
+  "competitorAnalysis": {
+    "enabled": true,
+    "competitors": [
+      {
+        "name": "The Grand Hotel",
+        "color": "#7eab52",
+        "brand": true,
+        "preSelect": true,
+        "companyID": "67887645655a4be87d8e61fc",
+        "locations": [
+          {
+            "id": "The Grand Hotel N'Eliya",
+            "name": "The Grand Hotel N'Eliya"
+          }
+        ],
+        "channels": []
+      },
+      {
+        "name": "Araliya Green City",
+        "brand": false,
+        "preSelect": true,
+        "color": "#76308a",
+        "companyID": "67e0eda2d56b7372c270fafc",
+        "locations": [
+          {
+            "id": "Araliya Green City",
+            "name": "Araliya Green City"
+          }
+        ],
+        "channels": []
+      },
+      {
+        "name": "Araliya Hills",
+        "brand": false,
+        "preSelect": true,
+        "color": "#0fa3b1",
+        "companyID": "67f4edf063c57d7558d37ee1",
+        "locations": [
+          {
+            "id": "Araliya Hills",
+            "name": "Araliya Hills"
+          }
+        ],
+        "channels": []
+      },
+      {
+        "name": "Golden Ridge",
+        "brand": false,
+        "preSelect": true,
+        "color": "#ffca3a",
+        "companyID": "67e0ef209076655a77c62da8",
+        "locations": [
+          {
+            "id": "Golden Ridge",
+            "name": "Golden Ridge"
+          }
+        ],
+        "channels": []
+      },
+      {
+        "name": "Heritance Tea Factory",
+        "brand": false,
+        "preSelect": true,
+        "color": "#1982c4",
+        "companyID": "67e0ed76d56b7372c270fae8",
+        "locations": [
+          {
+            "id": "Heritance Tea Factory",
+            "name": "Heritance Tea Factory"
+          }
+        ],
+        "channels": []
+      },
+      {
+        "name": "St. Andrews Hotel",
+        "brand": false,
+        "preSelect": true,
+        "color": "#ff595e",
+        "companyID": "67e0ee379076655a77c62d89",
+        "locations": [
+          {
+            "id": "St. Andrews Hotel",
+            "name": "St. Andrews Hotel"
+          }
+        ],
+        "channels": []
+      }
+    ],
+    "categories": [
+      {
+        "id": "all",
+        "name": "All"
+      },
+      {
+        "id": "Cleanliness",
+        "name": "Cleanliness"
+      },
+      {
+        "id": "Facilities",
+        "name": "Facilities"
+      },
+      {
+        "id": "Food and Dining",
+        "name": "Food and Dining"
+      },
+      {
+        "id": "Location",
+        "name": "Location"
+      },
+      {
+        "id": "Booking Process",
+        "name": "Booking Process"
+      },
+      {
+        "id": "Overall Experience",
+        "name": "Overall Experience"
+      },
+      {
+        "id": "Room Quality",
+        "name": "Room Quality"
+      },
+      {
+        "id": "Room Service",
+        "name": "Room Service"
+      },
+      {
+        "id": "Service",
+        "name": "Service"
+      },
+      {
+        "id": "Value for Money",
+        "name": "Value for Money"
+      }
+    ],
+    "indexColorSchemma": [
+      [
+        "0<=",
+        "<=40",
+        "#DF3D3D"
+      ],
+      [
+        "40<",
+        "<=70",
+        "#E9C46A"
+      ],
+      [
+        "70<",
+        "<=100",
+        "#2A9D8F"
+      ]
+    ],
+    "colorSchema": {
+      "negative": "#e63946",
+      "positive": "#2a9d8f",
+      "neutral": "#e9c46a"
+    },
+    "reviewChannelList": [
+      {
+        "id": "booking",
+        "name": "Booking.com",
+        "imageSource": "../../img/svg/bookingcom.svg"
+      },
+      {
+        "id": "google",
+        "name": "Google",
+        "imageSource": "../../img/svg/google.svg"
+      },
+      {
+        "id": "tripadvisor",
+        "name": "Tripadvisor",
+        "imageSource": "../../img/svg/tripadvisor.svg"
+      },
+      {
+        "id": "agoda",
+        "name": "Agoda",
+        "imageSource": "../../img/svg/agoda.svg"
+      },
+      {
+        "id": "expedia",
+        "name": "Expedia",
+        "imageSource": "../../img/svg/expedia.svg"
+      }
+    ],
+    "dateTimeList": [
+      {
+        "id": "monthly",
+        "name": "Monthly"
+      },
+      {
+        "id": "daily",
+        "name": "Daily"
+      }
+    ],
+    "aiCategories": [
+      {
+        "id": "customerPreferenceAndRecommendations",
+        "name": "Customer Preference and Recommendations"
+      }
+    ],
+    "ormPromptForCompetitor": {
+      "customerPreferenceAndRecommendations": {
+        "prompt": "Client: ##brands##\n Competitors: ##brandCompetitors##\n Please analyze these posts of  ##brandCompetitors## that received high rating. Give us a customer behaviour and preference analysis on ##category## for those competitors based on the ratings in comparison with its brands. Please return your analysis well formatted with HTML tags.\n"
+      }
+    },
+    "overallAICategories": [
+      {
+        "id": "customerPreferenceAndRecommendations",
+        "name": "Customer Preference and Recommendations"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "updatedTime": 1747825412655,
-  "updatedBy": "manura",
+  "updatedTime": 1747906510541,
+  "updatedBy": "lankeshh@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
   "vendors": [
@@ -108,9 +108,9 @@
           ]
         },
         "commtracks": [
-            513519,
-            513520,
-            529831
+          513519,
+          513520,
+          529831
         ]
       },
       {
@@ -136,9 +136,9 @@
           ]
         },
         "commtracks": [
-            513531,
-            513532,
-            530052
+          513531,
+          513532,
+          530052
         ]
       },
       {
@@ -164,9 +164,9 @@
           ]
         },
         "commtracks": [
-            513533,
-            513534,
-            530054
+          513533,
+          513534,
+          530054
         ]
       },
       {
@@ -193,9 +193,9 @@
           ]
         },
         "commtracks": [
-            513535,
-            513536,
-            530063
+          513535,
+          513536,
+          530063
         ]
       },
       {
@@ -221,9 +221,9 @@
           ]
         },
         "commtracks": [
-            513537,
-            513538,
-            530079
+          513537,
+          513538,
+          530079
         ]
       },
       {
@@ -246,9 +246,9 @@
           ]
         },
         "commtracks": [
-            513544,
-            513545,
-            530088
+          513544,
+          513545,
+          530088
         ]
       },
       {
@@ -276,9 +276,9 @@
           ]
         },
         "commtracks": [
-            513546,
-            513582,
-            530092
+          513546,
+          513582,
+          530092
         ]
       },
       {
@@ -305,9 +305,9 @@
           ]
         },
         "commtracks": [
-            513548,
-            513549,
-            530105
+          513548,
+          513549,
+          530105
         ]
       },
       {
@@ -363,9 +363,9 @@
           ]
         },
         "commtracks": [
-            513555,
-            513556,
-            530109
+          513555,
+          513556,
+          530109
         ]
       }
     ]
@@ -570,9 +570,6 @@
   "alertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
-      },
-      {
         "email": "Strategy@classictravel.lk"
       }
     ],
@@ -583,29 +580,23 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-05-19T01:00:26.617Z",
+    "updatedAt": "2025-05-26T01:00:22.138Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "lankeshh@emojot.com"
-        },
-        {
           "email": "Strategy@classictravel.lk"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-05-22T01:00:11.287Z",
-      "nextReminderDate": "2025-05-23T00:30:00.000Z"
+      "updatedAt": "2025-05-28T01:00:16.040Z",
+      "nextReminderDate": "2025-05-29T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-05-26T00:30:00.000Z"
+    "nextReminderDate": "2025-06-02T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
-      {
-        "email": "lankeshh@emojot.com"
-      },
       {
         "email": "Strategy@classictravel.lk"
       }

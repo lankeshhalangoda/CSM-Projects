@@ -42,8 +42,20 @@ Comment: "$$gp2651_c1_comment_value$$"
               <value>$$q8426_emote$$</value>
             </field>
             <field>
+              <key>items</key>
+              <value>$$q4655_emote$$</value>
+            </field>
+            <field>
+              <key>items_not_found</key>
+              <value>$$gp7188_c1_comment_value$$</value>
+            </field>
+            <field>
               <key>staff_rating</key>
               <value>$$q7930_emote$$</value>
+            </field>
+            <field>
+              <key>staff_member</key>
+              <value>$$gp8498_c1_comment_value$$</value>
             </field>
             <field>
               <key>value_for_money</key>
@@ -52,10 +64,6 @@ Comment: "$$gp2651_c1_comment_value$$"
             <field>
               <key>product_quality_rating</key>
               <value>$$q5817_emote$$</value>
-            </field>
-            <field>
-              <key>mobile_update</key>
-              <value>$$q8667_emote$$</value>
             </field>
             <field>
               <key>comment</key>
