@@ -105,60 +105,28 @@
       "readOnly": true,
       "values": [
         {
-          "id": "Colpetty",
-          "name": "Colpetty"
-        },
-        {
-          "id": "Wellawatte",
-          "name": "Wellawatte"
-        },
-        {
           "id": "Nugegoda",
           "name": "Nugegoda"
-        },
-        {
-          "id": "Maharagama",
-          "name": "Maharagama"
-        },
-        {
-          "id": "Moratuwa",
-          "name": "Moratuwa"
-        },
-        {
-          "id": "Kotahena",
-          "name": "Kotahena"
         },
         {
           "id": "Borella",
           "name": "Borella"
         },
         {
-          "id": "Wattala",
-          "name": "Wattala"
-        },
-        {
-          "id": "Negombo",
-          "name": "Negombo"
-        },
-        {
-          "id": "Kandy (Dalada Veediya)",
-          "name": "Kandy (Dalada Veediya)"
+          "id": "Bandarawela",
+          "name": "Bandarawela"
         },
         {
           "id": "Katugastota",
           "name": "Katugastota"
         },
         {
-          "id": "Kurunegala",
-          "name": "Kurunegala"
+          "id": "Kotahena",
+          "name": "Kotahena"
         },
         {
-          "id": "Matara",
-          "name": "Matara"
-        },
-        {
-          "id": "Bandarawela",
-          "name": "Bandarawela"
+          "id": "Negombo",
+          "name": "Negombo"
         }
       ]
     },

@@ -1,0 +1,175 @@
+{
+  "type": "onlineReviewManagement",
+  "companyID": "67693a2b6093173f584b7ae5",
+  "workflow": "676943e86093173f584b7c22",
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "Low",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      },
+      {
+        "fieldId": "complaintType",
+        "dataField": "source"
+      }
+    ],
+    "emoSignature": [
+      {
+        "fieldId": "location",
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  },
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please return your analysis well formatted with HTML tags.\n"
+    }
+  },
+  "ORMConfigs": {
+    "targetedKeywords": {
+      "Sizing and Fit": [
+        "small",
+        "large",
+        "tight",
+        "loose",
+        "short",
+        "long",
+        "fit",
+        "size"
+      ],
+      "Quality and Durability": [
+        "quality",
+        "material",
+        "fabric",
+        "stitching",
+        "durable",
+        "tear",
+        "wear",
+        "defect"
+      ],
+      "Shipping and Delivery": [
+        "shipping",
+        "delivery",
+        "delay",
+        "lost",
+        "tracking",
+        "courier",
+        "package",
+        "arrival"
+      ],
+      "Return and Refund": [
+        "return",
+        "refund",
+        "exchange",
+        "policy",
+        "credit",
+        "label",
+        "fee",
+        "process"
+      ],
+      "Customer Service": [
+        "service",
+        "support",
+        "response",
+        "help",
+        "rude",
+        "communication",
+        "assistance",
+        "resolution"
+      ],
+      "Product": [
+        "authentic",
+        "fake",
+        "genuine",
+        "knock-off",
+        "replica",
+        "scam",
+        "legit",
+        "counterfeit",
+        "quality"
+      ],
+      "Pricing and Billing": [
+        "price",
+        "billing",
+        "overcharge",
+        "fees",
+        "discount",
+        "promotion",
+        "invoice",
+        "charge"
+      ]
+    },
+    "reviewFetchLimit": {
+      "nonAdmin": 200,
+      "admin": 200
+    },
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list -  Products,Price,Brand,Order,Casual design,Apparel,Clothing,Style,Trends \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  }
+}

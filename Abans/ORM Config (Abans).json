@@ -1,0 +1,256 @@
+{
+  "type": "onlineReviewManagement",
+  "companyID": "6791d6ad94210ae8d23f93ae",
+  "aiModel": "gpt-4",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location.  Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    }
+  },
+  "ORMConfigs": {
+    "reviewFetchLimit": {
+      "nonAdmin": 500,
+      "admin": 500
+    },
+    "targetedKeywords": {
+      "Performance": [
+        "performance",
+        "functionality",
+        "efficiency",
+        "speed",
+        "issues",
+        "problem",
+        "working",
+        "features",
+        "specifications",
+        "output",
+        "user-friendly"
+      ],
+      "Quality": [
+        "quality",
+        "material",
+        "durable",
+        "sturdy",
+        "reliable",
+        "long-lasting",
+        "scratch",
+        "build",
+        "faulty",
+        "defective",
+        "broken"
+      ],
+      "Pricing": [
+        "price",
+        "affordable",
+        "expensive",
+        "value",
+        "worth",
+        "deal",
+        "promotion",
+        "discount",
+        "overpriced",
+        "cost-effective"
+      ],
+      "Installation": [
+        "installation",
+        "setup",
+        "configuration",
+        "manual",
+        "guide",
+        "easy",
+        "difficult",
+        "support",
+        "connectivity",
+        "instructions"
+      ],
+      "Warranty": [
+        "warranty",
+        "guarantee",
+        "policy",
+        "coverage",
+        "claim",
+        "replacement",
+        "validity",
+        "repair",
+        "service",
+        "support"
+      ],
+      "Delivery": [
+        "delivery",
+        "shipping",
+        "arrival",
+        "delay",
+        "time",
+        "courier",
+        "tracking",
+        "package",
+        "damage",
+        "handling"
+      ],
+      "After-Sales": [
+        "service",
+        "repair",
+        "maintenance",
+        "technician",
+        "response",
+        "support",
+        "helpful",
+        "resolution",
+        "service center",
+        "follow-up"
+      ],
+      "Customer Care": [
+        "customer care",
+        "response",
+        "helpful",
+        "communication",
+        "assistance",
+        "rude",
+        "polite",
+        "queries",
+        "feedback",
+        "contact"
+      ],
+      "Availability": [
+        "availability",
+        "stock",
+        "options",
+        "models",
+        "variants",
+        "out of stock",
+        "new",
+        "variety",
+        "inventory"
+      ],
+      "Returns": [
+        "return",
+        "refund",
+        "exchange",
+        "policy",
+        "process",
+        "delay",
+        "credit",
+        "label",
+        "charges",
+        "conditions"
+      ],
+      "Energy": [
+        "energy",
+        "electricity",
+        "consumption",
+        "efficient",
+        "eco-friendly",
+        "green",
+        "savings",
+        "power",
+        "waste",
+        "carbon"
+      ],
+      "Brand": [
+        "brand",
+        "Abans",
+        "reliable",
+        "trust",
+        "authentic",
+        "genuine",
+        "local",
+        "reputation",
+        "experience",
+        "fake"
+      ],
+      "IT": [
+        "software",
+        "hardware",
+        "connectivity",
+        "WiFi",
+        "Bluetooth",
+        "update",
+        "compatible",
+        "driver",
+        "system",
+        "IT support"
+      ]
+    },
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list -  Service, Cleanliness, Location, Room Quality, Food and Dining, Facilities, Value for Money, Room Service, Online Booking/Reservation Experience, Overall Experience \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "Low",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  }
+}
