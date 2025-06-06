@@ -194,6 +194,11 @@
       "type": "textArea",
       "readOnly": true,
       "hidden": true
+    },
+    "media": {
+      "name": "Customer's Attachment",
+      "type": "file",
+      "readOnly": true
     }
   },
   "timeZone": -330,

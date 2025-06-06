@@ -73,6 +73,10 @@ Comment: "$$gp2651_c1_comment_value$$"
               <key>csat</key>
               <value>$$q2091_emote$$</value>
             </field>
+            <field>
+              <key>media</key>
+              <value>$$mediafile_p2651$$</value>
+            </field>
           </customFields>
         </data>
         <validityPeriod>5</validityPeriod>
