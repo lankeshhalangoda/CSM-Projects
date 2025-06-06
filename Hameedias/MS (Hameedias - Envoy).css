@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:300,400');
  #master-section {
-     background:url('https://storage.emojot.com/pictures/skinImages/59b64d50a430d8b91b542843-skin1.png');
+     background:url('https://storage.emojot.com/pictures/skinImages/67761761cb917201e680c031-skin12.png');
      min-height: 657px;
      background-size:cover;
      background-repeat: no-repeat;
@@ -15,16 +15,21 @@
      padding-right:0px !important;
 }
  .emote-title {
-     color: #57114e;
+     color: #ffffff;
      font-family: 'exo 2.0', Helvetica, Arial, sans-serif;
      font-size:12pt;
      font-weight: bold;
 }
 .emo-text {
     font-size: 11pt;
-    color: #666;
+    color: #ffffff;
     font-family: 'Exo 2.0',Helvetica, Arial, sans-serif;
     font-weight: 300;
+}
+
+textarea.form-control {
+    background: rgba(255, 255, 255, 0.337);
+    color: #ffffff !important;
 }
  .middle-box {
      margin-top: 10px;
@@ -33,7 +38,7 @@
 }
  
  .emo-cont {
-     border: 2px solid #3330;
+     border: 2px solid rgba(255, 255, 255, 0);
      margin: 3px 0px;
      text-align: center;
      display: inline-block;
@@ -42,11 +47,11 @@
      padding: 7px 0;
      border-radius: 4px;
      color:#666;
-     background: rgb(255, 255, 255);
+     background: rgba(255, 255, 255, 0.337);
      }
 
 .clicked-emo-cont {
-    border: 3px #2a92ce solid !important;
+    border: 3px #ffffff solid !important;
 }
 .emo-ico img {
     width: 80%;
@@ -55,6 +60,10 @@
     max-width: 55px;
     margin: 5px;
 }
+
+.form-group label {
+    color: #ffffff !important;
+}
  .btn {
      
      color: ed1c24;
@@ -62,10 +71,10 @@
 }
 
  .btn-next {
-     color: #2a92ce;
+     color: #000000;
 }
  .btn-submit {
-     color: #2a92ce;
+     color: #000000;
 }
  .btn-prev {
      color: #333;
@@ -98,7 +107,7 @@
     text-align:center !important;
 }
  .btn:hover {
-     color: #196d9e;
+     color: #444444;
      text-decoration: none;
 }
 .btn-ok{
@@ -112,20 +121,26 @@
 }
 
 .loyalty-redeem-button{
-    border-color: #2a92ce;
+    border-color: #000000;
 }
 
  .logo-cust {
     margin: 3px 0 -3px 9px;
      height: 50px;
 }
+.company-logo img {
+    height: 80px !important;
+}
+
+.footer .logo {
+    padding: 2px !important;
+}
  .sensor-title {
-     color: #333;
+     color: #ffffff;
      font-size: 17pt;
      padding: 10px 10px 0px 10px;
      margin-bottom: 10px;
      font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
-     border-bottom: 2px solid #8db8ea;
      letter-spacing: -0.5px;
      background: rgba(255, 255, 255, 0);
      line-height: 40px;
@@ -193,8 +208,25 @@
  .company-logo img{
      height: 50px;
 }
+
+.progress_bar .pro-bar {
+    background: #000000 !important;
+}
+
+#progressfill {
+  background: #ffffff !important;
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+    display: flex !important;
+    justify-content: center !important;
+}
  .footer {
-     background: #333 !important;
+     background: #000000 !important;
      color: #fff;
      position: absolute;
      right: 10px;
@@ -207,6 +239,63 @@
      margin: 0 -10px 0px 0;
      font-family: 'Exo', Helvetica, Arial, sans-serif;
 }
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right:10px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6{
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8{
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10{
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon{
+    border: 3px solid #ffffff;
+    box-shadow: 0px 2px 6px #736f6f;
+}
+
  .form-group label{
      columns: #fff !important;
      font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
@@ -256,7 +345,7 @@
 }
 
 .thank-you-note{
-    color: #333 !important; 
+    color: #ffffff !important; 
 }
 
 #barChart{
