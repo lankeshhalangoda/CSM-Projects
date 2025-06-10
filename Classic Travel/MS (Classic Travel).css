@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 
+
+    =================|=================================
+    class/id         | description
+    ===================================================
+    master-section   | to change sensor background
+    emote-title      | change question title
+    emo-text         | change emoticon text
+    emo-cont         | change emoticon style. You can change emoticon button background color etc.
+    clicked-emo-cont | Add the style after the emoticon button get clicked
+    sensor-title     | change sensor title
+    form-group label | This will change the all label colors including label for loyalty and comments.
+    loyalty-message  | Change loyalty description style
+    thank-you-note   | change thank you note text color
+    footer           | Change footer color
+    pdGroupTitle     | change group title properties
+    progressfill     | change page progress color
+    NPS style        | uncomment this code to show color coded NPS
+*/
+
+/* Replace background url to add sensor background image */
+#master-section {
+    /* background: url('https://storage.emojot.com/pictures/skinImages/679369170bf0386ac6daafb6-skin3.png'); */
+    /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
+    background-color: #ffffff;
+    min-height: 657px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+/*#master-section {
+    background:url('https://s3-us-west-2.amazonaws.com/emojotdevstorage/themes_newmobile/images/backgroundimage/people_images_20180809.png');
+    min-height: 790px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}*/
+
+ #headerCompanyInfo {
+     color:#000000 !important;
+     min-height:70px;
+}
+
+.container[style]{
+     padding-left:0px !important;
+     padding-right:0px !important;
+}
+
+/* replace color to change question title color */
+.emote-title {
+     color: #000000;
+     font-family: 'PT Serif', sans-serif;
+     font-size:13pt;
+     font-weight: bold;
+}
+
+/* replace color to change emoticon colors */
+.emo-text {
+    font-size: 12pt;
+    color: #000000;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 300;
+}
+ .middle-box {
+     margin-top: 10px;
+     padding: 10px;
+     border: 1px solid #000000;
+}
+ 
+/* change background color to change emoticon button color. */
+ .emo-cont {
+     border: 1px solid rgb(241, 219, 219);
+     margin: 3px 0px;
+     text-align: center;
+     display: inline-block;
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+     padding: 7px 0;
+     border-radius: 4px;
+     color:#f5f5f5;
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1 );
+}
+
+ /* .emo-cont:hover {
+    border: 3px solid white;
+} */
+
+.clicked-emo-cont {
+	background: rgba(56, 50, 50, 0.1);
+    border: 3px #db2032 solid !important;
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 55px;
+    margin: 5px;
+}
+ .btn {
+     color: #db2032; 
+}
+
+ .btn-next {
+     color: #db2032;
+}
+ .btn-submit {
+     color: #db2032;
+}
+ .btn-prev {
+     color: #333;
+}
+
+.btn-skip {
+    color: #333;
+}
+ .btn-clear {
+     color: #333;
+}
+
+ .clear-submit-row{
+    text-align:center !important;
+}
+ .btn:hover {
+     color: #db2032;
+     text-decoration: none;
+}
+.btn-ok{
+    color:#333 
+}
+.btn-skip{
+    color:#333;
+}
+.btn-fb{
+    color:white;
+}
+
+.loyalty-redeem-button{
+    border-color: #db2032;
+    color:#333;
+}
+
+ .logo-cust {
+    margin: 3px 0 -3px 9px;
+     height: 50px;
+}
+
+/* change color property to change sensor title font color */
+.sensor-title {
+    color: #000000;
+    font-size: 17pt;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-family: 'PT Serif', sans-serif;
+    letter-spacing: 0.3px;
+    background: rgba(255, 255, 255, 0);
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Increased border radius for rounded corners */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    /* transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+}
+
+
+.panel {
+    margin: 0 10px;
+}
+
+ .panel-group .panel {
+     margin-bottom: 0;
+     border-radius: 5px;
+     box-shadow: none;
+     background: rgba(250, 247, 247, 0.64);
+}
+ 
+ .panel-group .panel-heading {
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+     border-radius: 5px;
+     color: black;
+     background: rgba(249,249,249,1);
+     background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(227,227,227,1)));
+     background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+}
+ .panel-title {
+    font-size: 11pt;
+     max-width: 90%;
+     font-family: 'PT Serif', sans-serif;
+     line-height: 1.6;
+}
+ .row {
+     background: transparent !important;
+}
+ .my-emojots{
+     display:none;
+}
+ .panel-body {
+     background: transparent !important;
+}
+ 
+#headerCompanyInfo > .access-user {
+    text-align: center;
+    float: right;
+    /* text-shadow: 1px 1px 1px #000; */
+    font-family: 'PT Serif',  sans-serif;
+    /* font-style: italic; */
+    font-size: 15px;
+    font-weight: 600; /* Adjusted font weight for a bolder appearance */
+    background-size: 120px 80px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+
+ .company-logo img{
+ 	margin:10px;
+     height: 60px;
+}
+
+/* change background color to change sensor footer color */
+ .footer {
+     background: #000000 !important;
+     color: #fff;
+     position: absolute;
+     right: 10px;
+     left: 0;
+     z-index: 800;
+     bottom: 0;
+     height: 40px;
+     padding: 12px 13px;
+     font-size: 8pt;
+     margin: 0 -10px 0px 0;
+     font-family: 'PT Serif', sans-serif;
+}
+
+/* change label color to change label color of the entire sensor */
+ .form-group label{
+     color: #000000 !important;
+     font-family: 'PT Serif', sans-serif;
+     font-size:12pt;
+}
+
+/* Change color to change loyalty description text color */
+ .loyalty-message{
+     color:#000000;
+     font-size: 13pt;
+     text-align:center;
+}
+
+ .loyalty-bottom{
+     text-align:center;
+}
+ 
+ .loyalty-dialog div:nth-child(3){
+    
+}
+ 
+ .email-emote-message{
+     color:#000000 !important;
+}
+
+/* change this to change page progress color */
+#progressfill{
+    background-color: #db2032;
+}
+
+#groupCommentBuzzModal .modal-header{
+	background:#fff ;
+	color:#e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body{
+	background:#fff;
+	color:#333333;
+}
+
+#groupCommentBuzzModal .modal-footer{
+	background:#fff;
+	color:#000000;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel{
+	background:#f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer{
+	color:#333333;
+}
+
+/* change color to change thankyou note text color */
+.thank-you-note{
+    font-size: 15pt;
+    color: #000000;
+    font-family: 'PT Serif', sans-serif;
+}
+
+.access-user-name {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 12pt;
+}
+
+.pdGroupTitle{
+    font-family: 'PT Serif', sans-serif;
+	color:#db2032;
+    margin: 0px 0px 0px 0px !important;
+}
+
+p.group-header-text{
+    margin-top: 5px;
+    font-size: 12pt;
+}
+
+.progress_bar .pro-bar {
+	margin-top:15px !important;
+}
+
+.company-logo{
+	padding:2px !important;
+}
+.title-image{
+    margin-left:auto;
+    margin-right:auto;
+    width:80px;
+color:#ffffff;
+}
+
+.btnGoogle {
+    font-family: 'PT Serif', sans-serif;
+  }
+
+.btnFacebook {
+    font-family: 'PT Serif', sans-serif;
+  }
+
+#facebook-login-section{
+	display:none;
+}
+
+.thankYouImage{
+	width:200px;
+}
+
+.repeated-item{
+	display:block;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+    font-family: "Playwrite AU SA", serif;
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right:10px;
+    color: #000000;
+    margin-right: 5px;
+}
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6{
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8{
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10{
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon{
+    border: 3px solid #333;
+    box-shadow: 0px 2px 6px #716868;
+}
+
+div.col-xs-7.ng-scope {
+    font-family: 'PT Serif', sans-serif;
+  }
+
+.btn-next, .btn-submit, .btn-ok, .btn-prev, .btn-skip {
+    position: relative;
+    background-color: #db2032;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 14pt;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.btn-next::after, .btn-submit::after, .btn-ok::after, .btn-prev::after, .btn-skip::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid #db2032;
+}
+
+.btn-next:hover, .btn-submit:hover, .btn-ok:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-next:hover::after, .btn-submit:hover::after, .btn-ok:hover::after {
+    border-color: #000000;
+}
+
+.btn-prev {
+    background-color: #000000;
+}
+
+.btn-prev::after {
+    border-color: #000000;
+}
+
+.btn-prev:hover {
+    background-color: #db2032;
+    color: #ffffff;
+}
+
+.btn-prev:hover::after {
+    border-color: #db2032;
+}
+
+.btn-skip {
+    background-color: #000000;
+}
+
+.btn-skip::after {
+    border-color: #000000;
+}
+
+.btn-skip:hover {
+    background-color: #db2032;
+    color: #ffffff;
+}
+
+.btn-skip:hover::after {
+    border-color: #db2032;
+}
+
+.btn-next:active, .btn-submit:active, .btn-ok:active, .btn-prev:active, .btn-skip:active {
+    background-color: inherit !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+.flex {
+    display: inline !important;
+}
+
+
+@media (max-width: 768px) {
+    .emo-text {
+        font-size: 8pt;
+    }
+
+    .sensor-title {
+        font-size: 12pt;
+    }
+
+    .emote-title {
+        font-size: 10pt;
+    }
+
+    .form-group label {
+        font-size: 10pt;
+    }
+
+    .btn-next,.btn-submit,.btn-prev,.btn-clear,.btn-skip,.btn-ok,.loyalty-redeem-button{
+        font-size: 12px;
+    }
+
+    .nps-bar::before,
+.nps-bar::after {
+    font-size: 10px;
+}
+
+p.group-header-text{
+    font-size: 10pt;
+}
+
+.thank-you-note{
+    font-size: 12pt;
+    color: #000000;
+    font-family: 'PT Serif', sans-serif;
+}
+.footer .logo {
+    height: 20px !important;
+    margin-top: 0px !important;
+}
+}

@@ -1,0 +1,778 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+#master-section {
+  background: url("https://storage.emojot.com/pictures/skinImages/66dfbef52f6e2187d8a5ca99-skin10.png");
+  background-color: #000000;
+  /* min-height: 657px; */
+  min-height: 150vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  z-index: 0;
+  padding-top: 50px;
+  flex-grow: 1;
+}
+
+body,
+.btn,
+.form-control,
+.panel,
+.panel-group,
+.panel-heading,
+.panel-title,
+.form-group label,
+.thank-you-note,
+.loyalty-message,
+.loyalty-bottom,
+.row,
+.middle-box,
+.clear-submit-row,
+.sensor-title,
+.footer,
+.panel-body,
+.logo-cust,
+.container[style],
+.message,
+.group-header-text,
+.bitter-<uniquifier >,
+.progress_bar .progress_bar_title {
+  font-family: "Open Sans", serif;
+}
+
+.btn-google,
+.btn-facebook,
+.btn,
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+}
+
+#headerCompanyInfo {
+  color: rgb(0, 0, 0) !important;
+}
+
+.container[style] {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.emote-title {
+  color: #ffffff;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.emo-text {
+  font-size: 11pt;
+  color: #ffffff;
+  font-family: "Open Sans", serif;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+}
+
+.middle-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+}
+
+.emo-cont {
+  border: none !important;
+  margin: 3px 0px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0px;
+  box-shadow: 0px 2px 8px rgb(255 255 255 / 0%);
+  padding: 7px 0;
+  border-radius: 4px;
+  color: #666;
+}
+
+.clicked-emo-cont {
+  border: 3px #ffffff solid !important;
+  border-radius: 5px !important;
+  background-color: rgba(255, 255, 255, 0.099) !important;
+}
+
+.emo-ico img {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  max-width: 55px;
+  margin: 5px;
+}
+
+.emoticonList {
+  background-color: #2f000c !important;
+  z-index: 9999 !important;
+}
+
+.emoticonList {
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Aligns items vertically */
+  text-align: center;
+  max-width: 100%;
+  gap: 10px; /* Adds spacing between items */
+}
+
+.flex {
+ display: block !important;
+}
+
+
+.btn {
+  color: ed1c24;
+}
+
+.btn-next {
+  color: #000000;
+}
+
+.btn-submit {
+  color: #d01110;
+}
+
+.btn-prev,
+.btn-clear {
+  color: #333;
+}
+
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 5px;
+  text-align: center;
+  min-width: 90px;
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 9px 25px;
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 12pt;
+  background: rgba(249, 249, 249, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(249, 249, 249, 1)),
+    color-stop(100%, rgba(227, 227, 227, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+}
+
+.clear-submit-row {
+  text-align: center !important;
+}
+
+.btn:hover {
+  color: #d01110;
+  text-decoration: none;
+}
+
+.btn-ok {
+  color: #333;
+}
+
+.btn-skip {
+  color: #333;
+}
+
+.btn-fb {
+  color: white;
+}
+
+.loyalty-redeem-button {
+  border-color: #000000;
+}
+
+.logo-cust {
+  margin: 3px 0 -3px 9px;
+  height: 50px;
+}
+
+.sensor-title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("https://storage.emojot.com/pictures/generalImages/66dfbef52f6e2187d8a5ca99-skin11.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 10px auto;
+}
+
+.sensor-title {
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 10px 10px 0px 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", serif;
+  background: #0b0b0b00;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 200px;
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.panel {
+  margin: 0 10px;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  background: rgba(250, 247, 247, 0.64);
+}
+
+.panel-group .panel-heading {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: black;
+  background: rgba(249, 249, 249, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(249, 249, 249, 1)),
+    color-stop(100%, rgba(227, 227, 227, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+}
+
+.media-uploaded {
+  background: none !important;
+  font-size: 12px !important;
+}
+
+.panel-title {
+  font-size: 11pt;
+  max-width: 90%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.row {
+  background: transparent !important;
+}
+
+.my-emojots {
+  display: none;
+}
+
+.panel-body {
+  background: transparent !important;
+}
+
+.thank-you-note {
+  color: #ffffff !important;
+  background: #00000087;
+  font-family: "Open Sans", serif;
+  font-weight: normal;
+}
+
+#headerCompanyInfo > .access-user {
+  text-align: left !important;
+  float: right !important;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  background-color: #000000;
+  background-image: url(https://storage.emojot.com/pictures/generalImages/66dfbef52f6e2187d8a5ca99-skin14.png);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  height: 60px;
+  width: 90px;
+  display: block !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: -40px !important;
+  margin-bottom: -60px !important;
+}
+
+#headerCompanyInfo .col-7 {
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+#accordionContainer {
+  display: none !important;
+}
+
+.company-logo img {
+  display: none;
+}
+
+.footer {
+  background: #000000 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.footer::before {
+  content: "MIDNIGHTDIVAS❤️COM";
+  font-family: "Cinzel", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  letter-spacing: 2.1px;
+  color: #e2e2e2;
+  position: absolute;
+  width: 100%;
+  bottom: 24px;
+  z-index: 1031;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+
+.footer::after {
+  content: "COLOMBO 03 | COLOMBO 06 | NAWALA | NEGOMBO | KANDY";
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+  color: white; /* Keeping the text color white */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  z-index: 1032;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.footer .logo {
+  display: none !important;
+}
+
+.form-group label {
+  columns: #fff !important;
+  font-family: "Open Sans", serif;
+  font-size: 12pt;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.loyalty-message {
+  color: #ffffff;
+  font-size: 14pt;
+  font-family: "Open Sans", serif;
+  background: #0000005e;
+}
+
+.loyalty-bottom {
+  text-align: center;
+}
+
+.email-emote-message {
+  color: white !important;
+}
+
+div.col-xs-7.ng-scope {
+  display: none !important;
+}
+
+.progress_bar,
+.progress_bar_title {
+  display: none !important;
+}
+
+#groupCommentBuzzModal .modal-header {
+  background: #fff;
+  color: #e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body {
+  background: #fff;
+  color: #333333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+  background: #fff;
+  color: white;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+  background: #9b26ab !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+  color: #9b26ab;
+}
+
+#barChart {
+  width: 100%;
+}
+
+.nps-bar {
+  position: relative;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+  content: "";
+  position: absolute;
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  color: #ffffff;
+  top: 100%;
+  text-transform: uppercase;
+  transform: translateY(8px);
+}
+
+.nps-bar::before {
+  content: "Less Likely";
+  left: 0;
+}
+
+.nps-bar::after {
+  content: "More Likely";
+  right: 0;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6 {
+  background: #ff2942;
+  color: white;
+  border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8 {
+  background: #ff7924;
+  color: white;
+  border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10 {
+  background: #1ca757;
+  color: white;
+  border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon {
+  border: 3px solid #ffffff;
+  box-shadow: 0px 2px 6px #948f8f;
+  padding: 1px;
+}
+
+.emoji {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.emo-text-only {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 13pt;
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  color: #000000;
+}
+
+.btnGoogle {
+  background: #f44336;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 5px;
+  text-align: center;
+  min-width: 90px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+  padding: 9px 0px;
+  font-size: 12pt;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  height: 44px;
+  font-family: "Open Sans", serif;
+}
+
+.btnGoogle:hover,
+.btnGoogle:focus {
+  background: #b1190e;
+  color: #ffffff;
+  border: 1px solid #f44336;
+}
+
+.btnFacebook {
+  background: #4267b2;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 10px 5px;
+  text-align: center;
+  min-width: 90px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+  padding: 9px 0px;
+  font-size: 12pt;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  height: 44px;
+  font-family: "Open Sans", serif;
+}
+
+.btnFacebook:hover,
+.btnFacebook:focus {
+  background: #2c4f94;
+  color: #ffffff;
+  border: 1px solid #4267b2;
+}
+
+.btnFacebook a,
+.btnGoogle a,
+.btnYelp a {
+  text-decoration: none !important;
+  color: white !important;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.progress_bar .progress_bar_title {
+  color: hsl(0deg 0% 100%);
+}
+
+.access-user-name {
+  color: #ffffff;
+  display: none;
+}
+
+.fa {
+  color: #ffffff;
+}
+
+.pdGroupTitle {
+  font-size: 12pt;
+  margin-left: 0px;
+  margin-top: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  background: #00000087;
+}
+
+.bitter-<uniquifier > {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.fa-user-circle:before {
+  content: "\f2bd";
+  display: none;
+}
+
+.message,
+.group-header-text {
+  font-family: "Open Sans", serif;
+  font-size: 13pt;
+  font-weight: normal;
+}
+
+.message {
+  text-align: center;
+}
+
+span.ng-binding.ng-scope {
+  color: #ffffff !important;
+  font-size: 12pt !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.emj-media-upload-attach {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  background-color: #808080;
+  color: #000000;
+  font-weight: 600;
+}
+
+.clear-submit-row {
+  padding-top: 50px !important;
+}
+
+
+@media (max-width: 768px) {
+  .emo-text {
+    font-size: 8pt;
+  }
+
+  #headerCompanyInfo > .access-user {
+    margin-left: 20px !important;
+  }
+
+  #master-section {
+    background-position: 35% 0 !important;
+    min-height: 115vh !important;
+    padding-bottom: 20px !important;
+    /* height: min-content !important; */
+    
+  }
+
+  #master-section::before {
+    display: block;
+  }
+
+  .sensor-title {
+    margin-top: 50px !important;
+    font-size: 12pt;
+    line-height: 1.2;
+}
+
+  .message {
+    font-size: 10pt !important;
+    margin-top: -30px !important;
+  }
+
+  .emo-text {
+    font-size: 10pt;
+  }
+
+  .footer::before {
+    font-size: 10pt;
+    background-color: #000000;
+    padding-top: 5px;
+    display: block !important;
+  }
+
+  .footer::after {
+    font-size: 6pt;
+    background-color: #000000;
+  }
+
+  .nps-bar {
+    margin-bottom: 30px !important;
+  }
+
+
+  .btn {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .nps-bar::before,
+  .nps-bar::after {
+    font-size: 10px !important;
+  }
+
+  span.ng-binding.ng-scope {
+    font-size: 10pt !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .form-group label {
+    font-size: 10pt;
+  }
+  .pdGroupTitle {
+    font-size: 10px !important;
+  }
+  
+}
