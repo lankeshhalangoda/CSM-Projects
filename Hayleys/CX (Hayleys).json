@@ -1,0 +1,3077 @@
+{
+  "menu": [
+    {
+      "id": "ehi2023p4",
+      "icon": "fa-user-md",
+      "header": "Hayleys Advantis IL Cluster Employee Happiness Index Survey 2025 - Phase 4",
+      "subs": [
+        {
+          "header": "Executive Summary",
+          "id": "ehi2023p4_cxm"
+        },
+        {
+          "header": "Engagement statisitics",
+          "id": "ehi2023p4_en"
+        },
+        {
+          "header": "Overall Responses",
+          "id": "ehi2023p4_rb"
+        },
+        {
+          "header": "Response Score Heatmap",
+          "id": "ehi2023p4_heatmap"
+        },
+        {
+          "header": "Score Trend Lines",
+          "id": "ehi2023p4_strend"
+        },
+        {
+          "header": "Comparison Analytics",
+          "id": "ehi2023p4_comp"
+        },
+        {
+          "header": "Correlation Analytics",
+          "id": "ehi2023p4_cor"
+        },
+        {
+          "header": "Comment Analysis",
+          "id": "ehi2023p4_ca"
+        }
+      ]
+    },
+    {
+      "id": "ehi2023",
+      "icon": "fa-user-md",
+      "header": "Hayleys Advantis IL Cluster Employee Happiness Index Survey 2024 - Phase 3",
+      "subs": [
+        {
+          "header": "Executive Summary",
+          "id": "ehi2023p3_cxm"
+        },
+        {
+          "header": "Engagement statisitics",
+          "id": "ehi2023p3_en"
+        },
+        {
+          "header": "Overall Responses",
+          "id": "ehi2023p3_rb"
+        },
+        {
+          "header": "Response Score Heatmap",
+          "id": "ehi2023p3_heatmap"
+        },
+        {
+          "header": "Score Trend Lines",
+          "id": "ehi2023p3_strend"
+        },
+        {
+          "header": "Comparison Analytics",
+          "id": "ehi2023p3_comp"
+        },
+        {
+          "header": "Correlation Analytics",
+          "id": "ehi2023p3_cor"
+        },
+        {
+          "header": "Comment Analysis",
+          "id": "ehi2023p3_ca"
+        }
+      ]
+    },
+    {
+      "id": "ehi2023",
+      "icon": "fa-user-md",
+      "header": "Hayleys Advantis IL Cluster Employee Happiness Index Survey 2023 - Phase 2",
+      "subs": [
+        {
+          "header": "Engagement statisitics",
+          "id": "ehi2023p2_en"
+        },
+        {
+          "header": "Overall Responses",
+          "id": "ehi2023p2_rb"
+        },
+        {
+          "header": "Response Score Heatmap",
+          "id": "ehi2023p2_heatmap"
+        },
+        {
+          "header": "Score Trend Lines",
+          "id": "ehi2023p2_strend"
+        },
+        {
+          "header": "Comparison Analytics",
+          "id": "ehi2023p2_comp"
+        },
+        {
+          "header": "Correlation Analytics",
+          "id": "ehi2023p2_cor"
+        },
+        {
+          "header": "Comment Analysis",
+          "id": "ehi2023p2_ca"
+        }
+      ]
+    },
+    {
+      "id": "ehi2023",
+      "icon": "fa-user-md",
+      "header": "Hayleys Advantis IL Cluster Employee Happiness Index Survey 2023 - Phase 1",
+      "subs": [
+        {
+          "header": "Engagement statisitics",
+          "id": "ehi2023_en"
+        },
+        {
+          "header": "Overall Responses",
+          "id": "ehi2023_rb"
+        },
+        {
+          "header": "Comparison Analytics",
+          "id": "ehi2023_comp"
+        },
+        {
+          "header": "Comment Analysis",
+          "id": "ehi2023_ca"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "Employee Happiness Index Surve - Score Heat Map",
+      "desc": "Score heat map for each question category",
+      "id": "ehi2023p2_heatmap",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/scoreOverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "EHI Score Heatmap"
+        },
+        {
+          "key": "hideUIComponents",
+          "value": "widgetFilterSection"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "EHI - Score Trend",
+      "desc": "Score variation of the responses based on different question categories",
+      "id": "ehi2023p2_strend",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "EHI Score Report"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023p2_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023p2_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023p2_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023p2_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023p2_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Comment categories & sentiment",
+          "desc": "Categories & sentiments of the comments received to the survey by all the respondents",
+          "type": "report",
+          "titleStyle": "color:white;background:#1973B7;",
+          "id": "ehi2023p2_ca2",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "reportType",
+              "value": "commentListByCategory"
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "collapseAction",
+              "value": "hide"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023p2_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "64e84a135fa919002045dbe2"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p3508"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey correlation analytics",
+      "desc": "This report illustrates responses across SBUs to identify correlations between questions.",
+      "type": "directReport",
+      "id": "ehi2023p2_cor",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "correlationAnalysis.jsp"
+        },
+        {
+          "key": "savedReportId",
+          "value": "64f9fbada5ec44001275f5ec"
+        },
+        {
+          "key": "correlationSort",
+          "value": true
+        },
+        {
+          "key": "correlationOpen",
+          "value": false
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023p2_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "64e84a135fa919002045dbe2"
+        },
+        {
+          "key": "questionID",
+          "value": "q2644"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023p2_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023p2_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023p2_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Age-wise analytics comparison",
+          "desc": "The survey data is categorized based on age groups, enabling meaningful insights into the distribution of responses across different age demographics",
+          "type": "report",
+          "id": "ehi2023p2_comp_6",
+          "titleStyle": "color:white;background:#00B7F1;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Age Category"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Gender-wise analytics comparison",
+          "desc": "The survey data is categorized by gender, providing valuable insights into response patterns based on different genders",
+          "type": "report",
+          "id": "ehi2023p2_comp_7",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64e84a135fa919002045dbe2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Gender"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023p2_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023p2_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023p2_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023p2_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023p2_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Comment categories & sentiment",
+          "desc": "Categories & sentiments of the comments received to the survey by all the respondents",
+          "type": "report",
+          "titleStyle": "color:white;background:#1973B7;",
+          "id": "ehi2023p2_ca2",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "reportType",
+              "value": "commentListByCategory"
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "collapseAction",
+              "value": "hide"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023p2_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "64537c40821daf0010374180"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p3508"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023p2_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "64537c40821daf0010374180"
+        },
+        {
+          "key": "questionID",
+          "value": "q2644"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023p2_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023p2_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023p2_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Age-wise analytics comparison",
+          "desc": "The survey data is categorized based on age groups, enabling meaningful insights into the distribution of responses across different age demographics",
+          "type": "report",
+          "id": "ehi2023p2_comp_6",
+          "titleStyle": "color:white;background:#00B7F1;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Age Category"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Gender-wise analytics comparison",
+          "desc": "The survey data is categorized by gender, providing valuable insights into response patterns based on different genders",
+          "type": "report",
+          "id": "ehi2023p2_comp_7",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Gender"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index Surve - Score Heat Map",
+      "desc": "Score heat map for each question category",
+      "id": "ehi2023p3_heatmap",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/scoreOverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": ""
+        },
+        {
+          "key": "hideUIComponents",
+          "value": "widgetFilterSection"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "EHI - Score Trend",
+      "desc": "Score variation of the responses based on different question categories",
+      "id": "ehi2023p3_strend",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "EHI_Phase_3"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Executive analytics summary of the EHI survey phase 3",
+      "type": "directReport",
+      "id": "ehi2023p3_cxm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "EHIPhase3_CXM"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023p3_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023p3_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023p3_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023p3_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023p3_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Comment categories & sentiment",
+          "desc": "Categories & sentiments of the comments received to the survey by all the respondents",
+          "type": "report",
+          "titleStyle": "color:white;background:#1973B7;",
+          "id": "ehi2023p3_ca2",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "reportType",
+              "value": "commentListByCategory"
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "collapseAction",
+              "value": "hide"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023p3_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "668acb29556ecb3b3d4d8ab3"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p3508"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey correlation analytics",
+      "desc": "This report illustrates responses across SBUs to identify correlations between questions.",
+      "type": "directReport",
+      "id": "ehi2023p3_cor",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "correlationAnalysis.jsp"
+        },
+        {
+          "key": "savedReportId",
+          "value": "668cc941679b33dfe53fe94f"
+        },
+        {
+          "key": "correlationSort",
+          "value": true
+        },
+        {
+          "key": "correlationOpen",
+          "value": false
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023p3_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "668acb29556ecb3b3d4d8ab3"
+        },
+        {
+          "key": "questionID",
+          "value": "q8891"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023p3_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023p3_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023p3_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Age-wise analytics comparison",
+          "desc": "The survey data is categorized based on age groups, enabling meaningful insights into the distribution of responses across different age demographics",
+          "type": "report",
+          "id": "ehi2023p3_comp_6",
+          "titleStyle": "color:white;background:#00B7F1;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Age Category"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Gender-wise analytics comparison",
+          "desc": "The survey data is categorized by gender, providing valuable insights into response patterns based on different genders",
+          "type": "report",
+          "id": "ehi2023p3_comp_7",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Gender"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023p3_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023p3_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023p3_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023p3_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023p3_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Comment categories & sentiment",
+          "desc": "Categories & sentiments of the comments received to the survey by all the respondents",
+          "type": "report",
+          "titleStyle": "color:white;background:#1973B7;",
+          "id": "ehi2023p3_ca2",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "reportType",
+              "value": "commentListByCategory"
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "collapseAction",
+              "value": "hide"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023p3_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "668acb29556ecb3b3d4d8ab3"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p3508"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023p3_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "668acb29556ecb3b3d4d8ab3"
+        },
+        {
+          "key": "questionID",
+          "value": "q8891"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023p3_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023p3_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023p3_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Age-wise analytics comparison",
+          "desc": "The survey data is categorized based on age groups, enabling meaningful insights into the distribution of responses across different age demographics",
+          "type": "report",
+          "id": "ehi2023p3_comp_6",
+          "titleStyle": "color:white;background:#00B7F1;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Age Category"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Gender-wise analytics comparison",
+          "desc": "The survey data is categorized by gender, providing valuable insights into response patterns based on different genders",
+          "type": "report",
+          "id": "ehi2023p3_comp_7",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "668acb29556ecb3b3d4d8ab3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Gender"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q8891"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "64537c40821daf0010374180"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p3508"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "64537c40821daf0010374180"
+        },
+        {
+          "key": "questionID",
+          "value": "q2644"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Age-wise analytics comparison",
+          "desc": "The survey data is categorized based on age groups, enabling meaningful insights into the distribution of responses across different age demographics",
+          "type": "report",
+          "id": "ehi2023_comp_6",
+          "titleStyle": "color:white;background:#00B7F1;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Age Category"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Gender-wise analytics comparison",
+          "desc": "The survey data is categorized by gender, providing valuable insights into response patterns based on different genders",
+          "type": "report",
+          "id": "ehi2023_comp_7",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "64537c40821daf0010374180"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Gender"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2644"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index Surve - Score Heat Map",
+      "desc": "Score heat map for each question category",
+      "id": "ehi2023p4_heatmap",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/scoreOverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Phase 4_2025"
+        },
+        {
+          "key": "hideUIComponents",
+          "value": "widgetFilterSection"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "EHI - Score Trend",
+      "desc": "Score variation of the responses based on different question categories",
+      "id": "ehi2023p4_strend",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Phase 4_socre analysis"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Executive analytics summary of the EHI survey phase 4",
+      "type": "directReport",
+      "id": "ehi2023p4_cxm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "EHI_Phase_04_EXM_2025"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey overall responses",
+      "desc": "This report provides a detailed breakdown of responses for each question. It offers insights into how participants answered each question, allowing for a comprehensive analysis of the survey data",
+      "id": "ehi2023p4_rb",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Pie Charts",
+          "desc": "Overall analytics for each question in pie chart view.",
+          "type": "report",
+          "id": "ehi2023p4_rb1",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Summary Table",
+          "desc": "Overall analytics for each question in tabular view.",
+          "type": "report",
+          "id": "ehi2023p4_rb2",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comment analysis",
+      "desc": "Analyze sentiment of the comments and categorize the comments received using Machined Learning (ML) algorithms. Disclaimer: This ML-based machined learning technique can have 5% of false positives or false negatives",
+      "type": "cards",
+      "id": "ehi2023p4_ca",
+      "cards": [
+        {
+          "title": "Sentiment Analysis",
+          "desc": "Analyze sentiment of the comments received to the survey.",
+          "type": "report",
+          "titleStyle": "color:white;background:#312E7D;",
+          "id": "ehi2023p4_ca1",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "startMonthDiff",
+              "value": "4"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Comment categories & sentiment",
+          "desc": "Categories & sentiments of the comments received to the survey by all the respondents",
+          "type": "report",
+          "titleStyle": "color:white;background:#1973B7;",
+          "id": "ehi2023p4_ca2",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "reportType",
+              "value": "commentListByCategory"
+            },
+            {
+              "key": "drillDownType",
+              "value": "multiple"
+            },
+            {
+              "key": "collapseAction",
+              "value": "hide"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey individual responses",
+      "type": "directReport",
+      "desc": "The Individual Responses feature enables users to access and download raw survey data in CSV format, including respondents' answers to all survey questions and any open-ended comments",
+      "id": "ehi2023p4_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "668acb29556ecb367b5691a8ed80658abcac3843d4d8ab3"
+        },
+        {
+          "key": "sensorComments",
+          "value": "p988@@p930"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "emoSignatureInclusionChecked",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey correlation analytics",
+      "desc": "This report illustrates responses across SBUs to identify correlations between questions.",
+      "type": "directReport",
+      "id": "ehi2023p4_cor",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "correlationAnalysis.jsp"
+        },
+        {
+          "key": "savedReportId",
+          "value": "682d9f9606acab6f10ed5077"
+        },
+        {
+          "key": "correlationSort",
+          "value": true
+        },
+        {
+          "key": "correlationOpen",
+          "value": false
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey engagement",
+      "type": "directReport",
+      "desc": "This report provides an overview of the employee engagement rates in relation to the EHI survey.",
+      "id": "ehi2023p4_en",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "all"
+        },
+        {
+          "key": "reportType",
+          "value": "emotiveTimeLinePanel"
+        },
+        {
+          "key": "timeLineChartView",
+          "value": "Spline"
+        },
+        {
+          "key": "timeLinePeriod",
+          "value": "daily"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "67b5691a8ed80658abcac384"
+        },
+        {
+          "key": "questionID",
+          "value": "q2618"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Employee Happiness Index (EHI) survey comparison analytics",
+      "desc": "Employee happiness index survey analytics compared based on different parameters",
+      "id": "ehi2023p4_comp",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "SBU-wise analytics comparison",
+          "desc": "The survey analytics are presented by comparing them with the data from IL cluster business units (SUBs), allowing for a comparative analysis of the results",
+          "type": "report",
+          "id": "ehi2023p4_comp_4",
+          "titleStyle": "color:white;background:#312E7D;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "SBU"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2618"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Department-wise analytics comparison",
+          "desc": "Survey data graphed by respondent departments offers valuable insights into data distribution across different departments",
+          "type": "report",
+          "id": "ehi2023p3_comp_5",
+          "titleStyle": "color:white;background:#1973B7;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "enterpriseHierarchicalView.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "67b5691a8ed80658abcac384"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "automaticSelectAll",
+              "value": true
+            },
+            {
+              "key": "selectedCategory",
+              "value": "Department"
+            },
+            {
+              "key": "selectedQuestion",
+              "value": "q2618"
+            }
+          ],
+          "styles": [
+            {
+              "id": ".container",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My Profile",
+      "desc": "Update profile settings",
+      "type": "directReport",
+      "id": "myProfile_profile",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "updateProfile.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "chamila.bandara@hayleysadvantis.com",
+      "id": "chamila.bandara@hayleysadvantis.com",
+      "title": "team_member",
+      "email": "chamila.bandara@hayleysadvantis.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "abhishekak@emojot.com",
+      "id": "abhishekak@emojot.com",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "dewminil@emojot.com",
+      "id": "dewminil@emojot.com",
+      "title": "company_admin",
+      "email": "dewminil@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "kashnika@emojot.com",
+      "id": "kashnika@emojot.com",
+      "title": "company_admin",
+      "email": "kashnika@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "koshilai@emojot.com",
+      "id": "koshilai@emojot.com",
+      "title": "company_admin",
+      "email": "koshilai@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "dewshik@emojot.com",
+      "id": "dewshik@emojot.com",
+      "title": "company_admin",
+      "email": "dewshik@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/64537af9821daf0010374150.png",
+      "name": "asela.hewapathirana@hayleysadvantis.com",
+      "id": "asela.hewapathirana@hayleysadvantis.com",
+      "title": "company_admin",
+      "email": "asela.hewapathirana@hayleysadvantis.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}

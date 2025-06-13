@@ -1,0 +1,4463 @@
+{
+  "menu": [
+    {
+      "id": "inpatient",
+      "icon": "fa-hospital-o",
+      "header": "In-Patient - TWG",
+      "subs": [
+        {
+          "header": "Response Counts",
+          "id": "inpatient_counts"
+        },
+        {
+          "header": "NPS/CSAT Trend",
+          "id": "inpatient_npscsat"
+        },
+        {
+          "header": "Sectional NPS Trend",
+          "id": "inpatient_nps"
+        },
+        {
+          "header": "Score Trend",
+          "id": "inpatient_score"
+        },
+        {
+          "header": "Score Trend Comparison",
+          "id": "inpatient_scorecomp"
+        },
+        {
+          "header": "Score Heat-Map",
+          "id": "inpatient_hmap"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "inpatient_breakdowns"
+        },
+        {
+          "header": "Sentiment Analysis",
+          "id": "inpatient_sanalysis"
+        },
+        {
+          "header": "Sentiment Analysis V2",
+          "id": "inpatient_sanalysisv2"
+        },
+        {
+          "header": "Alerts",
+          "id": "inpatient_alrts"
+        },
+        {
+          "header": "NPS Correlation",
+          "id": "inpatient_correlations"
+        },
+        {
+          "header": "2D Analysis",
+          "id": "inpatient_2d"
+        },
+        {
+          "header": "Individual Responses",
+          "id": "inpatient_ir"
+        }
+      ]
+    },
+    {
+      "id": "inpatientwattala",
+      "icon": "fa-hospital-o",
+      "header": "In-Patient - Wattala",
+      "subs": [
+        {
+          "header": "Response Counts",
+          "id": "inpatientwattala_counts"
+        },
+        {
+          "header": "NPS/CSAT Trend",
+          "id": "inpatientwattala_npscsat"
+        },
+        {
+          "header": "Sectional NPS Trend",
+          "id": "inpatientwattala_nps"
+        },
+        {
+          "header": "Score Trend",
+          "id": "inpatientwattala_score"
+        },
+        {
+          "header": "Score Trend Comparison",
+          "id": "inpatientwattala_scorecomp"
+        },
+        {
+          "header": "Score Heat-Map",
+          "id": "inpatientwattala_hmap"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "inpatientwattala_breakdowns"
+        },
+        {
+          "header": "Sentiment Analysis",
+          "id": "inpatientwattala_sanalysis"
+        },
+        {
+          "header": "Sentiment Analysis V2",
+          "id": "inpatientwattala_sanalysisv2"
+        },
+        {
+          "header": "Alerts",
+          "id": "inpatientwattala_alrts"
+        },
+        {
+          "header": "NPS Correlation",
+          "id": "inpatientwattala_correlations"
+        },
+        {
+          "header": "2D Analysis",
+          "id": "inpatientwattala_2d"
+        },
+        {
+          "header": "Individual Responses",
+          "id": "inpatientwattala_ir"
+        }
+      ]
+    },
+    {
+      "id": "opd2",
+      "icon": "fa-user-md",
+      "header": "OPD V2",
+      "subs": [
+        {
+          "header": "Analytics - TWG",
+          "id": "opd2_counts_twg"
+        },
+        {
+          "header": "Analytics - Wattala",
+          "id": "opd2_counts_wt"
+        },
+        {
+          "header": "Alerts",
+          "id": "opd2_alrts"
+        },
+        {
+          "header": "2D Analysis - TWG",
+          "id": "opd2_2d_twg"
+        },
+        {
+          "header": "2D Analysis - Wattala",
+          "id": "opd2_2d_wt"
+        },
+        {
+          "header": "Geo Map",
+          "id": "opd2_gm"
+        }
+      ]
+    },
+    {
+      "id": "opd",
+      "icon": "fa-user-md",
+      "header": "OPD",
+      "subs": [
+        {
+          "header": "Response Count - TWG",
+          "id": "opd_counts_twg"
+        },
+        {
+          "header": "Response Count - Wattala",
+          "id": "opd_counts_wt"
+        },
+        {
+          "header": "NPS",
+          "id": "opd_nps"
+        },
+        {
+          "header": "Score Trend",
+          "id": "opd_score"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "opd_breakdowns"
+        },
+        {
+          "header": "Sentiment Analysis",
+          "id": "opd_sanalysis"
+        },
+        {
+          "header": "Sentiment Analysis V2",
+          "id": "opd_sanalysisv2"
+        },
+        {
+          "header": "Alerts - TWG",
+          "id": "opd_alrtstwg"
+        },
+        {
+          "header": "Alerts - Wattala",
+          "id": "opd_alrtswt"
+        },
+        {
+          "header": "2D Analysis - TWG",
+          "id": "opd_2d_twg"
+        },
+        {
+          "header": "2D Analysis - Wattala",
+          "id": "opd_2d_wt"
+        },
+        {
+          "header": "Geo Map - TWG",
+          "id": "opd_gm_twg"
+        },
+        {
+          "header": "Geo Map - Wattala",
+          "id": "opd_gm_wt"
+        }
+      ]
+    },
+    {
+      "id": "opd2h",
+      "icon": "fa-user-md",
+      "header": "Health Plus",
+      "subs": [
+        {
+          "header": "Analytics - Wattala",
+          "id": "opd2h_counts_wthp"
+        },
+        {
+          "header": "Alerts",
+          "id": "opd2_alrts"
+        },
+        {
+          "header": "2D Analysis - Wattala",
+          "id": "opd2h_2d_wthp"
+        },
+        {
+          "header": "Geo Map",
+          "id": "opd2_gm"
+        }
+      ]
+    },
+    {
+      "id": "etuv3",
+      "icon": "fa-wheelchair",
+      "header": "ETU - TWG",
+      "subs": [
+        {
+          "header": "NPS",
+          "id": "etuv3_nps"
+        },
+        {
+          "header": "Score Trend",
+          "id": "etuv3_score"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "etuv3_breakdowns"
+        },
+        {
+          "header": "Sentiment Analysis",
+          "id": "etuv3_sanalysis"
+        },
+        {
+          "header": "2D Analysis",
+          "id": "etuv3_2d"
+        }
+      ]
+    },
+    {
+      "id": "etuwattala",
+      "icon": "fa-wheelchair",
+      "header": "ETU Wattala",
+      "subs": [
+        {
+          "header": "NPS",
+          "id": "etuwattala_nps"
+        },
+        {
+          "header": "Score Trend",
+          "id": "etuwattala_score"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "etuwattala_breakdowns"
+        },
+        {
+          "header": "Sentiment Analysis V2",
+          "id": "etuwattala_sanalysisv2"
+        },
+        {
+          "header": "2D Analysis",
+          "id": "etuwattala_2d"
+        }
+      ]
+    },
+    {
+      "id": "vocweb",
+      "icon": "fa-wheelchair",
+      "header": "VOC - Web",
+      "subs": [
+        {
+          "header": "NPS Trend",
+          "id": "web_nps"
+        },
+        {
+          "header": "NPS/CSAT Trend",
+          "id": "web_npscsat"
+        },
+        {
+          "header": "Response Breakdowns",
+          "id": "web_breakdowns"
+        },
+        {
+          "header": "Comments",
+          "id": "web_comments"
+        },
+        {
+          "header": "Individual Responses",
+          "id": "web_ir"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "OPD V2 Analytics - TWG",
+      "desc": "Overview of analytics of OPD survey TWG",
+      "type": "directReport",
+      "id": "opd2_counts_twg",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "OPD Survey V2 TWG"
+        },
+        {
+          "key": "savedReportId",
+          "value": "670e018b4621d10f08feafae"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "OPD V2 Analytics - WTL",
+      "desc": "Overview of analytics of OPD survey WTL",
+      "type": "directReport",
+      "id": "opd2_counts_wt",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "OPD Survey V2 WTL"
+        },
+        {
+          "key": "savedReportId",
+          "value": "670def830c0db5b4a5b96ee0"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "OPD Health Plus - WTL",
+      "desc": "Overview of analytics of OPD survey Health Plus",
+      "type": "directReport",
+      "id": "opd2h_counts_wthp",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "OPD Survey V2 health plus wt"
+        },
+        {
+          "key": "savedReportId",
+          "value": "670def830c0db5b4a5b96ee0"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Real-time Alerts - OPD Survey",
+      "desc": "The details of alerts sent for lower ratings.",
+      "type": "directReport",
+      "id": "opd2_alrts",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "engagementActionReport.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "66fe80c183251e95b8237c43"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "loyaltyFields",
+          "value": "Name@@Telephone@@Email"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - OPD - TWG",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "opd2_2d_twg",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "savedReportId",
+          "value": "670f50370c0db5b4a5b98796"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - OPD Wattala",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "opd2h_2d_wthp",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "savedReportId",
+          "value": "68353d956720c67515bae7d7"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - OPD Wattala",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "opd2_2d_wt",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "savedReportId",
+          "value": "670f4c8f7761b7d90197f5b3"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "OPD Survey Respondent Geo Map",
+      "desc": "Geo Location View of the Respondents",
+      "id": "opd2_gm",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "value": "percepticMapPanel",
+          "key": "reportType"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "66fe80c183251e95b8237c43"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) - ETU",
+      "desc": "NPS (Net Promoter Score) - ETU",
+      "id": "etuv3_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU NPSV3"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - ETU",
+      "desc": "Score variation of the responses based on the time",
+      "id": "etuv3_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU - Trend linesV3"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - ETU",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "etuv3_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary - ETU",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "etuv3_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f5c4f18cb19e200102561bc"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - ETU - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "etuv3_breakdowns_twg_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f5c4f18cb19e200102561bc"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - ETU",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "etuv3_sanalysis",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "commentCategories.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f5c4f18cb19e200102561bc"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "collapseAction",
+          "value": "show"
+        },
+        {
+          "key": "collapseSections",
+          "value": "negativePositiveCommentPanel"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - ETU",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "etuv3_2d",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5f5c4f18cb19e200102561bc"
+        },
+        {
+          "key": "defaultWidgets",
+          "value": "q9575"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - Wattala - In-Patient",
+      "desc": "Response Count - Wattala - In-Patient",
+      "id": "inpatientwattala_counts",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/enterpriseMetricsAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Wattala - Response Counts"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - Ward Level - In-Patient",
+      "desc": "Response Count - Ward Level - In-Patient",
+      "type": "directReport",
+      "id": "inpatientwattala_counts_ward",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "enterpriseHierarchicalView.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f2c04257febaf003da33cf0"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "automaticSelectAll",
+          "value": true
+        },
+        {
+          "key": "selectedCategory",
+          "value": "Ward"
+        },
+        {
+          "key": "selectedQuestion",
+          "value": "q6069"
+        },
+        {
+          "key": "totalResponses",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) Comparison - In-Patient ",
+      "desc": "NPS comparison for different aspects of the In-Patient Survey",
+      "id": "inpatientwattala_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "NPS Wattala In-Patient"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - In-Patient",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "inpatientwattala_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "inpatientwattala_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "inpatientwattala_breakdowns_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - Wattala",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "inpatientwattala_sanalysis",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Overall Satisfaction Comments",
+          "pageTitle": "Overall Satisfaction related comments sentiment analysis",
+          "desc": "Overall Satisfaction related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_overall",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p1126"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Nursing Comments",
+          "pageTitle": "Nursing related comments sentiment analysis",
+          "desc": "Nursing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_nursing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7068"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Medical Officers Comments",
+          "pageTitle": "Medical Officers related comments sentiment analysis",
+          "desc": "Medical Officers related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_mo",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p768"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Consultants Comments",
+          "pageTitle": "Consultants related comments sentiment analysis",
+          "desc": "Consultants related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_cons",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p3891"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "F&B Team Comments",
+          "pageTitle": "F&B Team related comments sentiment analysis",
+          "desc": "F&B Team related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_fandb",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p8102"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Housekeeping Comments",
+          "pageTitle": "Housekeeping related comments sentiment analysis",
+          "desc": "Housekeeping related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_hk",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p2674"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Billing Comments",
+          "pageTitle": "Billing related comments sentiment analysis",
+          "desc": "Billing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_billing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p274"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Suggestions & Comments",
+          "pageTitle": "Suggestions & sentiment analysis",
+          "desc": "Suggestions & comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysis_sug",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7578"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis V2 - Wattala",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "inpatientwattala_sanalysisv2",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Overall Satisfaction Comments",
+          "pageTitle": "Overall Satisfaction related comments sentiment analysis",
+          "desc": "Overall Satisfaction related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_overall",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p1126"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Nursing Comments",
+          "pageTitle": "Nursing related comments sentiment analysis",
+          "desc": "Nursing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_nursing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7068"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Medical Officers Comments",
+          "pageTitle": "Medical Officers related comments sentiment analysis",
+          "desc": "Medical Officers related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_mo",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p768"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Consultants Comments",
+          "pageTitle": "Consultants related comments sentiment analysis",
+          "desc": "Consultants related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_cons",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p3891"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "F&B Team Comments",
+          "pageTitle": "F&B Team related comments sentiment analysis",
+          "desc": "F&B Team related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_fandb",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p8102"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Housekeeping Comments",
+          "pageTitle": "Housekeeping related comments sentiment analysis",
+          "desc": "Housekeeping related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_hk",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p2674"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Billing Comments",
+          "pageTitle": "Billing related comments sentiment analysis",
+          "desc": "Billing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_billing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p274"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Suggestions & Comments",
+          "pageTitle": "Suggestions & sentiment analysis",
+          "desc": "Suggestions & comments sentiment analysis",
+          "type": "report",
+          "id": "inpatientwattala_sanalysisv2_sug",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f2c04257febaf003da33cf0"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7578"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - In-Patient",
+      "desc": "Score variation of the responses based on the time",
+      "id": "inpatientwattala_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient Wattala - Trend lines"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - Comparison - In-Patient",
+      "desc": "Score variation comparison of the responses based on the time",
+      "id": "inpatientwattala_scorecomp",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreSegmentComparison/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient Wattala"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Heat-Map",
+      "desc": "Score variation of the responses based on wards",
+      "id": "inpatientwattala_hmap",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/scoreOverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient survey - Wattala - Ward Comparison"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Real-time Alerts - In-Patient Survey",
+      "desc": "The details of alerts sent for lower ratings.",
+      "type": "directReport",
+      "id": "inpatientwattala_alrts",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "engagementActionReport.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5f2c04257febaf003da33cf0"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "loyaltyFields",
+          "value": "Name@@Telephone@@Email@@Room Number"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Overall NPS Correlations",
+      "desc": "The most affecting factors for higher overall NPS value.",
+      "id": "inpatientwattala_correlations",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "emoSignatureAnalysis.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f2c04257febaf003da33cf0"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "correlationQuestions",
+          "value": "q4814"
+        },
+        {
+          "key": "correlationOpen",
+          "value": true
+        },
+        {
+          "key": "savedReportId",
+          "value": "5f43df8d26821207db73e741"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - In-Patient",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "inpatientwattala_2d",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "savedReportId",
+          "value": "632a9f2166d3fc000fb30bb1"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) - ETU",
+      "desc": "NPS (Net Promoter Score) - ETU",
+      "id": "etuwattala_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU Wattala NPS"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - ETU",
+      "desc": "Score variation of the responses based on the time",
+      "id": "etuwattala_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU Wattala - Trend lines"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - ETU",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "etuwattala_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary - ETU",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "etuwattala_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f7c512ca951370010cefd18"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - ETU - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "etuwattala_breakdowns_twg_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5f7c512ca951370010cefd18"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - ETU",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "etuwattala_sanalysisv2",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "commentCategories.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f7c512ca951370010cefd18"
+        },
+        {
+          "key": "sensorPages",
+          "value": "p9464"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "collapseAction",
+          "value": "show"
+        },
+        {
+          "key": "collapseSections",
+          "value": "negativePositiveCommentPanel"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - ETU",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "etuwattala_2d",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5f7c512ca951370010cefd18"
+        },
+        {
+          "key": "defaultWidgets",
+          "value": "q9575"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) - ETU",
+      "desc": "NPS (Net Promoter Score) - ETU",
+      "id": "etu_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU NPS"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - ETU",
+      "desc": "Score variation of the responses based on the time",
+      "id": "etu_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "ETU - Trend lines"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - ETU",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "etu_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary - ETU",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "etu_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5d42e68e0c8f2000122cd75c"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - ETU - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "etu_breakdowns_twg_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5d42e68e0c8f2000122cd75c"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "2"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - ETU",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "etu_sanalysis",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "socialMediaAnalysis.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5d42e68e0c8f2000122cd75c"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis V2 - ETU",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "etu_sanalysisv2",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "commentCategories.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5d42e68e0c8f2000122cd75c"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "collapseAction",
+          "value": "show"
+        },
+        {
+          "key": "collapseSections",
+          "value": "negativePositiveCommentPanel"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - ETU",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "etu_2d",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5d42e68e0c8f2000122cd75c"
+        },
+        {
+          "key": "defaultWidgets",
+          "value": "q3946"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - TWG - In-Patient",
+      "desc": "Response Count - TWG - In-Patient",
+      "id": "inpatient_counts",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/enterpriseMetricsAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "TWG - Response Counts"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - In-Patient",
+      "desc": "Response Count - In-Patient",
+      "id": "inpatient_counts1",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "emoterInteractionSensor.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "companyID",
+          "value": "589063c454e4b60000f61c97"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - Ward Level - In-Patient",
+      "desc": "Response Count - Ward Level - In-Patient",
+      "type": "directReport",
+      "id": "inpatient_counts_ward",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "enterpriseHierarchicalView.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "automaticSelectAll",
+          "value": true
+        },
+        {
+          "key": "selectedCategory",
+          "value": "Ward"
+        },
+        {
+          "key": "selectedQuestion",
+          "value": "q1153"
+        },
+        {
+          "key": "totalResponses",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - Ward Level - In-Patient - Admission",
+      "desc": "Response Count - Ward Level - In-Patient - Admission",
+      "type": "directReport",
+      "id": "inpatient_counts_wardBilling",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "enterpriseHierarchicalView.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "automaticSelectAll",
+          "value": true
+        },
+        {
+          "key": "selectedCategory",
+          "value": "Ward"
+        },
+        {
+          "key": "selectedQuestion",
+          "value": "q1153"
+        },
+        {
+          "key": "totalResponses",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "In-Patient Survey - Customer Satisfaction Indices",
+      "desc": "Overall NPS/ CSAT Score and it's variations over time.",
+      "type": "directReport",
+      "id": "inpatient_npscsat",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "influencerScorePanel"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) Comparison - In-Patient ",
+      "desc": "NPS comparison for different aspects of the In-Patient Survey",
+      "id": "inpatient_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "NPS In-Patient"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - In-Patient",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "inpatient_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "inpatient_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "inpatient_breakdowns_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - Thalawathugoda",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "inpatient_sanalysis",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Overall Satisfaction Comments",
+          "pageTitle": "Overall Satisfaction related comments sentiment analysis",
+          "desc": "Overall Satisfaction related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_overall",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p1126"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Nursing Comments",
+          "pageTitle": "Nursing related comments sentiment analysis",
+          "desc": "Nursing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_nursing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7068"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Medical Officers Comments",
+          "pageTitle": "Medical Officers related comments sentiment analysis",
+          "desc": "Medical Officers related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_mo",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p768"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Consultants Comments",
+          "pageTitle": "Consultants related comments sentiment analysis",
+          "desc": "Consultants related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_cons",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p3891"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "F&B Team Comments",
+          "pageTitle": "F&B Team related comments sentiment analysis",
+          "desc": "F&B Team related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_fandb",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p8102"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Housekeeping Comments",
+          "pageTitle": "Housekeeping related comments sentiment analysis",
+          "desc": "Housekeeping related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_hk",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p2674"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Billing Comments",
+          "pageTitle": "Billing related comments sentiment analysis",
+          "desc": "Billing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_billing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p274"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Suggestions & Comments",
+          "pageTitle": "Suggestions & sentiment analysis",
+          "desc": "Suggestions & comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysis_sug",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7578"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis V2 - Thalawathugoda",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "inpatient_sanalysisv2",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Overall Satisfaction Comments",
+          "pageTitle": "Overall Satisfaction related comments sentiment analysis",
+          "desc": "Overall Satisfaction related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_overall",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p1126"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Nursing Comments",
+          "pageTitle": "Nursing related comments sentiment analysis",
+          "desc": "Nursing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_nursing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7068"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Medical Officers Comments",
+          "pageTitle": "Medical Officers related comments sentiment analysis",
+          "desc": "Medical Officers related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_mo",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p768"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Consultants Comments",
+          "pageTitle": "Consultants related comments sentiment analysis",
+          "desc": "Consultants related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_cons",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p3891"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "F&B Team Comments",
+          "pageTitle": "F&B Team related comments sentiment analysis",
+          "desc": "F&B Team related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_fandb",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p8102"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Housekeeping Comments",
+          "pageTitle": "Housekeeping related comments sentiment analysis",
+          "desc": "Housekeeping related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_hk",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p2674"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Billing Comments",
+          "pageTitle": "Billing related comments sentiment analysis",
+          "desc": "Billing related comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_billing",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p274"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Suggestions & Comments",
+          "pageTitle": "Suggestions & sentiment analysis",
+          "desc": "Suggestions & comments sentiment analysis",
+          "type": "report",
+          "id": "inpatient_sanalysisv2_sug",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5c46b2cbfc06da00103db2cc"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7578"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - In-Patient",
+      "desc": "Score variation of the responses based on the time",
+      "id": "inpatient_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient - Trend lines"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - Comparision - In-Patient",
+      "desc": "Score variation of the responses based on the time",
+      "id": "inpatient_scorecomp",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreSegmentComparison/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient - TWG"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Heat-Map",
+      "desc": "Score variation of the responses based on wards",
+      "id": "inpatient_hmap",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/scoreOverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "In-patient survey - Ward Comparison"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Real-time Alerts - In-Patient Survey",
+      "desc": "The details of alerts sent for lower ratings.",
+      "type": "directReport",
+      "id": "inpatient_alrts",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "engagementActionReport.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "loyaltyFields",
+          "value": "Name@@Telephone@@Email@@Room Number"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Overall NPS Correlations",
+      "desc": "The most affecting factors for higher overall NPS value.",
+      "id": "inpatient_correlations",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "emoSignatureAnalysis.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "correlationQuestions",
+          "value": "q4814"
+        },
+        {
+          "key": "correlationOpen",
+          "value": true
+        },
+        {
+          "key": "savedReportId",
+          "value": "5e2c7afd2682120d095b5761"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - In-Patient",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "inpatient_2d",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "savedReportId",
+          "value": "632a99f966d3fc000fb30b8f"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - OPD - Thalawathugoda",
+      "desc": "Response Count - OPD - Thalawathugoda",
+      "id": "opd_counts_twg",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "emoterInteractionSensor.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "companyID",
+          "value": "589063c454e4b60000f61c97"
+        },
+        {
+          "key": "sensorID",
+          "value": "5bbb4baa24b634005b0d0ed4"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Count - OPD - Wattala",
+      "desc": "Response Count - OPD - Wattala",
+      "id": "opd_counts_wt",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "emoterInteractionSensor.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "companyID",
+          "value": "589063c454e4b60000f61c97"
+        },
+        {
+          "key": "sensorID",
+          "value": "5beab6bb50052f001d4eab50"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "OPD Survey Respondent Geo Map - Thalawathugoda",
+      "desc": "Geo Location View of the Respondents",
+      "id": "opd_gm_twg",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "value": "percepticMapPanel",
+          "key": "reportType"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5bbb4baa24b634005b0d0ed4"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "OPD Survey Respondent Geo Map - Wattala",
+      "desc": "Geo Location View of the Respondents",
+      "id": "opd_gm_wt",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "value": "percepticMapPanel",
+          "key": "reportType"
+        },
+        {
+          "key": "summaryView",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5beab6bb50052f001d4eab50"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) Comparison - OPD",
+      "desc": "NPS comparison for Thalawathugoda and Wattala OPDs",
+      "id": "opd_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "OPD NPS"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - OPD",
+      "desc": "Score variation of the responses based on the time",
+      "id": "opd_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "OPD - Trend Line"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - OPD",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "opd_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary - OPD - Thalawathugoda",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "opd_breakdowns_twg_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5bbb4baa24b634005b0d0ed4"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - OPD - Table - Thalawathugoda",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "opd_breakdowns_twg_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5bbb4baa24b634005b0d0ed4"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - OPD - Wattala",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "id": "opd_breakdowns_wt_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5beab6bb50052f001d4eab50"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - OPD - Table - Wattala",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "opd_breakdowns_wt_table",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5beab6bb50052f001d4eab50"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis - OPD",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "opd_sanalysis",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Thalawathugoda",
+          "pageTitle": "Thalawathugoda OPD related comments sentiment analysis",
+          "desc": "Thalawathugoda OPD related comments sentiment analysis",
+          "type": "report",
+          "id": "opd_sanalysis_twg",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5bbb4baa24b634005b0d0ed4"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7475@@p777"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Wattala",
+          "pageTitle": "Wattala OPD related comments sentiment analysis",
+          "desc": "Wattala OPD related comments sentiment analysis",
+          "type": "report",
+          "id": "opd_sanalysis_wt",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "socialMediaAnalysis.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5beab6bb50052f001d4eab50"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7475@@p777"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sentiment Analysis V2 - OPD",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "opd_sanalysisv2",
+      "type": "cards",
+      "cards": [
+        {
+          "title": "Thalawathugoda",
+          "pageTitle": "Thalawathugoda OPD related comments sentiment analysis",
+          "desc": "Thalawathugoda OPD related comments sentiment analysis",
+          "type": "report",
+          "id": "opd_sanalysisv2_twg",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5bbb4baa24b634005b0d0ed4"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7475@@p777"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Wattala",
+          "pageTitle": "Wattala OPD related comments sentiment analysis",
+          "desc": "Wattala OPD related comments sentiment analysis",
+          "type": "report",
+          "id": "opd_sanalysisv2_wt",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "commentCategories.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5beab6bb50052f001d4eab50"
+            },
+            {
+              "key": "sensorPages",
+              "value": "p7475@@p777"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "collapseAction",
+              "value": "show"
+            },
+            {
+              "key": "collapseSections",
+              "value": "negativePositiveCommentPanel"
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Real-time Alerts - OPD Survey - Thalawathugoda",
+      "desc": "The details of alerts sent for lower ratings.",
+      "type": "directReport",
+      "id": "opd_alrtstwg",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "engagementActionReport.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5bbb4baa24b634005b0d0ed4"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "loyaltyFields",
+          "value": "Name@@Telephone@@Email"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Real-time Alerts - OPD Survey - Wattala",
+      "desc": "The details of alerts sent for lower ratings.",
+      "type": "directReport",
+      "id": "opd_alrtswt",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "engagementActionReport.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5beab6bb50052f001d4eab50"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        },
+        {
+          "key": "loyaltyFields",
+          "value": "Name@@Telephone@@Email"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - OPD - Thalawathugoda",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "opd_2d_twg",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5bbb4baa24b634005b0d0ed4"
+        },
+        {
+          "key": "defaultWidgets",
+          "value": "q11"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "2D Analysis of Responses - OPD - Wattala",
+      "desc": "Answers of one question of the survey compared with other aspects",
+      "type": "directReport",
+      "id": "opd_2d_wt",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "twoDimensionalAnalysis_v2.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5beab6bb50052f001d4eab50"
+        },
+        {
+          "key": "defaultWidgets",
+          "value": "q11"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "NPS (Net Promoter Score) Comparison - VOC_Web ",
+      "desc": "NPS comparison for different aspects of the Digital Voice Survey",
+      "id": "web_nps",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/satisfactionIndexWithEnterpriseData/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "NPS VOC_Web"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score Trend - VOC_Web",
+      "desc": "Score variation of the responses based on the time",
+      "id": "web_score",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreAnalysis/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "VOC_Web - Trend lines"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Comments - VOC_Web",
+      "desc": "Sentiment analysis for negative and positive comment classification of textual feedback of survey.",
+      "id": "web_comments",
+      "type": "directReport",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "commentCategories.jsp"
+        },
+        {
+          "key": "sensorID",
+          "value": "5af2943023a501000b9ac0af"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "collapseAction",
+          "value": "show"
+        },
+        {
+          "key": "collapseSections",
+          "value": "negativePositiveCommentPanel"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Individual Responses - VOC_Web",
+      "desc": "Answers of all the questions in the survey in raw format",
+      "type": "directReport",
+      "id": "web_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorID",
+          "value": "5af2943023a501000b9ac0af"
+        },
+        {
+          "key": "sensorComments",
+          "value": "2,6,7"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Digital Voice Sensor - Customer Satisfaction Indices",
+      "desc": "Overall NPS/ CSAT Score and it's variations over time.",
+      "type": "directReport",
+      "id": "web_npscsat",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "influencerScorePanel"
+        },
+        {
+          "key": "sensorID",
+          "value": "5af2943023a501000b9ac0af"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response Breakdowns - VOC_Web",
+      "desc": "Graphical representation of response breakdowns for each question",
+      "type": "cards",
+      "id": "web_breakdowns",
+      "cards": [
+        {
+          "title": "Response Summary",
+          "desc": "Overall analytics for each question in pie charts",
+          "type": "report",
+          "titleStyle": "color:white;background:#03396C;",
+          "id": "web_breakdowns_pie",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5af2943023a501000b9ac0af"
+            },
+            {
+              "key": "displayMode",
+              "value": "pie"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "showLabels",
+              "value": true
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        },
+        {
+          "title": "Response Summary - Table",
+          "desc": "Overall analytics for each question in a table",
+          "type": "report",
+          "id": "web_breakdowns_table",
+          "titleStyle": "color:white;background:#005B96;",
+          "params": [
+            {
+              "key": "redirectPage",
+              "value": "reports/crossSensorComparison/report.jsp"
+            },
+            {
+              "key": "sensorID",
+              "value": "5af2943023a501000b9ac0af"
+            },
+            {
+              "key": "displayMode",
+              "value": "table"
+            },
+            {
+              "key": "widgetsPerRow",
+              "value": "3"
+            },
+            {
+              "key": "trimOut",
+              "value": true
+            },
+            {
+              "key": "showOtherSensors",
+              "value": false
+            }
+          ],
+          "styles": [
+            {
+              "id": "#reportContainer",
+              "key": "width",
+              "value": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In-Patient Survey - Customer Satisfaction Indices",
+      "desc": "Overall NPS/ CSAT Score and it's variations over time.",
+      "type": "directReport",
+      "id": "inpatient_npscsat",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "influencerScorePanel"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Individual Responses - In-Patient",
+      "desc": "Answers of all the questions in the survey in raw format",
+      "type": "directReport",
+      "id": "inpatient_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorComments",
+          "value": "p7943,p1126,p7068,p768,p3891,p8102,p2674,p274,p3091,p7578,p8041"
+        },
+        {
+          "key": "sensorID",
+          "value": "5c46b2cbfc06da00103db2cc"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "In-Patient Survey - Customer Satisfaction Indices",
+      "desc": "Overall NPS/ CSAT Score and it's variations over time.",
+      "type": "directReport",
+      "id": "inpatientwattala_npscsat",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "dashboard.jsp"
+        },
+        {
+          "key": "reportType",
+          "value": "influencerScorePanel"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f2c04257febaf003da33cf0"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Individual Responses - In-Patient",
+      "desc": "Answers of all the questions in the survey in raw format",
+      "type": "directReport",
+      "id": "inpatientwattala_ir",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "rawEmotes.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "sensorComments",
+          "value": "p1126,p7068,p768,p3891,p8102,p2674,p274,p3091,p7578"
+        },
+        {
+          "key": "sensorID",
+          "value": "5f2c04257febaf003da33cf0"
+        },
+        {
+          "key": "showOtherSensors",
+          "value": false
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_abhisheka",
+      "id": "hemas_abhisheka",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "manura_hemas",
+      "id": "manura_hemas",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_anupama",
+      "id": "hemas_anupama",
+      "title": "company_admin",
+      "email": "anupama@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_andun",
+      "id": "hemas_andun",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "shivanthika",
+      "id": "shivanthika",
+      "title": "event_manager",
+      "email": "shivanthika@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "andun@emojot.com",
+      "id": "andun@emojot.com",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "ramkishorek@hemashospitals.com",
+      "id": "ramkishorek@hemashospitals.com",
+      "title": "team_member",
+      "email": "ramkishorek@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "lasanthaka@hemashospitals.com",
+      "id": "lasanthaka@hemashospitals.com",
+      "title": "team_member",
+      "email": "lasanthaka@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "nelufa@hemashospitals.com",
+      "id": "nelufa@hemashospitals.com",
+      "title": "team_member",
+      "email": "nelufa@hemashospitals.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_manura",
+      "id": "hemas_manura",
+      "title": "company_admin",
+      "email": "hemas_manura@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemastest",
+      "id": "hemastest",
+      "title": "team_member",
+      "email": "hemastest@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_gagan",
+      "id": "hemas_gagan",
+      "title": "company_admin",
+      "email": "hemas_gagan@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "hemas_anupama_twg",
+      "id": "hemas_anupama_twg",
+      "title": "company_admin",
+      "email": "hemas_anupama_twg@emojot.com"
+    },
+    {
+      "image": "https://emojotproductionstorage.s3.amazonaws.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "twgcommon",
+      "id": "twgcommon",
+      "title": "event_manager",
+      "email": "twgcommon@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "salmanf@emojot.com",
+      "id": "salmanf@emojot.com",
+      "title": "company_admin",
+      "email": "salmanf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "demo_cxmhospital@emojot.com",
+      "id": "demo_cxmhospital@emojot.com",
+      "title": "company_admin",
+      "email": "demo_cxmhospital@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "sugeeshwa@emojot.com",
+      "id": "sugeeshwa@emojot.com",
+      "title": "company_admin",
+      "email": "sugeeshwa@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "sarah.n@hemashospitals.com",
+      "id": "sarah.n@hemashospitals.com",
+      "title": "event_manager",
+      "email": "sarah.n@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "sunethh@hemashospitals.com",
+      "id": "sunethh@hemashospitals.com",
+      "title": "event_manager",
+      "email": "sunethh@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "chaamindak@hemashospitals.com",
+      "id": "chaamindak@hemashospitals.com",
+      "title": "company_admin",
+      "email": "chaamindak@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "mayumim@emojot.com",
+      "id": "mayumim@emojot.com",
+      "title": "company_admin",
+      "email": "mayumim@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "rukshanp@hemashospitals.com",
+      "id": "rukshanp@hemashospitals.com",
+      "title": "company_admin",
+      "email": "rukshanp@hemashospitals.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "kashnika@emojot.com",
+      "id": "kashnika@emojot.com",
+      "title": "company_admin",
+      "email": "kashnika@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/589063c454e4b60000f61c97.png",
+      "name": "dewshi2@emojot.com",
+      "id": "dewshi2@emojot.com",
+      "title": "company_admin",
+      "email": "dewshi2@emojot.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}
