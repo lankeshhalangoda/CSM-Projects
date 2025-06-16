@@ -1,0 +1,885 @@
+{
+  "menu": [
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Collect Feedback",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalytics"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalytics"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_links"
+        }
+      ]
+    },
+    {
+      "id": "comp",
+      "icon": "fas fa-users",
+      "header": "Resolve Complaints",
+      "subs": [
+        {
+          "header": "View Complaints",
+          "id": "comp_list"
+        },
+        {
+          "header": "Complaint Analytics",
+          "id": "comp_analy"
+        }
+      ]
+    },
+    {
+      "id": "orm",
+      "icon": "fa fa-users",
+      "header": "Improve Reviews",
+      "subs": [
+        {
+          "header": "View Reviews",
+          "id": "orm_rlm"
+        },
+        {
+          "header": "Review Analytics",
+          "id": "orm_ris"
+        }
+      ]
+    },
+    {
+      "id": "slt",
+      "icon": "fa fa-users",
+      "header": "Social Listening Tool",
+      "subs": [
+        {
+          "header": "Dashboard",
+          "id": "slt_dashboard"
+        },
+        {
+          "header": "Competitor Analysis",
+          "id": "slt_comp"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "View reviews",
+      "desc": "Review replies",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV2.jsp"
+        },
+        {
+          "key": "newLocationHide",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Review analytics",
+      "desc": "Review insights",
+      "type": "directReport",
+      "id": "orm_ris",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+        },
+        {
+          "key": "hideTicketWidgets",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "View complaints",
+      "desc": "Fix the problem",
+      "type": "directReport",
+      "id": "comp_list",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentManagement/incidentManagement.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Complaint analytics",
+      "desc": "See the pattern",
+      "type": "directReport",
+      "id": "comp_analy",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentOverview/incidentOverview.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback Analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalytics",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "ClassictravelCXM"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Analytics",
+      "desc": "Advanced Feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalytics",
+      "groups": [
+        {
+          "title": "Overall Responses View",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "67987d2aa00640239e5281af"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Survey Analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analytics of respondents to the survey",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "67986564838b2981d7f5d6da"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D Response Analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "2D response analytics",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "67987dc37d8a34b2b19dc7ce"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation Analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Correlation analytics",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q8426"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "67987d2aa00640239e5281af"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw Responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Raw responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "67986564838b2981d7f5d6da"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p3700"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual Analytics",
+          "cards": [
+            {
+              "title": "Sentiment Analysis",
+              "titleStyle": "color:white;background:#3CB8EA;",
+              "desc": "Comment sentiment analysis",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "67986564838b2981d7f5d6da"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p3700"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#E3097F;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/360OverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "scoreCT"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#E3097F;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "scoresegct"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Surveys",
+      "type": "groupedCards",
+      "id": "cxm_links",
+      "groups": [
+        {
+          "title": "Location level links",
+          "cards": [
+            {
+              "title": "Classic Travel Colombo 03",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/ctcmb",
+              "openInNewPage": true,
+              "id": "cxm_links_1",
+              "launchButtonText": "Launch Survey"
+            },
+            {
+              "title": "Classic Travel Corporate Office",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/ctcoprateoffice",
+              "openInNewPage": true,
+              "id": "cxm_links_2",
+              "launchButtonText": "Launch Survey"
+            },
+            {
+              "title": "Classic Sri Lanka",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/ctsl",
+              "openInNewPage": true,
+              "id": "cxm_links_3",
+              "launchButtonText": "Launch Survey"
+            },
+            {
+              "title": "Expo Visa Services",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/ctexpo",
+              "openInNewPage": true,
+              "id": "cxm_links_4",
+              "launchButtonText": "Launch Survey"
+            },
+            {
+              "title": "Gabo Travels",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/ctgabo",
+              "openInNewPage": true,
+              "id": "cxm_links_5",
+              "launchButtonText": "Launch Survey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Listening",
+      "type": "directReport",
+      "id": "slt_dashboard",
+      "openInNewTabButton": true,
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/socialListener/socialListener.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Social Listening - Competitor Analysis",
+      "type": "directReport",
+      "id": "slt_comp",
+      "openInNewTabButton": true,
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "https://emojot.com/emojotDashboard/reports/socialListener/competitorAnalysis.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "My Profile",
+      "desc": "Update profile settings",
+      "type": "directReport",
+      "id": "myProfile_profile",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "updateProfile.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/660cf4f4ed63e0dbb1f5d963.png",
+      "name": "andun@emojot.com",
+      "id": "andun@emojot.com",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "viraj@emojot.com",
+      "id": "viraj@emojot.com",
+      "title": "company_admin",
+      "email": "viraj@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "sachintha@emojot.com",
+      "id": "sachintha@emojot.com",
+      "title": "company_admin",
+      "email": "sachintha@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "sugeeshwa@emojot.com",
+      "id": "sugeeshwa@emojot.com",
+      "title": "company_admin",
+      "email": "sugeeshwa@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "selinik@emojot.com",
+      "id": "selinik@emojot.com",
+      "title": "company_admin",
+      "email": "selinik@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "gimhaniw@emojot.com",
+      "id": "gimhaniw@emojot.com",
+      "title": "company_admin",
+      "email": "gimhaniw@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "ganga.rd2003@gmail.com",
+      "id": "ganga.rd2003@gmail.com",
+      "title": "event_manager",
+      "email": "ganga.rd2003@gmail.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "salmanf@emojot.com",
+      "id": "salmanf@emojot.com",
+      "title": "company_admin",
+      "email": "salmanf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "imasham@emojot.com",
+      "id": "imasham@emojot.com",
+      "title": "company_admin",
+      "email": "imasham@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "kashnika@emojot.com",
+      "id": "kashnika@emojot.com",
+      "title": "company_admin",
+      "email": "kashnika@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "gagan@emojot.com",
+      "id": "gagan@emojot.com",
+      "title": "company_admin",
+      "email": "gagan@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "tharushib@emojot.com",
+      "id": "tharushib@emojot.com",
+      "title": "company_admin",
+      "email": "tharushib@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "viraj@emojot.com",
+      "id": "viraj@emojot.com",
+      "title": "company_admin",
+      "email": "viraj@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "dulanh@emojot.com",
+      "id": "dulanh@emojot.com",
+      "title": "company_admin",
+      "email": "dulanh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "chamindua@emojot.com",
+      "id": "chamindua@emojot.com",
+      "title": "company_admin",
+      "email": "chamindua@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "mayumim@emojot.com",
+      "id": "mayumim@emojot.com",
+      "title": "company_admin",
+      "email": "mayumim@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "dewminil@emojot.com",
+      "id": "dewminil@emojot.com",
+      "title": "company_admin",
+      "email": "dewminil@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "demo@emojot.com",
+      "id": "demo@emojot.com",
+      "title": "company_admin",
+      "email": "demo@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67693a2b6093173f584b7ae5.png",
+      "name": "andun@emojot.com",
+      "id": "andun@emojot.com",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67693a2b6093173f584b7ae5.png",
+      "name": "kashnika@emojot.com",
+      "id": "kashnika@emojot.com",
+      "title": "company_admin",
+      "email": "kashnika@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67693a2b6093173f584b7ae5.png",
+      "name": "mayumim@emojot.com",
+      "id": "mayumim@emojot.com",
+      "title": "company_admin",
+      "email": "mayumim@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67693a2b6093173f584b7ae5.png",
+      "name": "sugeeshwa@emojot.com",
+      "id": "sugeeshwa@emojot.com",
+      "title": "company_admin",
+      "email": "sugeeshwa@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "onels@emojot.com",
+      "id": "onels@emojot.com",
+      "title": "company_admin",
+      "email": "onels@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "abhishekak@emojot.com",
+      "id": "abhishekak@emojot.com",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "kashnika@emojot.com",
+      "id": "kashnika@emojot.com",
+      "title": "company_admin",
+      "email": "kashnika@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
+      "name": "gimhaniw@emojot.com",
+      "id": "gimhaniw@emojot.com",
+      "title": "company_admin",
+      "email": "gimhaniw@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "strategy@classictravel.lk",
+      "id": "strategy@classictravel.lk",
+      "title": "company_admin",
+      "email": "strategy@classictravel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "vikashar@emojot.com",
+      "id": "vikashar@emojot.com",
+      "title": "company_admin",
+      "email": "vikashar@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "dewshik@emojot.com",
+      "id": "dewshik@emojot.com",
+      "title": "company_admin",
+      "email": "dewshik@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "classictravels@emojot.com",
+      "id": "classictravels@emojot.com",
+      "title": "company_admin",
+      "email": "classictravels@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "viraj@emojot.com",
+      "id": "viraj@emojot.com",
+      "title": "company_admin",
+      "email": "viraj@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "andun@emojot.com",
+      "id": "andun@emojot.com",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "abhishekak@emojot.com",
+      "id": "abhishekak@emojot.com",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
+      "name": "dewshi2@emojot.com",
+      "id": "dewshi2@emojot.com",
+      "title": "company_admin",
+      "email": "dewshi2@emojot.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}
