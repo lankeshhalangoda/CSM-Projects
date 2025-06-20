@@ -1,0 +1,134 @@
+{
+  "reportNamePrefix": "Case",
+  "reporterNamePrefix": "Patient",
+  "descriptionFormat": "text",
+  "name": "In-Patient Mini Survey",
+  "nameTemplate": "Patient Complaint: $type$",
+  "descriptionTemplate": "Patient Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "inPatientMiniSurvey",
+        "name": "In-Patient Mini Survey"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "contacts": [
+              "lankeshh@emojot.com"
+            ]
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "rating": {
+      "name": "Rating",
+      "type": "string",
+      "required": false,
+      "readOnly": true
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "required": false,
+      "readOnly": true
+    }
+  },
+  "timeZone": -330,
+  "reportSensor": "inci1",
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+            "contacts": [
+              "lankeshh@emojot.com"
+            ]
+      }
+    ]
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "template": "complaintAssignment_email",
+        "channel": "email",
+        "target": "employee",
+        "appendEditUrl": false
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "number"
+  }
+}

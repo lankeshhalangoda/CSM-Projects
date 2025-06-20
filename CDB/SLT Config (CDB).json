@@ -1,7 +1,7 @@
 {
   "updatedTime": 1750145970428,
-  "updatedBy": "manura",
-  "companyID": "679369170bf0386ac6daafb6",
+  "updatedBy": "lankeshh",
+  "companyID": "68526768237bdc055f657a4e",
   "aiModel": "gpt-3.5",
   "vendors": [
     "mentionlytics"
@@ -9,83 +9,48 @@
   "token": "nkJYR2PcOYEToZ2jHC5U4Kczktnnwlk0ZhnhNzWO4LsmWSBXuZrWTB4pf0ysGhsXk272nfUuWenX4qMLEIv60j9m",
   "competitors": [
     {
-      "label": "Classic Travel",
-      "color": "#FF7F50",
+      "label": "CDB",
+      "color": "#ED3E42",
       "brand": true,
       "keys": [
-        "Classic Travel"
+        "CDB"
       ]
     },
     {
-      "label": "Gabo Travels",
-      "color": "#1E90FF",
+      "label": "LB Finance",
+      "color": "#202330",
       "keys": [
-        "Gabo Travels"
+        "LB Finance"
       ]
     },
     {
-      "label": "Bongo Travel",
-      "color": "#FF4500",
+      "label": "LOLC Finance",
+      "color": "#005DAB",
       "keys": [
-        "Bongo Travel"
+        "LOLC Finance"
       ]
     },
     {
-      "label": "Expo Visa Services (EVS)",
-      "color": "#32CD32",
+      "label": "Commercial Credit",
+      "color": "#676765",
       "keys": [
-        "Expo Visa Services",
-        "EVS"
-      ]
-    },
-    {
-      "label": "Sunpower Travels",
-      "color": "#FFD700",
-      "keys": [
-        "Sunpower Travels"
-      ]
-    },
-    {
-      "label": "Acorn Prime Destination",
-      "color": "#8A2BE2",
-      "keys": [
-        "Acorn Prime Destination"
-      ]
-    },
-    {
-      "label": "Hayleys Travels",
-      "color": "#FF69B4",
-      "keys": [
-        "Hayleys Travels"
-      ]
-    },
-    {
-      "label": "Mackinnons Travels",
-      "color": "#FF6347",
-      "keys": [
-        "Mackinnons Travels"
-      ]
-    },
-    {
-      "label": "Crazy Jets",
-      "color": "#4682B4",
-      "keys": [
-        "Crazy Jets"
-      ]
-    },
-    {
-      "label": "Travelco Holidays",
-      "color": "#20B2AA",
-      "keys": [
-        "Travelco Holidays"
+        "Commercial Credit"
       ]
     }
   ],
   "dataRetreivers": {
     "mentionlytics": [
       {
-        "label": "Classic Travel",
-        "key": "Classic Travel",
+        "label": "CDB",
+        "key": "CDB",
+                "commtracks": [
+          536570,
+          536571,
+          536572,
+          536573,
+          536574,
+          536583
+        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -95,28 +60,39 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "ClassicTravel",
-            "#ClassicTravel"
+            "Citizens Development Business Finance PLC",
+            "Citizens Development Business",
+            "Citizens",
+            "Development",
+            "Business",
+            "Finance",
+            "CDB Finance",
+            "#CDBOnline",
+            "#CDBFinance",
+            "#CDBSavings",
+            "CDBOnline",
+            "CDBFinance",
+            "CDBSavings"
           ],
           "commtracks": [
-            530032,
-            530033,
-            530034,
-            513519
+            536570,
+            536573,
+            536574,
+            536583
           ]
-        },
-        "commtracks": [
-          513519,
-          513520,
-          529831,
-          530032,
-          530033,
-          530034
-        ]
+        }
       },
       {
-        "label": "Gabo Travels",
-        "key": "Gabo Travels",
+        "label": "LB Finance",
+        "key": "LB Finance",
+                "commtracks": [
+          536576,
+          536577,
+          536578,
+          536579,
+          536580,
+          536581
+        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -125,23 +101,32 @@
             "Srilanka",
             "sriLanka",
             "Ceylon",
-            "ceylon"
+            "ceylon",
+            "#LBFinancePLC",
+            "LBFinancePLC",
+            "LBFinance",
+            "Finance",
+            "PLC"
           ],
           "commtracks": [
-            530053,
-            513531
+            536576,
+            536579,
+            536580,
+            536581
           ]
-        },
-        "commtracks": [
-          513531,
-          513532,
-          530052,
-          530053
-        ]
+        }
       },
       {
-        "label": "Bongo Travel",
-        "key": "Bongo Travel",
+        "label": "LOLC Finance",
+        "key": "LOLC Finance",
+                "commtracks": [
+          536584,
+          536585,
+          536586,
+          536587,
+          536588,
+          536589
+        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -150,23 +135,35 @@
             "Srilanka",
             "sriLanka",
             "Ceylon",
-            "ceylon"
+            "ceylon",
+            "#LOLCFinance",
+            "LOLCFinance",
+            "#LOLC",
+            "LOLC",
+            "Finance",
+            "PLC",
+            "Lanka ORIX Leasing Company Finance",
+            "Lanka ORIX Leasing Company",
+            "ORIX",
+            "#ORIX"
           ],
           "commtracks": [
-            530055,
-            513533
+            536584,
+            536586,
+            536587,
+            536589
           ]
-        },
-        "commtracks": [
-          513533,
-          513534,
-          530054,
-          530055
-        ]
+        }
       },
       {
-        "label": "Expo Visa Services (EVS)",
-        "key": "Expo Visa Services",
+        "label": "Commercial Credit",
+        "key": "Commercial Credit",
+                "commtracks": [
+          536590,
+          536591,
+          536592,
+          536594
+        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -175,176 +172,18 @@
             "Srilanka",
             "sriLanka",
             "Ceylon",
-            "ceylon"
+            "ceylon",
+            "#CommercialCredit",
+            "Finance",
+            "PLC",
+            "Commercial",
+            "Credit"
           ],
           "commtracks": [
-            530067,
-            513535
+            536590,
+            536594
           ]
-        },
-        "commtracks": [
-          513535,
-          513536,
-          530063,
-          530067
-        ]
-      },
-      {
-        "label": "Sunpower Travels",
-        "key": "Sunpower Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            530081,
-            513537
-          ]
-        },
-        "commtracks": [
-          513537,
-          513538,
-          530079,
-          530081
-        ]
-      },
-      {
-        "label": "Acorn Prime Destination",
-        "key": "Acorn Prime Destination",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513544,
-            513545,
-            530088
-          ]
-        },
-        "commtracks": [
-          513544,
-          513545,
-          530088
-        ]
-      },
-      {
-        "label": "Hayleys Travels",
-        "key": "Hayleys Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            530093,
-            530094,
-            530095,
-            513546
-          ]
-        },
-        "commtracks": [
-          513546,
-          513582,
-          530092,
-          530093,
-          530094,
-          530095
-        ]
-      },
-      {
-        "label": "Mackinnons Travels",
-        "key": "Mackinnons Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            530104,
-            530106,
-            513548
-          ]
-        },
-        "commtracks": [
-          513548,
-          513549,
-          530105,
-          530104,
-          530106
-        ]
-      },
-      {
-        "label": "Crazy Jets",
-        "key": "Crazy Jets",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            536250
-          ]
-        },
-        "commtracks": [
-          536250,
-          536251,
-          536252,
-          536253
-        ]
-      },
-      {
-        "label": "Travelco Holidays",
-        "key": "Travelco Holidays",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513557,
-            530110,
-            513555
-          ]
-        },
-        "commtracks": [
-          513555,
-          513556,
-          530109,
-          513557,
-          530110
-        ]
+        }
       }
     ]
   },
@@ -431,124 +270,138 @@
       "others": "Please analyze these tiktok and news posts of ##brands## that received high engagement. Give us a customer behaviour and preference analysis seperately based on the engagements. Please return your analysis well formatted with HTML tags.\n"
     }
   },
-  "sltCategories": {
-    "Travel Packages": [
-      "packages",
-      "luxury packages",
-      "budget travel",
-      "group tours",
-      "honeymoon",
-      "holiday deals",
-      "custom packages",
-      "family trips",
-      "weekend getaways",
-      "seasonal discounts",
-      "adventure packages",
-      "wellness retreats"
-    ],
-    "Flight Bookings": [
-      "flights",
-      "airfare",
-      "tickets",
-      "domestic flights",
-      "international",
-      "last-minute flights",
-      "economy class",
-      "business class",
-      "discount flights",
-      "chartered flights",
-      "flight combos",
-      "ticket refunds"
-    ],
-    "Hotel Reservations": [
-      "hotels",
-      "resorts",
-      "stays",
-      "hotel deals",
-      "luxury hotels",
-      "budget hotels",
-      "boutique hotels",
-      "villa stays",
-      "all-inclusive resorts",
-      "last-minute rooms",
-      "premium rooms",
-      "hotel packages"
-    ],
-    "Visa Assistance": [
-      "visa",
-      "tourist visa",
-      "business visa",
-      "visa application",
-      "visa services",
-      "visa refunds",
-      "delayed visa",
-      "express visa",
-      "visa consultancy",
-      "pre-order visa",
-      "embassy coordination",
-      "travel documentation"
-    ],
-    "Customer Support": [
-      "support",
-      "hotline",
-      "delayed responses",
-      "follow-up",
-      "wait time",
-      "friendly staff",
-      "24/7 assistance",
-      "live chat",
-      "resolution time",
-      "customer queries",
-      "complaint handling",
-      "customer care"
-    ],
-    "Travel Insurance": [
-      "insurance",
-      "medical cover",
-      "trip cancellation",
-      "lost luggage",
-      "policy claims",
-      "travel emergencies",
-      "premium insurance",
-      "budget insurance",
-      "comprehensive coverage",
-      "refund policies",
-      "safety cover",
-      "insurance offers"
-    ],
-    "Customer Experience": [
-      "reviews",
-      "navigation",
-      "website feedback",
-      "checkout process",
-      "complaint resolution",
-      "customer loyalty",
-      "delivery time",
-      "customer ratings",
-      "website usability",
-      "service quality",
-      "response speed",
-      "user experience"
-    ],
-    "Classic Travel Brand/Services": [
-      "classic travel",
-      "workshops",
-      "travel seminars",
-      "webinars",
-      "vip program",
-      "partnerships",
-      "travel events",
-      "meetups",
-      "exhibitions",
-      "training programs",
-      "travel promotions",
-      "brand loyalty"
-    ]
-  },
+"sltCategories": {
+  "Loan Products": [
+    "personal loan",
+    "home loan",
+    "education loan",
+    "vehicle loan",
+    "business loan",
+    "gold loan",
+    "salary loan",
+    "emergency loan",
+    "instant loan",
+    "secured loan",
+    "unsecured loan",
+    "loan top-up"
+  ],
+  "Leasing Services": [
+    "vehicle leasing",
+    "bike leasing",
+    "commercial leasing",
+    "leasing calculator",
+    "easy leasing",
+    "lease renewal",
+    "leasing options",
+    "hire purchase",
+    "residual value",
+    "low down payment",
+    "leasing plan",
+    "leasing documents"
+  ],
+  "Fixed Deposits": [
+    "fd rates",
+    "fixed deposit",
+    "interest rates",
+    "maturity value",
+    "monthly interest",
+    "high return",
+    "fd calculator",
+    "deposit plans",
+    "secure investment",
+    "short-term fd",
+    "long-term fd",
+    "fd renewal"
+  ],
+  "Savings Accounts": [
+    "savings account",
+    "interest bearing",
+    "daily interest",
+    "youth account",
+    "kids savings",
+    "online savings",
+    "joint account",
+    "account opening",
+    "account transfer",
+    "zero balance",
+    "passbook",
+    "ATM access"
+  ],
+  "Digital Services": [
+    "mobile app",
+    "internet banking",
+    "online services",
+    "digital wallet",
+    "qr payments",
+    "fund transfer",
+    "online deposits",
+    "virtual assistant",
+    "account alerts",
+    "payment reminders",
+    "app update",
+    "security features"
+  ],
+  "Customer Support": [
+    "customer care",
+    "support call",
+    "branch visit",
+    "delay response",
+    "issue handling",
+    "quick response",
+    "helpdesk",
+    "service quality",
+    "resolution time",
+    "ticket raised",
+    "complaint follow-up",
+    "feedback loop"
+  ],
+  "Insurance Services": [
+    "life cover",
+    "insurance policy",
+    "loan insurance",
+    "vehicle insurance",
+    "medical insurance",
+    "premium payment",
+    "claim process",
+    "policy document",
+    "renewal reminder",
+    "coverage terms",
+    "policy lapse",
+    "insurance benefit"
+  ],
+  "Customer Experience": [
+    "client feedback",
+    "service review",
+    "application process",
+    "approval time",
+    "support experience",
+    "staff behavior",
+    "user interface",
+    "mobile experience",
+    "trust factor",
+    "ease of use",
+    "customer journey",
+    "branch experience"
+  ],
+  "Company Initiatives": [
+    "financial literacy",
+    "csr events",
+    "community support",
+    "staff training",
+    "career development",
+    "partnerships",
+    "local events",
+    "awareness campaigns",
+    "scholarships",
+    "reward programs",
+    "customer events",
+    "educational programs"
+  ]
+},
   "alertConfig": {
     "receivers": [
       {
-        "email": "Strategy@classictravel.lk"
+        "email": "lankeshh@emojot.com"
       }
     ],
     "reminderDate": {
@@ -564,7 +417,7 @@
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "Strategy@classictravel.lk"
+          "email": "lankeshh@emojot.com"
         }
       ],
       "sendDailyReport": true,
@@ -576,11 +429,11 @@
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "Strategy@classictravel.lk"
+        "email": "lankeshh@emojot.com"
       }
     ],
     "timeOffset": -330,
-    "companyID": "679369170bf0386ac6daafb6",
+    "companyID": "68526768237bdc055f657a4e",
     "threshold": 1.4,
     "averageDates": 7,
     "emailTemplate": "SLT_StormAlert",
@@ -591,7 +444,7 @@
     "AIModel": "manual"
   },
   "hideUnloadedImages": true,
-  "companyName": "ClassicTravels",
+  "companyName": "CDB",
   "syncEnabled": true,
   "type": "socialNetworkListener"
 }

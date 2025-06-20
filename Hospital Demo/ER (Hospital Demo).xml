@@ -1,0 +1,686 @@
+<cepRules>
+
+ <cepRule id="1" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q9902"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>ld</operator>
+                <value>2</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low NPS value</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low NPS value towards his/her experience at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+NPS Rating - $$q9902_emote$$
+<br>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="2" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q9425"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low rating for overall admission process</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low rating about the admission process at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+Rating - $$q9425_emote$$
+<br>
+Comment - $$gp4975_c1_comment_value$$
+<br>
+</p>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="3" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q7234"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low rating for the medical team</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low rating for the medical team at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+Rating - $$q7234_emote$$
+<br>
+</p>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="4" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q61"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low rating for nursing team</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low rating for the nursing team at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+Rating - $$q61_emote$$
+<br>
+</p>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="5" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q3516"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low rating about discharge process</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low rating about discharge process at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+Rating - $$q3516_emote$$
+<br>
+</p>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+    <cepRule id="6" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q5704"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Medical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Hospital>Surgical</Hospital>
+                                <Department>In-Patient</Department>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Department>In-Patient</Department>
+                                <Hospital>Central</Hospital>
+                            </emoSignatureCondition>
+                             <to>lankeshh@emojot.com, leads@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                     <to>lankeshh@emojot.com, leads@emojot.com</to>
+                    <subject>Alert! - Low rating for in-room facilities</subject>
+                    <bodyType>html</bodyType>
+                    <body><![CDATA[<p>Hi, </p>
+<p>Below patient has expressed low rating about in-room facilities at $$emoSignature_Hospital_value$$.</p>
+<p>
+Name - $$loyalty_Name_value$$
+<br>
+Telephone - $$loyalty_Telephone_value$$
+<br>
+Speciality - $$emoSignature_Speciality_value$$
+<br>
+Ward - $$emoSignature_Ward_value$$
+<br>
+Room Number - $$emoSignature_Room_value$$
+<br>
+Rating - $$q5704_emote$$
+<br>
+</p>
+Yours sincerely,
+<br>
+Team Emojot
+<br>]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+
+    
+    <cepRule id="7" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q9902"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>ld</operator>
+            <value>2</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>Low NPS - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q9902_emote$$
+                </description>
+                <customFields>
+                    
+                    <field><key>rating</key><value>$$q9902_emote$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+<cepRule id="8" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q9425"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>gd</operator>
+            <value>0</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>Admission Process Issue - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q9425_emote$$
+                    Comment: $$gp4975_c1_comment_value$$
+                </description>
+                <customFields>
+                    
+                    <field><key>rating</key><value>$$q9425_emote$$</value></field>
+                    <field><key>comment</key><value>$$gp4975_c1_comment_value$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+<cepRule id="9" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q7234"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>gd</operator>
+            <value>0</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>Medical Team Issue - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q7234_emote$$
+                </description>
+                <customFields>
+                    
+                    <field><key>rating</key><value>$$q7234_emote$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+
+<cepRule id="10" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q61"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>gd</operator>
+            <value>0</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>Nursing Team Issue - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q61_emote$$
+                </description>
+                <customFields>
+                    
+                    <field><key>rating</key><value>$$q61_emote$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+<cepRule id="11" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q3516"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>gd</operator>
+            <value>0</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>Discharge Complaint - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q3516_emote$$
+                </description>
+                <customFields>
+                    
+                    <field><key>rating</key><value>$$q3516_emote$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+<cepRule id="12" timeWindow="5">
+    <params>
+        <param>
+            <name>percepticDrillDown</name>
+            <operator>eq</operator>
+            <value>"q5704"</value>
+        </param>
+        <joinOperator>and</joinOperator>
+        <joinParam>
+            <derivedValue>emoteNumericValue</derivedValue>
+            <operator>gd</operator>
+            <value>0</value>
+        </joinParam>
+    </params>
+    <engagementActions>
+        <action>
+            <type>incident</type>
+            <data>
+                <workflowID>685226c6237bdc055f653ab8</workflowID>
+                <name>In-room Complaint - $$emoSignature_Hospital_value$$</name>
+                <assignee>defaultassignee@emojot.com</assignee>
+                <type>Customer Satisfaction Survey</type>
+                <priority>High</priority>
+                <status>Open</status>
+                <description>
+                    Name: $$loyalty_Name_value$$
+                    Telephone: $$loyalty_Telephone_value$$
+                    Hospital: $$emoSignature_Hospital_value$$
+                    Speciality: $$emoSignature_Speciality_value$$
+                    Ward: $$emoSignature_Ward_value$$
+                    Room: $$emoSignature_Room_value$$
+                    Rating: $$q5704_emote$$
+                </description>
+                <customFields>
+                    <field><key>rating</key><value>$$q5704_emote$$</value></field>
+                </customFields>
+            </data>
+            <validityPeriod>5</validityPeriod>
+        </action>
+    </engagementActions>
+</cepRule>
+
+</cepRules>

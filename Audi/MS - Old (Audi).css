@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:300,400');
+
+/* 
+
+    =================|=================================
+    class/id         | description
+    ===================================================
+    master-section   | to change sensor background
+    emote-title      | change question title
+    emo-text         | change emoticon text
+    emo-cont         | change emoticon style. You can change emoticon button background color etc.
+    clicked-emo-cont | Add the style after the emoticon button get clicked
+    sensor-title     | change sensor title
+    form-group label | This will change the all label colors including label for loyalty and comments.
+    loyalty-message  | Change loyalty description style
+    thank-you-note   | change thank you note text color
+    footer           | Change footer color
+    pdGroupTitle     | change group title properties
+    progressfill     | change page progress color
+*/
+
+/* Replace background url to add sensor background image */
+#master-section {
+     background:url('https://storage.emojot.com/themes_newmobile/images/backgrounds_Audi.png');
+     min-height: 657px;
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: bottom;
+     position: relative;
+}
+
+/*#master-section {
+    background:url('https://s3-us-west-2.amazonaws.com/emojotdevstorage/themes_newmobile/images/backgroundimage/people_images_20180809.png');
+    min-height: 790px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}*/
+
+ #headerCompanyInfo {
+     color:white !important
+}
+
+#facebook-login-section{
+display:none !important;
+}
+.container[style]{
+     padding-left:0px !important;
+     padding-right:0px !important;
+}
+
+/* replace color to change question title color */
+.emote-title {
+     color: black;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+     font-size:12pt;
+     font-weight: bold;
+}
+
+/* replace color to change emoticon colors */
+.emo-text {
+    font-size: 11pt;
+    color: black;
+    font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+    font-weight: 300;
+}
+ .middle-box {
+     margin-top: 10px;
+     padding: 10px;
+     border: 1px solid #f3f3f3;
+}
+ 
+/* change background color to change emoticon button color. */
+ .emo-cont {
+ background:white !important;
+     border: 1px solid #333;
+     margin: 3px 0px;
+     text-align: center;
+     display: inline-block;
+     border-radius: 0px;
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+     padding: 7px 0;
+     border-radius: 4px;
+     color:#666;
+     background: rgba(209,209,209,1);
+     background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(209,209,209,1)), color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(226,226,226,1)));
+     background: -webkit-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+     background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+     background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+     background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1 );
+}
+
+ /* .emo-cont:hover {
+    border: 3px solid #591350;
+} */
+
+.clicked-emo-cont {
+    border: 3px black solid !important;
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 55px;
+    margin: 5px;
+}
+ .btn {
+     
+     color: black;
+     
+}
+
+ .btn-next {
+     color: black;
+}
+ .btn-submit {
+     color: black;
+}
+ .btn-prev {
+     color: black;
+}
+ .btn-clear {
+     color: black;
+}
+
+.btn-next,.btn-submit,.btn-prev,.btn-clear,.btn-skip,.btn-ok,.loyalty-redeem-button{
+    border: 1px solid rgba(255,255,255, 0.5);
+    margin: 10px 5px;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    padding: 9px 25px;
+    font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+    font-size: 12pt;
+    background: rgba(249,249,249,1);
+     background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(227,227,227,1)));
+     background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+}
+
+ .clear-submit-row{
+    text-align:center !important;
+}
+ .btn:hover {
+     color: black;
+     text-decoration: none;
+}
+.btn-ok{
+    color:black
+}
+.btn-skip{
+    color:black;
+display:none;
+}
+.btn-fb{
+    color:black;
+}
+
+.loyalty-redeem-button{
+    border-color: #ed1c24;
+}
+
+ .logo-cust {
+    margin: 3px 0 -3px 9px;
+     height: 50px;
+}
+
+/* change color property to change sensor title font color */
+ .sensor-title {
+     color: black;
+     font-size: 17pt;
+     padding: 10px 10px 0px 10px;
+     margin-bottom: 10px;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+     border-bottom: 1px solid gray;
+     letter-spacing: -0.5px;
+     background: rgba(255, 255, 255, 0);
+     line-height: 40px;
+     font-weight: bold;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.panel {
+    margin: 0 10px;
+}
+
+ .panel-group .panel {
+     margin-bottom: 0;
+     border-radius: 5px;
+     box-shadow: none;
+     background: rgba(250, 247, 247, 0.64);
+}
+ 
+ .panel-group .panel-heading {
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+     border-radius: 5px;
+     color: black;
+     background: rgba(249,249,249,1);
+     background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(227,227,227,1)));
+     background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+     background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+}
+ .panel-title {
+    font-size: 11pt;
+     max-width: 90%;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+     line-height: 1.6;
+}
+ .row {
+     background: transparent !important;
+}
+ .my-emojots{
+     display:none;
+}
+ .panel-body {
+     background: transparent !important;
+}
+ 
+ #headerCompanyInfo > .access-user{
+     text-align: center;
+     float: right;
+     text-shadow: 1px 1px 1px #000;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+     font-style: italic;
+     font-size: 15px;
+     background-size: 120px 80px;
+     background-repeat: no-repeat;
+     background-position: right center;
+     position: relative;
+}
+ .company-logo img{
+     height: 50px;
+}
+
+/* change background color to change sensor footer color */
+ .footer {
+     background: black !important;
+     color: #fff;
+     position: absolute;
+     right: 10px;
+     left: 0;
+     z-index: 800;
+     bottom: 0;
+     height: 40px;
+     padding: 12px 13px;
+     font-size: 8pt;
+     margin: 0 -10px 0px 0;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+}
+
+/* change label color to change label color of the entire sensor */
+ .form-group label{
+     color: black !important;
+     font-family: 'AudiTypeScreen',Verdana,Geneva,sans-serif;
+     font-size:12pt;
+}
+
+/* Change color to change loyalty description text color */
+ .loyalty-message{
+     color:black;
+     font-size: 14pt;
+}
+
+ .loyalty-bottom{
+     text-align:center;
+}
+ 
+ .loyalty-dialog div:nth-child(3){
+    
+}
+ 
+ .email-emote-message{
+     color:black !important;
+}
+
+/* change this to change page progress color */
+#progressfill{
+    background-color: #333;
+}
+
+#groupCommentBuzzModal .modal-header{
+	background:#fff ;
+	color:#e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body{
+	background:#fff;
+	color:#333333;
+}
+
+#groupCommentBuzzModal .modal-footer{
+	background:#fff;
+	color:white;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel{
+	background:#f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer{
+	color:#333333;
+}
+
+/* change color to change thankyou note text color */
+.thank-you-note{
+    color: black !important; 
+    font-size:22px !important;
+    font-weight:bold !important;
+}
+
+.access-user-name {
+	width:80%;
+}
+
+.pdGroupTitle{
+	color:#591350;
+	
+}
+
+.progress_bar .pro-bar {
+	margin-top:15px !important;
+}
+
+.company-logo{
+	padding:2px !important;
+}
+
+/*  view question - uncomment this to show big view question button if there are only one comment field */
+
+/* 
+#commentBuzzPanel i span{
+	font-size:18px !important;
+	display: none;
+}
+
+#commentBuzzPanel{
+	text-align: center;
+    padding: 7px;
+    background: #ee4b30;
+    border-radius: 10px;
+    margin-top: 96px;
+    color:white;
+    box-shadow: black;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ee4b30;
+    position: absolute;
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index:100;
+}
+
+#commentBuzzPanel i:after{
+	content:'View questions';
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+} */
+
+/*  tab width - uncomment below code to add full width when load sensor only in tab */
+
+/*.lean{
+    width:100% !important;
+    max-width:100% !important;
+}*/
+
+/* NPS style*/
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6{
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8{
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10{
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon{
+    border: 3px solid #333;
+    box-shadow: 0px 2px 6px #716868;
+} 
+
+.emj-required-indicator{
+color : black;
+    font-size: 14px;
+    font-weight: bold;
+}
