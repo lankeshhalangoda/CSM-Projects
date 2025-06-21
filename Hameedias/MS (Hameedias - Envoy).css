@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:300,400');
  #master-section {
-     background:url('https://storage.emojot.com/pictures/skinImages/67761761cb917201e680c031-skin12.png');
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://storage.emojot.com/pictures/skinImages/671b2a76284d8d40df9e1682-skin3.png');
      min-height: 657px;
      background-size:cover;
      background-repeat: no-repeat;
@@ -130,6 +130,15 @@ textarea.form-control {
 }
 .company-logo img {
     height: 80px !important;
+    display: none;
+}
+.access-user-name {
+  color: #ffffff;
+  display: none;
+}
+.fa-user-circle:before {
+  content: "\f2bd";
+  display: none;
 }
 
 .footer .logo {
@@ -193,17 +202,27 @@ textarea.form-control {
      color:white !important;
 }
  
- #headerCompanyInfo > .access-user{
-     text-align: center;
-     float: right;
-     text-shadow: 1px 1px 1px #000;
-     font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
-     font-style: italic;
-     font-size: 15px;
-     background-size: 120px 80px;
-     background-repeat: no-repeat;
-     background-position: right center;
-     position: relative;
+#headerCompanyInfo > .access-user {
+  text-align: left !important;
+  float: right !important;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  background-color: #000000;
+  background-image: url(https://storage.emojot.com/pictures/generalImages/671b2a76284d8d40df9e1682-skin5.png);
+  background-size: contain;
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  height: 90px;
+  width: 90px;
+  display: block !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 20px;
 }
  .company-logo img{
      height: 50px;
