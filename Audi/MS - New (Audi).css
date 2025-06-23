@@ -24,7 +24,7 @@
 #master-section {
   /* background: url("https://storage.emojot.com/pictures/skinImages/67b33d208ed80658abca4e23-skin1.png"); */
   /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
-  background:url('https://storage.emojot.com/pictures/skinImages/5c08a821f19849001d5e9efc-skin4.png');
+  background:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url('https://storage.emojot.com/pictures/skinImages/5c08a821f19849001d5e9efc-skin4.png');
   background-color: #ffffff;
 min-height: 657px;
      background-size:cover;
@@ -379,25 +379,25 @@ form-control:focus {
 
 .company-logo img {
   height: 80px;
-  animation: coinFlip 2s linear infinite;
+  /* animation: coinFlip 2s linear infinite; */
   transform-style: preserve-3d;
   backface-visibility: hidden;
   display: block;
 }
 
 /* Coin flip animation */
-@keyframes coinFlip {
+/* @keyframes coinFlip {
   0%   { transform: rotateY(0deg); }
   50%  { transform: rotateY(180deg); }
   100% { transform: rotateY(360deg); }
-}
+} */
 
 /* Shadow placed exactly below the image */
 .company-logo::after {
   content: "";
   position: absolute;
   top: 100%;
-  left: 30%;
+  left: 40%;
   transform: translateX(-50%);
   width: 80px;
   height: 10px;
@@ -561,6 +561,10 @@ div.col-xs-7.ng-scope {
   .footer .logo {
     display: none !important;
   }
+
+  .emj-required-indicator {
+    color: #000000 !important;
+  }
   
   
 
@@ -602,33 +606,6 @@ div.col-xs-7.ng-scope {
     max-width:100% !important;
 }*/
 
-/* NPS style*/
-.nps-bar::before,
-.nps-bar::after {
-    content: "";
-    position: absolute;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: bold;
-    top: 100%;
-    transform: translateY(8px);
-    font-family: "Playwrite AU SA", serif;
-}
-
-.nps-bar::before {
-    content: "Less Likely";
-    left: 10px;
-    color: #000000;
-    margin-left: 5px;
-}
-
-.nps-bar::after {
-    content: "More Likely";
-    right:10px;
-    color: #000000;
-    margin-right: 5px;
-}
-
 .evz-nps-position-0,
 .evz-nps-position-1,
 .evz-nps-position-2,
@@ -645,7 +622,7 @@ div.col-xs-7.ng-scope {
 .evz-nps-position-8{
     background: #ff7924;
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.61);
+    border: 1px solid rgba(255, 128, 0, 0.61);
 }
 
 .evz-nps-position-9,
@@ -676,24 +653,13 @@ label {
   font-weight: 400 !important;
 }
 
-.coolpanet-review-wrapper .thank-you-text {
-  font-weight: bold !important;
-  font-family: "Montserrat", sans-serif !important;
-  color: #000000 !important;
-}
-
-.coolpanet-review-wrapper .review-buttons a span {
-  font-family: "Montserrat", sans-serif !important;
-  color: #000000 !important;
-}
-
 @media (max-width: 768px) {
   .emo-text {
     font-size: 10pt !important;
   }
 
   .sensor-title {
-    font-size: 17pt;
+    font-size: 14pt;
   }
 
   .emote-title {
