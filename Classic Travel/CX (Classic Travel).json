@@ -1,5 +1,20 @@
 {
   "menu": [
+            {
+      "id": "slt",
+      "icon": "fa fa-users",
+      "header": "Social Listening Tool",
+      "subs": [
+        {
+          "header": "Dashboard",
+          "id": "slt_dashboard"
+        },
+        {
+          "header": "Competitor Analysis",
+          "id": "slt_comp"
+        }
+      ]
+    },
     {
       "id": "cxm",
       "icon": "fa fa-users",
@@ -18,6 +33,7 @@
           "id": "cxm_links"
         }
       ]
+      
     },
     {
       "id": "comp",
@@ -49,21 +65,7 @@
         }
       ]
     },
-    {
-      "id": "slt",
-      "icon": "fa fa-users",
-      "header": "Social Listening Tool",
-      "subs": [
-        {
-          "header": "Dashboard",
-          "id": "slt_dashboard"
-        },
-        {
-          "header": "Competitor Analysis",
-          "id": "slt_comp"
-        }
-      ]
-    },
+
     {
       "id": "myProfile",
       "icon": "fa fa-user",

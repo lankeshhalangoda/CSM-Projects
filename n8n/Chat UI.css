@@ -1,0 +1,310 @@
+:root {
+  /* Colors */
+  --chat--color-primary: #e74266;
+  --chat--color-primary-shade-50: #db4061;
+  --chat--color-primary-shade-100: #cf3c5c;
+  --chat--color-secondary: #20b69e;
+  --chat--color-secondary-shade-50: #1ca08a;
+  --chat--color-white: #ffffff;
+  --chat--color-light: #f2f4f8;
+  --chat--color-light-shade-50: #e6e9f1;
+  --chat--color-light-shade-100: #c2c5cc;
+  --chat--color-medium: #d2d4d9;
+  --chat--color-dark: #101330;
+  --chat--color-disabled: #777980;
+  --chat--color-typing: #404040;
+
+  /* Base Layout */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 0.25rem;
+  --chat--transition-duration: 0.15s;
+  --chat--font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Window Dimensions */
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+  --chat--window--bottom: var(--chat--spacing);
+  --chat--window--right: var(--chat--spacing);
+  --chat--window--z-index: 9999;
+  --chat--window--border: 1px solid var(--chat--color-light-shade-50);
+  --chat--window--border-radius: var(--chat--border-radius);
+  --chat--window--margin-bottom: var(--chat--spacing);
+
+  /* Header Styles */
+  --chat--header-height: 60px;
+  --chat--header--padding: var(--chat--spacing);
+--chat--header--background: linear-gradient(to right, #0d1e78, #2a3ed8, #e742aa);
+  --chat--header--color: var(--chat--color-light);
+  --chat--header--border-top: none;
+  --chat--header--border-bottom: none;
+  --chat--header--border-left: none;
+  --chat--header--border-right: none;
+  --chat--heading--font-size: 2em;
+  --chat--subtitle--font-size: 2em;
+  --chat--subtitle--line-height: 1.8;
+
+  /* Message Styles */
+  --chat--message--font-size: 1rem;
+  --chat--message--padding: var(--chat--spacing);
+  --chat--message--border-radius: var(--chat--border-radius);
+  --chat--message-line-height: 1.5;
+  --chat--message--margin-bottom: calc(var(--chat--spacing) * 1);
+  --chat--message--bot--background: var(--chat--color-white);
+  --chat--message--bot--color: var(--chat--color-dark);
+  --chat--message--bot--border: none;
+  --chat--message--user--background: var(--chat--color-secondary);
+  --chat--message--user--color: var(--chat--color-white);
+  --chat--message--user--border: none;
+  --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+  --chat--messages-list--padding: var(--chat--spacing);
+
+  /* Toggle Button */
+  --chat--toggle--size: 64px;
+  --chat--toggle--width: var(--chat--toggle--size);
+  --chat--toggle--height: var(--chat--toggle--size);
+  --chat--toggle--border-radius: 50%;
+  --chat--toggle--background: var(--chat--color-primary);
+  --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+  --chat--toggle--color: var(--chat--color-white);
+
+  /* Input Area */
+  --chat--textarea--height: 50px;
+  --chat--textarea--max-height: 30rem;
+  --chat--input--font-size: inherit;
+  --chat--input--border: 0;
+  --chat--input--border-radius: 0;
+  --chat--input--padding: 0.8rem;
+  --chat--input--background: var(--chat--color-white);
+  --chat--input--text-color: initial;
+  --chat--input--line-height: 1.5;
+  --chat--input--placeholder--font-size: var(--chat--input--font-size);
+  --chat--input--border-active: 0;
+  --chat--input--left--panel--width: 2rem;
+
+  /* Button Styles */
+  --chat--button--color: var(--chat--color-light);
+  --chat--button--background: var(--chat--color-primary);
+  --chat--button--padding: calc(var(--chat--spacing) * 1 / 2) var(--chat--spacing);
+  --chat--button--border-radius: var(--chat--border-radius);
+  --chat--button--hover--color: var(--chat--color-light);
+  --chat--button--hover--background: var(--chat--color-primary-shade-50);
+  --chat--close--button--color-hover: var(--chat--color-primary);
+
+  /* Send and File Buttons */
+  --chat--input--send--button--background: var(--chat--color-white);
+  --chat--input--send--button--color: var(--chat--color-light);
+  --chat--input--send--button--background-hover: var(--chat--color-primary-shade-50);
+  --chat--input--send--button--color-hover: var(--chat--color-secondary-shade-50);
+  --chat--input--file--button--background: var(--chat--color-white);
+  --chat--input--file--button--color: var(--chat--color-secondary);
+  --chat--input--file--button--background-hover: var(--chat--input--file--button--background);
+  --chat--input--file--button--color-hover: var(--chat--color-secondary-shade-50);
+  --chat--files-spacing: 0.25rem;
+
+  /* Body and Footer */
+  --chat--body--background: var(--chat--color-light);
+  --chat--footer--background: var(--chat--color-light);
+  --chat--footer--color: var(--chat--color-dark);
+}
+
+/* Apply font globally across chat */
+{
+  font-family: var(--chat--font-family);
+}
+
+/* You can override any class styles, too. Right-click inspect in Chat UI to find class to override. */
+.chat-heading {
+  display: none;
+}
+
+/* Insert your logo using ::before */
+.chat-header {
+  background: var(--chat--header--background);
+  position: relative;
+  padding-left: 60px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.chat-header::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 60px;
+  background: url('https://storage.emojot.com/pictures/generalImages/67761761cb917201e680c031-skin4.png') no-repeat center;
+  background-size: contain;
+  z-index: 2; /* logo above blur */
+}
+
+/* Add blurred background using ::after */
+.chat-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--chat--header--background);
+  filter: blur(8px); /* Adjust as needed */
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9; /* Optional: slightly fade the gradient */
+}
+
+/* Ensure header content is above blur layer */
+.chat-header > * {
+  position: relative;
+  z-index: 3;
+}
+
+.chat-layout .chat-header {
+    padding: 5px !important;
+}
+
+
+.chat-layout .chat-header p {
+    display: none;
+}
+
+.chat-message.chat-message-from-bot:not(.chat-message-transparent) {
+    background: rgb(255, 255, 255);
+    border: 0.5px solid grey;
+    border-radius: 15px 15px 15px 2px;
+    color: #000000;
+}
+
+.chat-message.chat-message-from-user:not(.chat-message-transparent) {
+    background:#2a3ed8;
+    color: #ffffff;
+    border-radius: 15px 15px 2px 15px;
+}
+
+
+.chat-layout .chat-body {
+  position: relative;
+  background-image: url('https://storage.emojot.com/pictures/generalImages/67761761cb917201e680c031-skin7.png');
+  background-repeat: repeat;
+  background-size: auto; /* Or adjust as needed */
+  z-index: 0;
+}
+
+/* Add white overlay */
+.chat-layout .chat-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Ensure chat content sits above overlay */
+.chat-layout .chat-body > * {
+  position: relative;
+  z-index: 2;
+}
+
+  .chat-message p {
+    font-size: 10pt;
+  }
+
+  .chat-inputs textarea[data-v-31e29ba2] {
+    background-color: #2a3ed82c;
+    margin: 10px;
+    border-radius: 15px;
+    line-height: none;
+  }
+
+.chat-input[data-v-31e29ba2] textarea::-webkit-scrollbar {
+  display: none;
+}
+.chat-input[data-v-31e29ba2] textarea {
+  scrollbar-width: none;
+}
+
+
+.chat-inputs[data-v-31e29ba2] {
+  position: relative;
+  background: transparent; /* remove flat background */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Add blurred background */
+.chat-inputs[data-v-31e29ba2]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6); /* optional tint */
+  backdrop-filter: blur(8px); /* blur strength */
+  z-index: -1;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.chat-input-send-button[data-v-31e29ba2],
+.chat-input-file-button[data-v-31e29ba2] {
+  position: relative;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent; /* Remove direct gradient */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Add blurred gradient background */
+.chat-input-send-button[data-v-31e29ba2]::before,
+.chat-input-file-button[data-v-31e29ba2]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #1c33aa, #2a3ed8, #e742aa);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.chat-input-send-button svg[data-v-31e29ba2],
+.chat-input-file-button svg[data-v-31e29ba2] {
+  display: none;
+}
+
+
+.chat-input-send-button::after,
+.chat-input-file-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-image: url('https://storage.emojot.com/pictures/generalImages/67761761cb917201e680c031-skin8.png'); /* Replace with your image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+
+
+/* Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+  .chat-header::before {
+    width: 160px;
+  }
+}
+
+/* Mobile view (up to 768px) */
+@media (max-width: 768px) {
+  .chat-header::before {
+    width: 115px;
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "updatedTime": 1750145970428,
-  "updatedBy": "lankeshh",
+  "updatedTime": 1750296381324,
+  "updatedBy": "lankeshh@emojot.com",
   "companyID": "68526768237bdc055f657a4e",
   "aiModel": "gpt-3.5",
   "vendors": [
@@ -43,14 +43,6 @@
       {
         "label": "CDB",
         "key": "CDB",
-                "commtracks": [
-          536570,
-          536571,
-          536572,
-          536573,
-          536574,
-          536583
-        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -80,19 +72,19 @@
             536574,
             536583
           ]
-        }
+        },
+        "commtracks": [
+          536570,
+          536571,
+          536572,
+          536573,
+          536574,
+          536583
+        ]
       },
       {
         "label": "LB Finance",
         "key": "LB Finance",
-                "commtracks": [
-          536576,
-          536577,
-          536578,
-          536579,
-          536580,
-          536581
-        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -114,19 +106,19 @@
             536580,
             536581
           ]
-        }
+        },
+        "commtracks": [
+          536576,
+          536577,
+          536578,
+          536579,
+          536580,
+          536581
+        ]
       },
       {
         "label": "LOLC Finance",
         "key": "LOLC Finance",
-                "commtracks": [
-          536584,
-          536585,
-          536586,
-          536587,
-          536588,
-          536589
-        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -153,17 +145,19 @@
             536587,
             536589
           ]
-        }
+        },
+        "commtracks": [
+          536584,
+          536585,
+          536586,
+          536587,
+          536588,
+          536589
+        ]
       },
       {
         "label": "Commercial Credit",
         "key": "Commercial Credit",
-                "commtracks": [
-          536590,
-          536591,
-          536592,
-          536594
-        ],
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -183,7 +177,13 @@
             536590,
             536594
           ]
-        }
+        },
+        "commtracks": [
+          536590,
+          536591,
+          536592,
+          536594
+        ]
       }
     ]
   },
@@ -270,134 +270,134 @@
       "others": "Please analyze these tiktok and news posts of ##brands## that received high engagement. Give us a customer behaviour and preference analysis seperately based on the engagements. Please return your analysis well formatted with HTML tags.\n"
     }
   },
-"sltCategories": {
-  "Loan Products": [
-    "personal loan",
-    "home loan",
-    "education loan",
-    "vehicle loan",
-    "business loan",
-    "gold loan",
-    "salary loan",
-    "emergency loan",
-    "instant loan",
-    "secured loan",
-    "unsecured loan",
-    "loan top-up"
-  ],
-  "Leasing Services": [
-    "vehicle leasing",
-    "bike leasing",
-    "commercial leasing",
-    "leasing calculator",
-    "easy leasing",
-    "lease renewal",
-    "leasing options",
-    "hire purchase",
-    "residual value",
-    "low down payment",
-    "leasing plan",
-    "leasing documents"
-  ],
-  "Fixed Deposits": [
-    "fd rates",
-    "fixed deposit",
-    "interest rates",
-    "maturity value",
-    "monthly interest",
-    "high return",
-    "fd calculator",
-    "deposit plans",
-    "secure investment",
-    "short-term fd",
-    "long-term fd",
-    "fd renewal"
-  ],
-  "Savings Accounts": [
-    "savings account",
-    "interest bearing",
-    "daily interest",
-    "youth account",
-    "kids savings",
-    "online savings",
-    "joint account",
-    "account opening",
-    "account transfer",
-    "zero balance",
-    "passbook",
-    "ATM access"
-  ],
-  "Digital Services": [
-    "mobile app",
-    "internet banking",
-    "online services",
-    "digital wallet",
-    "qr payments",
-    "fund transfer",
-    "online deposits",
-    "virtual assistant",
-    "account alerts",
-    "payment reminders",
-    "app update",
-    "security features"
-  ],
-  "Customer Support": [
-    "customer care",
-    "support call",
-    "branch visit",
-    "delay response",
-    "issue handling",
-    "quick response",
-    "helpdesk",
-    "service quality",
-    "resolution time",
-    "ticket raised",
-    "complaint follow-up",
-    "feedback loop"
-  ],
-  "Insurance Services": [
-    "life cover",
-    "insurance policy",
-    "loan insurance",
-    "vehicle insurance",
-    "medical insurance",
-    "premium payment",
-    "claim process",
-    "policy document",
-    "renewal reminder",
-    "coverage terms",
-    "policy lapse",
-    "insurance benefit"
-  ],
-  "Customer Experience": [
-    "client feedback",
-    "service review",
-    "application process",
-    "approval time",
-    "support experience",
-    "staff behavior",
-    "user interface",
-    "mobile experience",
-    "trust factor",
-    "ease of use",
-    "customer journey",
-    "branch experience"
-  ],
-  "Company Initiatives": [
-    "financial literacy",
-    "csr events",
-    "community support",
-    "staff training",
-    "career development",
-    "partnerships",
-    "local events",
-    "awareness campaigns",
-    "scholarships",
-    "reward programs",
-    "customer events",
-    "educational programs"
-  ]
-},
+  "sltCategories": {
+    "Loan Products": [
+      "personal loan",
+      "home loan",
+      "education loan",
+      "vehicle loan",
+      "business loan",
+      "gold loan",
+      "salary loan",
+      "emergency loan",
+      "instant loan",
+      "secured loan",
+      "unsecured loan",
+      "loan top-up"
+    ],
+    "Leasing Services": [
+      "vehicle leasing",
+      "bike leasing",
+      "commercial leasing",
+      "leasing calculator",
+      "easy leasing",
+      "lease renewal",
+      "leasing options",
+      "hire purchase",
+      "residual value",
+      "low down payment",
+      "leasing plan",
+      "leasing documents"
+    ],
+    "Fixed Deposits": [
+      "fd rates",
+      "fixed deposit",
+      "interest rates",
+      "maturity value",
+      "monthly interest",
+      "high return",
+      "fd calculator",
+      "deposit plans",
+      "secure investment",
+      "short-term fd",
+      "long-term fd",
+      "fd renewal"
+    ],
+    "Savings Accounts": [
+      "savings account",
+      "interest bearing",
+      "daily interest",
+      "youth account",
+      "kids savings",
+      "online savings",
+      "joint account",
+      "account opening",
+      "account transfer",
+      "zero balance",
+      "passbook",
+      "ATM access"
+    ],
+    "Digital Services": [
+      "mobile app",
+      "internet banking",
+      "online services",
+      "digital wallet",
+      "qr payments",
+      "fund transfer",
+      "online deposits",
+      "virtual assistant",
+      "account alerts",
+      "payment reminders",
+      "app update",
+      "security features"
+    ],
+    "Customer Support": [
+      "customer care",
+      "support call",
+      "branch visit",
+      "delay response",
+      "issue handling",
+      "quick response",
+      "helpdesk",
+      "service quality",
+      "resolution time",
+      "ticket raised",
+      "complaint follow-up",
+      "feedback loop"
+    ],
+    "Insurance Services": [
+      "life cover",
+      "insurance policy",
+      "loan insurance",
+      "vehicle insurance",
+      "medical insurance",
+      "premium payment",
+      "claim process",
+      "policy document",
+      "renewal reminder",
+      "coverage terms",
+      "policy lapse",
+      "insurance benefit"
+    ],
+    "Customer Experience": [
+      "client feedback",
+      "service review",
+      "application process",
+      "approval time",
+      "support experience",
+      "staff behavior",
+      "user interface",
+      "mobile experience",
+      "trust factor",
+      "ease of use",
+      "customer journey",
+      "branch experience"
+    ],
+    "Company Initiatives": [
+      "financial literacy",
+      "csr events",
+      "community support",
+      "staff training",
+      "career development",
+      "partnerships",
+      "local events",
+      "awareness campaigns",
+      "scholarships",
+      "reward programs",
+      "customer events",
+      "educational programs"
+    ]
+  },
   "alertConfig": {
     "receivers": [
       {
@@ -411,7 +411,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-06-16T01:00:19.225Z",
+    "updatedAt": "2025-06-23T01:00:18.581Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -421,10 +421,10 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-06-18T01:00:12.980Z",
-      "nextReminderDate": "2025-06-19T00:30:00.000Z"
+      "updatedAt": "2025-06-25T01:00:15.601Z",
+      "nextReminderDate": "2025-06-26T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-06-23T00:30:00.000Z"
+    "nextReminderDate": "2025-06-30T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [

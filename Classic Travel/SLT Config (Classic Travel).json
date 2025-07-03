@@ -46,10 +46,10 @@
       ]
     },
     {
-      "label": "Acorn Prime Destination",
+      "label": "Acorn Prime Destinations",
       "color": "#8A2BE2",
       "keys": [
-        "Acorn Prime Destination"
+        "Acorn Prime Destinations"
       ]
     },
     {
@@ -99,9 +99,6 @@
             "#ClassicTravel"
           ],
           "commtracks": [
-            530032,
-            530033,
-            530034,
             513519
           ]
         },
@@ -128,7 +125,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530053,
             513531
           ]
         },
@@ -153,7 +149,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530055,
             513533
           ]
         },
@@ -178,7 +173,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530067,
             513535
           ]
         },
@@ -203,7 +197,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530081,
             513537
           ]
         },
@@ -215,8 +208,8 @@
         ]
       },
       {
-        "label": "Acorn Prime Destination",
-        "key": "Acorn Prime Destination",
+        "label": "Acorn Prime Destinations",
+        "key": "Acorn Prime Destinations",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -228,9 +221,7 @@
             "ceylon"
           ],
           "commtracks": [
-            513544,
-            513545,
-            530088
+            513544
           ]
         },
         "commtracks": [
@@ -253,9 +244,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530093,
-            530094,
-            530095,
             513546
           ]
         },
@@ -282,8 +270,6 @@
             "ceylon"
           ],
           "commtracks": [
-            530104,
-            530106,
             513548
           ]
         },
@@ -333,8 +319,6 @@
             "ceylon"
           ],
           "commtracks": [
-            513557,
-            530110,
             513555
           ]
         },
@@ -558,7 +542,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-06-16T01:00:19.225Z",
+    "updatedAt": "2025-06-23T01:00:18.581Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -568,10 +552,10 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-06-18T01:00:12.980Z",
-      "nextReminderDate": "2025-06-19T00:30:00.000Z"
+      "updatedAt": "2025-06-24T01:00:12.997Z",
+      "nextReminderDate": "2025-06-25T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-06-23T00:30:00.000Z"
+    "nextReminderDate": "2025-06-30T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [

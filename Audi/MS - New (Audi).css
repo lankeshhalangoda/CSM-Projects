@@ -396,8 +396,8 @@ form-control:focus {
 .company-logo::after {
   content: "";
   position: absolute;
-  top: 100%;
-  left: 40%;
+  top: 90%;
+  left: 30%;
   transform: translateX(-50%);
   width: 80px;
   height: 10px;
@@ -684,4 +684,9 @@ label {
     font-size: 15pt;
     padding-left: 9px !important;
   }
+
+  .company-logo::after {
+  top: 80%;
+  left: 30%;
+}
 }
