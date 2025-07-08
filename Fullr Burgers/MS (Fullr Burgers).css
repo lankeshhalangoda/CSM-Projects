@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#master-section {
+    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin4.png') !important;
+    min-height: 657px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+#headerCompanyInfo {
+    color: white !important;
+    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.container[style] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.emote-title {
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 15pt;
+}
+
+.form-group label {
+    color: #000000 !important;
+    font-family: "Nunito", sans-serif !important;
+    font-size: 15pt !important;
+    font-weight: 400 !important;
+}
+
+.emo-text {
+    font-size: 13pt;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+}
+
+.emo-text-dropdown {
+    color: #000000 !important;
+}
+
+.middle-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+.emo-cont {
+    border: 2px solid #3330;
+    margin: 3px 0px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 7px 0;
+    border-radius: 3px;
+    color: #000000;
+}
+
+.clicked-emo-cont {
+    border: 3px #ea1e35 solid !important;
+    background: #ffffff15;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 7px 0;
+    border-radius: 3px;
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 55px;
+    margin: 5px;
+}
+
+.btn {
+
+    color: ed1c24;
+
+}
+
+.btn-next {
+    color: #ea1e35;
+}
+
+.btn-submit {
+    color: #ea1e35;
+}
+
+.btn-prev {
+    color: #333;
+}
+
+.btn-clear {
+    color: #333;
+}
+
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 10px 5px;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 9px 25px;
+    font-family: "Yellowtail", cursive;
+    font-size: 12pt;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+}
+
+.clear-submit-row {
+    text-align: center !important;
+}
+
+.clear-submit-row,
+.draft-response-row {
+    padding-right: 0 !important;
+}
+
+.btn:hover {
+    color: #196d9e;
+    text-decoration: none;
+}
+
+.btn-ok {
+    color: #333
+}
+
+.btn-skip {
+    color: #333;
+}
+
+.btn-fb {
+    color: white;
+}
+
+.loyalty-redeem-button {
+    border-color: #ea1e35;
+}
+
+.logo-cust {
+    margin: 3px 0 -3px 9px;
+    height: 50px;
+}
+
+.sensor-title {
+    color: #000000;
+    font-size: 30pt;
+    font-family: "Yellowtail", cursive;
+    background: rgba(255, 255, 255, 0);
+    line-height: 40px;
+}
+
+.form-control {
+    border-radius: 3px;
+}
+
+.panel {
+    margin: 0 10px;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    background: rgba(250, 247, 247, 0.64);
+}
+
+.panel-group .panel-heading {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: black;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+}
+
+.panel-title {
+    font-size: 11pt;
+    max-width: 90%;
+    font-family: "Yellowtail", cursive;
+    line-height: 1.6;
+}
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots {
+    display: none;
+}
+
+.panel-body {
+    background: transparent !important;
+}
+
+.thank-you-note {
+    color: white !important;
+}
+
+#headerCompanyInfo>.access-user {
+    text-align: center;
+    float: right;
+    text-shadow: 1px 1px 1px #000;
+    font-family: "Yellowtail", cursive;
+    font-style: italic;
+    font-size: 15px;
+    background-size: 120px 80px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+.access-user-name {
+    font-family: "Yellowtail", cursive;
+}
+
+.company-logo img {
+    height: 50px;
+}
+
+.footer {
+    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    height: 40px;
+    padding: 12px 13px;
+    font-size: 8pt;
+    margin: 0 -10px 0px 0;
+    font-family: "Yellowtail", cursive;
+}
+
+.footer .logo {
+    height: 25px;
+    margin-top: -5px;
+}
+
+.form-group label {
+    columns: #fff !important;
+    font-family: "Yellowtail", cursive;
+    font-size: 12pt;
+}
+
+.loyalty-message {
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+.loyalty-bottom {
+    text-align: center;
+}
+
+.loyalty-dialog div:nth-child(3) {}
+
+.email-emote-message {
+    color: white !important;
+}
+
+#progressfill {
+    background-color: #ea1e35;
+}
+
+.progress_bar .progress_number {
+    font-family: "Yellowtail", cursive;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#groupCommentBuzzModal .modal-header {
+    background: #fff;
+    color: #e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body {
+    background: #fff;
+    color: #333333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+    background: #fff;
+    color: white;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+    background: #f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #333333;
+}
+
+.thank-you-note {
+    color: #000000 !important;
+}
+
+#barChart {
+    width: 100%;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+    font-family: "Nunito", serif;
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: #000000;
+    margin-right: 5px;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6 {
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8 {
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10 {
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon {
+    border: 3px solid #333;
+    box-shadow: 0px 2px 6px #716868;
+}
+
+@media (max-width: 768px) {
+    .emote-title,
+    .form-group label {
+        font-size: 12pt !important;
+    }
+
+    .emo-text {
+        font-size: 10pt !important;
+    }
+
+    .sensor-title {
+        font-size: 26pt !important;
+        line-height: 34px !important;
+    }
+
+    .panel-title {
+        font-size: 8pt !important;
+    }
+
+    .loyalty-message {
+        font-size: 13pt !important;
+    }
+
+    .progress_bar .progress_number {
+        font-size: 10pt !important;
+    }
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
+    }
+
+    .btn-next,
+    .btn-submit,
+    .btn-prev,
+    .btn-clear,
+    .btn-skip,
+    .btn-ok,
+    .loyalty-redeem-button {
+        font-size: 10pt !important;
+        padding: 8px 20px !important;
+        min-width: 85px !important;
+    }
+
+    .access-user-name,
+    #headerCompanyInfo>.access-user {
+        font-size: 12pt !important;
+    }
+
+    .footer {
+        font-size: 7pt !important;
+        padding: 10px 10px !important;
+        height: 38px !important;
+    }
+
+    .company-logo img,
+    .logo-cust {
+        height: 45px !important;
+    }
+
+    .emo-ico img {
+        max-width: 50px !important;
+        width: 75% !important;
+    }
+
+    .form-control {
+        font-size: 11pt !important;
+    }
+}

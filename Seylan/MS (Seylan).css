@@ -60,10 +60,12 @@
     border: 1px solid rgba(0, 0, 0, 0.500); 
   border-radius: 10px; 
   box-shadow: none;
+  margin-left: 0 !important;
 }
 
 div[id^="ec_"][id$="q3029"].emo-cont.clickable.ng-scope {
   border: 1px solid black;
+  background: #ffffff !important;
 }
 
 
@@ -79,7 +81,6 @@ div[id^="ec_"][id$="q3029"].emo-cont.clickable.ng-scope {
   display: inline-block;
   text-align: center;
   max-width: 60px; 
-  margin: 5px; /* Center image horizontally */
 }
 
 .clicked-emo-cont {
@@ -487,168 +488,348 @@ color: #000000 !important;
 .brand-logo {
   height: 80px;
 }
-
-#ec_0_0q3029 .emo-ico,
-#ec_1_0q3029 .emo-ico,
-#ec_2_0q3029 .emo-ico,
-#ec_3_0q3029 .emo-ico,
-#ec_4_0q3029 .emo-ico,
-#ec_5_0q3029 .emo-ico,
-#ec_6_0q3029 .emo-ico {
-  display: none !important;
+#er_0q3029.col-xs-12.flex.ng-scope::before {
+  content: "Savings";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px)
 }
 
-#ec_0_1q3029 .emo-text {
-  display: none !important;
+#er_0q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20pt;
 }
 
-#ec_0_2q3029 .emo-text {
-  display: none !important;
+#er_1q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
 }
 
-#ec_1_1q3029 .emo-text {
-  display: none !important;
+#er_1q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
 }
 
-#ec_2_1q3029 .emo-text {
-  display: none !important;
+#er_0q3029.col-xs-12.flex.ng-scope,
+#er_1q3029.col-xs-12.flex.ng-scope {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
 }
 
-#ec_2_2q3029 .emo-text {
-  display: none !important;
+#er_3q3029.col-xs-12.flex.ng-scope::before {
+  content: "Fixed Investment";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px);
 }
 
-#ec_3_1q3029 .emo-text {
-  display: none !important;
+#er_3q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20pt;
 }
 
-#ec_3_2q3029 .emo-text {
-  display: none !important;
-}
-#ec_4_1q3029 .emo-text {
-  display: none !important;
-}
-#ec_5_1q3029 .emo-text {
-  display: none !important;
-}
-#ec_5_2q3029 .emo-text {
-  display: none !important;
-}
-#ec_5_3q3029 .emo-text {
-  display: none !important;
-}
-#ec_5_4q3029 .emo-text {
-  display: none !important;
-}
-#ec_6_1q3029 .emo-text {
-  display: none !important;
+#er_4q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
 }
 
-#ec_0_1q3029 {
-  background: #ffffff !important;
-}
-#ec_0_1q3029 {
-  background: #ffffff !important;
-}
-#ec_0_2q3029 {
-  background: #ffffff !important;
-}
-#ec_1_1q3029 {
-  background: #ffffff !important;
-}
-#ec_2_1q3029 {
-  background: #ffffff !important;
-}
-#ec_2_2q3029 {
-  background: #ffffff !important;
-}
-#ec_3_1q3029 {
-  background: #ffffff !important;
-}
-#ec_3_2q3029 {
-  background: #ffffff !important;
-}
-#ec_4_1q3029 {
-  background: #ffffff !important;
-}
-#ec_5_1q3029 {
-  background: #ffffff !important;
-}
-#ec_5_2q3029 {
-  background: #ffffff !important;
-}
-#ec_5_3q3029 {
-  background: #ffffff !important;
-}
-#ec_5_4q3029 {
-  background: #ffffff !important;
-  width: 16% !important
-}
-#ec_6_1q3029 {
-  background: #ffffff !important;
+#er_4q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
 }
 
-#ec_0_0q3029,
-#ec_1_0q3029,
-#ec_2_0q3029,
-#ec_3_0q3029,
-#ec_4_0q3029,
-#ec_5_0q3029,
-#ec_6_0q3029  {
-  pointer-events: none !important;
-  cursor: default !important;
+#er_3q3029.col-xs-12.flex.ng-scope,
+#er_4q3029.col-xs-12.flex.ng-scope,
+#er_5q3029.col-xs-12.flex.ng-scope,
+#er_6q3029.col-xs-12.flex.ng-scope {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
 }
 
 
-
-/* 1. Keep the parent flex container */
-#er_0q3029,
-#er_1q3029,
-#er_2q3029,
-#er_3q3029,
-#er_4q3029,
-#er_5q3029,
-#er_6q3029 {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-rows: auto;
-  row-gap: 10px;
-  align-items: center !important;
+#er_5q3029.col-xs-12.flex.ng-scope {
+  margin-left: 0;
+  margin-top: 30px !important;
+  clear: both;
+  margin-bottom: 20pt;
 }
 
-#ec_0_3q3029, #ec_0_4q3029,
-#ec_1_2q3029, #ec_1_3q3029, #ec_1_4q3029,
-#ec_2_3q3029, #ec_2_4q3029,
-#ec_3_3q3029, #ec_3_4q3029,
-#ec_4_2q3029, #ec_4_3q3029, #ec_4_4q3029,
-#ec_6_2q3029, #ec_6_3q3029, #ec_6_4q3029 {
-    display: none !important;
+#er_5q3029.col-xs-12.flex.ng-scope::before {
+  content: "Minor Savings";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
 }
 
-#ec_0_0q3029, #ec_1_0q3029,
-#ec_2_0q3029, #ec_3_0q3029, #ec_4_0q3029, #ec_5_0q3029, #ec_6_0q3029 {
-  border: none !important;
-  text-align: right !important;
-  align-items: center !important;
-  font-size: 13pt;
+#er_5q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
 }
 
-#ec_0_1q3029 .emo-ico img,
-#ec_0_2q3029 .emo-ico img,
-#ec_1_1q3029 .emo-ico img,
-#ec_2_1q3029 .emo-ico img,
-#ec_2_2q3029 .emo-ico img,
-#ec_3_1q3029 .emo-ico img,
-#ec_3_2q3029 .emo-ico img,
-#ec_4_1q3029 .emo-ico img,
-#ec_5_1q3029 .emo-ico img,
-#ec_5_2q3029 .emo-ico img,
-#ec_5_3q3029 .emo-ico img,
-#ec_5_4q3029 .emo-ico img,
-#ec_6_1q3029 .emo-ico img {
-  width: 120px;  /* adjust size as needed */
-  line-height: 1.2 !important;
+#er_6q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
 }
+
+#er_6q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
+}
+
+#er_5q3029.col-xs-12.flex.ng-scope {
+  display: block;          /* forces a line break */
+  clear: both;             /* clears float-like flow */
+  width: 20%;              /* keep same width */
+  vertical-align: top;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#er_2q3029.col-xs-12.flex.ng-scope::before {
+  content: "Current";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px);
+}
+
+#er_2q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20pt;
+}
+
+#er_7q3029.col-xs-12.flex.ng-scope::before {
+  content: "Benefits";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px);
+}
+
+#er_7q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20pt;
+}
+
+#er_8q3029.col-xs-12.flex.ng-scope::before {
+  content: "Facilities";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px);
+}
+
+#er_8q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20pt;
+}
+
+#er_9q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
+}
+
+#er_9q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
+}
+
+#er_10q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
+}
+
+#er_10q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
+}
+
+#er_11q3029.col-xs-12.flex.ng-scope::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
+}
+
+#er_11q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
+}
+
+#er_12q3029.col-xs-12.flex.ng-scope::before {
+  content: "Anything Else";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transform: translateY(-30px); /* Move it visually above */
+}
+
+#er_12q3029.col-xs-12.flex.ng-scope {
+  margin-top: 30px; /* Same height you moved the label up */
+  position: relative; /* Required for absolute ::before */
+}
+
+
+#er_8q3029.col-xs-12.flex.ng-scope,
+#er_9q3029.col-xs-12.flex.ng-scope,
+#er_10q3029.col-xs-12.flex.ng-scope,
+#er_11q3029.col-xs-12.flex.ng-scope {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+/* STEP 1: Target the wrapper (row) to allow child control */
+#er_2q3029.col-xs-12.flex.ng-scope,
+#er_7q3029.col-xs-12.flex.ng-scope,
+#er_12q3029.col-xs-12.flex.ng-scope {
+  width: 100%; /* Keep them on full line */
+  display: flex; 
+  justify-content: left; /* Center the smaller child inside */
+  padding: 0;
+}
+
+/* STEP 2: Shrink the actual .emo-cont inside */
+#er_2q3029 .emo-cont,
+#er_7q3029 .emo-cont,
+#er_12q3029 .emo-cont {
+  width: 18.5% !important; /* Shrink the actual box */
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -711,4 +892,47 @@ font-size: 10pt !important;
 .btn-next, .btn-submit, .btn-prev, .btn-clear, .btn-skip, .btn-ok, .loyalty-redeem-button {
   font-size: 10pt !important;
 }
+
+  #er_0q3029::before,
+  #er_1q3029::before,
+  #er_2q3029::before,
+  #er_3q3029::before,
+  #er_4q3029::before,
+  #er_5q3029::before,
+  #er_6q3029::before,
+  #er_7q3029::before,
+  #er_8q3029::before,
+  #er_9q3029::before,
+  #er_10q3029::before,
+  #er_11q3029::before,
+  #er_12q3029::before {
+    font-size: 10pt !important;
+  }
+  #er_3q3029.col-xs-12.flex.ng-scope, #er_4q3029.col-xs-12.flex.ng-scope, #er_5q3029.col-xs-12.flex.ng-scope, #er_6q3029.col-xs-12.flex.ng-scope {
+    width: 25% !important;
+    height: 80pt;
+    margin-bottom: 35px !important;
+  }
+  #er_0q3029.col-xs-12.flex.ng-scope, #er_1q3029.col-xs-12.flex.ng-scope {
+    width: 25% !important;
+  }
+  #er_2q3029 .emo-cont, #er_7q3029 .emo-cont, #er_12q3029 .emo-cont {
+    width: 20% !important;
+  }
+  #er_2q3029 .emo-cont, #er_7q3029 .emo-cont, #er_12q3029 .emo-cont {
+    width: 23% !important;
+    margin-bottom: 20px !important;
+  }
+  #er_8q3029.col-xs-12.flex.ng-scope, #er_9q3029.col-xs-12.flex.ng-scope, #er_10q3029.col-xs-12.flex.ng-scope, #er_11q3029.col-xs-12.flex.ng-scope {
+    width: 25% !important;
+    height: 90pt !important;
+  }
+
+  #er_5q3029.col-xs-12.flex.ng-scope::before {
+    top: -20px !important;
+  }
+
+  #er_3q3029.col-xs-12.flex.ng-scope::before {
+    top: -20px !important;
+  }
 }

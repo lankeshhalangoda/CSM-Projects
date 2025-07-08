@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q871"</value>
+      </param>
+      <joinOperator>and</joinOperator>
+      <joinParam>
+        <name>emoteNumericValue</name>
+        <operator>gd</operator>
+        <value>0</value>
+      </joinParam>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>6867941c52f6f5692ed01fef</workflowID>
+          <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Customer Satisfaction Survey</type>
+          <priority>High</priority>
+          <description>
+Customer Name: $$loyalty_Name_value$$
+Customer Email: $$loyalty_Email_value$$
+Customer Telephone: $$loyalty_Telephone_value$$
+Location: $$emoSignature_Location_value$$
+Satisfaction Level: $$q871_emote$$
+Comment: $$gp557_c1_comment_value$$
+          </description>
+          <customFields>
+          <field>
+              <key>location</key>
+              <value>$$emoSignature_Location_value$$</value>
+            </field>
+            <field>
+              <key>order_method</key>
+              <value>$$q567_emote$$</value>
+            </field>
+            <field>
+              <key>issue_type</key>
+              <value>$$q1308_emote$$</value>
+            </field>
+            <field>
+              <key>attachment</key>
+              <value>$$mediafile_p557$$</value>
+            </field>
+            <field>
+              <key>nps</key>
+              <value>$$q5749_emote$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+</cepRules>
