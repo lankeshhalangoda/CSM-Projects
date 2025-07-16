@@ -1,0 +1,375 @@
+{
+    "reportNamePrefix": "Complaint",
+    "reporterNamePrefix": "Customer",
+    "descriptionFormat": "text",
+    "timeZone": -330,
+    "type": {
+      "name": "Channel",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "guestSatisfactionSurvey",
+          "name": "Guest Satisfaction Survey"
+        },
+        {
+          "id": "googleMap",
+          "name": "Google"
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook"
+        }
+      ]
+    },
+    "status": {
+      "name": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "id": "Open",
+          "name": "Open"
+        },
+        {
+          "id": "In Progress",
+          "name": "In Progress"
+        },
+        {
+          "id": "Resolved",
+          "name": "Resolved",
+          "triggers": [
+            {
+              "channel": "email",
+              "template": "complaintResolutionAlert",
+              "target": "admin",
+              "contactFilters": [
+                "ticketResolutionAlert"
+              ],
+              "adminUserQuery": {
+                "condition": {
+                  "==": [
+                    {
+                      "var": "complaintType"
+                    },
+                    "guestSatisfactionSurvey"
+                  ]
+                },
+                "rules": [
+                  {
+                    "field": "complaintType",
+                    "operator": "eq",
+                    "value": "$complaintType$"
+                  }
+                ]
+              }
+            },
+            {
+              "channel": "email",
+              "template": "complaintResolutionAlert_orm",
+              "target": "admin",
+              "condition": {
+                "!=": [
+                  {
+                    "var": "complaintType"
+                  },
+                  "guestSatisfactionSurvey"
+                ]
+              },
+              "adminUserQuery": {
+                "condition": {
+                  "!=": [
+                    {
+                      "var": "complaintType"
+                    },
+                    "guestSatisfactionSurvey"
+                  ]
+                },
+                "rules": [
+                  {
+                    "field": "complaintType",
+                    "operator": "eq",
+                    "value": "$complaintType$"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "priority": {
+      "name": "Priority",
+      "type": "enum",
+      "values": [
+        {
+          "id": "Low",
+          "name": "Low"
+        },
+        {
+          "id": "Medium",
+          "name": "Medium"
+        },
+        {
+          "id": "High",
+          "name": "High"
+        }
+      ]
+    },
+    "timeSpent": {
+      "name": "Time spent",
+      "type": "time_accumulation",
+      "hidden": true
+    },
+    "customFields": {
+      "complaintType": {
+        "name": "Complaint Type",
+        "type": "enum",
+        "readOnly": true,
+        "values": [
+          {
+            "id": "guestSatisfactionSurvey",
+            "name": "Guest Satisfaction Survey"
+          },
+          {
+            "id": "googleMap",
+            "name": "Google"
+          },
+          {
+            "id": "facebook",
+            "name": "Facebook"
+          }
+        ]
+      },
+      "rating": {
+        "name": "Rating",
+        "readOnly": true,
+        "type": "string"
+      },
+      "comment": {
+        "name": "Comment",
+        "readOnly": true,
+        "type": "textArea"
+      },
+      "roomNumber": {
+        "name": "Room Number",
+        "readOnly": true,
+        "type": "string"
+      },
+      "location": {
+        "name": "Location",
+        "readOnly": true,
+        "type": "enum",
+        "values": [
+          {
+            "id": "Courtyard Colombo",
+            "name": "Courtyard Colombo"
+          },
+          {
+            "id": "Weligama Bay Marriott Resort & Spa",
+            "name": "Weligama Bay Marriott Resort & Spa"
+          }
+        ]
+      },
+      "reviewId": {
+        "name": "Review Id",
+        "type": "string",
+        "hidden": true,
+        "readOnly": true
+      },
+      "reviewLocation": {
+        "name": "Review Location",
+        "type": "string",
+        "hidden": true,
+        "readOnly": true
+      },
+      "overdue": {
+        "name": "Overdue",
+        "type": "enum",
+        "values": [
+          {
+            "id": "No",
+            "name": "No"
+          },
+          {
+            "id": "Yes",
+            "name": "Yes",
+            "triggers": [
+              {
+                "template": "unattendedEscalation",
+                "channel": "email",
+                "target": "admin",
+                "appendEditUrl": false,
+                "contactFilters": [
+                  "ticketAssignee",
+                  "escalationContact"
+                ],
+                "adminUserQuery": {
+                  "condition": "and",
+                  "rules": [
+                    {
+                      "field": "location",
+                      "operator": "eq",
+                      "value": "$location$"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "workflowCreation": {
+      "email": "bot@emojot.com",
+      "triggers": [
+        {
+          "channel": "email",
+          "template": "complaintCreationAlert",
+          "target": "admin",
+          "contactFilters": [
+            "ticketCreationAlert"
+          ],
+          "condition": {
+            "==": [
+              {
+                "var": "complaintType"
+              },
+              "guestSatisfactionSurvey"
+            ]
+          },
+          "adminUserQuery": {
+            "condition": "and",
+            "rules": [
+              {
+                "field": "location",
+                "operator": "eq",
+                "value": "$location$"
+              }
+            ]
+          }
+        },
+        {
+          "channel": "email",
+          "template": "complaintCreationAlert_orm",
+          "target": "admin",
+          "condition": {
+            "!=": [
+              {
+                "var": "complaintType"
+              },
+              "guestSatisfactionSurvey"
+            ]
+          },
+          "contactFilters": [
+            "ticketCreationAlert"
+          ],
+          "adminUserQuery": {
+            "condition": "and",
+            "rules": [
+              {
+                "field": "location",
+                "operator": "eq",
+                "value": "$location$"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "adminHierarchy": {
+      "list": "admin",
+      "headers": [
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "customField"
+        },
+        {
+          "id": "ticketAssignee",
+          "name": "Ticket Assignee",
+          "type": "contact"
+        },
+        {
+          "id": "ticketCreationAlert",
+          "name": "Ticket Creation Alert",
+          "type": "contact"
+        },
+        {
+          "id": "ticketResolutionAlert",
+          "name": "Ticket Resolution Alert",
+          "type": "contact"
+        },
+        {
+          "id": "escalationContact",
+          "name": "EscalationContact",
+          "type": "contact"
+        }
+      ],
+      "id": "AHI_1724995964_123456"
+    },
+    "name": "MarriottWF",
+    "assignment": {
+      "automaticAssignment": {
+        "isEnabled": true,
+        "email": "salmanf@emojot.com",
+        "resolvedStatus": [
+          "Resolved"
+        ],
+        "maxLevel": 2,
+        "triggerFlows": [
+          {
+            "condition": {
+              "!=": [
+                {
+                  "var": "status"
+                },
+                "Resolved"
+              ]
+            },
+            "skipAssignment": true,
+            "levels": [
+              {
+                "nextLevelTime": 900000
+              },
+              {
+                "fieldsChange": [
+                  {
+                    "id": "overdue",
+                    "value": "Yes"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "triggers": [
+        {
+          "channel": "email",
+          "template": "complaintAssignment",
+          "target": "employee",
+          "condition": {
+            "==": [
+              {
+                "var": "complaintType"
+              },
+              "guestSatisfactionSurvey"
+            ]
+          }
+        },
+        {
+          "channel": "email",
+          "template": "complaintAssignment_orm",
+          "target": "employee",
+          "condition": {
+            "!=": [
+              {
+                "var": "complaintType"
+              },
+              "guestSatisfactionSurvey"
+            ]
+          }
+        }
+      ]
+    }
+  }

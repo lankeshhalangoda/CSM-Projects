@@ -11,8 +11,8 @@
     "readOnly": true,
     "values": [
       {
-        "id": "complaintManagementSurvey",
-        "name": "Complaint Management Survey"
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
       },
       {
         "id": "googleMap",
@@ -211,6 +211,26 @@
         {
           "id": "Value for Money",
           "name": "Value for Money"
+        },
+        {
+          "id": "Packaging",
+          "name": "Packaging"
+        },
+        {
+          "id": "Delivery Time",
+          "name": "Delivery Time"
+        },
+        {
+          "id": "Order Accuracy",
+          "name": "Order Accuracy"
+        },
+        {
+          "id": "Food Temperature",
+          "name": "Food Temperature"
+        },
+        {
+          "id": "Rider Professionalism",
+          "name": "Rider Professionalism"
         }
       ]
     },
@@ -219,10 +239,22 @@
       "type": "file",
       "readOnly": true
     },
-    "nps": {
-      "name": "Net Promoter Score",
+    "rating": {
+      "name": "Satisfaction Level",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "author": {
+      "name": "Author",
       "type": "string",
       "readOnly": true
+    },
+    "comments": {
+      "name": "Comment",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
     }
   },
   "timeZone": -330,

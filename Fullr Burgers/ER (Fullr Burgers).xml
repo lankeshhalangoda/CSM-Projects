@@ -11,7 +11,7 @@
       <joinParam>
         <name>emoteNumericValue</name>
         <operator>gd</operator>
-        <value>0</value>
+        <value>-1</value>
       </joinParam>
     </params>
     <engagementActions>
@@ -23,9 +23,9 @@
           <assignee>defaultassignee@emojot.com</assignee>
           <type>Customer Satisfaction Survey</type>
           <priority>High</priority>
+          <status>Open</status>
           <description>
 Customer Name: $$loyalty_Name_value$$
-Customer Email: $$loyalty_Email_value$$
 Customer Telephone: $$loyalty_Telephone_value$$
 Location: $$emoSignature_Location_value$$
 Satisfaction Level: $$q871_emote$$
@@ -49,8 +49,12 @@ Comment: $$gp557_c1_comment_value$$
               <value>$$mediafile_p557$$</value>
             </field>
             <field>
-              <key>nps</key>
-              <value>$$q5749_emote$$</value>
+              <key>rating</key>
+              <value>$$q871_emote$$</value>
+            </field>
+            <field>
+              <key>comments</key>
+              <value>$$gp557_c1_comment_value$$</value>
             </field>
           </customFields>
         </data>

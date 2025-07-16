@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 #master-section {
     background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin4.png') !important;
@@ -12,7 +14,7 @@
 
 #headerCompanyInfo {
     color: white !important;
-    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
+    background: #ea1e35 !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
 }
@@ -28,6 +30,8 @@
     font-size: 15pt;
 }
 
+
+
 .form-group label {
     color: #000000 !important;
     font-family: "Nunito", sans-serif !important;
@@ -36,6 +40,13 @@
 }
 
 .emo-text {
+    font-size: 13pt;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+}
+
+.loyalty-message {
     font-size: 13pt;
     color: #000000;
     font-family: "Nunito", sans-serif;
@@ -115,7 +126,7 @@
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     padding: 9px 25px;
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     font-size: 12pt;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
@@ -146,6 +157,7 @@
 
 .btn-skip {
     color: #333;
+    display: none !important;
 }
 
 .btn-fb {
@@ -164,9 +176,10 @@
 .sensor-title {
     color: #000000;
     font-size: 30pt;
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
+    font-weight: 700;
 }
 
 .form-control {
@@ -200,7 +213,7 @@
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     line-height: 1.6;
 }
 
@@ -224,7 +237,7 @@
     text-align: center;
     float: right;
     text-shadow: 1px 1px 1px #000;
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     font-style: italic;
     font-size: 15px;
     background-size: 120px 80px;
@@ -234,38 +247,68 @@
 }
 
 .access-user-name {
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
 }
 
 .company-logo img {
     height: 50px;
 }
 
+div.col-xs-7.ng-scope {
+    display: none !important;
+}
+
 .footer {
-    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
-    color: #fff;
-    position: absolute;
     right: 10px;
     left: 0;
-    z-index: 1030;
+    z-index: 800;
     bottom: 0;
     height: 40px;
     padding: 12px 13px;
     font-size: 8pt;
     margin: 0 -10px 0px 0;
-    font-family: "Yellowtail", cursive;
+    font-family: "Nunito", sans-serif;
+    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    color: #fff;
+    position: absolute;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer::before {
+    content: "Powered by Emojot";
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 08pt;
+    color: #ffffff;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer::after {
+    content: "";
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: url("https://storage.emojot.com/pictures/skinImages/683409094d8e0caef523d63f-skin1.png") no-repeat center;
+    background-size: contain;
 }
 
 .footer .logo {
-    height: 25px;
-    margin-top: -5px;
+    display: none !important;
 }
 
 .form-group label {
     columns: #fff !important;
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     font-size: 12pt;
 }
 
@@ -289,7 +332,7 @@
 }
 
 .progress_bar .progress_number {
-    font-family: "Yellowtail", cursive;
+    font-family: "Roboto Condensed", cursive;
     color: #000000;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -320,6 +363,7 @@
 
 .thank-you-note {
     color: #000000 !important;
+    font-size: 15px !important;
 }
 
 #barChart {
@@ -451,4 +495,11 @@
     .form-control {
         font-size: 11pt !important;
     }
+
+    .loyalty-message {
+    font-size: 12pt;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+}
 }
