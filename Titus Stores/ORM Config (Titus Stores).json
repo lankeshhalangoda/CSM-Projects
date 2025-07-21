@@ -1,0 +1,284 @@
+{
+  "type": "onlineReviewManagement",
+  "updatedTime": 1751867817976,
+  "companyID": "68788ec9ed50dd32c5308ae8",
+  "workflow": "687dcec4ed50dd32c53143db",
+  "aiModel": "gpt-4",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    }
+  },
+  "ORMConfigs": {
+    "reviewFetchLimit": {
+      "nonAdmin": 100,
+      "admin": 100
+    },
+    "targetedKeywords": {
+      "Product Quality": [
+        "durable",
+        "authentic",
+        "defective",
+        "genuine",
+        "quality",
+        "damaged",
+        "faded",
+        "shrink",
+        "long-lasting",
+        "wear-resistant",
+        "premium",
+        "flawed",
+        "reliable",
+        "low-grade",
+        "trusted"
+      ],
+      "Variety & Availability": [
+        "range",
+        "options",
+        "sizes",
+        "colors",
+        "fabrics",
+        "stock",
+        "out-of-stock",
+        "new arrivals",
+        "seasonal",
+        "designs",
+        "limited edition",
+        "bulk",
+        "choices",
+        "collections",
+        "availability"
+      ],
+      "Billing & Checkout Speed": [
+        "fast",
+        "slow",
+        "queue",
+        "delay",
+        "efficient",
+        "smooth",
+        "hassle",
+        "long line",
+        "waiting",
+        "cashier",
+        "billing",
+        "receipt",
+        "POS",
+        "counter",
+        "prompt"
+      ],
+      "Staff Behavior": [
+        "helpful",
+        "rude",
+        "attentive",
+        "polite",
+        "busy",
+        "friendly",
+        "welcoming",
+        "unavailable",
+        "knowledgeable",
+        "cooperative",
+        "respectful",
+        "unresponsive",
+        "professional",
+        "smiling",
+        "inattentive"
+      ],
+      "Shopping Ambience": [
+        "crowded",
+        "organized",
+        "spacious",
+        "noisy",
+        "well-lit",
+        "clean",
+        "chaotic",
+        "comfortable",
+        "dusty",
+        "ventilation",
+        "AC",
+        "display",
+        "layout",
+        "easy navigation",
+        "tidy"
+      ],
+      "Cleanliness": [
+        "clean",
+        "dusty",
+        "organized",
+        "messy",
+        "cluttered",
+        "swept",
+        "well-maintained",
+        "dirty",
+        "smelly",
+        "sanitized",
+        "floor",
+        "aisles",
+        "fitting room",
+        "neat",
+        "bins"
+      ],
+      "Pricing": [
+        "affordable",
+        "cheap",
+        "value for money",
+        "expensive",
+        "overpriced",
+        "deal",
+        "discount",
+        "promotion",
+        "costly",
+        "offer",
+        "reasonable",
+        "budget-friendly",
+        "sale",
+        "worth",
+        "price tag"
+      ],
+      "Wait Time": [
+        "short wait",
+        "long wait",
+        "rush",
+        "queue",
+        "priority",
+        "delay",
+        "waiting",
+        "walk-in",
+        "fast service",
+        "appointment",
+        "early",
+        "busy hours",
+        "hold",
+        "traffic",
+        "late service"
+      ],
+      "Product Appearance & Display": [
+        "well-arranged",
+        "disorganized",
+        "labeled",
+        "attractive",
+        "wrinkled",
+        "folded",
+        "misplaced",
+        "showroom",
+        "colorful",
+        "stacked",
+        "display rack",
+        "unfolded",
+        "neatly presented",
+        "pile",
+        "sectioned"
+      ],
+      "Packaging": [
+        "secure",
+        "branded bag",
+        "plastic cover",
+        "carry bag",
+        "reusable",
+        "torn",
+        "neat",
+        "messy",
+        "eco-friendly",
+        "handle bag",
+        "gift wrap",
+        "billing slip",
+        "compact",
+        "unsealed",
+        "tagged"
+      ]
+    },
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list - Service, Quality, Price, Experience \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "Low",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "complaintType",
+        "dataField": "source",
+        "defaultValue": "googleMap"
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      },
+      {
+        "fieldId": "author",
+        "dataField": "author"
+      },
+      {
+        "fieldId": "comments",
+        "dataField": "reviewText"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  }
+}

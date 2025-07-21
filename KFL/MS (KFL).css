@@ -11,7 +11,7 @@
 
 #master-section {
     background: url('https://storage.emojot.com/pictures/skinImages/6866500fe18487d3d2efe4d5-skin2.png') !important;
-    min-height: 657px;
+    /* min-height: 657px; */
     background-size: contain !important;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -45,7 +45,7 @@
   color: #000000;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16pt;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase !important;
 }
@@ -664,22 +664,77 @@ div#qe_q1175.col-xs-12.text-center.emoticonList.ng-scope {
 }
 
 div#ec_0_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
-div#ec_2_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
 div#ec_1_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
-div#ec_3_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data {
+div#ec_2_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_3_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_4_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_5_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_6_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_7_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_8_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_9_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_0_0q9194.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_1_0q9194.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_2_0q9194.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_3_0q9194.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_0_0q5495.emo-cont.clickable.ng-scope .emote-pulse-data,
+div#ec_1_0q5495.emo-cont.clickable.ng-scope .emote-pulse-data {
+  display: none !important;
+}
+
+div#ec_0_0q5495.emo-cont.clickable.ng-scope .emo-text,
+div#ec_1_0q5495.emo-cont.clickable.ng-scope .emo-text {
   display: none !important;
 }
 
 .emote-pulse-data {
     color: #000000 !important;
     text-align: start !important;
+    font-size: large !important;
+    font-weight: 700;
+
 }
 
 .emote-pulse-data::before {
     content: "Voting Percentage: ";
     color: #000000;
+    font-size: 10pt !important;
+    font-weight: 700;
 }
 
+/* Make the bout schedule emote unclickable */
+
+/* div#ec_0_0q5495.emo-cont.clickable.ng-scope {
+  opacity: 0.5 !important;
+  pointer-events: none !important;
+} */
+
+/* Make the xtreme championship emote unclickable */
+
+div#ec_1_0q5495.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
+div#ec_1_0q5495.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting will open shortly for Xtreme Championship";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+}
 
 @media (max-width: 768px) {
   .emo-cont {
@@ -687,7 +742,7 @@ div#ec_3_0q2281.emo-cont.clickable.ng-scope .emote-pulse-data {
   }
 
   .sensor-title {
-    font-size: 20pt;
+    font-size: 16pt;
     line-height: 20px;
     margin-top: 10pt;
   }

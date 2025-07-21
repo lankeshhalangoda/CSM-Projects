@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q8719"</value>
+      </param>
+      <joinOperator>and</joinOperator>
+      <joinParam>
+        <name>emoteNumericValue</name>
+        <operator>gd</operator>
+        <value>0</value>
+      </joinParam>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>687dcec4ed50dd32c53143db</workflowID>
+          <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Customer Satisfaction Survey</type>
+          <priority>High</priority>
+          <status>Open</status>
+          <description>
+Customer Type: $$q3361_emote$$
+Customer Name: $$loyalty_Name_value$$
+Customer Telephone: $$loyalty_Telephone_value$$
+Location: $$emoSignature_Location_value$$
+Satisfaction Level: $$q8719_emote$$
+Comment: $$gp557_c1_comment_value$$
+Net Promoter Score: $$q5749_emote$$
+          </description>
+          <customFields>
+          <field>
+              <key>location</key>
+              <value>$$emoSignature_Location_value$$</value>
+            </field>
+            <field>
+              <key>customer_type</key>
+              <value>$$q3361_emote$$</value>
+            </field>
+            <field>
+              <key>issue_type</key>
+              <value>$$q1308_emote$$</value>
+            </field> 
+            <field>
+              <key>attachment</key>
+              <value>$$mediafile_p557$$</value>
+            </field>
+            <field>
+              <key>rating</key>
+              <value>$$q5749_emote$$</value>
+            </field>
+            <field>
+              <key>csat</key>
+              <value>$$q8719_emote$$</value>
+            </field>
+            <field>
+              <key>comments</key>
+              <value>$$gp557_c1_comment_value$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+</cepRules>

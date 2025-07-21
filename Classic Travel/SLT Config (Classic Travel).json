@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1752236029127,
+  "updatedTime": 1752324241018,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
@@ -160,9 +160,22 @@
               "lostgemsrewind",
               "antarjot_singh",
               "classictravelservice",
-              "Classic Immigration Lawyers"
+              "Classic Immigration Lawyers",
+              "mercurebkkmakkasan",
+              "elandpublishing",
+              "karenaxelrodwithwandandcompass",
+              "La Mode Mens",
+              "prababushkaneedham6",
+              "ottowittephotography",
+              "rubenpastord39",
+              "wunderbar2044.history",
+              "living.life.adventures",
+              "krndlrs",
+              "didyousaysaab",
+              "lamodemens",
+              "Josue Otero"
             ],
-            "version": "1.3"
+            "version": "1.4"
           }
         },
         "commtracks": [
@@ -597,9 +610,9 @@
       {
         "email": "lankeshh@emojot.com"
       },
-        {
-          "email": "dewshi2@emojot.com"
-        }
+      {
+        "email": "dewshi2@emojot.com"
+      }
     ],
     "reminderDate": {
       "dayOfTheWeek": "Monday",
@@ -608,7 +621,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-07T01:00:28.715Z",
+    "updatedAt": "2025-07-14T01:00:28.293Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -621,19 +634,19 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-12T01:00:14.044Z",
-      "nextReminderDate": "2025-07-13T00:30:00.000Z"
+      "updatedAt": "2025-07-16T01:00:14.978Z",
+      "nextReminderDate": "2025-07-17T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-07-14T00:30:00.000Z"
+    "nextReminderDate": "2025-07-21T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
         "email": "lankeshh@emojot.com"
       },
-        {
-          "email": "dewshi2@emojot.com"
-        }
+      {
+        "email": "dewshi2@emojot.com"
+      }
     ],
     "timeOffset": -330,
     "companyID": "679369170bf0386ac6daafb6",
