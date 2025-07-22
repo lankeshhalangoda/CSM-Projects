@@ -22,7 +22,6 @@
 .emote-title {
   color: #1f1f1f;
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   font-size: 13pt;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -32,19 +31,16 @@
   font-size: 12pt;
   color: #1f1f1f;
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
 
 .thank-you-note {
   font-family: "Source Sans 3", sans-serif !important;
-  text-transform: uppercase !important;
 }
 
 .loyalty-message {
   font-family: "Source Sans 3", sans-serif !important;
-  text-transform: uppercase !important;
 }
 
 .middle-box {
@@ -68,7 +64,6 @@
   border-radius: 0px;
   color: #1f1f1f;
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   letter-spacing: 0.5px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1);
 }
@@ -231,7 +226,6 @@
 
 .form-control {
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   display: block;
   flex: 1;
   width: 100%;
@@ -301,7 +295,6 @@ form-control:focus {
   font-size: 11pt;
   max-width: 90%;
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   line-height: 1.6;
 }
 
@@ -321,7 +314,6 @@ form-control:focus {
   text-align: center;
   float: right;
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
   font-size: 15px;
   font-weight: 600;
   background-size: 120px 80px;
@@ -332,7 +324,6 @@ form-control:focus {
 
 .access-user-name {
   font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase !important;
 }
 
 .company-logo img {
@@ -436,7 +427,6 @@ form-control:focus {
 
 .pdGroupTitle {
   font-family: "Source Sans 3", sans-serif !important;
-  text-transform: uppercase !important;
   color: #000000 !important;
   font-size: 15pt;
   margin-right: 0 !important;
@@ -528,29 +518,29 @@ form-control:focus {
 .evz-nps-position-3,
 .evz-nps-position-4,
 .evz-nps-position-5,
-.evz-nps-position-6{
-    background: #ff2942;
-    color: white;
-    border: 1px solid rgba(255, 0, 55, 0.61);
+.evz-nps-position-6 {
+  background: #ff2942;
+  color: white;
+  border: 1px solid rgba(255, 0, 55, 0.61);
 }
 
 .evz-nps-position-7,
-.evz-nps-position-8{
-    background: #ff7924;
-    color: white;
-    border: 1px solid rgba(195, 117, 34, 0.61);
+.evz-nps-position-8 {
+  background: #ff7924;
+  color: white;
+  border: 1px solid rgba(195, 117, 34, 0.61);
 }
 
 .evz-nps-position-9,
-.evz-nps-position-10{
-    background: #1ca757;
-    color: white;
-    border: 1px solid rgba(17, 144, 74, 0.61);
+.evz-nps-position-10 {
+  background: #1ca757;
+  color: white;
+  border: 1px solid rgba(17, 144, 74, 0.61);
 }
 
-.clicked-nps-icon{
-    border: 3px solid #333;
-    box-shadow: 0px 2px 6px #716868;
+.clicked-nps-icon {
+  border: 3px solid #333;
+  box-shadow: 0px 2px 6px #716868;
 }
 
 #facebook-login-section {
@@ -563,19 +553,6 @@ form-control:focus {
 
 .repeated-item {
   display: block;
-}
-
-.coolpanet-review-wrapper .thank-you-text {
-  font-weight: bold !important;
-  font-family: "Source Sans 3", sans-serif !important;
-  text-transform: uppercase !important;
-  color: #000000 !important;
-}
-
-.coolpanet-review-wrapper .review-buttons a span {
-  font-family: "Source Sans 3", sans-serif !important;
-  text-transform: uppercase !important;
-  color: #000000 !important;
 }
 
 @media (max-width: 768px) {
@@ -601,7 +578,6 @@ form-control:focus {
 
   .pdGroupTitle {
     font-family: "Source Sans 3", sans-serif !important;
-    text-transform: uppercase !important;
     font-size: 15pt;
   }
 }

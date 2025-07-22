@@ -1,0 +1,154 @@
+{
+  "menu": [
+    {
+      "id": "slt",
+      "icon": "fa fa-users",
+      "header": "Social Listening",
+      "subs": [
+        {
+          "header": "Dashboard",
+          "id": "slt_dashboard"
+        },
+        {
+          "header": "Competitor Analysis",
+          "id": "slt_comp"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "Social Listening",
+      "type": "directReport",
+      "id": "slt_dashboard",
+      "openInNewTabButton": true,
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/socialListener/socialListener.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Social Listening - Competitor Analysis",
+      "type": "directReport",
+      "id": "slt_comp",
+      "openInNewTabButton": true,
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "https://emojot.com/emojotDashboard/reports/socialListener/competitorAnalysis.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "My Profile",
+      "desc": "Update profile settings",
+      "type": "directReport",
+      "id": "myProfile_profile",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "updateProfile.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "shaveenf@emojot.com",
+      "id": "shaveenf@emojot.com",
+      "title": "company_admin",
+      "email": "shaveenf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "vikashar@emojot.com",
+      "id": "vikashar@emojot.com",
+      "title": "company_admin",
+      "email": "vikashar@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "gayan@nawalokamedicare.com",
+      "id": "gayan@nawalokamedicare.com",
+      "title": "company_admin",
+      "email": "gayan@nawalokamedicare.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "lushan@nawalokamedicare.com",
+      "id": "lushan@nawalokamedicare.com",
+      "title": "company_admin",
+      "email": "lushan@nawalokamedicare.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6858e7d969f1fef4f3560535.png",
+      "name": "ishinah@nawalokamedicare.com",
+      "id": "ishinah@nawalokamedicare.com",
+      "title": "company_admin",
+      "email": "ishinah@nawalokamedicare.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}

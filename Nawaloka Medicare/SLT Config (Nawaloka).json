@@ -1,7 +1,7 @@
 {
-  "updatedTime": 1753165513217,
+  "updatedTime": 1753164169151,
   "updatedBy": "lankeshh@emojot.com",
-  "companyID": "679369170bf0386ac6daafb6",
+  "companyID": "6858e7d969f1fef4f3560535",
   "aiModel": "gpt-3.5",
   "vendors": [
     "mentionlytics"
@@ -9,83 +9,55 @@
   "token": "nkJYR2PcOYEToZ2jHC5U4Kczktnnwlk0ZhnhNzWO4LsmWSBXuZrWTB4pf0ysGhsXk272nfUuWenX4qMLEIv60j9m",
   "competitors": [
     {
-      "label": "Classic Travel",
+      "label": "Nawaloka Medicare",
       "color": "#FF7F50",
       "brand": true,
       "keys": [
-        "Classic Travel"
+        "Nawaloka Medicare",
+        "Hospital",
+        "Surgery",
+        "Healthcare",
+        "Doctors",
+        "Medicine",
+        "Laboratory",
+        "Pharmacy",
+        "Medical"
       ]
     },
     {
-      "label": "Gabo Travels",
+      "label": "Hemas Hospitals",
       "color": "#1E90FF",
       "keys": [
-        "Gabo Travels"
+        "Hemas Hospitals"
       ]
     },
     {
-      "label": "Bongo Travel",
+      "label": "Lanka Hospitals",
       "color": "#FF4500",
       "keys": [
-        "Bongo Travel"
+        "Lanka Hospitals"
       ]
     },
     {
-      "label": "Expo Visa Services (EVS)",
+      "label": "Nawaloka Hospitals Colombo",
       "color": "#32CD32",
       "keys": [
-        "Expo Visa Services",
-        "EVS"
+        "Nawaloka Hospitals Colombo"
       ]
     },
     {
-      "label": "Sunpower Travels",
+      "label": "Durdans Hospitals",
       "color": "#FFD700",
       "keys": [
-        "Sunpower Travels"
-      ]
-    },
-    {
-      "label": "Acorn Prime Destinations",
-      "color": "#8A2BE2",
-      "keys": [
-        "Acorn Prime Destinations"
-      ]
-    },
-    {
-      "label": "Hayleys Travels",
-      "color": "#FF69B4",
-      "keys": [
-        "Hayleys Travels"
-      ]
-    },
-    {
-      "label": "Mackinnons Travels",
-      "color": "#FF6347",
-      "keys": [
-        "Mackinnons Travels"
-      ]
-    },
-    {
-      "label": "Crazy Jets",
-      "color": "#4682B4",
-      "keys": [
-        "Crazy Jets"
-      ]
-    },
-    {
-      "label": "Travelco Holidays",
-      "color": "#20B2AA",
-      "keys": [
-        "Travelco Holidays"
+        "Durdans Hospitals"
       ]
     }
   ],
   "dataRetreivers": {
     "mentionlytics": [
       {
-        "label": "Classic Travel",
-        "key": "Classic Travel",
+        "label": "Nawaloka Medicare",
+        "key": "Nawaloka Medicare",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -95,321 +67,140 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "ClassicTravel",
-            "#ClassicTravel"
+            "Nawaloka Medicare",
+            "NawalokaMedicare",
+            "Nawaloka",
+            "Meicare"
           ],
           "commtracks": [
-            513519
+            537666,
+            537667,
+            537668,
+            537677,
+            537769
           ],
           "exclusions": {
             "keywords": [
-              "bag",
-              "backpack",
-              "brush",
-              "CBS",
-              "Jersey",
-              "Bottle",
-              "booklaunch",
-              "FrutigerAero",
-              "#RetroTransportation",
-              "Classic Travelling",
-              "#FrutigerAero2000",
-              "Pullman Editions",
-              "Brush Witch",
-              "Eland Publishing",
-              "frutiger",
-              "frutiger aero",
-              "urecity vintage luggage",
-              "Radisson RED Heathrow",
-              "Vintastic Company",
-              "AJAY SINGH",
-              "Marie Umbach",
-              "Anurag",
-              "frutiger_aero_daily",
-              "in2switzerland",
-              "wanertour",
-              "elandpublishing",
-              "ioannis.kypa",
-              "lokicraft_india",
-              "happytraveldotcom",
-              "Tamara Stubbs",
-              "Blueprint Gentleman",
-              "collectors_sportscard",
-              "Rafin's Radiance",
-              "johannes_travel_page",
-              "buchiesphotopage",
-              "framologist",
-              "Hiper Jug",
-              "Beaudin",
-              "shawnjacksongallery",
-              "alex_e_l_w",
-              "classictourscollection",
-              "iaartworks",
-              "Nickii Travels",
-              "Classic Trip",
-              "Luxury Travel In Style",
-              "Frutiger Fantasia",
-              "luxurytravelinstyle",
-              "Loki Craft",
-              "frutiger_fantasia_official",
-              "Pierrot Oral Care",
-              "artsyervin",
-              "jordanandcosafari",
-              "Peaks Of Africa",
-              "Stan",
-              "lostgemsrewind",
-              "antarjot_singh",
-              "classictravelservice",
-              "Classic Immigration Lawyers",
-              "mercurebkkmakkasan",
-              "elandpublishing",
-              "karenaxelrodwithwandandcompass",
-              "La Mode Mens",
-              "prababushkaneedham6",
-              "ottowittephotography",
-              "rubenpastord39",
-              "wunderbar2044.history",
-              "living.life.adventures",
-              "krndlrs",
-              "didyousaysaab",
-              "lamodemens",
-              "Josue Otero",
-              "Eland",
-              "skytravelsinfo27",
-              "mercurebkkmakkasan",
-              "MidCenturyModern",
-              "mercurebkkmakkasan",
-              "MercureBangkokMakkasan"
+              "GSP GOSSIP",
+              "riyasewana.com",
+              "patpat.lk",
+              "ikman.lk",
+              "itsmepasindu",
+              "MSF",
+              "DeepLearningAI",
+              "Land for sale",
+              "Game Play",
+              "teledrama",
+              "yaka man"
             ],
-            "version": "1.6"
+            "version": "1.2"
           }
         },
         "commtracks": [
-          513519,
-          513520,
-          529831,
-          530032,
-          530033,
-          530034
+          537666,
+          537667,
+          537668,
+          537677,
+          537769
         ]
       },
       {
-        "label": "Gabo Travels",
-        "key": "Gabo Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513531
-          ]
-        },
+        "label": "Hemas Hospitals",
+        "key": "Hemas Hospitals",
         "commtracks": [
-          513531,
-          513532,
-          530052,
-          530053
+          537679,
+          537680,
+          537681,
+          537682
         ]
       },
       {
-        "label": "Bongo Travel",
-        "key": "Bongo Travel",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513533
-          ]
-        },
+        "label": "Lanka Hospitals",
+        "key": "Lanka Hospitals",
         "commtracks": [
-          513533,
-          513534,
-          530054,
-          530055
+          537688,
+          537689,
+          537690,
+          537691,
+          537773
         ]
       },
       {
-        "label": "Expo Visa Services (EVS)",
-        "key": "Expo Visa Services",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513535
-          ]
-        },
+        "label": "Nawaloka Hospitals Colombo",
+        "key": "Nawaloka Hospitals Colombo",
         "commtracks": [
-          513535,
-          513536,
-          530063,
-          530067
+          537706,
+          537707,
+          537708,
+          537709,
+          537780
         ]
       },
       {
-        "label": "Sunpower Travels",
-        "key": "Sunpower Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513537
-          ]
-        },
+        "label": "Durdans Hospitals",
+        "key": "Durdans Hospitals",
         "commtracks": [
-          513537,
-          513538,
-          530079,
-          530081
+          537702,
+          537703,
+          537704,
+          537705,
+          537781
         ]
       },
       {
-        "label": "Acorn Prime Destinations",
-        "key": "Acorn Prime Destinations",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513544
-          ]
-        },
+        "label": "Nawaloka Medicare",
+        "key": "Hospital",
         "commtracks": [
-          513544,
-          513545,
-          530088
+          538596
         ]
       },
       {
-        "label": "Hayleys Travels",
-        "key": "Hayleys Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513546
-          ]
-        },
+        "label": "Nawaloka Medicare",
+        "key": "Surgery",
         "commtracks": [
-          513546,
-          513582,
-          530092,
-          530093,
-          530094,
-          530095
+          538582
         ]
       },
       {
-        "label": "Mackinnons Travels",
-        "key": "Mackinnons Travels",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513548
-          ]
-        },
+        "label": "Nawaloka Medicare",
+        "key": "Healthcare",
         "commtracks": [
-          513548,
-          513549,
-          530105,
-          530104,
-          530106
+          538587
         ]
       },
       {
-        "label": "Crazy Jets",
-        "key": "Crazy Jets",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            536250
-          ]
-        },
+        "label": "Nawaloka Medicare",
+        "key": "Doctors",
         "commtracks": [
-          536250,
-          536251,
-          536252,
-          536253
+          538586
         ]
       },
       {
-        "label": "Travelco Holidays",
-        "key": "Travelco Holidays",
-        "verification": {
-          "wordsToCheck": [
-            "Sri Lanka",
-            "srilanka",
-            "SriLanka",
-            "Srilanka",
-            "sriLanka",
-            "Ceylon",
-            "ceylon"
-          ],
-          "commtracks": [
-            513555
-          ]
-        },
+        "label": "Nawaloka Medicare",
+        "key": "Medicine",
         "commtracks": [
-          513555,
-          513556,
-          530109,
-          513557,
-          530110
+          538590
+        ]
+      },
+      {
+        "label": "Nawaloka Medicare",
+        "key": "Laboratory",
+        "commtracks": [
+          538583
+        ]
+      },
+      {
+        "label": "Nawaloka Medicare",
+        "key": "Pharmacy",
+        "commtracks": [
+          538588
+        ]
+      },
+      {
+        "label": "Nawaloka Medicare",
+        "key": "Medical",
+        "commtracks": [
+          538589
         ]
       }
     ]
@@ -439,11 +230,6 @@
       "id": "instagram",
       "name": "Instagram",
       "channelId": 5
-    },
-    {
-      "id": "linkedin",
-      "name": "LinkedIn",
-      "channelId": 6
     },
     {
       "id": "others",
@@ -498,177 +284,188 @@
     }
   },
   "sltCategories": {
-    "Travel Packages": [
-      "packages",
-      "luxury packages",
-      "budget travel",
-      "group tours",
-      "honeymoon",
-      "holiday deals",
-      "custom packages",
-      "family trips",
-      "weekend getaways",
-      "seasonal discounts",
-      "adventure packages",
-      "wellness retreats"
+    "Medical Care Quality": [
+      "treatment",
+      "care",
+      "diagnosis",
+      "accurate",
+      "professional",
+      "effective",
+      "attention",
+      "outcome",
+      "recovery",
+      "medical error"
     ],
-    "Flight Bookings": [
-      "flights",
-      "airfare",
-      "tickets",
-      "domestic flights",
-      "international",
-      "last-minute flights",
-      "economy class",
-      "business class",
-      "discount flights",
-      "chartered flights",
-      "flight combos",
-      "ticket refunds"
+    "Doctor and Specialist Experience": [
+      "doctor",
+      "specialist",
+      "surgeon",
+      "knowledgeable",
+      "skilled",
+      "consultation",
+      "attentive",
+      "explanation",
+      "bedside manner",
+      "trust"
     ],
-    "Hotel Reservations": [
-      "hotels",
-      "resorts",
-      "stays",
-      "hotel deals",
-      "luxury hotels",
-      "budget hotels",
-      "boutique hotels",
-      "villa stays",
-      "all-inclusive resorts",
-      "last-minute rooms",
-      "premium rooms",
-      "hotel packages"
+    "Nursing and Staff Behavior": [
+      "nurse",
+      "staff",
+      "kind",
+      "helpful",
+      "attentive",
+      "rude",
+      "courteous",
+      "caring",
+      "availability",
+      "empathy"
     ],
-    "Visa Assistance": [
-      "visa",
-      "tourist visa",
-      "business visa",
-      "visa application",
-      "visa services",
-      "visa refunds",
-      "delayed visa",
-      "express visa",
-      "visa consultancy",
-      "pre-order visa",
-      "embassy coordination",
-      "travel documentation"
+    "Facility and Cleanliness": [
+      "cleanliness",
+      "hygiene",
+      "sanitized",
+      "infrastructure",
+      "modern",
+      "outdated",
+      "amenities",
+      "waiting area",
+      "restrooms",
+      "maintenance"
     ],
-    "Customer Support": [
-      "support",
-      "hotline",
-      "delayed responses",
-      "follow-up",
+    "Waiting Time and Efficiency": [
       "wait time",
-      "friendly staff",
-      "24/7 assistance",
-      "live chat",
-      "resolution time",
-      "customer queries",
-      "complaint handling",
-      "customer care"
+      "delay",
+      "queue",
+      "fast",
+      "efficient",
+      "slow",
+      "timely",
+      "appointment",
+      "scheduling",
+      "emergency response"
     ],
-    "Travel Insurance": [
+    "Room and In-Patient Experience": [
+      "room",
+      "bed",
+      "comfort",
+      "privacy",
+      "noise",
+      "AC",
+      "ward",
+      "ICU",
+      "food",
+      "accommodation"
+    ],
+    "Billing and Payment": [
+      "billing",
+      "cost",
+      "transparency",
+      "overcharged",
       "insurance",
-      "medical cover",
-      "trip cancellation",
-      "lost luggage",
-      "policy claims",
-      "travel emergencies",
-      "premium insurance",
-      "budget insurance",
-      "comprehensive coverage",
-      "refund policies",
-      "safety cover",
-      "insurance offers"
+      "reimbursement",
+      "affordable",
+      "invoice",
+      "cashless",
+      "hidden charges"
     ],
-    "Customer Experience": [
-      "reviews",
-      "navigation",
-      "website feedback",
-      "checkout process",
-      "complaint resolution",
-      "customer loyalty",
-      "delivery time",
-      "customer ratings",
-      "website usability",
-      "service quality",
-      "response speed",
-      "user experience"
+    "Communication and Information": [
+      "communication",
+      "update",
+      "informed",
+      "explanation",
+      "clarity",
+      "language barrier",
+      "responsiveness",
+      "feedback",
+      "instructions",
+      "documentation"
     ],
-    "Classic Travel Brand/Services": [
-      "classic travel",
-      "workshops",
-      "travel seminars",
-      "webinars",
-      "vip program",
-      "partnerships",
-      "travel events",
-      "meetups",
-      "exhibitions",
-      "training programs",
-      "travel promotions",
-      "brand loyalty"
+    "Access and Navigation": [
+      "location",
+      "parking",
+      "directions",
+      "signage",
+      "accessibility",
+      "entry",
+      "wheelchair",
+      "transport",
+      "confusing",
+      "convenient"
+    ],
+    "Discharge and Follow-up": [
+      "discharge",
+      "summary",
+      "follow-up",
+      "continuity",
+      "aftercare",
+      "review",
+      "appointment",
+      "medicine instructions",
+      "report delay",
+      "post-treatment"
+    ],
+    "Mental and Emotional Support": [
+      "counseling",
+      "mental health",
+      "support",
+      "stress",
+      "fear",
+      "reassurance",
+      "compassion",
+      "trauma",
+      "understanding",
+      "emotional care"
+    ],
+    "Technology and Equipment": [
+      "equipment",
+      "modern",
+      "outdated",
+      "scanner",
+      "digital",
+      "x-ray",
+      "MRI",
+      "lab test",
+      "availability",
+      "results"
     ]
   },
   "alertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
-      },
-      {
-        "email": "dewshik@emojot.com"
-      },
-      {
-        "email": "strategy@classictravel.lk"
-      },
-      {
-        "email": "viraj@emojot.com"
+        "email": "shaveenf@emojot.com"
       }
     ],
     "reminderDate": {
-      "dayOfTheWeek": "Tuesday",
-      "time": "16:00",
+      "dayOfTheWeek": "Monday",
+      "time": "06:00",
       "offset": -330
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-21T01:00:24.982Z",
+    "updatedAt": "2025-03-17T01:00:22.830Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "lankeshh@emojot.com"
-        },
-        {
-          "email": "dewshik@emojot.com"
+          "email": "shaveenf@emojot.com"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-22T01:00:13.676Z",
-      "nextReminderDate": "2025-07-23T00:30:00.000Z"
+      "updatedAt": "2025-03-20T01:00:07.324Z",
+      "nextReminderDate": "2025-03-21T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-07-28T00:30:00.000Z"
+    "nextReminderDate": "2025-03-24T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
-      },
-      {
-        "email": "dewshik@emojot.com"
-      },
-      {
-        "email": "strategy@classictravel.lk"
-      },
-      {
-        "email": "viraj@emojot.com"
+        "email": "shaveenf@emojot.com"
       }
     ],
     "timeOffset": -330,
-    "companyID": "679369170bf0386ac6daafb6",
-    "threshold": 1.4,
+    "companyID": "67f36dd2d4e563dd28b8ca49",
+    "threshold": 1.2,
     "averageDates": 7,
     "emailTemplate": "SLT_StormAlert",
     "reportType": "SLT_STORM_ALERT"
@@ -678,7 +475,7 @@
     "AIModel": "manual"
   },
   "hideUnloadedImages": true,
-  "companyName": "ClassicTravels",
+  "companyName": "Nawaloka",
   "syncEnabled": true,
   "type": "socialNetworkListener"
 }

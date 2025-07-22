@@ -174,7 +174,7 @@
         },
         {
           "key": "selectedReportName",
-          "value": "Fullr_v1"
+          "value": "TitusStoresv1"
         },
         {
           "key": "trimOut",
@@ -215,7 +215,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce193a9d955268e4edb59"
+                  "value": "687effb29241af5bd8691b14"
                 }
               ],
               "styles": [
@@ -247,7 +247,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "68789098b1c7b6ed012a7540"
                 },
                 {
                   "key": "trimOut",
@@ -275,7 +275,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce2d3a9d955268e4edb92"
+                  "value": "687f0147ed50dd32c5316b33"
                 },
                 {
                   "key": "drillDownType",
@@ -311,7 +311,7 @@
                 },
                 {
                   "key": "correlationQuestions",
-                  "value": "q871"
+                  "value": "q3361"
                 },
                 {
                   "key": "correlationOpen",
@@ -319,7 +319,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce23ea9d955268e4edb70"
+                  "value": "687effb29241af5bd8691b14"
                 }
               ],
               "styles": [
@@ -343,7 +343,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "68789098b1c7b6ed012a7540"
                 },
                 {
                   "key": "trimOut",
@@ -384,7 +384,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "68789098b1c7b6ed012a7540"
                 },
                 {
                   "key": "sensorPages",
@@ -425,7 +425,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "score_v1"
+                  "value": "TitusStoresScoreHeatmapv1"
                 }
               ],
               "styles": [
@@ -453,7 +453,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "scoresegct"
+                  "value": "TitusStoresScoreSegmentv1"
                 },
                 {
                   "key": "hideUIComponents",
@@ -481,13 +481,23 @@
           "title": "Location level links",
           "cards": [
             {
-              "title": "Full'r",
+              "title": "Titus Stores Pettah",
               "titleStyle": "color:white; background:#26619c;",
               "type": "direct",
               "desc": "Click below to access the survey.",
-              "target": "https://emo.run/fullr",
+              "target": "https://emo.run/tituspettah",
               "openInNewPage": true,
               "id": "cxm_links_1",
+              "launchButtonText": "Launch Survey"
+            },
+            {
+              "title": "Titus Stores Online",
+              "titleStyle": "color:white; background:#26619c;",
+              "type": "direct",
+              "desc": "Click below to access the survey.",
+              "target": "https://emo.run/titusonline",
+              "openInNewPage": true,
+              "id": "cxm_links_2",
               "launchButtonText": "Launch Survey"
             }
           ]
@@ -566,14 +576,14 @@
   ],
   "profiles": [
     {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "image": "https://storage.emojot.com/logos/company_logo/68789098b1c7b6ed012a7540.png",
       "name": "shaveenf@emojot.com",
       "id": "shaveenf@emojot.com",
       "title": "company_admin",
       "email": "shaveenf@emojot.com"
     },
     {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "image": "https://storage.emojot.com/logos/company_logo/68789098b1c7b6ed012a7540.png",
       "name": "vikashar@emojot.com",
       "id": "vikashar@emojot.com",
       "title": "company_admin",

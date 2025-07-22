@@ -1,0 +1,2274 @@
+{
+  "menu": [
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Hameedia",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalytics"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalytics"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_links"
+        }
+      ]
+    },
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Hameedia Hsports",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalyticsb"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalyticsb"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_linksb"
+        }
+      ]
+    },
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Envoy Mansion",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalyticsc"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalyticsc"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_linksc"
+        }
+      ]
+    },
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Real Barber",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalyticsd"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalyticsd"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_linksd"
+        }
+      ]
+    },
+    {
+      "id": "My friend Cafe",
+      "icon": "fa fa-users",
+      "header": "My friend Cafe",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalyticse"
+        },
+        {
+          "header": "Advanced Analytics",
+          "id": "cxm_advanalyticse"
+        },
+        {
+          "header": "Sample Surveys",
+          "id": "cxm_linkse"
+        }
+      ]
+    },
+    {
+      "id": "comp",
+      "icon": "fas fa-users",
+      "header": "Customer Complaints",
+      "subs": [
+        {
+          "header": "View Complaints",
+          "id": "comp_list"
+        },
+        {
+          "header": "Complaint Analytics",
+          "id": "comp_analy"
+        }
+      ]
+    },
+    {
+      "id": "orm",
+      "icon": "fa fa-users",
+      "header": "Online Review Management",
+      "subs": [
+        {
+          "header": "View Reviews",
+          "id": "orm_rlm"
+        },
+        {
+          "header": "Review Analytics",
+          "id": "orm_ris"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "View reviews",
+      "desc": "Review replies",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
+        },
+        {
+          "key": "newLocationHide",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Review analytics",
+      "desc": "Review insights",
+      "type": "directReport",
+      "id": "orm_ris",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+        },
+        {
+          "key": "hideTicketWidgets",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "View complaints",
+      "desc": "Fix the problem",
+      "type": "directReport",
+      "id": "comp_list",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentManagement/incidentManagement.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Complaint analytics",
+      "desc": "See the pattern",
+      "type": "directReport",
+      "id": "comp_analy",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentOverview/incidentOverview.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalytics",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "hameedia_CX"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalyticsb",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "Hsports_CX"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalyticsc",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "Envoy_CX"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalyticsd",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "Real Barber_CX"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback analytics",
+      "desc": "Customer insights",
+      "type": "directReport",
+      "id": "cxm_eanalyticse",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "MyfriendCafe_CX"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalytics",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bed69702376bc6efd9449"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683d2bcf203fbbf6d4561015"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bef623a7d541d48a8b5a1"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683d2bcf203fbbf6d4561015"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683d2bcf203fbbf6d4561015"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalyticsb",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bee423a7d541d48a8b591"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417a950bd26d5a9cc10d4a"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bef893a7d541d48a8b5a3"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417a950bd26d5a9cc10d4a"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417a950bd26d5a9cc10d4a"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalyticsc",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bedd1702376bc6efd944a"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "6842a5380bd26d5a9cc120d8"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bef7c3a7d541d48a8b5a2"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "6842a5380bd26d5a9cc120d8"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "6842a5380bd26d5a9cc120d8"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalyticsc",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "6842421e7e5e5c1bcde4c1f4"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683e7fe25d6efbf75d70fc91"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684243095881d43f26285075"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683e7fe25d6efbf75d70fc91"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "683e7fe25d6efbf75d70fc91"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalyticsd",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bec06702376bc6efd9442"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ab50bd26d5a9cc10d50"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bec06702376bc6efd9442"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ab50bd26d5a9cc10d50"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ab50bd26d5a9cc10d50"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced analytics",
+      "desc": "Advanced feedback",
+      "type": "groupedCards",
+      "id": "cxm_advanalyticse",
+      "groups": [
+        {
+          "title": "General analytics",
+          "cards": [
+            {
+              "title": "Response breakdown with comments",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Overall survey participation for quick overview",
+              "type": "report",
+              "id": "cxm_advanalytics_1",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684beca93a7d541d48a8b57b"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Geo Map of the respondents to the survey",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Geographic distribution of responses",
+              "type": "report",
+              "id": "cxm_advanalytics_2",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "dashboard.jsp"
+                },
+                {
+                  "value": "percepticMapPanel",
+                  "key": "reportType"
+                },
+                {
+                  "key": "summaryView",
+                  "value": true
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ad47e5e5c1bcde4b638"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "2D response analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Visualizes connections between two specific survey questions",
+              "type": "report",
+              "id": "cxm_advanalytics_3",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "twoDimensionalAnalysis_v2.jsp"
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684242b9fcf215351dc6c76a"
+                },
+                {
+                  "key": "drillDownType",
+                  "value": "multiple"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Correlation analytics",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Analyzes relationships between various response variables",
+              "type": "report",
+              "id": "cxm_advanalytics_4",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "correlationAnalysis.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "correlationQuestions",
+                  "value": "q538"
+                },
+                {
+                  "key": "correlationOpen",
+                  "value": true
+                },
+                {
+                  "key": "savedReportId",
+                  "value": "684bef503a7d541d48a8b5a0"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Raw responses",
+              "titleStyle": "color:white;background:#008fed;",
+              "desc": "Provides access to the unfiltered, original survey responses",
+              "type": "report",
+              "id": "cxm_advanalytics_5",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "rawEmotes.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ad47e5e5c1bcde4b638"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "showOtherSensors",
+                  "value": false
+                },
+                {
+                  "key": "sensorComments",
+                  "value": "p2651"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Textual analytics",
+          "cards": [
+            {
+              "title": "Comment sentiment analysis",
+              "titleStyle": "color:white;background:#6b962d;",
+              "desc": "Categorizes comments from the survey into positive, negative, and neutral sentiments",
+              "type": "report",
+              "id": "cxm_advanalytics_6",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "socialMediaAnalysis.jsp"
+                },
+                {
+                  "key": "sensorID",
+                  "value": "68417ad47e5e5c1bcde4b638"
+                },
+                {
+                  "key": "sensorPages",
+                  "value": "p2651"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Score Analytics",
+          "cards": [
+            {
+              "title": "Score heatmap",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+              "type": "report",
+              "id": "cxm_advanalytics_7",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/scoreOverviewReport/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score heatmap"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            },
+            {
+              "title": "Score segment trend",
+              "titleStyle": "color:white;background:#935a8a;",
+              "desc": "Tracks score changes over time and across different segments",
+              "type": "report",
+              "id": "cxm_advanalytics_8",
+              "params": [
+                {
+                  "key": "redirectPage",
+                  "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                },
+                {
+                  "key": "trimOut",
+                  "value": true
+                },
+                {
+                  "key": "reportName",
+                  "value": "Score trend"
+                },
+                {
+                  "key": "hideUIComponents",
+                  "value": "widgetFilterSection"
+                }
+              ],
+              "styles": [
+                {
+                  "id": ".container",
+                  "key": "width",
+                  "value": "100%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sample surveys",
+      "type": "groupedCards",
+      "id": "cxm_links",
+      "groups": [
+        {
+          "title": "Sample Survey Link",
+          "cards": [
+            {
+              "title": "Hameedia",
+              "type": "url",
+              "desc": "Click below to access the survey.",
+              "url": "https://emo.run/hamwellawatta",
+              "id": "cxm_links_1",
+              "launchButtonText": "Open Survey",
+              "eh": [
+                {
+                  "key": "Reported By",
+                  "value": "{username}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sample surveys",
+      "type": "groupedCards",
+      "id": "cxm_linksb",
+      "groups": [
+        {
+          "title": "Sample Survey Link",
+          "cards": [
+            {
+              "title": "Hameedia Hsports",
+              "type": "url",
+              "desc": "Click below to access the survey.",
+              "url": "https://emo.run/hsportcmb7",
+              "id": "cxm_links_1",
+              "launchButtonText": "Open Survey",
+              "eh": [
+                {
+                  "key": "Reported By",
+                  "value": "{username}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "title": "Sample surveys",
+      "type": "groupedCards",
+      "id": "cxm_linksc",
+      "groups": [
+        {
+          "title": "Sample Survey Link",
+          "cards": [
+            {
+              "title": "Envoy Mansions",
+              "type": "url",
+              "desc": "Click below to access the survey.",
+              "url": "https://emo.run/envoy",
+              "id": "cxm_links_1",
+              "launchButtonText": "Open Survey",
+              "eh": [
+                {
+                  "key": "Reported By",
+                  "value": "{username}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "title": "Sample surveys",
+      "type": "groupedCards",
+      "id": "cxm_linksd",
+      "groups": [
+        {
+          "title": "Sample Survey Link",
+          "cards": [
+            {
+              "title": "Real Barber",
+              "type": "url",
+              "desc": "Click below to access the survey.",
+              "url": "https://emo.run/realbarber",
+              "id": "cxm_links_1",
+              "launchButtonText": "Open Survey",
+              "eh": [
+                {
+                  "key": "Reported By",
+                  "value": "{username}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+            {
+      "title": "Sample surveys",
+      "type": "groupedCards",
+      "id": "cxm_linkse",
+      "groups": [
+        {
+          "title": "Sample Survey Link",
+          "cards": [
+            {
+              "title": "Real Barber",
+              "type": "url",
+              "desc": "Click below to access the survey.",
+              "url": "https://emo.run/myfriend",
+              "id": "cxm_links_1",
+              "launchButtonText": "Open Survey",
+              "eh": [
+                {
+                  "key": "Reported By",
+                  "value": "{username}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My Profile",
+      "desc": "Update profile settings",
+      "type": "directReport",
+      "id": "myProfile_profile",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "updateProfile.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "shaveenf@emojot.com",
+      "id": "shaveenf@emojot.com",
+      "title": "company_admin",
+      "email": "shaveenf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/671b2a76284d8d40df9e1682.png",
+      "name": "abhishekak@emojot.com",
+      "id": "abhishekak@emojot.com",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/671b2a76284d8d40df9e1682.png",
+      "name": "vikashar@emojot.com",
+      "id": "vikashar@emojot.com",
+      "title": "company_admin",
+      "email": "vikashar@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/671b2a76284d8d40df9e1682.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/671b2a76284d8d40df9e1682.png",
+      "name": "crm@hameedia.com",
+      "id": "crm@hameedia.com",
+      "title": "company_admin",
+      "email": "crm@hameedia.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/671b2a76284d8d40df9e1682.png",
+      "name": "kasunw@hameedia.com",
+      "id": "kasunw@hameedia.com",
+      "title": "company_admin",
+      "email": "kasunw@hameedia.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}
