@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753165513217,
+  "updatedTime": 1753239513193,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
@@ -179,9 +179,10 @@
               "mercurebkkmakkasan",
               "MidCenturyModern",
               "mercurebkkmakkasan",
-              "MercureBangkokMakkasan"
+              "MercureBangkokMakkasan",
+              "GujaratiTravel"
             ],
-            "version": "1.6"
+            "version": "1.7"
           }
         },
         "commtracks": [
@@ -627,13 +628,13 @@
       }
     ],
     "reminderDate": {
-      "dayOfTheWeek": "Tuesday",
-      "time": "16:00",
+      "dayOfTheWeek": "Monday",
+      "time": "06:00",
       "offset": -330
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-21T01:00:24.982Z",
+    "updatedAt": "2025-07-23T03:00:06.929Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -646,10 +647,9 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-22T01:00:13.676Z",
-      "nextReminderDate": "2025-07-23T00:30:00.000Z"
-    },
-    "nextReminderDate": "2025-07-28T00:30:00.000Z"
+      "updatedAt": "2025-07-23T03:00:06.929Z",
+      "nextReminderDate": "2025-07-24T10:30:00.000Z"
+    }
   },
   "stormAlertConfig": {
     "receivers": [

@@ -1,7 +1,7 @@
 {
-  "updatedTime": 1753172883244,
+  "updatedTime": 1753165513217,
   "updatedBy": "lankeshh@emojot.com",
-  "companyID": "6858e7d969f1fef4f3560535",
+  "companyID": "687f4c1f9241af5bd8692639",
   "aiModel": "gpt-3.5",
   "vendors": [
     "mentionlytics"
@@ -9,55 +9,23 @@
   "token": "nkJYR2PcOYEToZ2jHC5U4Kczktnnwlk0ZhnhNzWO4LsmWSBXuZrWTB4pf0ysGhsXk272nfUuWenX4qMLEIv60j9m",
   "competitors": [
     {
-      "label": "Nawaloka Medicare",
+      "label": "FPA",
       "color": "#FF7F50",
       "brand": true,
       "keys": [
-        "Nawaloka Medicare",
-        "Hospital",
-        "Surgery",
-        "Healthcare",
-        "Doctors",
-        "Medicine",
-        "Laboratory",
-        "Pharmacy",
-        "Medical"
-      ]
-    },
-    {
-      "label": "Hemas Hospitals",
-      "color": "#1E90FF",
-      "keys": [
-        "Hemas Hospitals"
-      ]
-    },
-    {
-      "label": "Lanka Hospitals",
-      "color": "#FF4500",
-      "keys": [
-        "Lanka Hospitals"
-      ]
-    },
-    {
-      "label": "Nawaloka Hospitals Colombo",
-      "color": "#32CD32",
-      "keys": [
-        "Nawaloka Hospitals Colombo"
-      ]
-    },
-    {
-      "label": "Durdans Hospitals",
-      "color": "#FFD700",
-      "keys": [
-        "Durdans Hospitals"
+        "FPA",
+        "Condoms",
+        "Contraceptives",
+        "Preethi Condoms",
+        "Stamina Condoms"
       ]
     }
   ],
   "dataRetreivers": {
     "mentionlytics": [
       {
-        "label": "Nawaloka Medicare",
-        "key": "Nawaloka Medicare",
+        "label": "FPA",
+        "key": "FPA",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -67,140 +35,174 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "Nawaloka Medicare",
-            "NawalokaMedicare",
-            "Nawaloka",
-            "Meicare"
+            "FPA",
+            "#FPA",
+            "FamilyPlanningAssociation",
+            "Family Planning Association",
+            "Family",
+            "Planning",
+            "Family Planning",
+            "Association",
+            "Condoms",
+            "Condom",
+            "Preethi",
+            "Stamina",
+            "Contraception",
+            "Contraceptives"
           ],
           "commtracks": [
-            537666,
-            537667,
-            537668,
-            537677,
-            537769
-          ],
-          "exclusions": {
-            "keywords": [
-              "GSP GOSSIP",
-              "riyasewana.com",
-              "patpat.lk",
-              "ikman.lk",
-              "itsmepasindu",
-              "MSF",
-              "DeepLearningAI",
-              "Land for sale",
-              "Game Play",
-              "teledrama",
-              "yaka man"
-            ],
-            "version": "1.2"
-          }
+            545734,
+            545772
+          ]
         },
         "commtracks": [
-          537666,
-          537667,
-          537668,
-          537677,
-          537769
+          545734,
+          545754,
+          545755,
+          545760,
+          545761,
+          545771,
+          545772
         ]
       },
       {
-        "label": "Hemas Hospitals",
-        "key": "Hemas Hospitals",
+        "label": "Preethi Condoms",
+        "key": "Preethi Condoms",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "FPA",
+            "#FPA",
+            "FamilyPlanningAssociation",
+            "Family Planning Association",
+            "Family",
+            "Planning",
+            "Family Planning",
+            "Association",
+            "Condoms",
+            "Condom",
+            "Preethi",
+            "Stamina",
+            "Contraception",
+            "Contraceptives"
+          ],
+          "commtracks": [
+            545779
+          ]
+        },
         "commtracks": [
-          537679,
-          537680,
-          537681,
-          537682
+          545779
         ]
       },
       {
-        "label": "Lanka Hospitals",
-        "key": "Lanka Hospitals",
+        "label": "Stamina Condoms",
+        "key": "Stamina Condoms",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "FPA",
+            "#FPA",
+            "FamilyPlanningAssociation",
+            "Family Planning Association",
+            "Family",
+            "Planning",
+            "Family Planning",
+            "Association",
+            "Condoms",
+            "Condom",
+            "Preethi",
+            "Stamina",
+            "Contraception",
+            "Contraceptives"
+          ],
+          "commtracks": [
+            545818
+          ]
+        },
         "commtracks": [
-          537688,
-          537689,
-          537690,
-          537691,
-          537773
+          545818
         ]
       },
       {
-        "label": "Nawaloka Hospitals Colombo",
-        "key": "Nawaloka Hospitals Colombo",
+        "label": "Condoms",
+        "key": "Condoms",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "FPA",
+            "#FPA",
+            "FamilyPlanningAssociation",
+            "Family Planning Association",
+            "Family",
+            "Planning",
+            "Family Planning",
+            "Association",
+            "Condoms",
+            "Condom",
+            "Preethi",
+            "Stamina",
+            "Contraception",
+            "Contraceptives"
+          ],
+          "commtracks": [
+            545788
+          ]
+        },
         "commtracks": [
-          537706,
-          537707,
-          537708,
-          537709,
-          537780
+          545788
         ]
       },
       {
-        "label": "Durdans Hospitals",
-        "key": "Durdans Hospitals",
+        "label": "Contraceptives",
+        "key": "Contraceptives",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "FPA",
+            "#FPA",
+            "FamilyPlanningAssociation",
+            "Family Planning Association",
+            "Family",
+            "Planning",
+            "Family Planning",
+            "Association",
+            "Condoms",
+            "Condom",
+            "Preethi",
+            "Stamina",
+            "Contraception",
+            "Contraceptives"
+          ],
+          "commtracks": [
+            545790
+          ]
+        },
         "commtracks": [
-          537702,
-          537703,
-          537704,
-          537705,
-          537781
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Hospital",
-        "commtracks": [
-          538596
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Surgery",
-        "commtracks": [
-          538582
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Healthcare",
-        "commtracks": [
-          538587
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Doctors",
-        "commtracks": [
-          538586
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Medicine",
-        "commtracks": [
-          538590
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Laboratory",
-        "commtracks": [
-          538583
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Pharmacy",
-        "commtracks": [
-          538588
-        ]
-      },
-      {
-        "label": "Nawaloka Medicare",
-        "key": "Medical",
-        "commtracks": [
-          538589
+          545790
         ]
       }
     ]
@@ -230,6 +232,11 @@
       "id": "instagram",
       "name": "Instagram",
       "channelId": 5
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "channelId": 6
     },
     {
       "id": "others",
@@ -284,155 +291,129 @@
     }
   },
   "sltCategories": {
-    "Medical Care Quality": [
-      "treatment",
-      "care",
-      "diagnosis",
-      "accurate",
-      "professional",
-      "effective",
-      "attention",
-      "outcome",
-      "recovery",
-      "medical error"
+    "Sexual and Reproductive Health": [
+      "sexual health",
+      "reproductive rights",
+      "family planning",
+      "contraception",
+      "birth control",
+      "emergency contraception",
+      "sexual education",
+      "reproductive care",
+      "safe sex",
+      "STI prevention",
+      "fertility services",
+      "pregnancy planning"
     ],
-    "Doctor and Specialist Experience": [
-      "doctor",
-      "specialist",
-      "surgeon",
-      "knowledgeable",
-      "skilled",
-      "consultation",
-      "attentive",
-      "explanation",
-      "bedside manner",
-      "trust"
+    "Youth & Adolescent Programs": [
+      "youth health",
+      "teen pregnancy",
+      "adolescent services",
+      "youth education",
+      "life skills training",
+      "peer counseling",
+      "youth awareness",
+      "sexual rights education",
+      "school outreach",
+      "youth empowerment",
+      "teen health workshops",
+      "early intervention"
     ],
-    "Nursing and Staff Behavior": [
-      "nurse",
-      "staff",
-      "kind",
-      "helpful",
-      "attentive",
-      "rude",
-      "courteous",
-      "caring",
-      "availability",
-      "empathy"
+    "Gender-Based Violence (GBV) and Protection": [
+      "gender violence",
+      "sexual abuse",
+      "domestic violence",
+      "gbv support",
+      "rape crisis",
+      "survivor support",
+      "violence prevention",
+      "mental health support",
+      "emergency hotline",
+      "safe spaces",
+      "trauma counseling",
+      "helpline services"
     ],
-    "Facility and Cleanliness": [
-      "cleanliness",
-      "hygiene",
-      "sanitized",
-      "infrastructure",
-      "modern",
-      "outdated",
-      "amenities",
-      "waiting area",
-      "restrooms",
-      "maintenance"
+    "Clinic and Health Services": [
+      "fpa clinic",
+      "SRH clinics",
+      "walk-in services",
+      "reproductive care centers",
+      "clinic hours",
+      "test and treat",
+      "cervical screening",
+      "HIV testing",
+      "Pap smear",
+      "menstrual health",
+      "prenatal services",
+      "postnatal care"
     ],
-    "Waiting Time and Efficiency": [
-      "wait time",
-      "delay",
-      "queue",
-      "fast",
-      "efficient",
-      "slow",
-      "timely",
-      "appointment",
-      "scheduling",
-      "emergency response"
+    "Advocacy and Policy": [
+      "srhr policy",
+      "reproductive rights laws",
+      "gender rights",
+      "lgbtq+ inclusion",
+      "abortion rights",
+      "reform campaigns",
+      "sexuality policy",
+      "rights advocacy",
+      "access to care",
+      "equal rights",
+      "legal awareness",
+      "public advocacy"
     ],
-    "Room and In-Patient Experience": [
-      "room",
-      "bed",
-      "comfort",
-      "privacy",
-      "noise",
-      "AC",
-      "ward",
-      "ICU",
-      "food",
-      "accommodation"
+    "Customer Support & Service Quality": [
+      "support team",
+      "response time",
+      "helpline service",
+      "appointment delays",
+      "staff behavior",
+      "service experience",
+      "clinic feedback",
+      "online booking issues",
+      "customer care",
+      "complaint handling",
+      "follow-up quality",
+      "accessibility issues"
     ],
-    "Billing and Payment": [
-      "billing",
-      "cost",
-      "transparency",
-      "overcharged",
-      "insurance",
-      "reimbursement",
-      "affordable",
-      "invoice",
-      "cashless",
-      "hidden charges"
+    "Outreach & Community Engagement": [
+      "community programs",
+      "awareness campaigns",
+      "field officers",
+      "rural outreach",
+      "health camps",
+      "mobile clinics",
+      "doorstep services",
+      "public events",
+      "media coverage",
+      "social education",
+      "community feedback",
+      "educational posters"
     ],
-    "Communication and Information": [
-      "communication",
-      "update",
-      "informed",
-      "explanation",
-      "clarity",
-      "language barrier",
-      "responsiveness",
-      "feedback",
-      "instructions",
-      "documentation"
-    ],
-    "Access and Navigation": [
-      "location",
-      "parking",
-      "directions",
-      "signage",
-      "accessibility",
-      "entry",
-      "wheelchair",
-      "transport",
-      "confusing",
-      "convenient"
-    ],
-    "Discharge and Follow-up": [
-      "discharge",
-      "summary",
-      "follow-up",
-      "continuity",
-      "aftercare",
-      "review",
-      "appointment",
-      "medicine instructions",
-      "report delay",
-      "post-treatment"
-    ],
-    "Mental and Emotional Support": [
-      "counseling",
-      "mental health",
-      "support",
-      "stress",
-      "fear",
-      "reassurance",
-      "compassion",
-      "trauma",
-      "understanding",
-      "emotional care"
-    ],
-    "Technology and Equipment": [
-      "equipment",
-      "modern",
-      "outdated",
-      "scanner",
-      "digital",
-      "x-ray",
-      "MRI",
-      "lab test",
-      "availability",
-      "results"
+    "FPA Brand & Campaigns": [
+      "fpa sri lanka",
+      "srh campaign",
+      "fpashines",
+      "mybodymyrights",
+      "fpa advocacy",
+      "fpa awareness",
+      "ngo partnerships",
+      "brand recognition",
+      "inclusive healthcare",
+      "fpa events",
+      "volunteer programs",
+      "social justice work"
     ]
   },
   "alertConfig": {
     "receivers": [
       {
-        "email": "shaveenf@emojot.com"
+        "email": "natashahdr@fpasrilanka.org"
+      },
+      {
+        "email": "junaid@fpasrilanka.org"
+      },
+      {
+        "email": "amila@fpasrilanka.org"
       }
     ],
     "reminderDate": {
@@ -442,30 +423,42 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-03-17T01:00:22.830Z",
+    "updatedAt": "2025-07-21T01:00:24.982Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "shaveenf@emojot.com"
+          "email": "natashahdr@fpasrilanka.org"
+        },
+        {
+          "email": "junaid@fpasrilanka.org"
+        },
+        {
+          "email": "amila@fpasrilanka.org"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-03-20T01:00:07.324Z",
-      "nextReminderDate": "2025-03-21T00:30:00.000Z"
+      "updatedAt": "2025-07-22T01:00:13.676Z",
+      "nextReminderDate": "2025-07-23T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-03-24T00:30:00.000Z"
+    "nextReminderDate": "2025-07-28T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "shaveenf@emojot.com"
+        "email": "natashahdr@fpasrilanka.org"
+      },
+      {
+        "email": "junaid@fpasrilanka.org"
+      },
+      {
+        "email": "amila@fpasrilanka.org"
       }
     ],
     "timeOffset": -330,
-    "companyID": "67f36dd2d4e563dd28b8ca49",
-    "threshold": 1.2,
+    "companyID": "687f4c1f9241af5bd8692639",
+    "threshold": 1.4,
     "averageDates": 7,
     "emailTemplate": "SLT_StormAlert",
     "reportType": "SLT_STORM_ALERT"
@@ -475,7 +468,7 @@
     "AIModel": "manual"
   },
   "hideUnloadedImages": true,
-  "companyName": "Nawaloka",
+  "companyName": "FPA",
   "syncEnabled": true,
   "type": "socialNetworkListener"
 }

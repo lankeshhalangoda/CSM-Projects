@@ -36,7 +36,7 @@
       "params": [
         {
           "key": "redirectPage",
-          "value": "reports/socialListener/socialListener.jsp"
+          "value": "reports/socialListenerV3/socialListenerV3.jsp"
         },
         {
           "key": "trimOut",

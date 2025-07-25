@@ -1,0 +1,250 @@
+{
+  "created": 1749024365521,
+  "createdBy": "shaveenf@emojot.com",
+  "companyID": "683e7c69203fbbf6d456378f",
+  "aiModel": "gpt-4",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location.  Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks  on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    }
+  },
+  "ORMConfigs": {
+    "reviewFetchLimit": {
+      "nonAdmin": 100,
+      "admin": 100
+    },
+    "targetedKeywords": {
+      "Room Quality and Comfort": [
+        "room",
+        "suite",
+        "comfortable",
+        "spacious",
+        "bed",
+        "mattress",
+        "pillows",
+        "temperature",
+        "lighting",
+        "air conditioning",
+        "heating",
+        "amenities"
+      ],
+      "Cleanliness and Hygiene": [
+        "clean",
+        "spotless",
+        "neat",
+        "sanitary",
+        "tidy",
+        "hygiene",
+        "fresh",
+        "well-maintained",
+        "dirty",
+        "smell",
+        "dust"
+      ],
+      "Service and Staff": [
+        "staff",
+        "service",
+        "hospitality",
+        "friendly",
+        "helpful",
+        "professional",
+        "attentive",
+        "welcoming",
+        "reception",
+        "courteous",
+        "housekeeping",
+        "team"
+      ],
+      "Food and Dining Experience": [
+        "food",
+        "dining",
+        "restaurant",
+        "buffet",
+        "breakfast",
+        "lunch",
+        "dinner",
+        "taste",
+        "cuisine",
+        "menu",
+        "chef",
+        "delicious",
+        "room service"
+      ],
+      "Facilities and Amenities": [
+        "pool",
+        "spa",
+        "gym",
+        "wifi",
+        "parking",
+        "bar",
+        "conference",
+        "lounge",
+        "elevator",
+        "recreation",
+        "kids area",
+        "business center"
+      ],
+      "Booking and Check-in Process": [
+        "booking",
+        "reservation",
+        "check-in",
+        "check-out",
+        "confirmation",
+        "online booking",
+        "front desk",
+        "smooth process",
+        "delay",
+        "upgrade"
+      ],
+      "Location and Accessibility": [
+        "location",
+        "nearby",
+        "central",
+        "accessible",
+        "view",
+        "scenic",
+        "beachfront",
+        "mountain view",
+        "distance",
+        "walkable"
+      ],
+      "Value for Money": [
+        "price",
+        "worth",
+        "deal",
+        "expensive",
+        "affordable",
+        "reasonable",
+        "package",
+        "rate",
+        "overpriced",
+        "cost"
+      ],
+      "Safety and Security": [
+        "safe",
+        "security",
+        "peace of mind",
+        "emergency",
+        "trust",
+        "guards",
+        "secure",
+        "reliable",
+        "safe for kids",
+        "surveillance"
+      ],
+      "Overall Guest Experience": [
+        "experience",
+        "memorable",
+        "stay",
+        "vacation",
+        "enjoyable",
+        "pleasant",
+        "wonderful",
+        "unforgettable",
+        "relaxing",
+        "recommend"
+      ]
+    },
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list -  Service, Cleanliness, Location, Room Quality, Food and Dining, Facilities, Value for Money, Room Service, Online Booking/Reservation Experience, Overall Experience \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflow": "683e9b2f745562a27181ddb6",
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "High",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "comment",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "complaintType",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "complaintType",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "Location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      },
+      {
+        "fieldId": "author",
+        "dataField": "author"
+      },
+      {
+        "fieldId": "comment",
+        "dataField": "reviewText"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  },
+  "type": "onlineReviewManagement"
+}

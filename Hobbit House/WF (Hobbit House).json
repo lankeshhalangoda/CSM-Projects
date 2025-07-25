@@ -1,0 +1,496 @@
+{
+  "reportNamePrefix": "Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "Igabara_wf",
+  "nameTemplate": "Online Review Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Channel",
+    "readOnly": true,
+    "type": "enum",
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey",
+        "highPriorityFields": [
+          "rating",
+          "complaintType",
+          "satisfactionValue",
+          "Location",
+          "comment",
+          "HouseNumber"
+        ]
+      },
+      {
+        "id": "googleMap",
+        "name": "Google",
+        "highPriorityFields": [
+          "rating",
+          "comment",
+          "author"
+        ]
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "highPriorityFields": [
+          "rating",
+          "comment",
+          "author"
+        ]
+      },
+      {
+        "id": "booking",
+        "name": "Booking.com",
+        "highPriorityFields": [
+          "rating",
+          "comment",
+          "author"
+        ]
+      },
+      {
+        "id": "tripadvisor",
+        "name": "Tripadvisor",
+        "highPriorityFields": [
+          "rating",
+          "comment",
+          "author"
+        ]
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm_email",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_sms",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_orm_sms",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "rating": {
+      "name": "Rating",
+      "readOnly": true,
+      "type": "string"
+    },
+    "satisfactionValue": {
+      "name": "Satisfaction Value",
+      "readOnly": true,
+      "type": "string"
+    },
+    "complaintType": {
+      "name": "Issue Type",
+      "readOnly": true,
+      "type": "string"
+    },
+    "comment": {
+      "name": "Comment",
+      "readOnly": true,
+      "type": "textArea"
+    },
+    "Location": {
+      "name": "Location",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "Igabara Hobbit House",
+          "name": "Igabara Hobbit House"
+        }
+      ]
+    },
+    "Touchpoint": {
+      "name": "Touchpoint",
+      "readOnly": true,
+      "type": "enum",
+      "values": [
+        {
+          "id": "House 1",
+          "name": "House 1"
+        },
+        {
+          "id": "House 2",
+          "name": "House 2"
+        },
+        {
+          "id": "House 3",
+          "name": "House 3"
+        },
+        {
+          "id": "House 4",
+          "name": "House 4"
+        },
+        {
+          "id": "House 5",
+          "name": "House 5"
+        },
+        {
+          "id": "Reception",
+          "name": "Reception"
+        }
+      ]
+    },
+    "HouseNumber": {
+      "name": "House Number",
+      "readOnly": true,
+      "type": "string"
+    },
+    "author": {
+      "name": "Author",
+      "type": "string",
+      "readOnly": true
+    }
+  },
+  "timeZone": -330,
+  "reportSensor": "inci1",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "Location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "Touchpoint",
+        "name": "Touchpoint",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1720446904000_1234569876"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm_email",
+        "target": "admin",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_sms",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreation_orm_sms",
+        "target": "admin",
+        "contactFilters": [
+          "ticketResolutionAlert"
+        ],
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_email",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm_email",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_sms",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_orm_sms",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time spent",
+    "type": "time_accumulation",
+    "hidden": true
+  }
+}

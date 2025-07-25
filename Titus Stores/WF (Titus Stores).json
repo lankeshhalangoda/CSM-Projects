@@ -198,10 +198,11 @@
     "rating": {
       "name": "Net Promoter Score",
       "type": "string",
-      "readOnly": true
+      "readOnly": true,
+      "hidden":true
     },
     "csat": {
-      "name": "Satisfaction Level",
+      "name": "Experience",
       "type": "string",
       "readOnly": true
     },
