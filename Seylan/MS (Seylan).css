@@ -830,6 +830,23 @@ color: #000000 !important;
 }
 
 
+/* Sinhala selected */
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_0q3029::before { content: "ඉතුරුම්"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_2q3029::before { content: "ජංගම"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_3q3029::before { content: "ස්ථාවර ආයෝජන"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_5q3029::before { content: "ළමා ඉතුරුම්"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_7q3029::before { content: "ප්‍රතිලාභ"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_8q3029::before { content: "පහසුකම්"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) #er_12q3029::before { content: "වෙනත්"; }
+
+/* Tamil selected */
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_0q3029::before { content: "சேமிப்பு"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_2q3029::before { content: "நடப்பு"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_3q3029::before { content: "நிலையான முதலீடுகள்"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_5q3029::before { content: "சிறு சேமிப்புகள்"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_7q3029::before { content: "நன்மைகள்"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_8q3029::before { content: "வசதிகள்"; }
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) #er_12q3029::before { content: "மற்றவை"; }
 
 @media (max-width: 768px) {
 

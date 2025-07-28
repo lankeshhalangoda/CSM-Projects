@@ -709,15 +709,15 @@ div#ec_1_0q5495.emo-cont.clickable.ng-scope .emo-text {
   pointer-events: none !important;
 } */
 
-/* Make the xtreme championship emote unclickable */
+/* Make the bout 01 emote unclickable */
 
-div#ec_1_0q5495.emo-cont.clickable.ng-scope {
+/* div#ec_0_0q2281.emo-cont.clickable.ng-scope {
   opacity: 0.4 !important;
   pointer-events: none !important;
 }
 
-div#ec_1_0q5495.emo-cont.clickable.ng-scope::after {
-  content: "🔒 Voting will open shortly for Xtreme Championship";
+div#ec_0_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
   position: absolute;
   top: 0;
   left: 0;
@@ -734,7 +734,142 @@ div#ec_1_0q5495.emo-cont.clickable.ng-scope::after {
   border-radius: 4px;
   z-index: 999;
   pointer-events: none;
+} */
+
+/* Make the bout 02 emote unclickable */
+
+/* div#ec_1_0q2281.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
 }
+
+div#ec_1_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+} */
+
+/* Make the bout 03 emote unclickable */
+
+/* div#ec_2_0q2281.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
+div#ec_2_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+} */
+
+/* Make the bout 04 emote unclickable */
+
+/* div#ec_3_0q2281.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
+div#ec_3_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+} */
+
+/* Make the bout 05 emote unclickable */
+
+/* div#ec_4_0q2281.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
+div#ec_4_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+} */
+
+/* Make the bout 6 emote unclickable */
+
+/* div#ec_5_0q2281.emo-cont.clickable.ng-scope {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
+div#ec_5_0q2281.emo-cont.clickable.ng-scope::after {
+  content: "🔒 Voting Ended!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: none;
+} */
 
 @media (max-width: 768px) {
   .emo-cont {
