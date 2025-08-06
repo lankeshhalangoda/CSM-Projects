@@ -73,6 +73,10 @@
           "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
         },
         {
+          "key": "newLocationHide",
+          "value": true
+        },
+        {
           "key": "trimOut",
           "value": true
         }
@@ -563,12 +567,19 @@
   "profiles": [
     {
       "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "shaveenf@emojot.com",
+      "id": "shaveenf@emojot.com",
+      "title": "company_admin",
+      "email": "shaveenf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
       "name": "vikashar@emojot.com",
       "id": "vikashar@emojot.com",
       "title": "company_admin",
       "email": "vikashar@emojot.com"
     },
-    {
+        {
       "image": "https://storage.emojot.com/logos/company_logo/660cf4f4ed63e0dbb1f5d963.png",
       "name": "andun@emojot.com",
       "id": "andun@emojot.com",
@@ -630,62 +641,6 @@
       "id": "dewshi2@emojot.com",
       "title": "company_admin",
       "email": "dewshi2@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "shifaz@gigafoods.lk",
-      "id": "shifaz@gigafoods.lk",
-      "title": "company_admin",
-      "email": "shifaz@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "udara@gigafoods.lk",
-      "id": "udara@gigafoods.lk",
-      "title": "company_admin",
-      "email": "udara@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "yakoob.n@gigafoods.lk",
-      "id": "yakoob.n@gigafoods.lk",
-      "title": "company_admin",
-      "email": "yakoob.n@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "marshan@gigafoods.lk",
-      "id": "marshan@gigafoods.lk",
-      "title": "company_admin",
-      "email": "marshan@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "shaveenf@emojot.com",
-      "id": "shaveenf@emojot.com",
-      "title": "company_admin",
-      "email": "shaveenf@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "dilini@gigafoods.lk",
-      "id": "dilini@gigafoods.lk",
-      "title": "company_admin",
-      "email": "dilini@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "revan@gigafoods.lk",
-      "id": "revan@gigafoods.lk",
-      "title": "company_admin",
-      "email": "revan@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "ziyath@gigafoods.lk",
-      "id": "ziyath@gigafoods.lk",
-      "title": "company_admin",
-      "email": "ziyath@gigafoods.lk"
     }
   ],
   "assignmentAllowed": true,

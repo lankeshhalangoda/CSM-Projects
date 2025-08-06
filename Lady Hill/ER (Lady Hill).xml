@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<cepRules>
+    <cepRule id="1" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q2091"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <name>emoteNumericValue</name>
+                <operator>gd</operator>
+                <value>0</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>incident</type>
+                <data>
+                    <workflowID>67ea4763df25ff258998f72e</workflowID>
+                    <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+                    <assignee>defaultassignee@emojot.com</assignee>
+                    <type>Customer Satisfaction Survey</type>
+                    <priority>High</priority>
+                    <status>Open</status>
+                    <description>
+                        Customer Name: $$loyalty_Name_value$$
+                        Customer Email: $$loyalty_Email_value$$
+                        Customer Telephone: $$loyalty_Telephone_value$$
+                        Customer Satisfaction: $$q2091_emote$$
+                    </description>
+                    <customFields>
+                        <field>
+                            <key>location</key>
+                            <value>$$emoSignature_Location_value$$</value>
+                        </field>
+                        <field>
+                            <key>complaintType</key>
+                            <value>Customer Satisfaction Survey</value>
+                        </field>
+                        <field>
+                            <key>rating</key>
+                            <value>$$q8426_emote$$</value>
+                        </field>
+                        <field>
+                            <key>comments</key>
+                            <value>$$gp3700_c1_comment_value$$</value>
+                        </field>
+                        <field>
+                            <key>roomNumber</key>
+                            <value>$$gp4139_c1_comment_value$$</value>
+                        </field>
+                    </customFields>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+</cepRules>

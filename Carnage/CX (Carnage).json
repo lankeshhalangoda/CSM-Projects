@@ -1,0 +1,1197 @@
+{
+    "menu": [
+      {
+        "id": "cxm",
+        "icon": "fa fa-users",
+        "header": "Feedback Analytics",
+        "subs": [
+          {
+            "header": "Basic Analytics",
+            "id": "cxm_eanalytics"
+          },
+          {
+            "header": "Advanced Analytics",
+            "id": "cxm_advanalytics"
+          }
+        ]
+      },
+      {
+        "id": "cxm_links",
+        "icon": "fa fa-users",
+        "header": "Feedback channels",
+        "subs": [
+          {
+            "header": "Feedback channels",
+            "id": "cxm_links"
+          }
+        ]
+      },
+      {
+        "id": "comp",
+        "icon": "fas fa-users",
+        "header": "Resolve Complaints",
+        "subs": [
+          {
+            "header": "View Complaints",
+            "id": "comp_list"
+          },
+          {
+            "header": "Complaint Analytics",
+            "id": "comp_analy"
+          }
+        ]
+      },
+      {
+        "id": "orm",
+        "icon": "fa fa-users",
+        "header": "Improve Reviews",
+        "subs": [
+          {
+            "header": "View Reviews",
+            "id": "orm_rlm"
+          },
+          {
+            "header": "Review Analytics",
+            "id": "orm_ris"
+          }
+        ]
+      },
+      {
+        "id": "slt",
+        "icon": "fa fa-users",
+        "header": "Listen Around",
+        "subs": [
+          {
+            "header": "Brand Analysis",
+            "id": "slt_dashboard"
+          },
+          {
+            "header": "Competitor Analysis",
+            "id": "slt_comp"
+          }
+        ]
+      },
+      {
+        "id": "reachout1",
+        "icon": "fa fa-users",
+        "header": "Share your survey",
+        "subs": [
+          {
+            "header": "Share your survey",
+            "id": "reachout1"
+          }
+        ]
+      },
+      {
+        "id": "myProfile",
+        "icon": "fa fa-user",
+        "header": "My Profile",
+        "subs": [
+          {
+            "header": "My Profile",
+            "id": "myProfile_profile"
+          }
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "title": "ORM: Review Insights",
+        "type": "directReport",
+        "id": "orm_ris",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          },
+          {
+            "key": "hideTicketWidgets",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Social Listening",
+        "type": "directReport",
+        "id": "slt_dashboard",
+        "openInNewTabButton": true,
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/socialListenerV3/socialListenerV3.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Social Listening",
+        "type": "directReport",
+        "id": "slt_comp",
+        "openInNewTabButton": true,
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "https://emojot.com/emojotDashboard/reports/socialListener/competitorAnalysis.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "ORM: Review Listing and Monitoring",
+        "type": "directReport",
+        "id": "orm_rlm",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "ORM: Ticket Handling",
+        "type": "directReport",
+        "id": "orm_tickets",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentManagement/incidentManagement.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          },
+          {
+            "key": "workflowID",
+            "value": "688cbb5c6012f560ef0c1ded"
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "ORM: Review Request Campaigns",
+        "type": "directReport",
+        "id": "orm_rrm",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "touchpointPortal.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Submit a complaint",
+        "type": "cards",
+        "id": "complaintmgmt_create",
+        "cards": [
+          {
+            "title": "Complaint submission Sensor",
+            "pageTitle": "Complaint submission Sensor",
+            "desc": "You can use this sensor to submit complaints. Share the URL with customers or embed it on your customer interaction channels. URL: https://emojot.com/complaints3",
+            "type": "url",
+            "id": "complaintmgmt_create1",
+            "url": "https://emojot.com/complaints3",
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Complaints",
+        "type": "cards",
+        "id": "complaintmgmt_mgmt",
+        "cards": [
+          {
+            "title": "Open complaints",
+            "pageTitle": "Open complaints",
+            "titleStyle": "color:white;background:#941f10;",
+            "desc": "Details of all open complaints",
+            "type": "report",
+            "id": "complaintmgmt_mgmt1",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "688cbb5c6012f560ef0c1ded"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "openComplaints"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "In-progress complaints",
+            "pageTitle": "In-progress complaints",
+            "titleStyle": "color:white;background:#c17e16;",
+            "desc": "Details of all proposal that are in-progress",
+            "type": "report",
+            "id": "complaintmgmt_mgmt2",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "688cbb5c6012f560ef0c1ded"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "inProgressComplaints"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "Closed complaints",
+            "pageTitle": "Closed complaints",
+            "titleStyle": "color:white;background:#0e7b07;",
+            "desc": "Details of all closed complaints",
+            "type": "report",
+            "id": "complaintmgmt_mgmt3",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "688cbb5c6012f560ef0c1ded"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "closedComplaints"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Complaints Dashboard",
+        "desc": "Aggregated analytics for complaints",
+        "type": "directReport",
+        "id": "complaintmgmt_reports",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentOverview/incidentOverview.jsp"
+          },
+          {
+            "key": "workflowID",
+            "value": "688cbb5c6012f560ef0c1ded"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Lead Capturing",
+        "type": "cards",
+        "id": "lead_create",
+        "cards": [
+          {
+            "title": "Lead Capturing Sensor",
+            "pageTitle": "Lead Capturing Sensor",
+            "desc": "You can use this sensor to capture leads. Share the URL or embed it on your portal. URL: https://emojot.com/DM",
+            "type": "url",
+            "id": "lead_create1",
+            "url": "https://emojot.com/DM",
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Leads",
+        "type": "cards",
+        "id": "lead_mgmt",
+        "cards": [
+          {
+            "title": "Open Leads",
+            "pageTitle": "Open Leads",
+            "desc": "Details of all open leads",
+            "type": "report",
+            "id": "leads_mgmt1",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "623c1ce9802c21f29758a0ae"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "openLeads"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "Proposal Sent",
+            "pageTitle": "Proposal Sent",
+            "desc": "Details of all proposal sent leads",
+            "type": "report",
+            "id": "leads_mgmt2",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "623c1ce9802c21f29758a0ae"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "proposalSentLeads"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "Proposal Accepted",
+            "pageTitle": "Proposal Accepted Leads",
+            "desc": "Details of all proposal accepted leads",
+            "type": "report",
+            "id": "leads_mgmt3",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "623c1ce9802c21f29758a0ae"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "proposalAccepted"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "Changes Requested",
+            "pageTitle": "Changes Requested Leads",
+            "desc": "Details of all changes requested leads",
+            "type": "report",
+            "id": "leads_mgmt4",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "623c1ce9802c21f29758a0ae"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "changesRequestedLeads"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lead Requests Dashboard",
+        "desc": "Aggregated analytics for lead requests",
+        "type": "directReport",
+        "id": "lead_reports",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentOverview/incidentOverview.jsp"
+          },
+          {
+            "key": "workflowID",
+            "value": "623c1ce9802c21f29758a0ae"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Create a Service Request",
+        "type": "cards",
+        "id": "issues_create",
+        "cards": [
+          {
+            "title": "Create a Service Request",
+            "pageTitle": "Create a Service Request",
+            "desc": "Fill and submit the form to create a service request",
+            "type": "url",
+            "id": "issues_create1",
+            "url": "https://emojot.com/DipraBreakdownHandling",
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Service Requests",
+        "type": "cards",
+        "id": "issues_mgmt",
+        "cards": [
+          {
+            "title": "Open Jobs",
+            "pageTitle": "Open Jobs",
+            "desc": "Details of all open jobs",
+            "type": "report",
+            "id": "issues_mgmt1",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "61e6cc71f318dcec1dde5375"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "openIssues"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "title": "Completed Jobs",
+            "pageTitle": "Completed Jobs",
+            "desc": "Details of completed jobs",
+            "type": "report",
+            "id": "issues_mgmt2",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "workflowID",
+                "value": "61e6cc71f318dcec1dde5375"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "selectedReportName",
+                "value": "closedIssues"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Service Requests Data Reports",
+        "desc": "Aggregated analytics for service requests data management",
+        "type": "directReport",
+        "id": "issues_reports",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentOverview/incidentOverview.jsp"
+          },
+          {
+            "key": "workflowID",
+            "value": "61e6cc71f318dcec1dde5375"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Order management dashboard",
+        "type": "directReport",
+        "id": "om_analytics",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentOverview/incidentOverview.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          },
+          {
+            "key": "workflowID",
+            "value": "6191fd5049e344005356f0d0"
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Order management",
+        "type": "cards",
+        "id": "om_mgmt",
+        "cards": [
+          {
+            "title": "Plance an order",
+            "desc": "Submit this form to place an order",
+            "id": "om_mgmt2",
+            "type": "url",
+            "url": "https://emojot.com/cos",
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              },
+              {
+                "id": "#reportIframe",
+                "key": "height",
+                "value": "1000px"
+              }
+            ]
+          },
+          {
+            "title": "Order master data",
+            "desc": "All the orders received",
+            "type": "report",
+            "id": "om_mgmt1",
+            "params": [
+              {
+                "key": "redirectPage",
+                "value": "reports/incidentManagement/incidentManagement.jsp"
+              },
+              {
+                "key": "trimOut",
+                "value": true
+              },
+              {
+                "key": "workflowID",
+                "value": "6191fd5049e344005356f0d0"
+              }
+            ],
+            "styles": [
+              {
+                "id": ".container",
+                "key": "width",
+                "value": "100%"
+              },
+              {
+                "id": "#reportIframe",
+                "key": "height",
+                "value": "1000px"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "View complaints",
+        "desc": "Fix the problem",
+        "type": "directReport",
+        "id": "comp_list",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentManagement/incidentManagement.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          },
+          {
+            "key": "workflowID",
+            "value": "688cbb5c6012f560ef0c1ded"
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Complaint analytics",
+        "desc": "See the pattern",
+        "type": "directReport",
+        "id": "comp_analy",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/incidentOverview/incidentOverview.jsp"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          },
+          {
+            "key": "workflowID",
+            "value": "688cbb5c6012f560ef0c1ded"
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Feedback Analytics",
+        "desc": "Customer insights",
+        "type": "directReport",
+        "id": "cxm_eanalytics",
+        "params": [
+          {
+            "key": "redirectPage",
+            "value": "reports/cxmDashboard/cxmDashboard.jsp"
+          },
+          {
+            "key": "selectedReportName",
+            "value": "Feedback Analytics"
+          },
+          {
+            "key": "trimOut",
+            "value": true
+          }
+        ],
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      },
+      {
+        "title": "Advanced Analytics",
+        "desc": "Advanced Feedback",
+        "type": "groupedCards",
+        "id": "cxm_advanalytics",
+        "groups": [
+          {
+            "title": "Overall Responses View",
+            "cards": [
+              {
+                "title": "Respondent Geo Map",
+                "titleStyle": "color:white;background:#008fed;",
+                "desc": "Geo map of the respondents to the survey",
+                "type": "report",
+                "id": "cxm_advanalytics_2",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "dashboard.jsp"
+                  },
+                  {
+                    "value": "percepticMapPanel",
+                    "key": "reportType"
+                  },
+                  {
+                    "key": "summaryView",
+                    "value": true
+                  },
+                  {
+                    "key": "sensorID",
+                    "value": "688cb44f9e37944e2968f0c2"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              },
+              {
+                "title": "2D Response Analytics",
+                "titleStyle": "color:white;background:#008fed;",
+                "desc": "2D response analytics",
+                "type": "report",
+                "id": "cxm_advanalytics_3",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "twoDimensionalAnalysis_v2.jsp"
+                  },
+                  {
+                    "key": "savedReportId",
+                    "value": "688cba616012f560ef0c1d7a"
+                  },
+                  {
+                    "key": "drillDownType",
+                    "value": "multiple"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              },
+              {
+                "title": "Correlation Analytics",
+                "titleStyle": "color:white;background:#008fed;",
+                "desc": "Correlation analytics",
+                "type": "report",
+                "id": "cxm_advanalytics_4",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "correlationAnalysis.jsp"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  },
+                  {
+                    "key": "correlationQuestions",
+                    "value": "q8426"
+                  },
+                  {
+                    "key": "correlationOpen",
+                    "value": true
+                  },
+                  {
+                    "key": "savedReportId",
+                    "value": "688cb8c69e37944e2968f16b"
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              },
+              {
+                "title": "Raw Responses",
+                "titleStyle": "color:white;background:#008fed;",
+                "desc": "Raw responses",
+                "type": "report",
+                "id": "cxm_advanalytics_5",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "rawEmotes.jsp"
+                  },
+                  {
+                    "key": "sensorID",
+                    "value": "688cb44f9e37944e2968f0c2"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  },
+                  {
+                    "key": "showOtherSensors",
+                    "value": false
+                  },
+                  {
+                    "key": "sensorComments",
+                    "value": "p2651"
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Textual Analytics",
+            "cards": [
+              {
+                "title": "Sentiment Analysis",
+                "titleStyle": "color:white;background:#3CB8EA;",
+                "desc": "Comment sentiment analysis",
+                "type": "report",
+                "id": "cxm_advanalytics_7",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "socialMediaAnalysis.jsp"
+                  },
+                  {
+                    "key": "sensorID",
+                    "value": "688cb44f9e37944e2968f0c2"
+                  },
+                  {
+                    "key": "sensorPages",
+                    "value": "p2651"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Score Analytics",
+            "cards": [
+              {
+                "title": "Score heatmap",
+                "titleStyle": "color:white;background:#E3097F;",
+                "desc": "Highlights response scores across different sections for quick identification of strong and weak areas",
+                "type": "report",
+                "id": "cxm_advanalytics_8",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "reports/scoreOverviewReport/report.jsp"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  },
+                  {
+                    "key": "reportName",
+                    "value": "Score heat map"
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              },
+              {
+                "title": "Score segment trend",
+                "titleStyle": "color:white;background:#E3097F;",
+                "desc": "Tracks score changes over time and across different segments",
+                "type": "report",
+                "id": "cxm_advanalytics_9",
+                "params": [
+                  {
+                    "key": "redirectPage",
+                    "value": "reports/sensorScoreSegmentComparison/report.jsp"
+                  },
+                  {
+                    "key": "trimOut",
+                    "value": true
+                  },
+                  {
+                    "key": "reportName",
+                    "value": "GSS Score Trend"
+                  },
+                  {
+                    "key": "hideUIComponents",
+                    "value": "widgetFilterSection"
+                  }
+                ],
+                "styles": [
+                  {
+                    "id": ".container",
+                    "key": "width",
+                    "value": "100%"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Customer satisfaction Survey",
+        "type": "cards",
+        "id": "cxm_links",
+        "cards": [
+          {
+            "title": "Customer Satisfaction Survey",
+            "titleStyle": "color:white;background:#837c33;",
+            "type": "direct",
+            "desc": "Click below to access the satisfaction survey",
+            "target": "https://emojot.com/carnage",
+            "openInNewPage": true,
+            "id": "cxm_links1",
+            "launchButtonText": "Launch Sensor"
+          }
+        ]
+      },
+      {
+        "title": "Share your survey",
+        "desc": "Use this portal to share your survey with your customers.",
+        "type": "iframe",
+        "id": "reachout1",
+        "src": "<iframe height='700' src='https://emojot.com/emojotReachout?reachOutToken=aG90ZWw=' width='100%' frameborder='none'></iframe>",
+        "styles": [
+          {
+            "id": ".container",
+            "key": "width",
+            "value": "100%"
+          }
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+        "name": "abhishekak@emojot.com",
+        "id": "abhishekak@emojot.com",
+        "title": "company_admin",
+        "email": "abhishekak@emojot.com"
+      },
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+        "name": "onels@emojot.com",
+        "id": "onels@emojot.com",
+        "title": "company_admin",
+        "email": "onels@emojot.com"
+      },
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/688cb1089e37944e2968f023.png",
+        "name": "lankeshh@emojot.com",
+        "id": "lankeshh@emojot.com",
+        "title": "company_admin",
+        "email": "lankeshh@emojot.com"
+      },
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/688cb1089e37944e2968f023.png",
+        "name": "dewminil@emojot.com",
+        "id": "dewminil@emojot.com",
+        "title": "company_admin",
+        "email": "dewminil@emojot.com"
+      },
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/688cb1089e37944e2968f023.png",
+        "name": "shaveenf@emojot.com",
+        "id": "shaveenf@emojot.com",
+        "title": "company_admin",
+        "email": "shaveenf@emojot.com"
+      },
+      {
+        "image": "https://storage.emojot.com/logos/company_logo/688cb1089e37944e2968f023.png",
+        "name": "salmanf@emojot.com",
+        "id": "salmanf@emojot.com",
+        "title": "company_admin",
+        "email": "salmanf@emojot.com"
+      }
+    ],
+    "assignmentAllowed": true,
+    "showAIAssistant": true
+  }

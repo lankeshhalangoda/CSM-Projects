@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753239513193,
+  "updatedTime": 1753268778438,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
@@ -619,12 +619,6 @@
       },
       {
         "email": "dewshik@emojot.com"
-      },
-      {
-        "email": "strategy@classictravel.lk"
-      },
-      {
-        "email": "viraj@emojot.com"
       }
     ],
     "reminderDate": {
@@ -634,7 +628,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-23T03:00:06.929Z",
+    "updatedAt": "2025-07-28T01:00:19.219Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -647,9 +641,10 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-23T03:00:06.929Z",
-      "nextReminderDate": "2025-07-24T10:30:00.000Z"
-    }
+      "updatedAt": "2025-07-30T01:00:13.737Z",
+      "nextReminderDate": "2025-07-31T00:30:00.000Z"
+    },
+    "nextReminderDate": "2025-08-04T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
@@ -658,12 +653,6 @@
       },
       {
         "email": "dewshik@emojot.com"
-      },
-      {
-        "email": "strategy@classictravel.lk"
-      },
-      {
-        "email": "viraj@emojot.com"
       }
     ],
     "timeOffset": -330,

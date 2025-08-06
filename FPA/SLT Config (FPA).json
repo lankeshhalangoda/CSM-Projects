@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753165513217,
+  "updatedTime": 1753338311813,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "687f4c1f9241af5bd8692639",
   "aiModel": "gpt-3.5",
@@ -53,7 +53,13 @@
           "commtracks": [
             545734,
             545772
-          ]
+          ],
+          "exclusions": {
+            "keywords": [
+              "essentials.lk"
+            ],
+            "version": "1.1"
+          }
         },
         "commtracks": [
           545734,

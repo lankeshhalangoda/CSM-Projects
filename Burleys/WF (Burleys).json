@@ -1,0 +1,720 @@
+{
+  "reportNamePrefix": "Case",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "v1",
+  "nameTemplate": "Customer Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
+      },
+      {
+        "id": "googleMap",
+        "name": "Google"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_sms",
+            "target": "admin",
+            "appendEditUrl": true,
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm_email",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_orm_sms",
+            "target": "admin",
+            "appendEditUrl": true,
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "type": "enum",
+      "required": false,
+      "readOnly": true,
+      "editable": true,
+      "values": [
+        {
+          "id": "Colombo 04",
+          "name": "Colombo 04"
+        },
+        {
+          "id": "Nugegoda",
+          "name": "Nugegoda"
+        }
+      ]
+    },
+    "source": {
+      "name": "Source/Channel",
+      "type": "string",
+      "readOnly": true
+    },
+    "order_method": {
+      "name": "Order Method",
+      "type": "string",
+      "readOnly": true
+    },
+    "issue_type": {
+      "name": "Issue Type(s)",
+      "type": "multiselect",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Staff",
+          "name": "Staff"
+        },
+        {
+          "id": "Facilities",
+          "name": "Facilities"
+        },
+        {
+          "id": "Taste/Quality",
+          "name": "Taste/Quality"
+        },
+        {
+          "id": "Value for Money",
+          "name": "Value for Money"
+        },
+        {
+          "id": "Packaging",
+          "name": "Packaging"
+        },
+        {
+          "id": "Delivery Time",
+          "name": "Delivery Time"
+        },
+        {
+          "id": "Order Accuracy",
+          "name": "Order Accuracy"
+        },
+        {
+          "id": "Food Temperature",
+          "name": "Food Temperature"
+        },
+        {
+          "id": "Rider Professionalism",
+          "name": "Rider Professionalism"
+        }
+      ]
+    },
+    "attachment": {
+      "name": "Attachment",
+      "type": "file",
+      "readOnly": true
+    },
+    "rating": {
+      "name": "Satisfaction Level",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "author": {
+      "name": "Author",
+      "type": "string",
+      "readOnly": true
+    },
+    "comments": {
+      "name": "Comment",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "overdue": {
+      "name": "Overdue",
+      "type": "enum",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "2nd Level",
+          "name": "2nd Level",
+          "triggers": [
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_2ndLevel",
+              "target": "admin",
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              }
+            },
+            {
+              "channel": "sms",
+              "template": "overdueAlertSMS_2ndLevel",
+              "target": "admin",
+              "appendEditUrl": true,
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "location",
+                    "operator": "eq",
+                    "value": "$location$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "3rd Level",
+          "name": "3rd Level",
+          "triggers": [
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_3rdLevel",
+              "target": "admin",
+              "contactFilters": [
+                "3rdlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              }
+            },
+            {
+              "channel": "sms",
+              "template": "overdueAlertSMS_3rdLevel",
+              "target": "admin",
+              "appendEditUrl": true,
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "location",
+                    "operator": "eq",
+                    "value": "$location$"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timeZone": -330,
+  "reportSensor": "inci1",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      },
+      {
+        "id": "2ndlevel",
+        "name": "2nd Level Alert",
+        "type": "contact"
+      },
+      {
+        "id": "3rdlevel",
+        "name": "3rd Level Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1753869593189_694804717"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_sms",
+        "target": "admin",
+        "appendEditUrl": true,
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_orm_sms",
+        "target": "admin",
+        "appendEditUrl": true,
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "assignment": {
+        "automaticAssignment": {
+      "isEnabled": true,
+      "email": "bot@gmail.com",
+      "resolvedStatus": [
+        "Resolved"
+      ],
+      "filteringQuery": {
+        "condition": "and",
+        "rules": [
+          {
+            "field": "overdue",
+            "operator": "ne",
+            "value": "3rd Level"
+          }
+        ]
+      },
+      "triggerFlows": [
+        {
+          "condition": {
+            "==": [
+              {
+                "var": "status"
+              },
+              "Open"
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 900000
+            },
+            {
+              "nextLevelTime": 900000,
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "2nd Level"
+                }
+              ]
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {
+            "and": [
+              {
+                "==": [
+                  {
+                    "var": "status"
+                  },
+                  "In Progress"
+                ]
+              },
+              {
+                "!=": [
+                  {
+                    "var": "overdue"
+                  },
+                  "2nd Level"
+                ]
+              }
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 900000
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {
+            "and": [
+              {
+                "==": [
+                  {
+                    "var": "status"
+                  },
+                  "In Progress"
+                ]
+              },
+              {
+                "==": [
+                  {
+                    "var": "overdue"
+                  },
+                  "2nd Level"
+                ]
+              }
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 900000
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_email",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_sms",
+        "target": "employee",
+        "appendEditUrl": true,
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm_email",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_orm_sms",
+        "target": "employee",
+        "appendEditUrl": true,
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "number",
+    "hidden": true
+  }
+}

@@ -1,0 +1,338 @@
+{
+    "reportNamePrefix": "Complaint",
+    "reporterNamePrefix": "Customer",
+    "descriptionFormat": "text",
+    "type": {
+        "name": "Channel",
+        "readOnly": true,
+        "type": "enum",
+        "values": [
+            {
+                "id": "customerSatisfactionSurvey",
+                "name": "Customer Satisfaction Survey"
+            },
+            {
+                "id": "googleMap",
+                "name": "Google"
+            },
+            {
+                "id": "booking",
+                "name": "Booking.com"
+            }
+        ]
+    },
+    "status": {
+        "name": "Status",
+        "type": "enum",
+        "values": [
+            {
+                "id": "Open",
+                "name": "Open"
+            },
+            {
+                "id": "In Progress",
+                "name": "In Progress",
+                "triggers": [
+                    {
+                        "channel": "fieldChange",
+                        "condition": {
+                            "and": [
+                                {
+                                    "==": [
+                                        {
+                                            "var": "status"
+                                        },
+                                        "In Progress"
+                                    ]
+                                }
+                            ]
+                        },
+                        "changingFields": [
+                            {
+                                "id": "priority",
+                                "value": "Medium"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Resolved",
+                "name": "Resolved",
+                "triggers": [
+                    {
+                        "channel": "email",
+                        "template": "complaintResolutionAlert",
+                        "target": "admin",
+                        "contactFilters": [
+                            "ticketResolutionAlert"
+                        ],
+                        "condition": {
+                            "==": [
+                                {
+                                    "var": "type"
+                                },
+                                "customerSatisfactionSurvey"
+                            ]
+                        },
+                        "adminUserQuery": {
+                            "condition": "and",
+                            "rules": [
+                                {
+                                    "field": "location",
+                                    "operator": "eq",
+                                    "value": "$location$"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "channel": "email",
+                        "template": "complaintResolutionAlert_orm",
+                        "target": "admin",
+                        "condition": {
+                            "!=": [
+                                {
+                                    "var": "type"
+                                },
+                                "customerSatisfactionSurvey"
+                            ]
+                        },
+                        "contactFilters": [
+                            "ticketResolutionAlert"
+                        ],
+                        "adminUserQuery": {
+                            "condition": "and",
+                            "rules": [
+                                {
+                                    "field": "location",
+                                    "operator": "eq",
+                                    "value": "$location$"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "transitions": [
+            {
+                "sourceState": "Open",
+                "targetStates": [
+                    "In Progress"
+                ]
+            },
+            {
+                "sourceState": "In Progress",
+                "targetStates": [
+                    "Resolved"
+                ]
+            },
+            {
+                "sourceState": "Resolved",
+                "targetStates": []
+            }
+        ]
+    },
+    "priority": {
+        "name": "Priority",
+        "type": "enum",
+        "values": [
+            {
+                "id": "Low",
+                "name": "Low"
+            },
+            {
+                "id": "Medium",
+                "name": "Medium"
+            },
+            {
+                "id": "High",
+                "name": "High"
+            }
+        ]
+    },
+    "timeSpent": {
+        "name": "Time spent",
+        "type": "time_accumulation"
+    },
+    "customFields": {
+        "location": {
+            "name": "Location",
+            "readOnly": true,
+            "type": "enum",
+            "values": [
+                {
+                    "id": "The Lady Hill Hotel - Galle",
+                    "name": "The Lady Hill Hotel - Galle"
+                }
+            ]
+        },
+        "complaintType": {
+            "name": "Complaint Type",
+            "type": "enum",
+            "readOnly": true,
+            "values": [
+                {
+                    "id": "customerSatisfactionSurvey",
+                    "name": "Customer Satisfaction Survey"
+                },
+                {
+                    "id": "googleMap",
+                    "name": "Google"
+                },
+                {
+                    "id": "booking",
+                    "name": "Booking.com"
+                }
+            ]
+        },
+        "rating": {
+            "name": "Rating",
+            "readOnly": true,
+            "type": "string"
+        },
+        "comments": {
+            "name": "Comment",
+            "readOnly": true,
+            "type": "textArea"
+        },
+        "roomNumber": {
+            "name": "Room Number",
+            "readOnly": true,
+            "type": "textArea"
+        },
+        "author": {
+            "name": "Author",
+            "type": "string",
+            "readOnly": true
+        }
+    },
+    "workflowCreation": {
+        "email": "bot@emojot.com",
+        "triggers": [
+            {
+                "channel": "email",
+                "template": "complaintCreationAlert",
+                "target": "admin",
+                "contactFilters": [
+                    "ticketCreationAlert"
+                ],
+                "condition": {
+                    "==": [
+                        {
+                            "var": "type"
+                        },
+                        "customerSatisfactionSurvey"
+                    ]
+                },
+                "adminUserQuery": {
+                    "condition": "and",
+                    "rules": [
+                        {
+                            "field": "location",
+                            "operator": "eq",
+                            "value": "$location$"
+                        }
+                    ]
+                }
+            },
+            {
+                "channel": "email",
+                "template": "complaintCreationAlert_orm",
+                "target": "admin",
+                "condition": {
+                    "!=": [
+                        {
+                            "var": "type"
+                        },
+                        "customerSatisfactionSurvey"
+                    ]
+                },
+                "contactFilters": [
+                    "ticketCreationAlert"
+                ],
+                "adminUserQuery": {
+                    "condition": "and",
+                    "rules": [
+                        {
+                            "field": "location",
+                            "operator": "eq",
+                            "value": "$location$"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "adminHierarchy": {
+        "list": "admin",
+        "headers": [
+            {
+                "id": "location",
+                "name": "Location",
+                "type": "customField"
+            },
+            {
+                "id": "ticketCreationAlert",
+                "name": "Ticket Creation Alert",
+                "type": "contact"
+            },
+            {
+                "id": "ticketResolutionAlert",
+                "name": "Ticket Resolution Alert",
+                "type": "contact"
+            },
+            {
+                "id": "escalationAlert",
+                "name": "Escalation Alert",
+                "type": "contact"
+            }
+        ],
+        "id": "AHI_1721463473000_1743406006"
+    },
+    "name": "Lady Hill WF",
+    "assignment": {
+        "automaticAssignment": {
+            "isEnabled": true,
+            "email": "bot@emojot.com",
+            "resolvedStatus": [
+                "Resolved"
+            ],
+            "triggerFlows": [
+                {
+                    "condition": {
+                        "!=": [
+                            {
+                                "var": "status"
+                            },
+                            "Resolved"
+                        ]
+                    },
+                    "levels": [
+                        {
+                            "nextLevelTime": 86400000,
+                            "fieldsChange": [
+                                {
+                                    "id": "priority",
+                                    "value": "High"
+                                }
+                            ],
+                            "triggers": [
+                                {
+                                    "channel": "email",
+                                    "template": "complaintEscalationAlert",
+                                    "target": "admin",
+                                    "contactFilters": [
+                                        "escalationAlert"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "nameTemplate": "Online Review Complaint: $type$"
+}

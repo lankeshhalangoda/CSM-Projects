@@ -9,8 +9,8 @@
     "readOnly": true,
     "values": [
       {
-        "id": "Guest Experience",
-        "name": "Guest Experience",
+        "id": "Rooms",
+        "name": "Rooms",
         "highPriorityFields": [
           "Location",
           "Touchpoint",
@@ -22,8 +22,8 @@
         ]
       },
       {
-        "id": "Bistro Experience",
-        "name": "Bistro Experience",
+        "id": "Bistro",
+        "name": "Bistro",
         "highPriorityFields": [
           "Location",
           "Touchpoint",
@@ -118,7 +118,7 @@
     ]
   },
   "timeSpent": {
-    "hidden": true,
+    "hidden": false,
     "name": "Time spent",
     "type": "time_accumulation"
   },
@@ -487,10 +487,10 @@
           "skipAssignment": true,
           "levels": [
             {
-              "nextLevelTime": 540000
+              "nextLevelTime": 600000
             },
             {
-              "nextLevelTime": 2340000,
+              "nextLevelTime": 1200000,
               "fieldsChange": [
                 {
                   "id": "overdue",
@@ -532,7 +532,7 @@
           "skipAssignment": true,
           "levels": [
             {
-              "nextLevelTime": 3540000
+              "nextLevelTime": 1200000
             },
             {
               "fieldsChange": [
@@ -568,7 +568,7 @@
           "skipAssignment": true,
           "levels": [
             {
-              "nextLevelTime": 7140000
+              "nextLevelTime": 1200000
             },
             {
               "fieldsChange": [

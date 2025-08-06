@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q871"</value>
+      </param>
+      <joinOperator>and</joinOperator>
+      <joinParam>
+        <name>emoteNumericValue</name>
+        <operator>gd</operator>
+        <value>-1</value>
+      </joinParam>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>6889e412cc1198b3524eb405</workflowID>
+          <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Customer Satisfaction Survey</type>
+          <priority>High</priority>
+          <status>Open</status>
+          <description>
+Customer Name: $$loyalty_Name_value$$
+Customer Telephone: $$loyalty_Telephone_value$$
+Location: $$emoSignature_Location_value$$
+Satisfaction Level: $$q871_emote$$
+Comment: $$gp557_c1_comment_value$$
+          </description>
+          <customFields>
+          <field>
+              <key>location</key>
+              <value>$$emoSignature_Location_value$$</value>
+            </field>
+            <field>
+              <key>order_method</key>
+              <value>$$q567_emote$$</value>
+            </field>
+            <field>
+              <key>issue_type</key>
+              <value>$$q1308_emote$$</value>
+            </field>
+            <field>
+              <key>attachment</key>
+              <value>$$mediafile_p557$$</value>
+            </field>
+            <field>
+              <key>rating</key>
+              <value>$$q871_emote$$</value>
+            </field>
+            <field>
+              <key>comments</key>
+              <value>$$gp557_c1_comment_value$$</value>
+            </field>
+            <field>
+              <key>source</key>
+              <value>$$q1738_emote$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+
+  <cepRule id="2" timeWindow="5">
+        <params>
+            <param>
+                <name>percepticDrillDown</name>
+                <operator>eq</operator>
+                <value>"q871"</value>
+            </param>
+            <joinOperator>and</joinOperator>
+            <joinParam>
+                <derivedValue>emoteNumericValue</derivedValue>
+                <operator>ldOrEq</operator>
+                <value>-1</value>
+            </joinParam>
+        </params>
+        <engagementActions>
+            <action>
+                <type>email</type>
+                <data>
+                    <emoSignatureBasedRecipientSelection>true</emoSignatureBasedRecipientSelection>
+                    <emoSignatureBasedEmailRecipientList>
+                        <recipient>
+                            <emoSignatureCondition>
+                                <Location>Crescat</Location>
+                            </emoSignatureCondition>
+                            <to>lankeshh@emojot.com</to>
+                        </recipient>
+                    </emoSignatureBasedEmailRecipientList>
+                    <subject>Emojot: Positive Feedback Alert for Burley's</subject>
+          <bodyType>html</bodyType>
+          <body><![CDATA[
+<p>Hello,</p>
+<p>A customer has expressed positive feedback at <strong>Burley's</strong>.</p>
+<p>
+  <strong>Location:</strong> $$emoSignature_Location_value$$<br>
+  <strong>Source/Channel:</strong> $$q1738_emote$$<br>
+  <strong>Order Method:</strong> $$q567_emote$$<br>
+  <strong>Satisfaction Level:</strong> $$q871_emote$$<br>
+  <strong>Net Promoter Score:</strong> $$q5749_emote$$<br>
+</p>
+<p>Please check the system for more details.</p>
+]]></body>
+                </data>
+                <validityPeriod>5</validityPeriod>
+            </action>
+        </engagementActions>
+    </cepRule>
+</cepRules>

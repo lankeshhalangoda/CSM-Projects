@@ -1,7 +1,7 @@
 {
-  "updatedTime": 1750296381324,
+  "updatedTime": 1753268778438,
   "updatedBy": "lankeshh@emojot.com",
-  "companyID": "68526768237bdc055f657a4e",
+  "companyID": "688cb1089e37944e2968f023",
   "aiModel": "gpt-3.5",
   "vendors": [
     "mentionlytics"
@@ -9,40 +9,54 @@
   "token": "nkJYR2PcOYEToZ2jHC5U4Kczktnnwlk0ZhnhNzWO4LsmWSBXuZrWTB4pf0ysGhsXk272nfUuWenX4qMLEIv60j9m",
   "competitors": [
     {
-      "label": "CDB",
-      "color": "#ED3E42",
+      "label": "Carnage",
+      "color": "#FF7F50",
       "brand": true,
       "keys": [
-        "CDB"
+        "Carnage"
       ]
     },
     {
-      "label": "LB Finance",
-      "color": "#202330",
+      "label": "FOA",
+      "color": "#1E90FF",
       "keys": [
-        "LB Finance"
+        "FOA"
       ]
     },
     {
-      "label": "LOLC Finance",
-      "color": "#005DAB",
+      "label": "Pepper Street",
+      "color": "#FF4500",
       "keys": [
-        "LOLC Finance"
+        "Pepper Street"
       ]
     },
     {
-      "label": "Commercial Credit",
-      "color": "#676765",
+      "label": "Scylla Zelus",
+      "color": "#32CD32",
       "keys": [
-        "Commercial Credit"
+        "Scylla Zelus"
+      ]
+    },
+    {
+      "label": "Street82",
+      "color": "#FFD700",
+      "keys": [
+        "Street82"
+      ]
+    },
+    {
+      "label": "Bolt Gear",
+      "color": "#8A2BE2",
+      "keys": [
+        "Bolt Gear"
       ]
     }
   ],
   "dataRetreivers": {
     "mentionlytics": [
       {
-        "label": "CDB",
-        "key": "CDB",
+        "label": "Carnage",
+        "key": "Carnage",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -52,117 +66,44 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "Citizens Development Business Finance PLC",
-            "Citizens Development Business",
-            "Citizens",
-            "Development",
-            "Business",
-            "Finance",
-            "CDB Finance",
-            "#CDBOnline",
-            "#CDBFinance",
-            "#CDBSavings",
-            "CDBOnline",
-            "CDBFinance",
-            "CDBSavings"
+            "Carnage",
+            "#Carnage",
+            "clothing"
           ],
           "commtracks": [
-            536570,
-            536573,
-            536574,
-            536583
+            547980
           ],
           "exclusions": {
             "keywords": [
-              "telegram",
-              "canada",
-              "caribbean",
-              "investimento",
-              "DTC",
-              "bahamas",
-              "investimentos",
-              "haricut",
-              "investindo",
-              "mentoriafinanceira",
-              "educaçãofinanceira",
-              "educacaofinanceira",
-              "china",
-              "crypto",
-              "cryptocurrency",
-              "stream",
-              "financeira",
-              "investido",
-              "cairo",
-              "$cdb",
-              "token",
-              "sncf",
-              "julien_cdb",
-              "mynt_josh",
-              "mahishadal",
-              "medinipur",
-              "kvk",
-              "fpi",
-              "nabard",
-              "futebol",
-              "tesouro",
-              "mentoriafinanceira",
-              "brasileiro",
-              "Government of India",
-              "Coconut Development Board",
-              "t.co",
-              "primopobre",
-              "Mysterio",
-              "Illinois",
-              "don bosco",
-              "Telinho Alegre",
-              "streamflow.finance",
-              "eporktimes",
-              "GuyanaGoodNews",
-              "financaspessoais",
-              "fgc",
-              "CDBGroup",
-              "Conditionnement Dechets Béton",
-              "Club Dirigeant Bâtiment 4.0",
-              "BTP",
-              "onlinecourses",
-              "Academy IT",
-              "MDBs",
-              "Belize",
-              "CDB 4.0",
-              "Ministry of Agriculture of Bangladesh",
-              "de",
-              "Committee for Melbourne",
-              "CDBS",
-              "SIA Dental",
-              "The Gill Master",
-              "Mysterio623",
-              "slcouple89",
-              "vinduwarath",
-              "IamAgnar",
-              "VLOG with KANI",
-              "Island Gays",
-              "gay",
-              "lesbian",
-              "sex",
-              "Island Gays!",
-              "teninchtopx",
-              "eugenegg99"
+              "gaming",
+              "venom",
+              "usa",
+              "island.lk",
+              "midpoint.lk",
+              "ft.lk",
+              "wrestling",
+              "wwe",
+              "games",
+              "game",
+              "movie",
+              "movies",
+              "wrestler",
+              "israel"
             ],
-            "version": "1.5"
+            "version": "1.1"
           }
         },
         "commtracks": [
-          536570,
-          536571,
-          536572,
-          536573,
-          536574,
-          536583
+          547980,
+          547942,
+          547943,
+          547944,
+          547945
         ]
       },
       {
-        "label": "LB Finance",
-        "key": "LB Finance",
+        "label": "FOA",
+        "key": "FOA",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -172,31 +113,25 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "#LBFinancePLC",
-            "LBFinancePLC",
-            "LBFinance",
-            "Finance",
-            "PLC"
+            "FOA",
+            "#FOA",
+            "clothing"
           ],
           "commtracks": [
-            536576,
-            536579,
-            536580,
-            536581
+            547984
           ]
         },
         "commtracks": [
-          536576,
-          536577,
-          536578,
-          536579,
-          536580,
-          536581
+          547984,
+          547947,
+          547949,
+          547950,
+          547951
         ]
       },
       {
-        "label": "LOLC Finance",
-        "key": "LOLC Finance",
+        "label": "Pepper Street",
+        "key": "Pepper Street",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -206,36 +141,26 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "#LOLCFinance",
-            "LOLCFinance",
-            "#LOLC",
-            "LOLC",
-            "Finance",
-            "PLC",
-            "Lanka ORIX Leasing Company Finance",
-            "Lanka ORIX Leasing Company",
-            "ORIX",
-            "#ORIX"
+            "PepperStreet",
+            "#PepperStreet",
+            "Pepper Street",
+            "clothing"
           ],
           "commtracks": [
-            536584,
-            536586,
-            536587,
-            536589
+            547952
           ]
         },
         "commtracks": [
-          536584,
-          536585,
-          536586,
-          536587,
-          536588,
-          536589
+          547952,
+          547953,
+          547954,
+          547955,
+          547956
         ]
       },
       {
-        "label": "Commercial Credit",
-        "key": "Commercial Credit",
+        "label": "Scylla Zelus",
+        "key": "Scylla Zelus",
         "verification": {
           "wordsToCheck": [
             "Sri Lanka",
@@ -245,22 +170,76 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "#CommercialCredit",
-            "Finance",
-            "PLC",
-            "Commercial",
-            "Credit"
+            "Scylla Zelus",
+            "#ScyllaZelus",
+            "ScyllaZelus",
+            "clothing"
           ],
           "commtracks": [
-            536590,
-            536594
+            547985
           ]
         },
         "commtracks": [
-          536590,
-          536591,
-          536592,
-          536594
+          547985,
+          547958,
+          547959,
+          547960,
+          547961
+        ]
+      },
+      {
+        "label": "Street82",
+        "key": "Street82",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "Street82",
+            "#Street82",
+            "clothing"
+          ],
+          "commtracks": [
+            547965
+          ]
+        },
+        "commtracks": [
+          547965,
+          547966,
+          547967,
+          547968,
+          547969
+        ]
+      },
+      {
+        "label": "Bolt Gear",
+        "key": "Bolt Gear",
+        "verification": {
+          "wordsToCheck": [
+            "Sri Lanka",
+            "srilanka",
+            "SriLanka",
+            "Srilanka",
+            "sriLanka",
+            "Ceylon",
+            "ceylon",
+            "BoltGear",
+            "#BoltGear",
+            "clothing"
+          ],
+          "commtracks": [
+            547970
+          ]
+        },
+        "commtracks": [
+          547970,
+          547971,
+          547972,
+          547973
         ]
       }
     ]
@@ -348,138 +327,127 @@
       "others": "Please analyze these tiktok and news posts of ##brands## that received high engagement. Give us a customer behaviour and preference analysis seperately based on the engagements. Please return your analysis well formatted with HTML tags.\n"
     }
   },
-  "sltCategories": {
-    "Loan Products": [
-      "personal loan",
-      "home loan",
-      "education loan",
-      "vehicle loan",
-      "business loan",
-      "gold loan",
-      "salary loan",
-      "emergency loan",
-      "instant loan",
-      "secured loan",
-      "unsecured loan",
-      "loan top-up"
-    ],
-    "Leasing Services": [
-      "vehicle leasing",
-      "bike leasing",
-      "commercial leasing",
-      "leasing calculator",
-      "easy leasing",
-      "lease renewal",
-      "leasing options",
-      "hire purchase",
-      "residual value",
-      "low down payment",
-      "leasing plan",
-      "leasing documents"
-    ],
-    "Fixed Deposits": [
-      "fd rates",
-      "fixed deposit",
-      "interest rates",
-      "maturity value",
-      "monthly interest",
-      "high return",
-      "fd calculator",
-      "deposit plans",
-      "secure investment",
-      "short-term fd",
-      "long-term fd",
-      "fd renewal"
-    ],
-    "Savings Accounts": [
-      "savings account",
-      "interest bearing",
-      "daily interest",
-      "youth account",
-      "kids savings",
-      "online savings",
-      "joint account",
-      "account opening",
-      "account transfer",
-      "zero balance",
-      "passbook",
-      "ATM access"
-    ],
-    "Digital Services": [
-      "mobile app",
-      "internet banking",
-      "online services",
-      "digital wallet",
-      "qr payments",
-      "fund transfer",
-      "online deposits",
-      "virtual assistant",
-      "account alerts",
-      "payment reminders",
-      "app update",
-      "security features"
-    ],
-    "Customer Support": [
-      "customer care",
-      "support call",
-      "branch visit",
-      "delay response",
-      "issue handling",
-      "quick response",
-      "helpdesk",
-      "service quality",
-      "resolution time",
-      "ticket raised",
-      "complaint follow-up",
-      "feedback loop"
-    ],
-    "Insurance Services": [
-      "life cover",
-      "insurance policy",
-      "loan insurance",
-      "vehicle insurance",
-      "medical insurance",
-      "premium payment",
-      "claim process",
-      "policy document",
-      "renewal reminder",
-      "coverage terms",
-      "policy lapse",
-      "insurance benefit"
-    ],
-    "Customer Experience": [
-      "client feedback",
-      "service review",
-      "application process",
-      "approval time",
-      "support experience",
-      "staff behavior",
-      "user interface",
-      "mobile experience",
-      "trust factor",
-      "ease of use",
-      "customer journey",
-      "branch experience"
-    ],
-    "Company Initiatives": [
-      "financial literacy",
-      "csr events",
-      "community support",
-      "staff training",
-      "career development",
-      "partnerships",
-      "local events",
-      "awareness campaigns",
-      "scholarships",
-      "reward programs",
-      "customer events",
-      "educational programs"
-    ]
-  },
+"sltCategories": {
+  "Clothing": [
+    "t-shirts",
+    "hoodies",
+    "jackets",
+    "pants",
+    "jeans",
+    "shirts",
+    "shorts",
+    "sweaters",
+    "outerwear",
+    "basics",
+    "tracksuits",
+    "coats"
+  ],
+  "Footwear": [
+    "sneakers",
+    "boots",
+    "slippers",
+    "sandals",
+    "runners",
+    "high-tops",
+    "low-tops",
+    "casual shoes",
+    "skate shoes",
+    "street shoes",
+    "trainers",
+    "footwear"
+  ],
+  "Accessories": [
+    "hats",
+    "bags",
+    "belts",
+    "sunglasses",
+    "watches",
+    "jewelry",
+    "wallets",
+    "socks",
+    "backpacks",
+    "rings",
+    "chains",
+    "scarves"
+  ],
+  "Sales & Offers": [
+    "discounts",
+    "clearance",
+    "special offers",
+    "promo code",
+    "limited time",
+    "deals",
+    "sale items",
+    "price drops",
+    "bundle offers",
+    "flash sale",
+    "free shipping",
+    "seasonal sale"
+  ],
+  "Orders & Delivery": [
+    "track order",
+    "shipping",
+    "delivery",
+    "returns",
+    "refunds",
+    "exchange",
+    "order issues",
+    "late delivery",
+    "cancel order",
+    "order number",
+    "package status",
+    "delivery time"
+  ],
+  "Customer Service": [
+    "help",
+    "support",
+    "contact us",
+    "live chat",
+    "email support",
+    "complaints",
+    "service issue",
+    "feedback",
+    "response time",
+    "assistance",
+    "helpline",
+    "customer care"
+  ],
+  "Style & Fit": [
+    "size guide",
+    "fit",
+    "measurements",
+    "what to wear",
+    "fashion tips",
+    "styling ideas",
+    "color matching",
+    "outfit ideas",
+    "wardrobe basics",
+    "look ideas",
+    "try on",
+    "model size"
+  ],
+  "Brand & Events": [
+    "brand info",
+    "about us",
+    "new arrivals",
+    "store events",
+    "brand launch",
+    "campaigns",
+    "fashion events",
+    "collections",
+    "updates",
+    "brand story",
+    "featured products",
+    "store locator"
+  ]
+},
   "alertConfig": {
     "receivers": [
       {
         "email": "lankeshh@emojot.com"
+      },
+      {
+        "email": "onels@emojot.com"
       }
     ],
     "reminderDate": {
@@ -489,29 +457,35 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-14T01:00:28.293Z",
+    "updatedAt": "2025-07-28T01:00:19.219Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
           "email": "lankeshh@emojot.com"
+        },
+        {
+          "email": "onels@emojot.com"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-16T01:00:14.978Z",
-      "nextReminderDate": "2025-07-17T00:30:00.000Z"
+      "updatedAt": "2025-07-30T01:00:13.737Z",
+      "nextReminderDate": "2025-07-31T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-07-21T00:30:00.000Z"
+    "nextReminderDate": "2025-08-04T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
         "email": "lankeshh@emojot.com"
+      },
+      {
+        "email": "onels@emojot.com"
       }
     ],
     "timeOffset": -330,
-    "companyID": "68526768237bdc055f657a4e",
+    "companyID": "688cb1089e37944e2968f023",
     "threshold": 1.4,
     "averageDates": 7,
     "emailTemplate": "SLT_StormAlert",
@@ -522,7 +496,7 @@
     "AIModel": "manual"
   },
   "hideUnloadedImages": true,
-  "companyName": "CDB",
+  "companyName": "Carnage",
   "syncEnabled": true,
   "type": "socialNetworkListener"
 }

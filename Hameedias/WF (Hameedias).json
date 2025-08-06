@@ -1,0 +1,652 @@
+{
+  "reportNamePrefix": "Case",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "hameedia_wf",
+  "nameTemplate": "Customer Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "customerSatisfactionSurvey",
+        "name": "Complaint Satisfaction Survey",
+        "highPriorityFields": [
+          "Location",
+          "rating",
+          "comment",
+          "issueType",
+          "overdue"
+        ]
+      },
+      {
+        "id": "googleMap",
+        "name": "Google",
+        "highPriorityFields": [
+          "Location",
+          "rating",
+          "comment",
+          "author",
+          "overdue"
+        ]
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm_email",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "Location",
+                  "operator": "eq",
+                  "value": "$Location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "Brand": {
+      "name": "Brand",
+      "type": "enum",
+      "required": true,
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Hameedia",
+          "name": "Hameedia"
+        },
+        {
+          "id": "Hsport",
+          "name": "Hsport"
+        },
+        {
+          "id": "Envoy Mansion",
+          "name": "Envoy Mansion"
+        },
+        {
+          "id": "Real Barber",
+          "name": "Real Barber"
+        },
+        {
+          "id": "My Friend Cafe",
+          "name": "My Friend Cafe"
+        }
+      ]
+    },
+    "Location": {
+      "name": "Location",
+      "type": "enum",
+      "required": true,
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Hameedia Majestic City",
+          "name": "Hameedia Majestic City"
+        },
+        {
+          "id": "Hameedia Wattala",
+          "name": "Hameedia Wattala"
+        },
+        {
+          "id": "Hameedia Kiribathgoda",
+          "name": "Hameedia Kiribathgoda"
+        },
+        {
+          "id": "Hameedia Rajagiriya",
+          "name": "Hameedia Rajagiriya"
+        },
+        {
+          "id": "Hameedia Peradeniya",
+          "name": "Hameedia Peradeniya"
+        },
+        {
+          "id": "Hameedia Pettah",
+          "name": "Hameedia Pettah"
+        },
+        {
+          "id": "Hameedia Kandy City Center",
+          "name": "Hameedia Kandy City Center"
+        },
+        {
+          "id": "Hameedia Pelawatta",
+          "name": "Hameedia Pelawatta"
+        },
+        {
+          "id": "Hameedia Kurunegala",
+          "name": "Hameedia Kurunegala"
+        },
+        {
+          "id": "Hameedia One Galle Face",
+          "name": "Hameedia One Galle Face"
+        },
+        {
+          "id": "Hameedia Negombo",
+          "name": "Hameedia Negombo"
+        },
+        {
+          "id": "Hameedia Nugegoda",
+          "name": "Hameedia Nugegoda"
+        },
+        {
+          "id": "Hameedia Wellawatte",
+          "name": "Hameedia Wellawatte"
+        },
+        {
+          "id": "Hameedia Havelock city Mall",
+          "name": "Hameedia Havelock city Mall"
+        },
+        {
+          "id": "Hsport Colombo 07",
+          "name": "Hsport Colombo 07"
+        },
+        {
+          "id": "Hsport Kandy City Center",
+          "name": "Hsport Kandy City Center"
+        },
+        {
+          "id": "Hsport Race course",
+          "name": "Hsport Race course"
+        },
+        {
+          "id": "Envoy Mansion Colombo 3",
+          "name": "Envoy Mansion Colombo 3"
+        },
+        {
+          "id": "Real Barber",
+          "name": "Real Barber"
+        },
+        {
+          "id": "My Friend Cafe",
+          "name": "My Friend Cafe"
+        }
+      ]
+    },
+    "Satisfaction": {
+      "name": "Satisfaction",
+      "type": "string",
+      "required": true,
+      "readOnly": true
+    },
+    "rating": {
+      "name": "Rating",
+      "type": "string",
+      "required": true,
+      "readOnly": true,
+      "editable": false
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "required": false,
+      "readOnly": true,
+      "editable": false
+    },
+    "author": {
+      "name": "Author",
+      "type": "textArea",
+      "required": false,
+      "readOnly": true
+    },
+    "issueType": {
+      "name": "Issue Type(s)",
+      "type": "multiselect",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Food Quality",
+          "name": "Food Quality"
+        },
+        {
+          "id": "Friendliness",
+          "name": "Friendliness"
+        },
+        {
+          "id": "Experience",
+          "name": "Experience"
+        },
+        {
+          "id": "Cleanliness",
+          "name": "Value for Money"
+        },
+        {
+          "id": "Other",
+          "name": "Other"
+        },
+        {
+          "id": "Product Quality",
+          "name": "Product Quality"
+        },
+        {
+          "id": "Customer Service",
+          "name": "Customer Service"
+        },
+        {
+          "id": "Shopping Experience",
+          "name": "Shopping Experience"
+        }
+      ]
+    },
+    "overdue": {
+      "name": "Overdue",
+      "type": "enum",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "2nd Level",
+          "name": "2nd Level",
+          "triggers": [
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_2ndLevel",
+              "target": "admin",
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "3rd Level",
+          "name": "3rd Level",
+          "triggers": [
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_3rdLevel",
+              "target": "admin",
+              "contactFilters": [
+                "3rdlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timeZone": -330,
+  "reportSensor": "inci1",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "Brand",
+        "name": "Brand",
+        "type": "customField"
+      },
+      {
+        "id": "Location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      },
+      {
+        "id": "1stlevel",
+        "name": "1st Level Alert",
+        "type": "contact"
+      },
+      {
+        "id": "2ndlevel",
+        "name": "2nd Level Alert",
+        "type": "contact"
+      },
+      {
+        "id": "3rdlevel",
+        "name": "3rd Level Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1720446904000_1234569876"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketAssignee",
+          "1stlevel"
+        ],
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketAssignee",
+          "1stlevel"
+        ],
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        },
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "Location",
+              "operator": "eq",
+              "value": "$Location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_email",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm_email",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ],
+    "automaticAssignment": {
+      "isEnabled": true,
+      "email": "bot@gmail.com",
+      "resolvedStatus": [
+        "Resolved"
+      ],
+      "filteringQuery": {
+        "condition": "and",
+        "rules": [
+          {
+            "field": "overdue",
+            "operator": "ne",
+            "value": "3rd Level"
+          }
+        ]
+      },
+      "triggerFlows": [
+        {
+          "condition": {
+            "==": [
+              {
+                "var": "status"
+              },
+              "Open"
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 86400000
+            },
+            {
+              "nextLevelTime": 86400000,
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "2nd Level"
+                }
+              ]
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {
+            "and": [
+              {
+                "==": [
+                  {
+                    "var": "status"
+                  },
+                  "In Progress"
+                ]
+              },
+              {
+                "!=": [
+                  {
+                    "var": "overdue"
+                  },
+                  "2nd Level"
+                ]
+              }
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 86400000
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {
+            "and": [
+              {
+                "==": [
+                  {
+                    "var": "status"
+                  },
+                  "In Progress"
+                ]
+              },
+              {
+                "==": [
+                  {
+                    "var": "overdue"
+                  },
+                  "2nd Level"
+                ]
+              }
+            ]
+          },
+          "skipAssignment": true,
+          "levels": [
+            {
+              "nextLevelTime": 86400000
+            },
+            {
+              "fieldsChange": [
+                {
+                  "id": "overdue",
+                  "value": "3rd Level"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timeSpent": {
+    "hidden": false,
+    "name": "Time spent",
+    "type": "time_accumulation"
+  }
+}

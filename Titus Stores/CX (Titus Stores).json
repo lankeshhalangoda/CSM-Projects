@@ -73,10 +73,6 @@
           "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
         },
         {
-          "key": "newLocationHide",
-          "value": true
-        },
-        {
           "key": "trimOut",
           "value": true
         }
@@ -589,7 +585,7 @@
       "title": "company_admin",
       "email": "vikashar@emojot.com"
     },
-        {
+    {
       "image": "https://storage.emojot.com/logos/company_logo/660cf4f4ed63e0dbb1f5d963.png",
       "name": "andun@emojot.com",
       "id": "andun@emojot.com",
@@ -651,6 +647,34 @@
       "id": "dewshi2@emojot.com",
       "title": "company_admin",
       "email": "dewshi2@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68788ec9ed50dd32c5308ae8.png",
+      "name": "isuris@emojot.com",
+      "id": "isuris@emojot.com",
+      "title": "company_admin",
+      "email": "isuris@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68788ec9ed50dd32c5308ae8.png",
+      "name": "titusstores@emojot.com",
+      "id": "titusstores@emojot.com",
+      "title": "company_admin",
+      "email": "titusstores@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68788ec9ed50dd32c5308ae8.png",
+      "name": "sampath@emojot.com",
+      "id": "sampath@emojot.com",
+      "title": "company_admin",
+      "email": "sampath@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68788ec9ed50dd32c5308ae8.png",
+      "name": "johan@titusstores.com",
+      "id": "johan@titusstores.com",
+      "title": "company_admin",
+      "email": "johan@titusstores.com"
     }
   ],
   "assignmentAllowed": true,
