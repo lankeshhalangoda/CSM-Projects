@@ -50,8 +50,11 @@
             "channel": "email",
             "template": "complaintResolution",
             "target": "admin",
-            "contactFilters": [
-              "ticketResolutionAlert"
+            "contacts": [
+              "ranaf@abansgroup.com",
+              "hansac@abansgroup.com",
+              "rajinir@abansgroup.com",
+              "prabuddhikaj@abansgroup.com"
             ],
             "adminUserQuery": {
               "condition": {
@@ -152,172 +155,1340 @@
       "type": "enum",
       "values": [
         {
-          "id": "Abans Elite - Colombo 03 (Main Showroom)",
-          "name": "Abans Elite - Colombo 03 (Main Showroom)"
+          "id": "Anuradhapura - Abans Elite",
+          "name": "Anuradhapura - Abans Elite"
         },
         {
-          "id": "Abans Elite - Rajagiriya",
-          "name": "Abans Elite - Rajagiriya"
+          "id": "Badulla - Abans Elite",
+          "name": "Badulla - Abans Elite"
         },
         {
-          "id": "Abans Elite - Katunayake",
-          "name": "Abans Elite - Katunayake"
+          "id": "Colombo 03 (Main Showroom) - Abans Elite",
+          "name": "Colombo 03 (Main Showroom) - Abans Elite"
         },
         {
-          "id": "Abans Elite - Maharagama",
-          "name": "Abans Elite - Maharagama"
+          "id": "Colombo City Centre - Abans Elite",
+          "name": "Colombo City Centre - Abans Elite"
         },
         {
-          "id": "Abans Elite - Welisara",
-          "name": "Abans Elite - Welisara"
+          "id": "Dalugama (Kiribathgoda) - Abans Elite",
+          "name": "Dalugama (Kiribathgoda) - Abans Elite"
         },
         {
-          "id": "Abans Service Center - Wellawatta",
-          "name": "Abans Service Center - Wellawatta"
+          "id": "Dehiwala - Abans Elite",
+          "name": "Dehiwala - Abans Elite"
+        },
+        {
+          "id": "Galle - Abans Elite",
+          "name": "Galle - Abans Elite"
+        },
+        {
+          "id": "Gampaha - Abans Elite",
+          "name": "Gampaha - Abans Elite"
+        },
+        {
+          "id": "Havelock City Mall - Abans Elite",
+          "name": "Havelock City Mall - Abans Elite"
+        },
+        {
+          "id": "Homagama - Abans Elite",
+          "name": "Homagama - Abans Elite"
+        },
+        {
+          "id": "Ja-Ela - Abans Elite",
+          "name": "Ja-Ela - Abans Elite"
+        },
+        {
+          "id": "Jaffna - Abans Elite",
+          "name": "Jaffna - Abans Elite"
+        },
+        {
+          "id": "Kadawatha - Abans Elite",
+          "name": "Kadawatha - Abans Elite"
+        },
+        {
+          "id": "Kaduruwela - Abans Elite",
+          "name": "Kaduruwela - Abans Elite"
+        },
+        {
+          "id": "Kalutara - Abans Elite",
+          "name": "Kalutara - Abans Elite"
+        },
+        {
+          "id": "Kandy - Abans Elite",
+          "name": "Kandy - Abans Elite"
+        },
+        {
+          "id": "Katugastota - Abans Elite",
+          "name": "Katugastota - Abans Elite"
+        },
+        {
+          "id": "Katunayake - Abans Elite",
+          "name": "Katunayake - Abans Elite"
+        },
+        {
+          "id": "Kurunegala - Abans Elite",
+          "name": "Kurunegala - Abans Elite"
+        },
+        {
+          "id": "Liberty Plaza - Abans Elite",
+          "name": "Liberty Plaza - Abans Elite"
+        },
+        {
+          "id": "Maharagama - Abans Elite",
+          "name": "Maharagama - Abans Elite"
+        },
+        {
+          "id": "Malabe - Abans Elite",
+          "name": "Malabe - Abans Elite"
+        },
+        {
+          "id": "Matara - Abans Elite",
+          "name": "Matara - Abans Elite"
+        },
+        {
+          "id": "Moratuwa - Abans Elite",
+          "name": "Moratuwa - Abans Elite"
+        },
+        {
+          "id": "Mount Lavinia - Abans Elite",
+          "name": "Mount Lavinia - Abans Elite"
+        },
+        {
+          "id": "Nawala (Nugegoda) - Abans Elite",
+          "name": "Nawala (Nugegoda) - Abans Elite"
+        },
+        {
+          "id": "Negombo - Abans Elite",
+          "name": "Negombo - Abans Elite"
+        },
+        {
+          "id": "Panadura - Abans Elite",
+          "name": "Panadura - Abans Elite"
+        },
+        {
+          "id": "Pelawatta - Abans Elite",
+          "name": "Pelawatta - Abans Elite"
+        },
+        {
+          "id": "Piliyandala - Abans Elite",
+          "name": "Piliyandala - Abans Elite"
+        },
+        {
+          "id": "Rajagiriya - Abans Elite",
+          "name": "Rajagiriya - Abans Elite"
+        },
+        {
+          "id": "Ratmalana - Abans Elite",
+          "name": "Ratmalana - Abans Elite"
+        },
+        {
+          "id": "Ratnapura - Abans Elite",
+          "name": "Ratnapura - Abans Elite"
+        },
+        {
+          "id": "Thalawathugoda - Abans Elite",
+          "name": "Thalawathugoda - Abans Elite"
+        },
+        {
+          "id": "Vavuniya - Abans Elite",
+          "name": "Vavuniya - Abans Elite"
+        },
+        {
+          "id": "Welisara - Abans Elite",
+          "name": "Welisara - Abans Elite"
+        },
+        {
+          "id": "Maharagama - Abans Elite B",
+          "name": "Maharagama - Abans Elite B"
+        },
+        {
+          "id": "Agalawatta - Limited",
+          "name": "Agalawatta - Limited"
+        },
+        {
+          "id": "Ahangama - Limited",
+          "name": "Ahangama - Limited"
+        },
+        {
+          "id": "Akkareipattuwa - Limited",
+          "name": "Akkareipattuwa - Limited"
+        },
+        {
+          "id": "Akuressa - Limited",
+          "name": "Akuressa - Limited"
+        },
+        {
+          "id": "Alawwa - Limited",
+          "name": "Alawwa - Limited"
+        },
+        {
+          "id": "Aluthgama Unlimited",
+          "name": "Aluthgama Unlimited"
+        },
+        {
+          "id": "Ambalangoda - Limited",
+          "name": "Ambalangoda - Limited"
+        },
+        {
+          "id": "Ambalanthota Unlimited",
+          "name": "Ambalanthota Unlimited"
+        },
+        {
+          "id": "Ambalantota - Limited",
+          "name": "Ambalantota - Limited"
+        },
+        {
+          "id": "Ampara - Limited",
+          "name": "Ampara - Limited"
+        },
+        {
+          "id": "Angunukolapelessa  - Limited",
+          "name": "Angunukolapelessa  - Limited"
+        },
+        {
+          "id": "Anuradhapura A - Limited",
+          "name": "Anuradhapura A - Limited"
+        },
+        {
+          "id": "Anuradhapura Jvc - Limited",
+          "name": "Anuradhapura Jvc - Limited"
+        },
+        {
+          "id": "Aralaganwila - Limited",
+          "name": "Aralaganwila - Limited"
+        },
+        {
+          "id": "Atchchuvali - Limited",
+          "name": "Atchchuvali - Limited"
+        },
+        {
+          "id": "Athurugiriya Retail Channel - 01 B",
+          "name": "Athurugiriya Retail Channel - 01 B"
+        },
+        {
+          "id": "Attampitiya- Limited",
+          "name": "Attampitiya- Limited"
+        },
+        {
+          "id": "Avissawella B - Limited",
+          "name": "Avissawella B - Limited"
+        },
+        {
+          "id": "Avissawella Unlimited",
+          "name": "Avissawella Unlimited"
+        },
+        {
+          "id": "Badalkumbura Ad - Limited",
+          "name": "Badalkumbura Ad - Limited"
+        },
+        {
+          "id": "Baddegama - Limited",
+          "name": "Baddegama - Limited"
+        },
+        {
+          "id": "Badulla - Limited",
+          "name": "Badulla - Limited"
+        },
+        {
+          "id": "Badulla Unlimited",
+          "name": "Badulla Unlimited"
+        },
+        {
+          "id": "Bakamoona  - Limited",
+          "name": "Bakamoona  - Limited"
+        },
+        {
+          "id": "Balangoda - Limited",
+          "name": "Balangoda - Limited"
+        },
+        {
+          "id": "Balangoda  Unlimited",
+          "name": "Balangoda  Unlimited"
+        },
+        {
+          "id": "Bandaragama - Limited",
+          "name": "Bandaragama - Limited"
+        },
+        {
+          "id": "Bandarawela - Limited",
+          "name": "Bandarawela - Limited"
+        },
+        {
+          "id": "Bandarawela Unlimited",
+          "name": "Bandarawela Unlimited"
+        },
+        {
+          "id": "Batapola - Limited",
+          "name": "Batapola - Limited"
+        },
+        {
+          "id": "Battaramulla - Limited",
+          "name": "Battaramulla - Limited"
+        },
+        {
+          "id": "Batticoloa - Limited",
+          "name": "Batticoloa - Limited"
+        },
+        {
+          "id": "Beliatta 2 - Limited",
+          "name": "Beliatta 2 - Limited"
+        },
+        {
+          "id": "Beruwela - Limited",
+          "name": "Beruwela - Limited"
+        },
+        {
+          "id": "Beruwela Unlimited",
+          "name": "Beruwela Unlimited"
+        },
+        {
+          "id": "Bibile - Limited",
+          "name": "Bibile - Limited"
+        },
+        {
+          "id": "Bibile Unlimited",
+          "name": "Bibile Unlimited"
+        },
+        {
+          "id": "Bingiriya  - Limited",
+          "name": "Bingiriya  - Limited"
+        },
+        {
+          "id": "Boralesgamuwa - Limited B",
+          "name": "Boralesgamuwa - Limited B"
+        },
+        {
+          "id": "Bulathkohupitiya  - Limited",
+          "name": "Bulathkohupitiya  - Limited"
+        },
+        {
+          "id": "Bulathsinghala - Limited",
+          "name": "Bulathsinghala - Limited"
+        },
+        {
+          "id": "Buttala - Limited",
+          "name": "Buttala - Limited"
+        },
+        {
+          "id": "Chankanai - Limited",
+          "name": "Chankanai - Limited"
+        },
+        {
+          "id": "Chawakachcheri - Limited",
+          "name": "Chawakachcheri - Limited"
+        },
+        {
+          "id": "Chenkalady - Limited",
+          "name": "Chenkalady - Limited"
+        },
+        {
+          "id": "Chilaw C - Limited",
+          "name": "Chilaw C - Limited"
+        },
+        {
+          "id": "Chilaw Jvc - Limited",
+          "name": "Chilaw Jvc - Limited"
+        },
+        {
+          "id": "Chunnagam - Limited",
+          "name": "Chunnagam - Limited"
+        },
+        {
+          "id": "Dambulla - Limited",
+          "name": "Dambulla - Limited"
+        },
+        {
+          "id": "Dankotuwa - Limited",
+          "name": "Dankotuwa - Limited"
+        },
+        {
+          "id": "Dehiattakandiya - Limited",
+          "name": "Dehiattakandiya - Limited"
+        },
+        {
+          "id": "Dehiattakandiya Unlimited",
+          "name": "Dehiattakandiya Unlimited"
+        },
+        {
+          "id": "Dehiowita Unlimited",
+          "name": "Dehiowita Unlimited"
+        },
+        {
+          "id": "Delgoda - Limited",
+          "name": "Delgoda - Limited"
+        },
+        {
+          "id": "Dematagoda - Limited",
+          "name": "Dematagoda - Limited"
+        },
+        {
+          "id": "Deniyaya - Limited",
+          "name": "Deniyaya - Limited"
+        },
+        {
+          "id": "Deraniyagala  - Limited",
+          "name": "Deraniyagala  - Limited"
+        },
+        {
+          "id": "Digana Limited B",
+          "name": "Digana Limited B"
+        },
+        {
+          "id": "Dikwella - Limited",
+          "name": "Dikwella - Limited"
+        },
+        {
+          "id": "Diulapitiya - Limited",
+          "name": "Diulapitiya - Limited"
+        },
+        {
+          "id": "Eheliyagoda - Limited",
+          "name": "Eheliyagoda - Limited"
+        },
+        {
+          "id": "Eheliyagoda Unlimited",
+          "name": "Eheliyagoda Unlimited"
+        },
+        {
+          "id": "Elpitiya B Limited",
+          "name": "Elpitiya B Limited"
+        },
+        {
+          "id": "Embilipitiya - Limited",
+          "name": "Embilipitiya - Limited"
+        },
+        {
+          "id": "Embilipitiya Unlimited",
+          "name": "Embilipitiya Unlimited"
+        },
+        {
+          "id": "Eppawala B Limited",
+          "name": "Eppawala B Limited"
+        },
+        {
+          "id": "Galaha - Limited",
+          "name": "Galaha - Limited"
+        },
+        {
+          "id": "Galewela - Limited B",
+          "name": "Galewela - Limited B"
+        },
+        {
+          "id": "Galenbindunuwewa Limited",
+          "name": "Galenbindunuwewa Limited"
+        },
+        {
+          "id": "Galgamuwa - Limited",
+          "name": "Galgamuwa - Limited"
+        },
+        {
+          "id": "Galle - Limited",
+          "name": "Galle - Limited"
+        },
+        {
+          "id": "Galle - Limited B2",
+          "name": "Galle - Limited B2"
+        },
+        {
+          "id": "Galnewa - Limited B",
+          "name": "Galnewa - Limited B"
+        },
+        {
+          "id": "Gampaha - Limited",
+          "name": "Gampaha - Limited"
+        },
+        {
+          "id": "Gampaha - Limited B",
+          "name": "Gampaha - Limited B"
+        },
+        {
+          "id": "Gampola - Limited",
+          "name": "Gampola - Limited"
+        },
+        {
+          "id": "Gampola  Unlimited",
+          "name": "Gampola  Unlimited"
+        },
+        {
+          "id": "Ganemulla - Limited",
+          "name": "Ganemulla - Limited"
+        },
+        {
+          "id": "Gelioya - Limited",
+          "name": "Gelioya - Limited"
+        },
+        {
+          "id": "Ginigathhena - Limited B",
+          "name": "Ginigathhena - Limited B"
+        },
+        {
+          "id": "Girandurukotte Hp",
+          "name": "Girandurukotte Hp"
+        },
+        {
+          "id": "Giriulla - Limited",
+          "name": "Giriulla - Limited"
+        },
+        {
+          "id": "Godagama - Limited",
+          "name": "Godagama - Limited"
+        },
+        {
+          "id": "Godakawela  - Limited",
+          "name": "Godakawela  - Limited"
+        },
+        {
+          "id": "Godakawela Unlimited",
+          "name": "Godakawela Unlimited"
+        },
+        {
+          "id": "Hakmana - Limited",
+          "name": "Hakmana - Limited"
+        },
+        {
+          "id": "Hambantota - Limited",
+          "name": "Hambantota - Limited"
+        },
+        {
+          "id": "Hanwella - Limited",
+          "name": "Hanwella - Limited"
+        },
+        {
+          "id": "Hanwella Unlimited",
+          "name": "Hanwella Unlimited"
+        },
+        {
+          "id": "Haputhale - Limited",
+          "name": "Haputhale - Limited"
+        },
+        {
+          "id": "Hatton - Limited",
+          "name": "Hatton - Limited"
+        },
+        {
+          "id": "Hatton Unlimited",
+          "name": "Hatton Unlimited"
+        },
+        {
+          "id": "Hettipola - Limited",
+          "name": "Hettipola - Limited"
+        },
+        {
+          "id": "Hikkaduwa - Limited",
+          "name": "Hikkaduwa - Limited"
+        },
+        {
+          "id": "Hingurakgoda - Limited",
+          "name": "Hingurakgoda - Limited"
+        },
+        {
+          "id": "Hiripitiya Ad - Limited",
+          "name": "Hiripitiya Ad - Limited"
+        },
+        {
+          "id": "Homagama B - Limited",
+          "name": "Homagama B - Limited"
+        },
+        {
+          "id": "Horana - Limited",
+          "name": "Horana - Limited"
+        },
+        {
+          "id": "Horana  Unlimited",
+          "name": "Horana  Unlimited"
+        },
+        {
+          "id": "Ibbagamuwa - Limited",
+          "name": "Ibbagamuwa - Limited"
+        },
+        {
+          "id": "Immaduwa - Limited",
+          "name": "Immaduwa - Limited"
+        },
+        {
+          "id": "Ingiriya - Limited",
+          "name": "Ingiriya - Limited"
+        },
+        {
+          "id": "Ja Ela - Limited",
+          "name": "Ja Ela - Limited"
+        },
+        {
+          "id": "Jaffna A - Limited",
+          "name": "Jaffna A - Limited"
+        },
+        {
+          "id": "Jaffna B - Limited",
+          "name": "Jaffna B - Limited"
+        },
+        {
+          "id": "Jaffna Jvc - Limited",
+          "name": "Jaffna Jvc - Limited"
+        },
+        {
+          "id": "Kadawatha B - Limited",
+          "name": "Kadawatha B - Limited"
+        },
+        {
+          "id": "Kaduwela - Limited",
+          "name": "Kaduwela - Limited"
+        },
+        {
+          "id": "Kaduwela Jvc - Limited",
+          "name": "Kaduwela Jvc - Limited"
+        },
+        {
+          "id": "Kahatagasdigiliya - Limited",
+          "name": "Kahatagasdigiliya - Limited"
+        },
+        {
+          "id": "Kahawatta - Limited",
+          "name": "Kahawatta - Limited"
+        },
+        {
+          "id": "Kalawana - Limited",
+          "name": "Kalawana - Limited"
+        },
+        {
+          "id": "Kalawanchikudi B - Limited",
+          "name": "Kalawanchikudi B - Limited"
+        },
+        {
+          "id": "Kalmunai - Limited",
+          "name": "Kalmunai - Limited"
+        },
+        {
+          "id": "Kalmunai - Unlimited",
+          "name": "Kalmunai - Unlimited"
+        },
+        {
+          "id": "Kalutara - Limited",
+          "name": "Kalutara - Limited"
+        },
+        {
+          "id": "Kamburupitiya - Limited",
+          "name": "Kamburupitiya - Limited"
+        },
+        {
+          "id": "Kandana - Limited",
+          "name": "Kandana - Limited"
+        },
+        {
+          "id": "Kandana B Unlimited",
+          "name": "Kandana B Unlimited"
+        },
+        {
+          "id": "Kandy Limited",
+          "name": "Kandy Limited"
+        },
+        {
+          "id": "Kandy City Center - Limited",
+          "name": "Kandy City Center - Limited"
+        },
+        {
+          "id": "Kanthale Retail Channel - 01 B Showroom",
+          "name": "Kanthale Retail Channel - 01 B Showroom"
+        },
+        {
+          "id": "Karandeniya Limited",
+          "name": "Karandeniya Limited"
+        },
+        {
+          "id": "Karapitya Unlimited",
+          "name": "Karapitya Unlimited"
+        },
+        {
+          "id": "Kaththankudi B - Limited",
+          "name": "Kaththankudi B - Limited"
+        },
+        {
+          "id": "Katugastota 3 - Limited",
+          "name": "Katugastota 3 - Limited"
+        },
+        {
+          "id": "Kebithigollawa - Limited",
+          "name": "Kebithigollawa - Limited"
+        },
+        {
+          "id": "Kegalle Jvc - Limited",
+          "name": "Kegalle Jvc - Limited"
+        },
+        {
+          "id": "Kegalle Retail Channel - 1 B Showroom",
+          "name": "Kegalle Retail Channel - 1 B Showroom"
+        },
+        {
+          "id": "Kekirawa B - Limited",
+          "name": "Kekirawa B - Limited"
+        },
+        {
+          "id": "Kekirawa Jvc - Limited",
+          "name": "Kekirawa Jvc - Limited"
+        },
+        {
+          "id": "Keppetipola - Limited",
+          "name": "Keppetipola - Limited"
+        },
+        {
+          "id": "Kesbewa - Limited",
+          "name": "Kesbewa - Limited"
+        },
+        {
+          "id": "Kilinochchi - Limited",
+          "name": "Kilinochchi - Limited"
+        },
+        {
+          "id": "Kilinochchi Unlimited",
+          "name": "Kilinochchi Unlimited"
+        },
+        {
+          "id": "Kiribathgoda A - Limited",
+          "name": "Kiribathgoda A - Limited"
+        },
+        {
+          "id": "Kirindiwela Limited",
+          "name": "Kirindiwela Limited"
+        },
+        {
+          "id": "Kobeygane Jvc",
+          "name": "Kobeygane Jvc"
+        },
+        {
+          "id": "Kochchikade - Limited",
+          "name": "Kochchikade - Limited"
+        },
+        {
+          "id": "Kodikamam - Limited",
+          "name": "Kodikamam - Limited"
+        },
+        {
+          "id": "Kolonnawa - Limited",
+          "name": "Kolonnawa - Limited"
+        },
+        {
+          "id": "Kotahena - Limited",
+          "name": "Kotahena - Limited"
+        },
+        {
+          "id": "Kotikawatte - Limited",
+          "name": "Kotikawatte - Limited"
+        },
+        {
+          "id": "Kottawa  - Limited",
+          "name": "Kottawa  - Limited"
+        },
+        {
+          "id": "Kuliyapitiya - Limited",
+          "name": "Kuliyapitiya - Limited"
+        },
+        {
+          "id": "Kundasale - Limited",
+          "name": "Kundasale - Limited"
+        },
+        {
+          "id": "Kurunegala B - Limited",
+          "name": "Kurunegala B - Limited"
+        },
+        {
+          "id": "Kurunegala C - Limited",
+          "name": "Kurunegala C - Limited"
+        },
+        {
+          "id": "Kuruwita - Limited",
+          "name": "Kuruwita - Limited"
+        },
+        {
+          "id": "Maharagama 2 - Limited",
+          "name": "Maharagama 2 - Limited"
+        },
+        {
+          "id": "Maharagama 2nds - Limited",
+          "name": "Maharagama 2nds - Limited"
+        },
+        {
+          "id": "Mahawewa - Limited",
+          "name": "Mahawewa - Limited"
+        },
+        {
+          "id": "Mahiyangana - Limited",
+          "name": "Mahiyangana - Limited"
+        },
+        {
+          "id": "Mahiyangana Unlimited",
+          "name": "Mahiyangana Unlimited"
+        },
+        {
+          "id": "Maho - Limited",
+          "name": "Maho - Limited"
+        },
+        {
+          "id": "Makola Jvc - Limited",
+          "name": "Makola Jvc - Limited"
+        },
+        {
+          "id": "Malabe  - Limited",
+          "name": "Malabe  - Limited"
+        },
+        {
+          "id": "Manipai - Limited",
+          "name": "Manipai - Limited"
+        },
+        {
+          "id": "Mannar - Limited",
+          "name": "Mannar - Limited"
+        },
+        {
+          "id": "Mannar Unlimited",
+          "name": "Mannar Unlimited"
+        },
+        {
+          "id": "Marawila - Limited",
+          "name": "Marawila - Limited"
+        },
+        {
+          "id": "Matale - Limited",
+          "name": "Matale - Limited"
+        },
+        {
+          "id": "Matale Jvc - Limited",
+          "name": "Matale Jvc - Limited"
+        },
+        {
+          "id": "Matara  B - Limited",
+          "name": "Matara  B - Limited"
+        },
+        {
+          "id": "Matara A - Limited",
+          "name": "Matara A - Limited"
+        },
+        {
+          "id": "Mathugama B - Limited",
+          "name": "Mathugama B - Limited"
+        },
+        {
+          "id": "Mawanella - Limited",
+          "name": "Mawanella - Limited"
+        },
+        {
+          "id": "Mawathagama - Limited",
+          "name": "Mawathagama - Limited"
+        },
+        {
+          "id": "Medawachchiya Jvc - Limited",
+          "name": "Medawachchiya Jvc - Limited"
+        },
+        {
+          "id": "Medirigiriya Unlimited",
+          "name": "Medirigiriya Unlimited"
+        },
+        {
+          "id": "Menikhinna - Limited",
+          "name": "Menikhinna - Limited"
+        },
+        {
+          "id": "Middeniya - Limited",
+          "name": "Middeniya - Limited"
+        },
+        {
+          "id": "Minuwangoda - Limited",
+          "name": "Minuwangoda - Limited"
+        },
+        {
+          "id": "Mirigama 2 - Limited",
+          "name": "Mirigama 2 - Limited"
+        },
+        {
+          "id": "Mirigama Unlimited",
+          "name": "Mirigama Unlimited"
+        },
+        {
+          "id": "Moneragala - Limited",
+          "name": "Moneragala - Limited"
+        },
+        {
+          "id": "Moratuwa - Limited",
+          "name": "Moratuwa - Limited"
+        },
+        {
+          "id": "Morawaka - Limited",
+          "name": "Morawaka - Limited"
+        },
+        {
+          "id": "Mulgampola - Limited",
+          "name": "Mulgampola - Limited"
+        },
+        {
+          "id": "Mulliyavalai Limited",
+          "name": "Mulliyavalai Limited"
+        },
+        {
+          "id": "Murukkan - Limited",
+          "name": "Murukkan - Limited"
+        },
+        {
+          "id": "Narammala B - Limited",
+          "name": "Narammala B - Limited"
+        },
+        {
+          "id": "Nattandiya - Limited",
+          "name": "Nattandiya - Limited"
+        },
+        {
+          "id": "Nawalapitiya  - Limited",
+          "name": "Nawalapitiya  - Limited"
+        },
+        {
+          "id": "Negambo Jvc New - Limited",
+          "name": "Negambo Jvc New - Limited"
+        },
+        {
+          "id": "Negombo - Limited",
+          "name": "Negombo - Limited"
+        },
+        {
+          "id": "Nelliady - Limited",
+          "name": "Nelliady - Limited"
+        },
+        {
+          "id": "Neluwa - Limited",
+          "name": "Neluwa - Limited"
+        },
+        {
+          "id": "Nikaweratiya 2 - Limited",
+          "name": "Nikaweratiya 2 - Limited"
+        },
+        {
+          "id": "Nittambuwa - Limited",
+          "name": "Nittambuwa - Limited"
+        },
+        {
+          "id": "Nittambuwa B - Limited",
+          "name": "Nittambuwa B - Limited"
+        },
+        {
+          "id": "Nivithigala - Limited",
+          "name": "Nivithigala - Limited"
+        },
+        {
+          "id": "Nugegoda - Limited",
+          "name": "Nugegoda - Limited"
+        },
+        {
+          "id": "Nuwara Eliya - Limited",
+          "name": "Nuwara Eliya - Limited"
+        },
+        {
+          "id": "Nuwara Eliya B - Limited",
+          "name": "Nuwara Eliya B - Limited"
+        },
+        {
+          "id": "Padawiya  - Limited",
+          "name": "Padawiya  - Limited"
+        },
+        {
+          "id": "Padukka - Limited",
+          "name": "Padukka - Limited"
+        },
+        {
+          "id": "Palai - Limited",
+          "name": "Palai - Limited"
+        },
+        {
+          "id": "Panadura - Limited",
+          "name": "Panadura - Limited"
+        },
+        {
+          "id": "Pannala - Limited",
+          "name": "Pannala - Limited"
+        },
+        {
+          "id": "Passara  - Limited",
+          "name": "Passara  - Limited"
+        },
+        {
+          "id": "Pasyala Limited",
+          "name": "Pasyala Limited"
+        },
+        {
+          "id": "Pelawatta Unlimited",
+          "name": "Pelawatta Unlimited"
+        },
+        {
+          "id": "Pelmadulla  - Limited",
+          "name": "Pelmadulla  - Limited"
+        },
+        {
+          "id": "Pilimathalawa - Limited B",
+          "name": "Pilimathalawa - Limited B"
+        },
+        {
+          "id": "Piliyandala - Limited",
+          "name": "Piliyandala - Limited"
+        },
+        {
+          "id": "Piliyandala B - Limited",
+          "name": "Piliyandala B - Limited"
+        },
+        {
+          "id": "Pitabeddara  - Limited",
+          "name": "Pitabeddara  - Limited"
+        },
+        {
+          "id": "Pitigala - Limited",
+          "name": "Pitigala - Limited"
+        },
+        {
+          "id": "Point Pedro - Limited",
+          "name": "Point Pedro - Limited"
+        },
+        {
+          "id": "Polgahawela - Limited",
+          "name": "Polgahawela - Limited"
+        },
+        {
+          "id": "Polonnaruiwa Limited",
+          "name": "Polonnaruiwa Limited"
+        },
+        {
+          "id": "Polpithigama  - Limited",
+          "name": "Polpithigama  - Limited"
+        },
+        {
+          "id": "Poodaluoya Limited",
+          "name": "Poodaluoya Limited"
+        },
+        {
+          "id": "Pothuwil - Limited",
+          "name": "Pothuwil - Limited"
+        },
+        {
+          "id": "Pugoda - Limited",
+          "name": "Pugoda - Limited"
+        },
+        {
+          "id": "Pussellawa - Limited",
+          "name": "Pussellawa - Limited"
+        },
+        {
+          "id": "Puthukkudiyiruppu Jvc - Limited",
+          "name": "Puthukkudiyiruppu Jvc - Limited"
+        },
+        {
+          "id": "Puttlam - Limited",
+          "name": "Puttlam - Limited"
+        },
+        {
+          "id": "Puttlam Jvc - Limited",
+          "name": "Puttlam Jvc - Limited"
+        },
+        {
+          "id": "Ragala - Limited",
+          "name": "Ragala - Limited"
+        },
+        {
+          "id": "Ragama - Limited",
+          "name": "Ragama - Limited"
+        },
+        {
+          "id": "Rakwana - Limited",
+          "name": "Rakwana - Limited"
+        },
+        {
+          "id": "Rambukkana - Limited",
+          "name": "Rambukkana - Limited"
+        },
+        {
+          "id": "Ratnapura A - Limited",
+          "name": "Ratnapura A - Limited"
+        },
+        {
+          "id": "Ratnapura B - Limited",
+          "name": "Ratnapura B - Limited"
+        },
+        {
+          "id": "Rideegama  - Limited",
+          "name": "Rideegama  - Limited"
+        },
+        {
+          "id": "Rikillagaskada - Limited",
+          "name": "Rikillagaskada - Limited"
+        },
+        {
+          "id": "Ruwanwella - Limited",
+          "name": "Ruwanwella - Limited"
+        },
+        {
+          "id": "Seeduwa Limited",
+          "name": "Seeduwa Limited"
+        },
+        {
+          "id": "Siyamblanduwa  - Limited",
+          "name": "Siyamblanduwa  - Limited"
+        },
+        {
+          "id": "Sooriyawewa - Limited",
+          "name": "Sooriyawewa - Limited"
+        },
+        {
+          "id": "Tangalle - Limited",
+          "name": "Tangalle - Limited"
+        },
+        {
+          "id": "Thambuththegama 2 - Limited",
+          "name": "Thambuththegama 2 - Limited"
+        },
+        {
+          "id": "Thambuttegama Jvc - Limited",
+          "name": "Thambuttegama Jvc - Limited"
+        },
+        {
+          "id": "Thanamalwila - Limited",
+          "name": "Thanamalwila - Limited"
+        },
+        {
+          "id": "Thirunalvali - Limited",
+          "name": "Thirunalvali - Limited"
+        },
+        {
+          "id": "Tissamaharama - Limited",
+          "name": "Tissamaharama - Limited"
+        },
+        {
+          "id": "Tissamaharama Unlimited",
+          "name": "Tissamaharama Unlimited"
+        },
+        {
+          "id": "Trincomalee - Limited",
+          "name": "Trincomalee - Limited"
+        },
+        {
+          "id": "Trincomalee  Unlimited",
+          "name": "Trincomalee  Unlimited"
+        },
+        {
+          "id": "Trincomalee B - Limited",
+          "name": "Trincomalee B - Limited"
+        },
+        {
+          "id": "Ududumbara  - Limited",
+          "name": "Ududumbara  - Limited"
+        },
+        {
+          "id": "Udugama B - Limited",
+          "name": "Udugama B - Limited"
+        },
+        {
+          "id": "Uhana  - Limited",
+          "name": "Uhana  - Limited"
+        },
+        {
+          "id": "Uragasmanhandiya - Limited",
+          "name": "Uragasmanhandiya - Limited"
+        },
+        {
+          "id": "Urubokka  - Limited",
+          "name": "Urubokka  - Limited"
+        },
+        {
+          "id": "Vavniya Unlimited",
+          "name": "Vavniya Unlimited"
+        },
+        {
+          "id": "Vavuniya - Limited",
+          "name": "Vavuniya - Limited"
+        },
+        {
+          "id": "Veyangoda - Limited",
+          "name": "Veyangoda - Limited"
+        },
+        {
+          "id": "Wadduwa - Limited",
+          "name": "Wadduwa - Limited"
+        },
+        {
+          "id": "Wanduramba Unlimited",
+          "name": "Wanduramba Unlimited"
+        },
+        {
+          "id": "Warakapola - Limited",
+          "name": "Warakapola - Limited"
+        },
+        {
+          "id": "Wariyapola - Limited",
+          "name": "Wariyapola - Limited"
+        },
+        {
+          "id": "Wattala - Limited",
+          "name": "Wattala - Limited"
+        },
+        {
+          "id": "Wattegama 2 - Limited",
+          "name": "Wattegama 2 - Limited"
+        },
+        {
+          "id": "Weeraketiya - Limited",
+          "name": "Weeraketiya - Limited"
+        },
+        {
+          "id": "Weligama - Limited",
+          "name": "Weligama - Limited"
+        },
+        {
+          "id": "Welimada - Limited",
+          "name": "Welimada - Limited"
+        },
+        {
+          "id": "Weliweriya - Limited",
+          "name": "Weliweriya - Limited"
+        },
+        {
+          "id": "Weliweriya Unlimited Showroom",
+          "name": "Weliweriya Unlimited Showroom"
+        },
+        {
+          "id": "Wellawatta - Limited",
+          "name": "Wellawatta - Limited"
+        },
+        {
+          "id": "Wellawaya - Limited",
+          "name": "Wellawaya - Limited"
+        },
+        {
+          "id": "Wellawaya Unlimited",
+          "name": "Wellawaya Unlimited"
+        },
+        {
+          "id": "Wennappuwa - Limited",
+          "name": "Wennappuwa - Limited"
+        },
+        {
+          "id": "Wennappuwa Unlimited",
+          "name": "Wennappuwa Unlimited"
+        },
+        {
+          "id": "Yakkala - Limited",
+          "name": "Yakkala - Limited"
+        },
+        {
+          "id": "Yakkalamulla - Limited",
+          "name": "Yakkalamulla - Limited"
+        },
+        {
+          "id": "Yatiyantota - Limited",
+          "name": "Yatiyantota - Limited"
         },
         {
           "id": "Abans IT Service Center",
           "name": "Abans IT Service Center"
         },
         {
+          "id": "Abans IT Service Center Ampara",
+          "name": "Abans IT Service Center Ampara"
+        },
+        {
+          "id": "Abans IT Service Center Anuradhapura",
+          "name": "Abans IT Service Center Anuradhapura"
+        },
+        {
+          "id": "Abans IT Service Center Badulla",
+          "name": "Abans IT Service Center Badulla"
+        },
+        {
+          "id": "Abans IT Service Center Chilaw",
+          "name": "Abans IT Service Center Chilaw"
+        },
+        {
+          "id": "Abans IT Service Center Galle",
+          "name": "Abans IT Service Center Galle"
+        },
+        {
+          "id": "Abans IT Service Center Jaffna",
+          "name": "Abans IT Service Center Jaffna"
+        },
+        {
+          "id": "Abans IT Service Center Kandy",
+          "name": "Abans IT Service Center Kandy"
+        },
+        {
+          "id": "Abans IT Service Center Kurunegala",
+          "name": "Abans IT Service Center Kurunegala"
+        },
+        {
+          "id": "Abans IT Service Center Ratnapura",
+          "name": "Abans IT Service Center Ratnapura"
+        },
+        {
+          "id": "Abans Service Center Anuradhapura",
+          "name": "Abans Service Center Anuradhapura"
+        },
+        {
+          "id": "Abans Service Center Badulla",
+          "name": "Abans Service Center Badulla"
+        },
+        {
+          "id": "Abans Service Center Batticaloa",
+          "name": "Abans Service Center Batticaloa"
+        },
+        {
+          "id": "Abans Service Center Chilaw",
+          "name": "Abans Service Center Chilaw"
+        },
+        {
+          "id": "Abans Service Center Dambulla",
+          "name": "Abans Service Center Dambulla"
+        },
+        {
+          "id": "Abans Service Center Galle",
+          "name": "Abans Service Center Galle"
+        },
+        {
+          "id": "Abans Service Center Gampaha",
+          "name": "Abans Service Center Gampaha"
+        },
+        {
+          "id": "Abans Service Center Jaffna",
+          "name": "Abans Service Center Jaffna"
+        },
+        {
+          "id": "Abans Service Center Kalmunai",
+          "name": "Abans Service Center Kalmunai"
+        },
+        {
+          "id": "Abans Service Center Kandy",
+          "name": "Abans Service Center Kandy"
+        },
+        {
+          "id": "Abans Service Center Kurunegala",
+          "name": "Abans Service Center Kurunegala"
+        },
+        {
+          "id": "Abans Service Center Matara",
+          "name": "Abans Service Center Matara"
+        },
+        {
+          "id": "Abans Service Center Negombo",
+          "name": "Abans Service Center Negombo"
+        },
+        {
+          "id": "Abans Service Center Ratnapura",
+          "name": "Abans Service Center Ratnapura"
+        },
+        {
+          "id": "Abans Service Center Vavuniya",
+          "name": "Abans Service Center Vavuniya"
+        },
+        {
+          "id": "Abans Service Center Wellawatte",
+          "name": "Abans Service Center Wellawatte"
+        },
+        {
+          "id": "Abans Service Center Trincomalee",
+          "name": "Abans Service Center Trincomalee"
+        },
+        {
           "id": "Apple Authorised Service Provider - Abans - Colombo",
           "name": "Apple Authorised Service Provider - Abans - Colombo"
-        },
-        {
-          "id": "Abans Service Center - Kandy",
-          "name": "Abans Service Center - Kandy"
-        },
-        {
-          "id": "Abans Service Center - Negombo",
-          "name": "Abans Service Center - Negombo"
-        },
-        {
-          "id": "Abans Elite - Anuradhapura",
-          "name": "Abans Elite - Anuradhapura"
-        },
-        {
-          "id": "Abans Elite - Badulla",
-          "name": "Abans Elite - Badulla"
-        },
-        {
-          "id": "Abans Elite - Colombo City Centre",
-          "name": "Abans Elite - Colombo City Centre"
-        },
-        {
-          "id": "Abans Elite - Dalugama (Kiribathgoda)",
-          "name": "Abans Elite - Dalugama (Kiribathgoda)"
-        },
-        {
-          "id": "Abans Elite - Dehiwala",
-          "name": "Abans Elite - Dehiwala"
-        },
-        {
-          "id": "Abans Elite - Galle",
-          "name": "Abans Elite - Galle"
-        },
-        {
-          "id": "Abans Elite - Gampaha",
-          "name": "Abans Elite - Gampaha"
-        },
-        {
-          "id": "Abans Elite - Havelock City Mall",
-          "name": "Abans Elite - Havelock City Mall"
-        },
-        {
-          "id": "Abans Elite - Homagama",
-          "name": "Abans Elite - Homagama"
-        },
-        {
-          "id": "Abans Elite - Ja-Ela",
-          "name": "Abans Elite - Ja-Ela"
-        },
-        {
-          "id": "Abans Elite - Jaffna",
-          "name": "Abans Elite - Jaffna"
-        },
-        {
-          "id": "Abans Elite - Kadawatha",
-          "name": "Abans Elite - Kadawatha"
-        },
-        {
-          "id": "Abans Elite - Kaduruwela",
-          "name": "Abans Elite - Kaduruwela"
-        },
-        {
-          "id": "Abans Elite - Kalutara",
-          "name": "Abans Elite - Kalutara"
-        },
-        {
-          "id": "Abans Elite - Kandy",
-          "name": "Abans Elite - Kandy"
-        },
-        {
-          "id": "Abans Elite - Katugastota",
-          "name": "Abans Elite - Katugastota"
-        },
-        {
-          "id": "Abans Elite - Kurunegala",
-          "name": "Abans Elite - Kurunegala"
-        },
-        {
-          "id": "Abans Elite - Liberty Plaza",
-          "name": "Abans Elite - Liberty Plaza"
-        },
-        {
-          "id": "Abans Elite - Malabe",
-          "name": "Abans Elite - Malabe"
-        },
-        {
-          "id": "Abans Elite - Matara",
-          "name": "Abans Elite - Matara"
-        },
-        {
-          "id": "Abans Elite - Moratuwa",
-          "name": "Abans Elite - Moratuwa"
-        },
-        {
-          "id": "Abans Elite - Mount Lavinia",
-          "name": "Abans Elite - Mount Lavinia"
-        },
-        {
-          "id": "Abans Elite - Nawala (Nugegoda)",
-          "name": "Abans Elite - Nawala (Nugegoda)"
-        },
-        {
-          "id": "Abans Elite - Negombo",
-          "name": "Abans Elite - Negombo"
-        },
-        {
-          "id": "Abans Elite - Panadura",
-          "name": "Abans Elite - Panadura"
-        },
-        {
-          "id": "Abans Elite - Pelawatta",
-          "name": "Abans Elite - Pelawatta"
-        },
-        {
-          "id": "Abans Elite - Piliyandala",
-          "name": "Abans Elite - Piliyandala"
-        },
-        {
-          "id": "Abans Elite - Ratmalana",
-          "name": "Abans Elite - Ratmalana"
-        },
-        {
-          "id": "Abans Elite - Ratnapura",
-          "name": "Abans Elite - Ratnapura"
-        },
-        {
-          "id": "Abans Elite - Thalawathugoda",
-          "name": "Abans Elite - Thalawathugoda"
-        },
-        {
-          "id": "Abans Elite - Vavuniya",
-          "name": "Abans Elite - Vavuniya"
-        },
-        {
-          "id": "Abans Elite B - Maharagama",
-          "name": "Abans Elite B - Maharagama"
         },
         {
           "id": "Social",
@@ -421,8 +1592,11 @@
         "channel": "email",
         "template": "complaintCreation",
         "target": "admin",
-        "contactFilters": [
-          "ticketCreationAlert"
+        "contacts": [
+          "ranaf@abansgroup.com",
+          "hansac@abansgroup.com",
+          "rajinir@abansgroup.com",
+          "prabuddhikaj@abansgroup.com"
         ],
         "adminUserQuery": {
           "condition": {

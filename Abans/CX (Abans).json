@@ -97,7 +97,7 @@
         },
         {
           "key": "hideTicketWidgets",
-          "value": true
+          "value": false
         },
         {
           "key": "trimOut",
@@ -521,13 +521,6 @@
     },
     {
       "image": "https://storage.emojot.com/logos/company_logo/6791d6ad94210ae8d23f93ae.png",
-      "name": "abansbrandit@gmail.com",
-      "id": "abansbrandit@gmail.com",
-      "title": "company_admin",
-      "email": "abansbrandit@gmail.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/6791d6ad94210ae8d23f93ae.png",
       "name": "prabuddhikaj@abansgroup.com",
       "id": "prabuddhikaj@abansgroup.com",
       "title": "company_admin",
@@ -581,8 +574,22 @@
       "id": "dewshi2@emojot.com",
       "title": "company_admin",
       "email": "dewshi2@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6791d6ad94210ae8d23f93ae.png",
+      "name": "sachintha@emojot.com",
+      "id": "sachintha@emojot.com",
+      "title": "company_admin",
+      "email": "sachintha@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6791d6ad94210ae8d23f93ae.png",
+      "name": "abansbrandit@gmail.com",
+      "id": "abansbrandit@gmail.com",
+      "title": "company_admin",
+      "email": "abansbrandit@gmail.com"
     }
   ],
   "assignmentAllowed": true,
-  "showAIAssistant": false
+  "showAIAssistant": true
 }

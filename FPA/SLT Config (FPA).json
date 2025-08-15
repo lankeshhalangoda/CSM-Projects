@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753338311813,
+  "updatedTime": 1755061447396,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "687f4c1f9241af5bd8692639",
   "aiModel": "gpt-3.5",
@@ -38,17 +38,7 @@
             "FPA",
             "#FPA",
             "FamilyPlanningAssociation",
-            "Family Planning Association",
-            "Family",
-            "Planning",
-            "Family Planning",
-            "Association",
-            "Condoms",
-            "Condom",
-            "Preethi",
-            "Stamina",
-            "Contraception",
-            "Contraceptives"
+            "Family Planning Association"
           ],
           "commtracks": [
             545734,
@@ -72,7 +62,7 @@
         ]
       },
       {
-        "label": "Preethi Condoms",
+        "label": "FPA",
         "key": "Preethi Condoms",
         "verification": {
           "wordsToCheck": [
@@ -83,31 +73,22 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "FPA",
-            "#FPA",
-            "FamilyPlanningAssociation",
-            "Family Planning Association",
-            "Family",
-            "Planning",
-            "Family Planning",
-            "Association",
             "Condoms",
             "Condom",
-            "Preethi",
-            "Stamina",
-            "Contraception",
-            "Contraceptives"
+            "Preethi"
           ],
           "commtracks": [
             545779
           ]
         },
         "commtracks": [
-          545779
+          545779,
+          550811,
+          550814
         ]
       },
       {
-        "label": "Stamina Condoms",
+        "label": "FPA",
         "key": "Stamina Condoms",
         "verification": {
           "wordsToCheck": [
@@ -118,31 +99,22 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "FPA",
-            "#FPA",
-            "FamilyPlanningAssociation",
-            "Family Planning Association",
-            "Family",
-            "Planning",
-            "Family Planning",
-            "Association",
             "Condoms",
             "Condom",
-            "Preethi",
-            "Stamina",
-            "Contraception",
-            "Contraceptives"
+            "Stamina"
           ],
           "commtracks": [
             545818
           ]
         },
         "commtracks": [
-          545818
+          545818,
+          550812,
+          550813
         ]
       },
       {
-        "label": "Condoms",
+        "label": "FPA",
         "key": "Condoms",
         "verification": {
           "wordsToCheck": [
@@ -153,20 +125,8 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "FPA",
-            "#FPA",
-            "FamilyPlanningAssociation",
-            "Family Planning Association",
-            "Family",
-            "Planning",
-            "Family Planning",
-            "Association",
             "Condoms",
-            "Condom",
-            "Preethi",
-            "Stamina",
-            "Contraception",
-            "Contraceptives"
+            "Condom"
           ],
           "commtracks": [
             545788
@@ -177,7 +137,7 @@
         ]
       },
       {
-        "label": "Contraceptives",
+        "label": "FPA",
         "key": "Contraceptives",
         "verification": {
           "wordsToCheck": [
@@ -188,18 +148,6 @@
             "sriLanka",
             "Ceylon",
             "ceylon",
-            "FPA",
-            "#FPA",
-            "FamilyPlanningAssociation",
-            "Family Planning Association",
-            "Family",
-            "Planning",
-            "Family Planning",
-            "Association",
-            "Condoms",
-            "Condom",
-            "Preethi",
-            "Stamina",
             "Contraception",
             "Contraceptives"
           ],

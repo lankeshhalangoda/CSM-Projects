@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753268778438,
+  "updatedTime": 1753849261048,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
@@ -180,9 +180,20 @@
               "MidCenturyModern",
               "mercurebkkmakkasan",
               "MercureBangkokMakkasan",
-              "GujaratiTravel"
+              "GujaratiTravel",
+              "hireanything2024",
+              "HorseAndCarriage",
+              "nights_in_pomfretto",
+              "#TravelLiterature",
+              "#EvelynWaugh",
+              "digiartbyai",
+              "#TravelFlatLay",
+              "#VenemaAntiques",
+              "classictravelservice",
+              "#FourSeasonsHotel",
+              "rachell26s"
             ],
-            "version": "1.7"
+            "version": "1.8"
           }
         },
         "commtracks": [
@@ -628,7 +639,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-28T01:00:19.219Z",
+    "updatedAt": "2025-08-11T01:00:23.054Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -641,10 +652,10 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-30T01:00:13.737Z",
-      "nextReminderDate": "2025-07-31T00:30:00.000Z"
+      "updatedAt": "2025-08-15T01:00:14.539Z",
+      "nextReminderDate": "2025-08-16T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-08-04T00:30:00.000Z"
+    "nextReminderDate": "2025-08-18T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [

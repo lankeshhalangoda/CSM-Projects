@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1753172883244,
+  "updatedTime": 1754552833519,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "6858e7d969f1fef4f3560535",
   "aiModel": "gpt-3.5",
@@ -96,9 +96,22 @@
               "Job Vacancy",
               "Vacancies",
               "lassana.com",
-              "applications.lk"
+              "applications.lk",
+              "colombojobs.lk",
+              "topjobs.lk",
+              "ispot.lk",
+              "libertystore.lk",
+              "ubuy.com.lk",
+              "guruwarya.lk",
+              "daraz.lk",
+              "findit.lk",
+              "waves.lk",
+              "mycosco.lk",
+              "tax",
+              "topjobs",
+              "vacancy"
             ],
-            "version": "1.4"
+            "version": "1.5"
           }
         },
         "commtracks": [

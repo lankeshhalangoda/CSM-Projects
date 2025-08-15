@@ -312,6 +312,40 @@
                     "value": "$Location$"
                   }
                 ]
+              },
+              "condition": {
+                "==": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
+              }
+            },
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_2ndLevel_orm",
+              "target": "admin",
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              },
+              "condition": {
+                "!=": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
               }
             },
             {
@@ -330,6 +364,41 @@
                     "operator": "eq",
                     "value": "$location$"
                   }
+                ]
+              },
+              "condition": {
+                "==": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
+              }
+            },
+            {
+              "channel": "sms",
+              "template": "overdueAlertSMS_2ndLevel_orm",
+              "target": "admin",
+              "appendEditUrl": true,
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "location",
+                    "operator": "eq",
+                    "value": "$location$"
+                  }
+                ]
+              },
+              "condition": {
+                "!=": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
                 ]
               }
             }
@@ -355,6 +424,40 @@
                     "value": "$Location$"
                   }
                 ]
+              },
+              "condition": {
+                "==": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
+              }
+            },
+            {
+              "channel": "email",
+              "template": "overdueAlertEmail_3rdLevel_orm",
+              "target": "admin",
+              "contactFilters": [
+                "3rdlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "Location",
+                    "operator": "eq",
+                    "value": "$Location$"
+                  }
+                ]
+              },
+              "condition": {
+                "!=": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
               }
             },
             {
@@ -373,6 +476,41 @@
                     "operator": "eq",
                     "value": "$location$"
                   }
+                ]
+              },
+              "condition": {
+                "==": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
+                ]
+              }
+            },
+            {
+              "channel": "sms",
+              "template": "overdueAlertSMS_3rdLevel_orm",
+              "target": "admin",
+              "appendEditUrl": true,
+              "contactFilters": [
+                "2ndlevel"
+              ],
+              "adminUserQuery": {
+                "condition": "and",
+                "rules": [
+                  {
+                    "field": "location",
+                    "operator": "eq",
+                    "value": "$location$"
+                  }
+                ]
+              },
+              "condition": {
+                "!=": [
+                  {
+                    "var": "type"
+                  },
+                  "customerSatisfactionSurvey"
                 ]
               }
             }
@@ -531,7 +669,7 @@
     ]
   },
   "assignment": {
-        "automaticAssignment": {
+    "automaticAssignment": {
       "isEnabled": true,
       "email": "bot@gmail.com",
       "resolvedStatus": [

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:300,400');
+
+#master-section {
+    background: url("https://storage.emojot.com/pictures/skinImages/661ff4d4507538eb60267952-skin29.png");
+    /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
+    /* background-color: #ffffff; */
+    min-height: 657px;
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+
+#headerCompanyInfo {   
+    background:rgba(255, 255, 255, 0) !important;
+     
+     color:white !important}
+
+.container[style]{
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+.emote-title {
+   font-family: 'exo 2.0', Helvetica,  Arial, sans-serif; 
+   font-size:12pt;
+  font-weight: bold; color: #57114e;
+}
+
+.middle-box {
+	margin-top: 10px;
+
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+.emo-text {font-size: 11pt; color: black;  font-family: 'Exo 2.0', Helvetica,  Arial, sans-serif;      font-weight: 300;  }
+
+.emo-cont {
+      border: 1px solid rgba(31, 29, 29, 0.37);
+      margin: 10px 5px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 0px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+      padding: 7px 0;
+      border-radius: 4px;
+      background: rgba(209,209,209,1);
+      background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(209,209,209,1)), color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(226,226,226,1)));
+      background: -webkit-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+      background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+      background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 100%);
+      background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1 );
+}
+.emo-cont:hover {border: 2px solid #ffd1de;margin-bottom:0}
+
+.btn {
+    
+    border: 1px solid rgba(255,255,255, 0.5);
+    margin: 10px 5px;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    padding: 9px 25px;
+    font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    background: rgba(249,249,249,1);
+    background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(227,227,227,1)));
+    background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+	
+}
+
+.btn-next {    color: #ed1c24; }
+.btn-submit {    color: #ed1c24; }
+.btn-prev {  color: #333;}
+.btn-clear {  color: #333;}
+.clear-submit-row{text-align:center !important;}
+
+ .btn:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+.prg {width: 12px; height: 12px; border: 2px solid #eee; background: rgba(255,255,255,0.5); border-radius: 100%; float: left; position: relative;}
+
+.prg-bar {
+	border: 1px solid transparent;
+	margin: 5px 13px 15px 6px;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: center;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: center;
+	display: box;
+	box-pack: justify;
+	box-align: center;
+	background: url(../img/bg-prg-dk.png) repeat-x;
+	background-position: 0 -1px;
+}
+ 
+
+.prg-ln {height: 2px; background: rgba(0,0,0,0.1);float: left; margin-top: 5px;}
+
+
+.prg-c { border: 6px solid #abe7ff;}
+.prg-ln-c {background: rgba(0,0,0,0.3); }
+
+.prg-n { border: 6px solid #00adee;}
+
+.lg-name {color: #fff; margin: -4px 10px 0 0; font-family: 'Exo', Helvetica,  Arial, sans-serif; font-style: italic; font-size: 14px;}
+.logo-cust {margin: 3px 0 -3px 9px; height: 50px;}
+
+.sensor-title {
+     color: #57104e;
+    font-size: 17pt;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #019ac3;
+    letter-spacing: -0.5px;
+    background: rgba(255, 255, 255, 0);
+    line-height: 40px;
+    font-weight: bold;
+	
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 55px;
+    margin: 5px;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    background: rgba(54, 47, 47, 0.84);
+    
+}
+
+.form-control {border-radius: 0px; }
+
+
+
+
+
+.panel {margin: 0 10px;}
+.panel-group .panel-heading { box-shadow: 0px 2px 8px rgba(0,0,0,0.2); border-radius: 5px; color: black;
+
+    background: rgba(249,249,249,1);
+    background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(227,227,227,1)));
+    background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e3e3e3', GradientType=0 );
+	
+}
+
+.panel-title {font-size: 11pt;     max-width: 90%;     font-family: 'Exo', Helvetica, Arial, sans-serif; line-height: 1.6; }
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots{
+display:none;
+}
+.panel-body {
+    background: transparent !important;
+}
+
+.thank-you-note{
+color:white !important;
+}
+.clicked-emo-cont {
+    border: 3px red solid !important;
+}
+
+#headerCompanyInfo > .access-user{
+	text-align: center;
+    float: right;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Exo 2.0', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px;  
+     
+    background-size: 120px 80px;
+    background-repeat: no-repeat; 
+    background-position: right center;
+    position: relative;
+}
+
+.company-logo img{
+	height: 50px;
+}
+
+.footer {
+      position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    height: 40px;
+    padding: 12px 13px;
+    font-size: 8pt;
+    background: rgb(89, 19, 80) !important;
+    color: #fff;
+    margin: 0 -10px 0px 0;
+    font-family: 'Exo', Helvetica, Arial, sans-serif;
+}
+
+.form-group label{
+	color:#57104e !important;
+	 font-family: 'Exo 2.0', Helvetica,  Arial, sans-serif; 
+   font-size:12pt;
+}
+.loyalty-message{
+	color:#57104e;
+}
+
+.loyalty-bottom{
+	text-align:center;
+}
+.btn-ok{
+	color:#333
+}
+.btn-skip{
+	color:#333;	display:none;
+}
+
+.btn-fb{
+	color:#333;
+}
+
+.email-emote-message{
+	color:white !important;
+}
+
+#facebook-login-section{
+display : none !important;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6{
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8{
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10{
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon{
+    border: 3px solid #333;
+    box-shadow: 0px 2px 6px #716868;
+} 

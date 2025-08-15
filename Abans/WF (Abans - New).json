@@ -1,0 +1,341 @@
+{
+  "reportNamePrefix": "Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "Customer Satisfaction Survey",
+  "nameTemplate": "Customer Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "complaintManagementSurvey",
+        "name": "Complaint Management Survey"
+      },
+      {
+        "id": "googleMap",
+        "name": "Google"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_email",
+            "target": "admin",
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contacts": [
+              "ranaf@abansgroup.com",
+              "hansac@abansgroup.com",
+              "rajinir@abansgroup.com",
+              "prabuddhikaj@abansgroup.com"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm_email",
+            "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contacts": [
+              "ranaf@abansgroup.com",
+              "hansac@abansgroup.com",
+              "rajinir@abansgroup.com",
+              "prabuddhikaj@abansgroup.com"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "type": "enum",
+      "required": true,
+      "readOnly": false,
+      "editable": true,
+      "values": [
+        {
+          "id": "Main Branch",
+          "name": "Main Branch"
+        },
+        {
+          "id": "Downtown",
+          "name": "Downtown"
+        },
+        {
+          "id": "Uptown",
+          "name": "Uptown"
+        }
+      ]
+    },
+    "customer_name": {
+      "name": "Customer Name",
+      "type": "string",
+      "required": true,
+      "readOnly": false,
+      "editable": true
+    },
+    "rating": {
+      "name": "Rating",
+      "type": "string",
+      "required": true,
+      "readOnly": true,
+      "editable": false
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "required": false,
+      "readOnly": true,
+      "editable": false
+    }
+  },
+  "timeZone": -330,
+  "reportSensor": "inci1",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1755175977491_735577602"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_email",
+        "target": "admin",
+        "contacts": [
+          "ranaf@abansgroup.com",
+          "hansac@abansgroup.com",
+          "rajinir@abansgroup.com",
+          "prabuddhikaj@abansgroup.com"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm_email",
+        "target": "admin",
+        "contacts": [
+          "ranaf@abansgroup.com",
+          "hansac@abansgroup.com",
+          "rajinir@abansgroup.com",
+          "prabuddhikaj@abansgroup.com"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_email",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_sms",
+        "target": "employee",
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm_email",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_orm_sms",
+        "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "number",
+    "hidden": true
+  }
+}
