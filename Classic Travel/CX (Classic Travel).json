@@ -620,7 +620,7 @@
     }
   ],
   "profiles": [
-        {
+    {
       "image": "https://storage.emojot.com/logos/company_logo/677cfe18f3e90a41facf416f.png",
       "name": "lankeshh@emojot.com",
       "id": "lankeshh@emojot.com",
@@ -720,5 +720,5 @@
     }
   ],
   "assignmentAllowed": true,
-  "showAIAssistant": false
+  "showAIAssistant": true
 }

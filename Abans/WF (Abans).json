@@ -55,47 +55,13 @@
               "hansac@abansgroup.com",
               "rajinir@abansgroup.com",
               "prabuddhikaj@abansgroup.com"
-            ],
-            "adminUserQuery": {
-              "condition": {
-                "==": [
-                  {
-                    "var": "complaintType"
-                  },
-                  "complaintManagementSurvey"
-                ]
-              },
-              "rules": [
-                {
-                  "field": "complaintType",
-                  "operator": "eq",
-                  "value": "$complaintType$"
-                }
-              ]
-            }
+            ]
           },
           {
             "template": "complaintResolution_customer",
             "channel": "email",
             "target": "customer",
-            "appendEditUrl": false,
-            "adminUserQuery": {
-              "condition": {
-                "==": [
-                  {
-                    "var": "complaintType"
-                  },
-                  "complaintManagementSurvey"
-                ]
-              },
-              "rules": [
-                {
-                  "field": "complaintType",
-                  "operator": "eq",
-                  "value": "$complaintType$"
-                }
-              ]
-            }
+            "appendEditUrl": false
           }
         ]
       }
@@ -1597,24 +1563,7 @@
           "hansac@abansgroup.com",
           "rajinir@abansgroup.com",
           "prabuddhikaj@abansgroup.com"
-        ],
-        "adminUserQuery": {
-          "condition": {
-            "==": [
-              {
-                "var": "complaintType"
-              },
-              "complaintManagementSurvey"
-            ]
-          },
-          "rules": [
-            {
-              "field": "complaintType",
-              "operator": "eq",
-              "value": "$complaintType$"
-            }
-          ]
-        }
+        ]
       },
       {
         "template": "complaintCreation_customer",
@@ -1786,32 +1735,5 @@
   },
   "createdByDesigner": true,
   "wfd_engagementRuleID": "67b7f500785bdf1c3f05785e",
-  "adminHierarchy": {
-    "list": "admin",
-    "headers": [
-      {
-        "id": "location",
-        "name": "Location",
-        "type": "customField"
-      },
-      {
-        "id": "ticketAssignee",
-        "name": "Ticket Assignee",
-        "type": "contact"
-      },
-      {
-        "id": "ticketCreationAlert",
-        "name": "Ticket Creation Alert",
-        "type": "contact"
-      },
-      {
-        "id": "ticketResolutionAlert",
-        "name": "Ticket Resolution Alert",
-        "type": "contact"
-      }
-    ],
-    "id": "AHI_:1740051641491_6242281",
-    "lastGroupId": 1
-  },
   "reporterNamePrefix": "Customer"
 }

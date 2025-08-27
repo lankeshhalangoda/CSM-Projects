@@ -1,0 +1,514 @@
+{
+  "menu": [
+    {
+      "id": "cxm",
+      "icon": "fa fa-users",
+      "header": "Overall Analytics",
+      "subs": [
+        {
+          "header": "Feedback Analytics",
+          "id": "cxm_eanalytics"
+        },
+        {
+          "header": "Overall Response Analytics",
+          "id": "cxm_advanalytics_1"
+        }
+      ]
+    },
+    {
+      "id": "cxm",
+      "icon": "fas fa-users",
+      "header": "Score Analytics",
+      "subs": [
+        {
+          "header": "Task 1 Analysis",
+          "id": "cxm_advanalytics_2"
+        },
+        {
+          "header": "Task 2 Analysis",
+          "id": "cxm_advanalytics_3"
+        },
+        {
+          "header": "Task 3 Analysis",
+          "id": "cxm_advanalytics_4"
+        },
+        {
+          "header": "Task 4 Analysis",
+          "id": "cxm_advanalytics_5"
+        },
+        {
+          "header": "Task 5 Analysis",
+          "id": "cxm_advanalytics_6"
+        },
+        {
+          "header": "Task 6 Analysis",
+          "id": "cxm_advanalytics_7"
+        },
+        {
+          "header": "Task 7 Analysis",
+          "id": "cxm_advanalytics_8"
+        },
+        {
+          "header": "Task 8 Analysis",
+          "id": "cxm_advanalytics_9"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "View reviews",
+      "desc": "Review replies",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV2.jsp"
+        },
+        {
+          "key": "newLocationHide",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Review analytics",
+      "desc": "Review insights",
+      "type": "directReport",
+      "id": "orm_ris",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+        },
+        {
+          "key": "hideTicketWidgets",
+          "value": true
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Complaint analytics",
+      "desc": "See the pattern",
+      "type": "directReport",
+      "id": "comp_analy",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentOverview/incidentOverview.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Feedback Analytics",
+      "desc": "Feedback insights",
+      "type": "directReport",
+      "id": "cxm_eanalytics",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/cxmDashboard/cxmDashboard.jsp"
+        },
+        {
+          "key": "selectedReportName",
+          "value": "360v3"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Response breakdown",
+      "titleStyle": "color:white;background:#008fed;",
+      "desc": "Overall survey participation for quick overview",
+      "type": "directReport",
+      "id": "cxm_advanalytics_1",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "correlationAnalysis.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "savedReportId",
+          "value": "68a53f92a4de84d5216fd9fd"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 1: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_2",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 1"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 2: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_3",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 2"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 3: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_4",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 3"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 4: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_5",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 4"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 5: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_6",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 5"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "task 6: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_7",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 6"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 7: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_8",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 7"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "360 Overview",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Task 8: Highlights response scores across different sections for quick identification of strong and weak areas",
+      "type": "directReport",
+      "id": "cxm_advanalytics_9",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/360OverviewReport/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Task 8"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Score segment trend",
+      "titleStyle": "color:white;background:#E3097F;",
+      "desc": "Tracks score changes over time and across different segments",
+      "type": "report",
+      "id": "cxm_advanalytics_8",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/sensorScoreSegmentComparison/report.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "reportName",
+          "value": "Score trend"
+        },
+        {
+          "key": "hideUIComponents",
+          "value": "widgetFilterSection"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "My Profile",
+      "desc": "Update profile settings",
+      "type": "directReport",
+      "id": "myProfile_profile",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "updateProfile.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
+      "name": "abhishekak@emojot.com",
+      "id": "abhishekak@emojot.com",
+      "title": "company_admin",
+      "email": "abhishekak@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67761761cb917201e680c031.png",
+      "name": "onels@emojot.com",
+      "id": "onels@emojot.com",
+      "title": "company_admin",
+      "email": "onels@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67761761cb917201e680c031.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67761761cb917201e680c031.png",
+      "name": "sachintha@emojot.com",
+      "id": "sachintha@emojot.com",
+      "title": "company_admin",
+      "email": "sachintha@emojot.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}

@@ -1,6 +1,6 @@
 {
-  "updatedTime": 1753849261048,
-  "updatedBy": "lankeshh@emojot.com",
+  "updatedTime": 1755662778808,
+  "updatedBy": "dewshi2@emojot.com",
   "companyID": "679369170bf0386ac6daafb6",
   "aiModel": "gpt-3.5",
   "vendors": [
@@ -87,6 +87,7 @@
         "label": "Classic Travel",
         "key": "Classic Travel",
         "verification": {
+          "prompt": "Given that 'Classic Travel' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Classic Travel Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -191,9 +192,25 @@
               "#VenemaAntiques",
               "classictravelservice",
               "#FourSeasonsHotel",
-              "rachell26s"
+              "rachell26s",
+              "xo_maddy_kathir",
+              "classicsocialclub",
+              "the_feminine_travelista",
+              "VenemaAntiques",
+              "viralシ",
+              "FSHualalai",
+              "feminineluxurylife",
+              "xo_maddy_kathir",
+              "classicsocialclub",
+              "the_feminine_travelista",
+              "VenemaAntiques",
+              "viralシ",
+              "FSHualalai",
+              "feminineluxurylife",
+              "HasselbladXPan",
+              "AestheticFlatlay"
             ],
-            "version": "1.8"
+            "version": "2.2"
           }
         },
         "commtracks": [
@@ -209,6 +226,7 @@
         "label": "Gabo Travels",
         "key": "Gabo Travels",
         "verification": {
+          "prompt": "Given that 'Gabo Travels' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Gabo Travels Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -233,6 +251,7 @@
         "label": "Bongo Travel",
         "key": "Bongo Travel",
         "verification": {
+          "prompt": "Given that 'Bongo Travel' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Bongo Travel Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -257,6 +276,7 @@
         "label": "Expo Visa Services (EVS)",
         "key": "Expo Visa Services",
         "verification": {
+          "prompt": "Given that 'EVS' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about EVS Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -281,6 +301,7 @@
         "label": "Sunpower Travels",
         "key": "Sunpower Travels",
         "verification": {
+          "prompt": "Given that 'Sunpower Travels' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Sunpower Travels Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -305,6 +326,7 @@
         "label": "Acorn Prime Destinations",
         "key": "Acorn Prime Destinations",
         "verification": {
+          "prompt": "Given that 'Acorn Prime Destinations' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Acorn Prime Destinations Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -328,6 +350,7 @@
         "label": "Hayleys Travels",
         "key": "Hayleys Travels",
         "verification": {
+          "prompt": "Given that 'Hayleys Travels' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Hayleys Travels Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -354,6 +377,7 @@
         "label": "Mackinnons Travels",
         "key": "Mackinnons Travels",
         "verification": {
+          "prompt": "Given that 'Mackinnons Travels' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Mackinnons Travels Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -379,6 +403,7 @@
         "label": "Crazy Jets",
         "key": "Crazy Jets",
         "verification": {
+          "prompt": "Given that 'Crazy Jets' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Crazy Jets Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -403,6 +428,7 @@
         "label": "Travelco Holidays",
         "key": "Travelco Holidays",
         "verification": {
+          "prompt": "Given that 'Travelco Holidays' refers specifically to the travel agency based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Travelco Holidays Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -626,7 +652,7 @@
   "alertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
+        "email": "strategy@classictravel.lk"
       },
       {
         "email": "dewshik@emojot.com"
@@ -639,28 +665,25 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-08-11T01:00:23.054Z",
+    "updatedAt": "2025-08-18T01:00:16.995Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "lankeshh@emojot.com"
-        },
-        {
           "email": "dewshik@emojot.com"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-08-15T01:00:14.539Z",
-      "nextReminderDate": "2025-08-16T00:30:00.000Z"
+      "updatedAt": "2025-08-20T01:00:13.483Z",
+      "nextReminderDate": "2025-08-21T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-08-18T00:30:00.000Z"
+    "nextReminderDate": "2025-08-25T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
+        "email": "strategy@classictravel.lk"
       },
       {
         "email": "dewshik@emojot.com"
