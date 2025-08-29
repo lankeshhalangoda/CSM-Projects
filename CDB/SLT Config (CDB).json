@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1754463369077,
+  "updatedTime": 1756287803854,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "68526768237bdc055f657a4e",
   "aiModel": "gpt-3.5",
@@ -44,7 +44,7 @@
         "label": "CDB",
         "key": "CDB",
         "verification": {
-          "prompt": "Given that 'CDB' refers specifically to the handloom company based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about CDB Sri Lanka and 'no' otherwise.",
+          "prompt": "Given that 'CDB' refers specifically to the financial institution based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about CDB Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -100,10 +100,7 @@
             "வங்கி"
           ],
           "commtracks": [
-            536570,
-            536573,
-            536574,
-            536583
+            536570
           ],
           "exclusions": {
             "keywords": [
@@ -179,9 +176,93 @@
               "sex",
               "Island Gays!",
               "teninchtopx",
-              "eugenegg99"
+              "eugenegg99",
+              "ABDanielleSmith",
+              "marinaverso",
+              "sitenoataque",
+              "zendayats",
+              "bigred",
+              "abpoli",
+              "CDNPoli",
+              "imediatamente",
+              "Rendimento",
+              "CIBanco",
+              "CDBInfotech",
+              "Craig Johnson",
+              "cdbaviation",
+              "uknowmoe2",
+              "Yangtze",
+              "BangaloreJobs",
+              "Uknowmoe2",
+              "CDBAviation",
+              "caixinhaturbo",
+              "CAIXINHA",
+              "Bondo",
+              "ABDanielleSmith",
+              "ArifeenRavin",
+              "marinaverso",
+              "planejamento",
+              "popularidade",
+              "juroscompostos",
+              "Andrew Bills",
+              "Crop Diversity Block",
+              "Recruitupia",
+              "MorningtonPeninsula",
+              "Oracle",
+              "FryYayUpdate",
+              "constancia",
+              "Ruzheva",
+              "CanRevAgency",
+              "Ehri-Chan",
+              "Jenkins",
+              "Dave B",
+              "Canada Disability Benefit",
+              "Impressive_Steak5354",
+              "mouse",
+              "CDN_Bookmouse",
+              "r/Odsp",
+              "CBD",
+              "Hajdu",
+              "Katie0690",
+              "Scotia",
+              "jeffster1970",
+              "Conscious-Length-565",
+              "Kiss_Slap",
+              "Infamous-Boat-7529",
+              "Silent-Egg-3221",
+              "superblazetoise",
+              "Vitality80",
+              "Thena_Prince",
+              "No-Key-8223",
+              "Ok-Sale-3896",
+              "aaron15287",
+              "tiger",
+              "TD",
+              "Ontario",
+              "scotiabank",
+              "Toronto",
+              "RBC",
+              "Talvez",
+              "DefiantDirection6736",
+              "BMO",
+              "SatisfactionSlow6985",
+              "Community Development Banking",
+              "CottonConnect",
+              "Greg Bailey",
+              "sucesso",
+              "riqueza",
+              "RendaFixa",
+              "dinheironainternet",
+              "rendaextra",
+              "liberdadefinanceira",
+              "poupanca",
+              "financeiramente",
+              "CARIFESTA",
+              "quando",
+              "tivesse",
+              "dinheiro"
             ],
-            "version": "1.5"
+            "version": "2.0"
           }
         },
         "commtracks": [
@@ -197,6 +278,7 @@
         "label": "LB Finance",
         "key": "LB Finance",
         "verification": {
+          "prompt": "Given that 'LB Finance' refers specifically to the financial institution based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about LB Finance Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -212,10 +294,7 @@
             "PLC"
           ],
           "commtracks": [
-            536576,
-            536579,
-            536580,
-            536581
+            536576
           ]
         },
         "commtracks": [
@@ -231,6 +310,7 @@
         "label": "LOLC Finance",
         "key": "LOLC Finance",
         "verification": {
+          "prompt": "Given that 'LOLC Finance' refers specifically to the financial institution based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about LOLC Finance Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -251,10 +331,7 @@
             "#ORIX"
           ],
           "commtracks": [
-            536584,
-            536586,
-            536587,
-            536589
+            536584
           ]
         },
         "commtracks": [
@@ -270,6 +347,7 @@
         "label": "Commercial Credit",
         "key": "Commercial Credit",
         "verification": {
+          "prompt": "Given that 'Commercial Credit' refers specifically to the financial institution based in Sri Lanka, please evaluate the following social media post to determine if it is discussing this company. Reply with 'yes' if it is about Commercial Credit Sri Lanka and 'no' otherwise.",
           "wordsToCheck": [
             "Sri Lanka",
             "srilanka",
@@ -833,7 +911,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-08-18T01:00:16.995Z",
+    "updatedAt": "2025-08-25T01:00:30.641Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -843,10 +921,10 @@
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-08-19T01:00:18.584Z",
-      "nextReminderDate": "2025-08-20T00:30:00.000Z"
+      "updatedAt": "2025-08-28T01:00:14.722Z",
+      "nextReminderDate": "2025-08-29T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-08-25T00:30:00.000Z"
+    "nextReminderDate": "2025-09-01T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
@@ -861,7 +939,7 @@
     "emailTemplate": "SLT_StormAlert",
     "reportType": "SLT_STORM_ALERT"
   },
-  "sltDataCategorizationPrompt": "give me the aspect base sentiment for given text.the text is $text$. Valid asspects are \nNews, Social, Loan Services, Digital Banking, Saving Accounts, Competition, Credit Cards, E-Banking & Mobile Banking, Youth, Fake calls, E-Banking & Mobile Banking, Youth, Fake calls.\nFind the most relevant aspect from the given aspect list, for the given text.sentiment should be one of neutral,negative,positive.return the response with most suitable aspect and related sentiment as a JSON format. object key is equal to aspect and its value shoud be sentiment {relatedAspect:sentiment}.if there is no relevent aspect found for the text return null",
+  "sltDataCategorizationPrompt": "give me the aspect base sentiment for given text.the text is $text$. Valid asspects are \nNews, Social, Loan Services, Leasing Services, Credit Cards, Savings Accounts, Digital Banking, E-Banking & Mobile Banking, Youth Banking, Fraud & Scam calls, Competition, Customer Support, Insurance Services, Customer Experience, Company Initiatives\nFind the most relevant aspect from the given aspect list, for the given text.sentiment should be one of neutral,negative,positive.return the response with most suitable aspect and related sentiment as a JSON format. object key is equal to aspect and its value shoud be sentiment {relatedAspect:sentiment}.if there is no relevent aspect found for the text return null",
   "categorizationConfig": {
     "AIModel": "manual"
   },

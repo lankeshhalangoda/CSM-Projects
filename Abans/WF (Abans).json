@@ -54,7 +54,8 @@
               "ranaf@abansgroup.com",
               "hansac@abansgroup.com",
               "rajinir@abansgroup.com",
-              "prabuddhikaj@abansgroup.com"
+              "prabuddhikaj@abansgroup.com",
+              "nipunin@abansgroup.com"
             ]
           },
           {
@@ -1562,7 +1563,8 @@
           "ranaf@abansgroup.com",
           "hansac@abansgroup.com",
           "rajinir@abansgroup.com",
-          "prabuddhikaj@abansgroup.com"
+          "prabuddhikaj@abansgroup.com",
+          "nipunin@abansgroup.com"
         ]
       },
       {
@@ -1735,5 +1737,32 @@
   },
   "createdByDesigner": true,
   "wfd_engagementRuleID": "67b7f500785bdf1c3f05785e",
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_:1740051641491_6242281",
+    "lastGroupId": 1
+  },
   "reporterNamePrefix": "Customer"
 }
