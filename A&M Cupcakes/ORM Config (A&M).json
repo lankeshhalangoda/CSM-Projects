@@ -1,0 +1,250 @@
+{
+  "companyID": "68afe7228ee6be9116a0fec6",
+  "workflow": "6889e412cc1198b3524eb405",
+  "aiModel": "gpt-4",
+  "ormAICategories": [
+    {
+      "id": "overallAnalysis",
+      "name": "Overall Analysis"
+    },
+    {
+      "id": "customerBehaviorAnalysis",
+      "name": "Customer Behavior Analysis"
+    },
+    {
+      "id": "customerPreferenceAnalysis",
+      "name": "Customer Preference Analysis"
+    },
+    {
+      "id": "latestCustomerTrendsAnalysis",
+      "name": "Latest Customer Trends Analysis"
+    }
+  ],
+  "ormPromptForSource": {
+    "overallAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give overall analysis as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerBehaviorAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer behavior as bullet points. Please also suggest recommendations for how to improve the review in this location. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "customerPreferenceAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer preference as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    },
+    "latestCustomerTrendsAnalysis": {
+      "prompt": "Please analyze these online reviews included after triple backticks on ##location## that received high rating. Give analysis on customer trend as bullet points. Please also suggest recommendations for how to improve the review in this location. Please do not include content parts of the prompt in the response or do not try to complete the incomplete prompts. \n ```"
+    }
+  },
+  "ORMConfigs": {
+    "reviewFetchLimit": {
+      "nonAdmin": 1000,
+      "admin": 1500
+    },
+"targetedKeywords": {
+  "Taste": [
+    "fresh",
+    "moist",
+    "soft",
+    "dry",
+    "fluffy",
+    "delicious",
+    "sweet",
+    "bland",
+    "rich",
+    "buttery",
+    "undercooked",
+    "overbaked",
+    "flavorful",
+    "creamy",
+    "stale"
+  ],
+  "Flavors": [
+    "chocolate",
+    "vanilla",
+    "red-velvet",
+    "strawberry",
+    "caramel",
+    "seasonal",
+    "special",
+    "custom",
+    "limited",
+    "unique",
+    "classic",
+    "popular",
+    "exclusive",
+    "choice",
+    "variety"
+  ],
+  "Service": [
+    "quick",
+    "slow",
+    "friendly",
+    "helpful",
+    "rude",
+    "polite",
+    "attentive",
+    "responsive",
+    "professional",
+    "welcoming",
+    "delivery",
+    "pickup",
+    "efficient",
+    "delay",
+    "smooth"
+  ],
+  "Design": [
+    "beautiful",
+    "creative",
+    "customized",
+    "messy",
+    "colorful",
+    "aesthetic",
+    "cute",
+    "appealing",
+    "neat",
+    "attractive",
+    "artistic",
+    "personalized",
+    "eye-catching",
+    "unique",
+    "themed"
+  ],
+  "Packaging": [
+    "secure",
+    "eco-friendly",
+    "branded",
+    "neat",
+    "messy",
+    "compact",
+    "functional",
+    "giftbox",
+    "convenient",
+    "luxury",
+    "minimal",
+    "attractive",
+    "protective",
+    "sustainable",
+    "appealing"
+  ],
+  "Pricing": [
+    "affordable",
+    "expensive",
+    "worth",
+    "reasonable",
+    "deal",
+    "promotion",
+    "discount",
+    "overpriced",
+    "budget",
+    "premium",
+    "special",
+    "exclusive",
+    "value",
+    "costly",
+    "money"
+  ],
+  "Freshness": [
+    "homemade",
+    "handcrafted",
+    "natural",
+    "premium",
+    "organic",
+    "quality",
+    "soft",
+    "moist",
+    "fluffy",
+    "authentic",
+    "rich",
+    "tender",
+    "stale",
+    "fresh",
+    "original"
+  ],
+  "Occasions": [
+    "birthday",
+    "wedding",
+    "anniversary",
+    "party",
+    "celebration",
+    "event",
+    "custom",
+    "surprise",
+    "gift",
+    "holiday",
+    "theme",
+    "special",
+    "corporate",
+    "festive",
+    "box"
+  ]
+},
+
+    "ormDataCategorizationPrompt": "Return the high-level categories and associated sentiment for those categories of the following text in the following Format. Pick the categories from the Category list given below. Include only the given categories. All category should have a sentiment, select sentiment from following values neutral,negative,positive\n Category list - Service, Quality, Price, Experience \nFormat:<category>:<sentiment>\nText : $text$",
+    "replySuggestionAIModel": "gpt-4",
+    "replySuggestionDefaultLangIsEnglish": true,
+    "replySuggestionPrompt": {
+      "english": "What is the best reply for the following review? Please give the reply in english",
+      "similar": "What is the best reply for the following review? Please give the reply in same language as the review"
+    }
+  },
+  "categorizationConfig": {
+    "AIModel": "manual"
+  },
+  "workflowMappingFiels": {
+    "mandatoryFields": [
+      {
+        "fieldId": "priority",
+        "defaultValue": "Low",
+        "dataField": "priority"
+      },
+      {
+        "fieldId": "type",
+        "defaultValue": "googleMap",
+        "dataField": "source"
+      },
+      {
+        "fieldId": "description",
+        "dataField": "reviewText",
+        "defaultValue": "N/A"
+      },
+      {
+        "fieldId": "assignee",
+        "dataField": "$currentUser$"
+      }
+    ],
+    "customFields": [
+      {
+        "fieldId": "rating",
+        "dataField": "rating",
+        "parseString": true
+      },
+      {
+        "fieldId": "complaintType",
+        "dataField": "source",
+        "defaultValue": "googleMap"
+      },
+      {
+        "fieldId": "location",
+        "dataField": "locationId"
+      },
+      {
+        "fieldId": "reviewId",
+        "dataField": "_id"
+      },
+      {
+        "fieldId": "author",
+        "dataField": "author"
+      },
+      {
+        "fieldId": "comments",
+        "dataField": "reviewText"
+      }
+    ],
+    "emoSignature": [
+      {
+        "mappingField": "Location",
+        "dataField": "locationId"
+      }
+    ]
+  },
+  "type": "onlineReviewManagement"
+}
