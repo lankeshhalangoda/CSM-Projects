@@ -202,14 +202,12 @@
                                 <!-- Content -->
                                 <tr>
                                     <td class="content">
-                                        <p>A new complaint has been registered. Kindly review it at your earliest
-                                            convenience.</p>
-                                        <p><strong>Complaint ID: </strong>$incident_number$</p>
-                                        <p><strong>Customer Name:&nbsp;</strong>$client_name$</p>
-                                        <p><strong>Customer Telephone:&nbsp;</strong>$client_telephone$</p>
-                                        <p><strong>Satisfaction Level:</strong>&nbsp;$incident_customFields_rating$</p>
+                                        <p>The following complaint hasn't been resolved yet. Please take the necessary
+                                            actions.</p>
+                                        <p><strong>Complaint ID:</strong>&nbsp;$incident_number$</p>
+                                        <p><strong>Customer Name: </strong>$incident_customFields_author$</p>
+                                        <p><strong>Rating:</strong>&nbsp;$incident_customFields_rating$</p>
                                         <p><strong>Location:</strong>&nbsp;$emoSignature_Location$</p>
-                                        <p><strong>Category:</strong>&nbsp;$incident_customFields_issue_type$</p>
                                         <p><strong>Comment:</strong>&nbsp;$incident_customFields_comments$</p>
                                         <!-- Sensor Load Button -->
                                         <center>

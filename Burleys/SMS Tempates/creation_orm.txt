@@ -1,0 +1,6 @@
+New ORM Complaint Created: $incident_number$
+Customer: $incident_customFields_author$
+Location: $emoSignature_Location$
+Satisfaction: $incident_customFields_rating$
+Visit $incidentURL$ for more info.
+- Emojot

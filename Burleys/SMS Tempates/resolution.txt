@@ -1,0 +1,8 @@
+Survey Complaint Resolved: $incident_number$
+Customer: $client_name$
+Telephone: $client_telephone$
+Location: $emoSignature_Location$
+Order: $incident_customFields_order_method$
+Satisfaction: $incident_customFields_rating$
+Visit $incidentURL$ for more info.
+- Emojot
