@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width" name="viewport" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            line-height: 1.65;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        body,
+        .body-wrap {
+            width: 100% !important;
+            height: 100%;
+            background: linear-gradient(to right, #ff7bf5, #ffe6fa, #ff7bf5);
+            /* Light purple gradient for both sides */
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .button {
+            display: inline-block;
+            color: white;
+            background: #800a78;
+            /* Purple button color */
+            border: solid #800a78;
+            border-width: 10px 20px 8px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 20px;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        p,
+        ul,
+        ol {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: block !important;
+            clear: both !important;
+            margin: 0 auto !important;
+            max-width: 580px !important;
+        }
+
+        .container table {
+            width: 100% !important;
+            border-collapse: collapse;
+        }
+
+        .container .masthead img {
+            width: auto;
+            max-width: 100px;
+            margin: 10px 0;
+        }
+
+        .container .masthead {
+            padding: 20px;
+            background-color: white;
+            text-align: left;
+        }
+
+        .container .content {
+            background: white;
+            padding: 30px 35px;
+        }
+
+        .container .content.footer {
+            background: #800a78;
+            height: 42px;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+
+        .container .content.footer p {
+            margin-bottom: 0;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .container .content.footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container .content.footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 699px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            p,
+            ul,
+            ol {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table class="body-wrap" style="color: black; background-color: #ffe0b3;">
+        <tbody>
+            <tr>
+                <td>
+                    <center>
+                        <table class="container" style="border-spacing: 0px;">
+                            <tbody><!-- Header -->
+                                <tr>
+                                    <td align="left" class="masthead"><img alt="Burleys Logo"
+                                            src="https://storage.emojot.com/pictures/emailImages/68afe7228ee6be9116a0fec6-skin1.png" />
+                                    </td>
+                                </tr>
+                                <tr style="background: white;">
+                                    <td>
+                                        <hr style="border: 1px solid #efeeee;" />
+                                    </td>
+                                </tr>
+                                <!-- Content -->
+                                <tr>
+                                    <td class="content">
+                                        <p>The following complaint has been resolved.&nbsp;No further action is required
+                                            at this time.</p>
+                                        <p><strong>Complaint ID:</strong>&nbsp;$incident_number$</p>
+                                        <p><strong>Customer Name:&nbsp;</strong>$incident_customFields_author$</p>
+                                        <p><strong>Rating:</strong>&nbsp;$incident_customFields_rating$</p>
+                                        <p><strong>Location:</strong>&nbsp;$emoSignature_Location$</p>
+                                        <p><strong>Comment:</strong>&nbsp;$incident_customFields_comments$</p>
+                                        <!-- Sensor Load Button -->
+                                        <center>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <p><a class="button"
+                                                                    href="https://emojot.com/emojotDashboard/samlsso?redirectPage=reports/incidentManagement/incidentEdit.jsp&amp;workflowID=$workflow_id$&amp;incidentID=$incident_id$&amp;trimOut=true&amp;companyID=68874a352d16d957319d827e&amp;unmask=true"
+                                                                    rel="noopener"
+                                                                    style="padding: 5px; background: #800a78; color: white; text-decoration: none;"
+                                                                    target="_blank">Click here to review</a></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </td>
+                                </tr>
+                                <tr style="background: white;">
+                                    <td>
+                                        <hr style="border: 1px solid #efeeee;" />
+                                    </td>
+                                </tr>
+                                <!-- Footer -->
+                                <tr>
+                                    <td class="content footer" height="42"
+                                        style="background: #800a78; height: 42px; padding-top: 2px; padding-bottom: 5px;">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p align="left" style="text-align: left; color: white;">Powered
+                                                            by Emojot</p>
+                                                    </td>
+                                                    <td width="200"><a href="http://emojot.com/"><img align="right"
+                                                                alt="Emojot Logo"
+                                                                src="https://storage.emojot.com/pictures/generalImages/68874a352d16d957319d827e-skin3.png"
+                                                                style="width: 30px; float: right;" width="30" /></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

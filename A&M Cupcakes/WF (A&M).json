@@ -11,8 +11,8 @@
     "readOnly": true,
     "values": [
       {
-        "id": "complaintManagementSurvey",
-        "name": "Complaint Management Survey"
+        "id": "customerSatisfactionSurvey",
+        "name": "Customer Satisfaction Survey"
       },
       {
         "id": "googleMap",

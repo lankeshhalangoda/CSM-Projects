@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1756287803854,
+  "updatedTime": 1756380467320,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "68526768237bdc055f657a4e",
   "aiModel": "gpt-3.5",
@@ -901,7 +901,25 @@
   "alertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
+        "email": "budsarani.samaranayaka@cdb.lk"
+      },
+      {
+        "email": "melissa.gunatilleke@wppmedia.com"
+      },
+      {
+        "email": "sandali.piyapema@mindshareworld.com"
+      },
+      {
+        "email": "sudeshika.somarathna@wppmedia.com"
+      },
+      {
+        "email": "yasith.kumalsha@cdb.lk"
+      },
+      {
+        "email": "arshaq.ali@mindshareworld.com"
+      },
+      {
+        "email": "dewshik@emojot.com"
       }
     ],
     "reminderDate": {
@@ -911,25 +929,61 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-08-25T01:00:30.641Z",
+    "updatedAt": "2025-09-01T01:00:28.064Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "lankeshh@emojot.com"
+          "email": "budsarani.samaranayaka@cdb.lk"
+        },
+        {
+          "email": "melissa.gunatilleke@wppmedia.com"
+        },
+        {
+          "email": "sandali.piyapema@mindshareworld.com"
+        },
+        {
+          "email": "sudeshika.somarathna@wppmedia.com"
+        },
+        {
+          "email": "yasith.kumalsha@cdb.lk"
+        },
+        {
+          "email": "arshaq.ali@mindshareworld.com"
+        },
+        {
+          "email": "dewshik@emojot.com"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-08-28T01:00:14.722Z",
-      "nextReminderDate": "2025-08-29T00:30:00.000Z"
+      "updatedAt": "2025-09-01T01:00:28.064Z",
+      "nextReminderDate": "2025-09-02T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-09-01T00:30:00.000Z"
+    "nextReminderDate": "2025-09-08T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "lankeshh@emojot.com"
+        "email": "budsarani.samaranayaka@cdb.lk"
+      },
+      {
+        "email": "melissa.gunatilleke@wppmedia.com"
+      },
+      {
+        "email": "sandali.piyapema@mindshareworld.com"
+      },
+      {
+        "email": "sudeshika.somarathna@wppmedia.com"
+      },
+      {
+        "email": "yasith.kumalsha@cdb.lk"
+      },
+      {
+        "email": "arshaq.ali@mindshareworld.com"
+      },
+      {
+        "email": "dewshik@emojot.com"
       }
     ],
     "timeOffset": -330,
