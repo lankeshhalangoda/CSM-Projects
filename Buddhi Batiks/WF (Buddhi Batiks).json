@@ -2,7 +2,7 @@
   "reportNamePrefix": "Case",
   "reporterNamePrefix": "Customer",
   "descriptionFormat": "text",
-  "name": "Fullr v1",
+  "name": "WF v1",
   "nameTemplate": "Customer Complaint: $type$",
   "descriptionTemplate": "Customer Complaint from $type$",
   "type": {
@@ -17,14 +17,6 @@
       {
         "id": "googleMap",
         "name": "Google"
-      },
-      {
-        "id": "facebook",
-        "name": "Facebook"
-      },
-      {
-        "id": "tripadvisor",
-        "name": "Tripadvisor"
       }
     ]
   },
@@ -148,100 +140,15 @@
     "location": {
       "name": "Location",
       "type": "enum",
-      "required": false,
-      "readOnly": true,
+      "required": true,
+      "readOnly": false,
       "editable": true,
       "values": [
         {
-          "id": "Crescat",
-          "name": "Crescat"
-        },
-        {
-          "id": "Colombo 05",
-          "name": "Colombo 05"
-        },
-        {
-          "id": "Mount Lavinia",
-          "name": "Mount Lavinia"
-        },
-        {
-          "id": "Maharagama",
-          "name": "Maharagama"
-        },
-        {
-          "id": "Welisara",
-          "name": "Welisara"
-        },
-        {
-          "id": "Pita Kotte",
-          "name": "Pita Kotte"
-        },
-        {
-          "id": "Thalawathugoda",
-          "name": "Thalawathugoda"
-        },
-        {
-          "id": "Nawala",
-          "name": "Nawala"
-        },
-        {
-          "id": "Colombo City Centre (CCC)",
-          "name": "Colombo City Centre (CCC)"
+          "id": "Colombo",
+          "name": "Colombo"
         }
       ]
-    },
-    "order_method": {
-      "name": "Order Method",
-      "type": "string",
-      "readOnly": true
-    },
-    "issue_type": {
-      "name": "Issue Type(s)",
-      "type": "multiselect",
-      "readOnly": true,
-      "values": [
-        {
-          "id": "Staff",
-          "name": "Staff"
-        },
-        {
-          "id": "Facilities",
-          "name": "Facilities"
-        },
-        {
-          "id": "Taste/Quality",
-          "name": "Taste/Quality"
-        },
-        {
-          "id": "Value for Money",
-          "name": "Value for Money"
-        },
-        {
-          "id": "Packaging",
-          "name": "Packaging"
-        },
-        {
-          "id": "Delivery Time",
-          "name": "Delivery Time"
-        },
-        {
-          "id": "Order Accuracy",
-          "name": "Order Accuracy"
-        },
-        {
-          "id": "Food Temperature",
-          "name": "Food Temperature"
-        },
-        {
-          "id": "Rider Professionalism",
-          "name": "Rider Professionalism"
-        }
-      ]
-    },
-    "attachment": {
-      "name": "Attachment",
-      "type": "file",
-      "readOnly": true
     },
     "rating": {
       "name": "Satisfaction Level",
@@ -249,16 +156,45 @@
       "readOnly": true,
       "hidden": true
     },
-    "author": {
-      "name": "Author",
+    "recommendation": {
+      "name": "Recommendation",
       "type": "string",
-      "readOnly": true
+      "readOnly": true,
+      "hidden": true
+    },
+    "quality": {
+      "name": "Quality",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "price": {
+      "name": "Price",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "service": {
+      "name": "Service",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
     },
     "comments": {
       "name": "Comment",
       "type": "string",
       "readOnly": true,
       "hidden": true
+    },
+    "attachment": {
+      "name": "Attachment",
+      "type": "file",
+      "readOnly": true
+    },
+    "author": {
+      "name": "Author",
+      "type": "string",
+      "readOnly": true
     }
   },
   "timeZone": -330,
@@ -287,7 +223,7 @@
         "type": "contact"
       }
     ],
-    "id": "AHI_1751614039113_891335362"
+    "id": "AHI_1757574482606_643520427"
   },
   "workflowCreation": {
     "email": "bot@emojot.com",
@@ -378,7 +314,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number",
-    "hidden": true
+    "type": "number"
   }
 }

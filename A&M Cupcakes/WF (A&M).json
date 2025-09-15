@@ -2,7 +2,7 @@
   "reportNamePrefix": "Case",
   "reporterNamePrefix": "Customer",
   "descriptionFormat": "text",
-  "name": "Customer Satisfaction Survey",
+  "name": "WF v1",
   "nameTemplate": "Customer Complaint: $type$",
   "descriptionTemplate": "Customer Complaint from $type$",
   "type": {
@@ -79,9 +79,63 @@
             }
           },
           {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_sms",
+            "target": "admin",
+            "appendEditUrl": true,
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
             "channel": "email",
             "template": "complaintResolutionAlert_orm_email",
             "target": "admin",
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_orm_sms",
+            "target": "admin",
+            "appendEditUrl": true,
             "condition": {
               "!=": [
                 {
@@ -159,6 +213,10 @@
         {
           "id": "Pelawatte",
           "name": "Pelawatte"
+        },
+        {
+          "id": "Delivery",
+          "name": "Delivery"
         }
       ]
     },
@@ -286,9 +344,63 @@
         }
       },
       {
+        "channel": "sms",
+        "template": "complaintCreationAlert_sms",
+        "target": "admin",
+        "appendEditUrl": true,
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
         "channel": "email",
         "template": "complaintCreationAlert_orm_email",
         "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_orm_sms",
+        "target": "admin",
+        "appendEditUrl": true,
         "contactFilters": [
           "ticketCreationAlert"
         ],
@@ -329,9 +441,37 @@
         }
       },
       {
+        "channel": "sms",
+        "template": "complaintAssignment_sms",
+        "target": "employee",
+        "appendEditUrl": true,
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
         "channel": "email",
         "template": "complaintAssignment_orm_email",
         "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_orm_sms",
+        "target": "employee",
+        "appendEditUrl": true,
         "condition": {
           "!=": [
             {
@@ -345,7 +485,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number",
-    "hidden": true
+    "type": "number"
   }
 }

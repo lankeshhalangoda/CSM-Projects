@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1756380467320,
+  "updatedTime": 1757316103309,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "68526768237bdc055f657a4e",
   "aiModel": "gpt-3.5",
@@ -260,9 +260,18 @@
               "CARIFESTA",
               "quando",
               "tivesse",
-              "dinheiro"
+              "dinheiro",
+              "Cyprus",
+              "Cyprus Development Bank",
+              "Cyprus Stock Exchange",
+              "Cyprus Mail",
+              "porquinho",
+              "sistema",
+              "tigrinho",
+              "aparecendo",
+              "IceCream-Cold"
             ],
-            "version": "2.0"
+            "version": "2.1"
           }
         },
         "commtracks": [
@@ -920,6 +929,9 @@
       },
       {
         "email": "dewshik@emojot.com"
+      },
+      {
+        "email": "cs@emojot.com"
       }
     ],
     "reminderDate": {
@@ -929,7 +941,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-09-01T01:00:28.064Z",
+    "updatedAt": "2025-09-08T01:00:30.060Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -954,13 +966,16 @@
         },
         {
           "email": "dewshik@emojot.com"
-        }
+        },
+        {
+        "email": "cs@emojot.com"
+      }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-09-01T01:00:28.064Z",
-      "nextReminderDate": "2025-09-02T00:30:00.000Z"
+      "updatedAt": "2025-09-09T10:00:23.624Z",
+      "nextReminderDate": "2025-09-10T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-09-08T00:30:00.000Z"
+    "nextReminderDate": "2025-09-15T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
@@ -984,6 +999,9 @@
       },
       {
         "email": "dewshik@emojot.com"
+      },
+      {
+        "email": "cs@emojot.com"
       }
     ],
     "timeOffset": -330,

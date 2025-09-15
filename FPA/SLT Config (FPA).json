@@ -1,6 +1,6 @@
 {
-  "updatedTime": 1755083881454,
-  "updatedBy": "lankeshh@emojot.com",
+  "updatedTime": 1757407244565,
+  "updatedBy": "manura",
   "companyID": "687f4c1f9241af5bd8692639",
   "aiModel": "gpt-3.5",
   "vendors": [
@@ -871,6 +871,9 @@
       },
       {
         "email": "amila@fpasrilanka.org"
+      },
+      {
+        "email": "cs@emojot.com"
       }
     ],
     "reminderDate": {
@@ -880,7 +883,7 @@
     },
     "reportType": "SLT_UPDATE_ALERT",
     "reminderType": "weekly",
-    "updatedAt": "2025-07-21T01:00:24.982Z",
+    "updatedAt": "2025-09-09T10:00:23.624Z",
     "emailTemplate": "SLT_WeeklyUpdateReport",
     "dailyAlert": {
       "emailTemplate": "SLT_DailyUpdateReport",
@@ -893,13 +896,16 @@
         },
         {
           "email": "amila@fpasrilanka.org"
+        },
+        {
+          "email": "cs@emojot.com"
         }
       ],
       "sendDailyReport": true,
-      "updatedAt": "2025-07-22T01:00:13.676Z",
-      "nextReminderDate": "2025-07-23T00:30:00.000Z"
+      "updatedAt": "2025-09-09T10:00:23.624Z",
+      "nextReminderDate": "2025-09-10T00:30:00.000Z"
     },
-    "nextReminderDate": "2025-07-28T00:30:00.000Z"
+    "nextReminderDate": "2025-09-15T00:30:00.000Z"
   },
   "stormAlertConfig": {
     "receivers": [
@@ -911,6 +917,9 @@
       },
       {
         "email": "amila@fpasrilanka.org"
+      },
+      {
+        "email": "cs@emojot.com"
       }
     ],
     "timeOffset": -330,

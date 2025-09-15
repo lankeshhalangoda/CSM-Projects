@@ -1,5 +1,5 @@
 {
-  "updatedTime": 1755685198077,
+  "updatedTime": 1756272019464,
   "updatedBy": "lankeshh@emojot.com",
   "companyID": "6858e7d969f1fef4f3560535",
   "aiModel": "gpt-3.5",
@@ -810,7 +810,13 @@
   "alertConfig": {
     "receivers": [
       {
-        "email": "shaveenf@emojot.com"
+        "email": "cs@emojot.com"
+      },
+      {
+        "email": "lushan@nawalokamedicare.com"
+      },
+      {
+        "email": "ishinah@nawalokamedicare.com"
       }
     ],
     "reminderDate": {
@@ -826,8 +832,14 @@
       "emailTemplate": "SLT_DailyUpdateReport",
       "receivers": [
         {
-          "email": "shaveenf@emojot.com"
-        }
+        "email": "cs@emojot.com"
+      },
+      {
+        "email": "lushan@nawalokamedicare.com"
+      },
+      {
+        "email": "ishinah@nawalokamedicare.com"
+      }
       ],
       "sendDailyReport": true,
       "updatedAt": "2025-03-20T01:00:07.324Z",
@@ -838,7 +850,13 @@
   "stormAlertConfig": {
     "receivers": [
       {
-        "email": "shaveenf@emojot.com"
+        "email": "cs@emojot.com"
+      },
+      {
+        "email": "lushan@nawalokamedicare.com"
+      },
+      {
+        "email": "ishinah@nawalokamedicare.com"
       }
     ],
     "timeOffset": -330,

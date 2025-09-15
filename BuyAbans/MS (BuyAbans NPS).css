@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =====================================================
+   Modern Variables
+   ===================================================== */
+:root {
+    --primary: #781d7d;
+    --primary-600: #6a1b9a;
+    --primary-700: #5a178a;
+    --text: #111827;
+    --text-soft: #444;
+    --muted: #f6f6f8;
+    --border: #e7e7ec;
+    --shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, .18);
+    --radius: 12px;
+}
+
+/* =====================================================
+   Base / Resets
+   ===================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =====================================================
+   Layout Containers
+   ===================================================== */
+#master-section {
+    background: url("https://storage.emojot.com/pictures/skinImages/6791d6ad94210ae8d23f93ae-skin3.png");
+    /* background:
+      radial-gradient(1000px 400px at 0% 0%, rgba(120,29,125,.06), transparent 60%),
+      radial-gradient(800px 300px at 100% 0%, rgba(120,29,125,.05), transparent 60%),
+      #ffffff; */
+    /* min-height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* uncomment to re-enable animation */
+.emo-ico img {
+    /* animation:shake .6s infinite; */
+}
+
+/* =====================================================
+   Buttons
+   ===================================================== */
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+    border: none;
+    margin: 10px 6px;
+    text-align: center;
+    min-width: 110px;
+    display: inline-block;
+    padding: 11px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+.btn-next:hover,
+.btn-submit:hover,
+.btn-prev:hover,
+.btn-clear:hover,
+.btn-ok:hover,
+.loyalty-redeem-button:hover {
+    background: transparent;
+    border: 2px solid #6a1b9a;
+    background-image: linear-gradient(135deg, #9c27b0, #6a1b9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn-next:active,
+.btn-submit:active,
+.btn-prev:active,
+.btn-clear:active,
+.btn-ok:active,
+.loyalty-redeem-button:active {
+    transform: translateY(0);
+    filter: brightness(.98);
+}
+
+.btn-prev {
+    background: linear-gradient(135deg, #e5e7eb, #c7cbd3);
+    color: #111;
+}
+
+.btn-clear {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #7a5a00;
+}
+
+.btn-ok {
+    background: linear-gradient(135deg, #ff0044, #cc0036);
+    /* updated gradient */
+    color: #fff;
+}
+
+/* .btn-skip {
+    display: none !important;
+} */
+
+/* legacy hover rule retained */
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn-fb {
+    color: #fff;
+}
+
+.btn-prev {
+    font-size: 0;
+}
+
+.btn-prev::after {
+    content: "Go Back";
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+
+.sensor-title {
+    display: none !important;
+}
+
+/* =====================================================
+   Panels (Bootstrap-like)
+   ===================================================== */
+.panel {
+    margin: 0 10px;
+    border: none;
+    background: transparent;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: var(--radius);
+    box-shadow: none;
+    background: transparent;
+}
+
+.panel-group .panel-heading {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    color: var(--primary);
+    background: #fff;
+}
+
+.panel-title {
+    font-size: 11pt;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots {
+    display: none;
+}
+
+.panel-body {
+    background: transparent !important;
+}
+
+.emote-title,
+.form-group label {
+    color: #000 !important;
+    font-size: 15pt !important;
+    font-weight: 600 !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+.footer {
+    display: none !important;
+}
+
+
+.flex {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+/* Modals */
+#groupCommentBuzzModal .modal-header {
+    background: #fff;
+    color: #444;
+}
+
+
+
+#groupCommentBuzzModal .modal-body {
+    background: #fff;
+    color: #333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+    background: #fff;
+    color: #333;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+    background: #f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #333;
+}
+
+#barChart {
+    width: 100%;
+}
+
+/* NPS bar helpers */
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: var(--primary);
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6 {
+    background: #ff2942;
+    color: #fff;
+    border: 1px solid rgba(255, 0, 55, .61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8 {
+    background: #ff7924;
+    color: #fff;
+    border: 1px solid rgba(195, 117, 34, .61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10 {
+    background: #1ca757;
+    color: #fff;
+    border: 1px solid rgba(17, 144, 74, .61);
+}
+
+.clicked-nps-icon {
+    border: 3px solid #333;
+    box-shadow: 0 2px 6px #716868;
+}
+
+.ui-select-container .ui-select-match span {
+    font-weight: 500 !important;
+}
+
+#accordionContainer {
+    display: none !important;
+}
+
+.clear-submit-row {
+    padding-right: 0 !important;
+}
+
+.form-group {
+    display: none !important;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+@media (max-width: 768px) {
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
+    }
+
+    .btn-next,
+    .btn-submit,
+    .btn-prev,
+    .btn-clear,
+    .btn-skip,
+    .btn-ok,
+    .loyalty-redeem-button {
+        font-size: 14px !important;
+        padding: 12px 18px !important;
+        min-width: 100% !important;
+        margin: 6px 0 !important;
+    }
+
+    .access-user-name,
+    #headerCompanyInfo>.access-user {
+        font-size: 12pt !important;
+    }
+
+    .btn-prev {
+        font-size: 0 !important;
+    }
+
+    .emote-title,
+    .form-group label {
+        font-size: 14pt !important;
+    }
+
+}

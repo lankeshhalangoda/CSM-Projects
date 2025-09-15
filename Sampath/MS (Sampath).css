@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
@@ -21,7 +22,7 @@
 */
 
 #master-section {
-    background: url("https://storage.emojot.com/pictures/skinImages/67761761cb917201e680c031-skin15.png");
+    background: url("https://storage.emojot.com/pictures/skinImages/67ca7d8244a092407d279491-skin1.png");
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
     /* background-color: #ffffff; */
     min-height: 657px;
@@ -637,7 +638,7 @@ div#er_1q4907.col-xs-12.flex.ng-scope {
 
     .company-logo img {
         margin: 10px;
-        height: 70px;
+        height: 50px;
     }
 
     .form-group label {

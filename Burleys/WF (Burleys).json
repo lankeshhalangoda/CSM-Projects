@@ -852,7 +852,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number",
-    "hidden": true
+    "type": "number"
   }
 }

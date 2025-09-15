@@ -3,14 +3,14 @@
     {
       "id": "cxm",
       "icon": "fa fa-users",
-      "header": "Collect Feedback",
+      "header": "Customer Experience Management",
       "subs": [
         {
-          "header": "Feedback Analytics",
+          "header": "Survey Analytics",
           "id": "cxm_eanalytics"
         },
         {
-          "header": "Advanced Analytics",
+          "header": "Advanced Survey Analytics",
           "id": "cxm_advanalytics"
         },
         {
@@ -22,7 +22,7 @@
     {
       "id": "comp",
       "icon": "fas fa-users",
-      "header": "Resolve Complaints",
+      "header": "Customer Complaint Management",
       "subs": [
         {
           "header": "View Complaints",
@@ -37,7 +37,7 @@
     {
       "id": "orm",
       "icon": "fa fa-users",
-      "header": "Improve Reviews",
+      "header": "Online Review Management",
       "subs": [
         {
           "header": "View Reviews",
@@ -170,7 +170,7 @@
         },
         {
           "key": "selectedReportName",
-          "value": "amc_v1"
+          "value": "v1"
         },
         {
           "key": "trimOut",
@@ -211,7 +211,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "68b17aac8ee6be9116a1688e"
+                  "value": "68c7b6ebe3b0fb46a95988c8"
                 }
               ],
               "styles": [
@@ -243,7 +243,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68afea388ee6be9116a0ff4f"
+                  "value": "68c26c7570f4b5419f0ac4d2"
                 },
                 {
                   "key": "trimOut",
@@ -271,7 +271,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "68b17b6b3f8c5a68ee9c35e6"
+                  "value": "68c7b75b8d93d17e50f9b459"
                 },
                 {
                   "key": "drillDownType",
@@ -307,7 +307,7 @@
                 },
                 {
                   "key": "correlationQuestions",
-                  "value": "q871"
+                  "value": "q7626"
                 },
                 {
                   "key": "correlationOpen",
@@ -315,7 +315,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "68b17aac8ee6be9116a1688e"
+                  "value": "68c7b6ebe3b0fb46a95988c8"
                 }
               ],
               "styles": [
@@ -339,7 +339,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68afea388ee6be9116a0ff4f"
+                  "value": "68c26c7570f4b5419f0ac4d2"
                 },
                 {
                   "key": "trimOut",
@@ -351,7 +351,7 @@
                 },
                 {
                   "key": "sensorComments",
-                  "value": "p557"
+                  "value": "p7457"
                 }
               ],
               "styles": [
@@ -380,11 +380,11 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68afea388ee6be9116a0ff4f"
+                  "value": "68c26c7570f4b5419f0ac4d2"
                 },
                 {
                   "key": "sensorPages",
-                  "value": "p557"
+                  "value": "p7457"
                 },
                 {
                   "key": "trimOut",
@@ -421,7 +421,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "Score Overview"
+                  "value": "score_v1"
                 }
               ],
               "styles": [
@@ -449,7 +449,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "v1"
+                  "value": "scoresegment_v1"
                 },
                 {
                   "key": "hideUIComponents",
@@ -477,31 +477,11 @@
           "title": "Location level links",
           "cards": [
             {
-              "title": "Colpetty",
+              "title": "Buddhi Batiks - Colombo",
               "titleStyle": "color:white; background:#26619c;",
               "type": "direct",
               "desc": "Click below to access the survey.",
-              "target": "https://emo.run/amccol",
-              "openInNewPage": true,
-              "id": "cxm_links_1",
-              "launchButtonText": "Launch Survey"
-            },
-            {
-              "title": "Havelock",
-              "titleStyle": "color:white; background:#26619c;",
-              "type": "direct",
-              "desc": "Click below to access the survey.",
-              "target": "https://emo.run/amchav",
-              "openInNewPage": true,
-              "id": "cxm_links_1",
-              "launchButtonText": "Launch Survey"
-            },
-            {
-              "title": "Pelawatte",
-              "titleStyle": "color:white; background:#26619c;",
-              "type": "direct",
-              "desc": "Click below to access the survey.",
-              "target": "https://emo.run/amcpel",
+              "target": "https://emo.run/bbcmb",
               "openInNewPage": true,
               "id": "cxm_links_1",
               "launchButtonText": "Launch Survey"
@@ -535,13 +515,7 @@
     }
   ],
   "profiles": [
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "onels@emojot.com",
-      "id": "onels@emojot.com",
-      "title": "company_admin",
-      "email": "onels@emojot.com"
-    },
+
     {
       "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
       "name": "manura@emojot.com",
@@ -576,6 +550,13 @@
       "id": "dewminil@emojot.com",
       "title": "company_admin",
       "email": "dewminil@emojot.com"
+    },
+        {
+      "image": "https://storage.emojot.com/logos/company_logo/68874a352d16d957319d827e.png",
+      "name": "vikashar@emojot.com",
+      "id": "vikashar@emojot.com",
+      "title": "company_admin",
+      "email": "vikashar@emojot.com"
     }
   ],
   "assignmentAllowed": true,

@@ -1,0 +1,7 @@
+New Survey Complaint Created: $incident_number$
+Customer: $client_name$
+Telephone: $client_telephone$
+Location: $emoSignature_Location$
+Satisfaction: $incident_customFields_rating$
+Visit $incidentURL$ for more info.
+- Emojot

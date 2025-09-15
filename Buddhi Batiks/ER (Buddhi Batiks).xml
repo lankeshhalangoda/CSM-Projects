@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q7626"</value>
+      </param>
+      <joinOperator>and</joinOperator>
+      <joinParam>
+        <name>emoteNumericValue</name>
+        <operator>gd</operator>
+        <value>0</value>
+      </joinParam>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>68c277e670f4b5419f0ac60d</workflowID>
+          <name>Customer Satisfaction Survey Complaint > $$emoSignature_Location_value$$</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Customer Satisfaction Survey</type>
+          <priority>High</priority>
+          <status>Open</status>
+          <description>
+Customer Name: $$loyalty_Name_value$$
+Customer Telephone: $$loyalty_Telephone_value$$
+Location: $$emoSignature_Location_value$$
+Satisfaction Level: $$q7626_emote$$
+Comment: $$gp7457_c1_comment_value$$
+          </description>
+          <customFields>
+            <field>
+              <key>location</key>
+              <value>$$emoSignature_Location_value$$</value>
+            </field>
+            <field>
+              <key>service</key>
+              <value>$$q3890_emote$$</value>
+            </field>
+            <field>
+              <key>attachment</key>
+              <value>$$mediafile_p7457$$</value>
+            </field>
+            <field>
+              <key>quality</key>
+              <value>$$q7623_emote$$</value>
+            </field>
+            <field>
+              <key>rating</key>
+              <value>$$q7626_emote$$</value>
+            </field>
+            <field>
+              <key>recommendation</key>
+              <value>$$q3416_emote$$</value>
+            </field>
+            <field>
+              <key>price</key>
+              <value>$$q2462_emote$$</value>
+            </field>
+            <field>
+              <key>comments</key>
+              <value>$$gp7457_c1_comment_value$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+</cepRules>
