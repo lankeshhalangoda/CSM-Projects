@@ -47,7 +47,7 @@ body {
       radial-gradient(1000px 400px at 0% 0%, rgba(120,29,125,.06), transparent 60%),
       radial-gradient(800px 300px at 100% 0%, rgba(120,29,125,.05), transparent 60%),
       #ffffff; */
-    /* min-height: 100vh; */
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

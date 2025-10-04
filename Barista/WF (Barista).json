@@ -199,12 +199,20 @@
           "name": "Facilities"
         },
         {
-          "id": "Taste/Quality",
-          "name": "Taste/Quality"
+          "id": "Food Taste/Quality",
+          "name": "Food Taste/Quality"
+        },
+        {
+          "id": "Beverage Taste/Quality",
+          "name": "Beverage Taste/Quality"
         },
         {
           "id": "Value for Money",
           "name": "Value for Money"
+        },
+        {
+          "id": "Service Speed",
+          "name": "Service Speed"
         }
       ]
     },

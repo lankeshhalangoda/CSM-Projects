@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* =====================================================
    Modern Variables
    ===================================================== */
 :root {
-    --primary: #c8a97e;      /* light brown */
-    --primary-600: #a67c52;  /* medium brown */
-    --primary-700: #7d5a35;  /* darker brown */
-    --secondary: #008080;    /* teal */
-    --secondary-light: #20b2aa; /* lighter teal */
+    --primary: #4295d0;
+    --primary-600: #005996;
+    --primary-700: #005996;
     --text: #111827;
     --text-soft: #444;
     --muted: #f6f6f8;
@@ -33,7 +31,7 @@ body {
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: var(--text);
     background: #fff;
     -webkit-font-smoothing: antialiased;
@@ -44,7 +42,7 @@ body {
    Layout Containers
    ===================================================== */
 #master-section {
-    background: url("https://storage.emojot.com/pictures/skinImages/68c7afe3256a0b2c8bb8179a-skin2.png");
+    background: url("https://storage.emojot.com/pictures/skinImages/60537e5f830a3f0010bae459-skin15.png");
     /* background:
       radial-gradient(1000px 400px at 0% 0%, rgba(120,29,125,.06), transparent 60%),
       radial-gradient(800px 300px at 100% 0%, rgba(120,29,125,.05), transparent 60%),
@@ -57,10 +55,11 @@ body {
 }
 
 #headerCompanyInfo {
-    color: #000 !important;
+    color: #ffffff !important;
     min-height: 70px;
     position: relative;
-    background: linear-gradient(135deg, #20b2aa22, #00808022) !important;
+    /* background: linear-gradient(135deg, #4295d022, #00599622) !important; */
+    background: url("https://storage.emojot.com/pictures/skinImages/68d4bf17891a828041238d7f-skin2.png") !important;
     color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -79,7 +78,7 @@ body {
     color: #000 !important;
     font-size: 15pt !important;
     font-weight: 600 !important;
-    font-family: "Inter", sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
 }
 
 .emo-text {
@@ -88,7 +87,16 @@ body {
     font-weight: 500;
     display: inline-block;
     vertical-align: middle;
-    font-family: "Inter", sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
+}
+
+.emo-text-only {
+    font-size: 13pt;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Raleway", sans-serif !important;
 }
 
 .loyalty-message {
@@ -141,7 +149,7 @@ body {
 
 .clicked-emo-cont {
     border: 2px solid var(--primary) !important;
-    background: linear-gradient(135deg, #c8a97e, #20b2aa);
+    background: linear-gradient(135deg, #edf8ff, #e9f6ff);
     box-shadow: var(--shadow-lg);
 }
 
@@ -208,7 +216,7 @@ body {
     padding: 11px 26px;
     font-size: 14px;
     font-weight: 600;
-    background: linear-gradient(135deg, #aa7856, #9c6138);
+    background: linear-gradient(135deg, #132049, #005996);
     color: #fff;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -223,8 +231,8 @@ body {
 .btn-ok:hover,
 .loyalty-redeem-button:hover {
     background: transparent;
-    border: 2px solid #9c6138;
-    background-image: linear-gradient(135deg, #aa7856, #9c6138);
+    border: 2px solid #005996;
+    background-image: linear-gradient(135deg, #132049, #005996);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -250,14 +258,14 @@ body {
 }
 
 .btn-ok {
-    background: linear-gradient(135deg, #ff0044, #cc0036);
+    background: linear-gradient(135deg, #d23c8c, #e2097e);
     /* updated gradient */
     color: #fff;
 }
 
-/* .btn-skip {
+.btn-skip {
     display: none !important;
-} */
+}
 
 /* legacy hover rule retained */
 .btn:hover {
@@ -288,13 +296,12 @@ body {
 }
 
 .sensor-title {
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 20pt;
     background: transparent;
     line-height: 40px;
     font-weight: 700;
-    font-family: "Inter", sans-serif !important;
-    text-align: center;
+    font-family: "Raleway", sans-serif !important;
 }
 
 .brand-logo {
@@ -355,7 +362,8 @@ body {
    Footer
    ===================================================== */
 .footer {
-    background: linear-gradient(135deg, #9c613840, #aa785640) !important;
+    /* background: linear-gradient(135deg, #00599640, #13204940) !important; */
+    background: url("https://storage.emojot.com/pictures/skinImages/68d4bf17891a828041238d7f-skin2.png") !important;
     color: #fff;
     position: absolute;
     right: 10px;
@@ -422,8 +430,7 @@ body {
    Progress
    ===================================================== */
 #progressfill {
-    background: linear-gradient(270deg, #c8a97e, #008080, #7d5a35, #20b2aa);
-
+    background: linear-gradient(270deg, #132049, #005996, #005996, #132049);
     background-size: 300% 300%;
     animation: gradientMove 4s ease infinite;
     height: 8px;
@@ -554,8 +561,8 @@ body {
 }
 
 div.col-xs-7.ng-scope {
-    font-family: "Inter", sans-serif !important;
-    color: #000000;
+    font-family: "Raleway", sans-serif !important;
+    color: #ffffff;
 }
 
 .col-xs-12 {
@@ -565,7 +572,7 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        max-height: 50px !important;
+        max-height: 70px !important;
     }
 
 /* =====================================================
@@ -578,7 +585,15 @@ div.col-xs-7.ng-scope {
         font-size: 14pt !important;
     }
 
+    .sensor-title {
+    font-size: 16pt;
+}
+
     .emo-text {
+        font-size: 12pt !important;
+    }
+
+    .emo-text-only {
         font-size: 12pt !important;
     }
 
@@ -629,7 +644,7 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        max-height: 30px !important;
+        max-height: 40px !important;
     }
 
     .btn-prev {

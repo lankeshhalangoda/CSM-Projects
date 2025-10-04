@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 #master-section {
-    background: url("https://storage.emojot.com/pictures/skinImages/68874a352d16d957319d827e-skin8.png");
+    background: url("https://storage.emojot.com/pictures/skinImages/68a41bbd2eb25ffffe9f7fc2-skin5.png");
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
     /* background-color: #ffffff; */
     min-height: 657px;
@@ -15,25 +13,11 @@
     background-position: center;
     position: relative;
 }
+
 #headerCompanyInfo {
-    position: relative;
-    background-color: #fa9f1b !important;
-    color: #3f1e27 !important;
-    overflow: hidden;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #e2b2a8, #b15b51, #5a2c25) !important;
 }
-
-#headerCompanyInfo::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 150' xmlns='http://www.w3.org/2000/svg'><path fill='%23ffffff' d='M0,0 C360,150 1080,150 1440,0 V150 H0 Z'/></svg>") no-repeat bottom;
-    pointer-events: none;
-}
-
-
 
 .container[style] {
     padding-left: 0px !important;
@@ -41,37 +25,46 @@
 }
 
 .emote-title {
-    color: #3f1e27;
-    font-family: "Roboto Condensed", cursive;
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 15pt;
-    font-weight: 700;
+    font-weight: 600;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
 }
 
 
 
 .form-group label {
-    color: #3f1e27 !important;
-    font-family: "Roboto Condensed", cursive;
+    color: #000000 !important;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 15pt !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
 }
 
 .emo-text {
     font-size: 13pt;
-    color: #3f1e27;
-    font-family: "Roboto Condensed", cursive;
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+}
+
+.emo-text-only {
+    font-size: 13pt;
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 500;
 }
 
 .loyalty-message {
     font-size: 13pt;
-    color: #3f1e27;
-    font-family: "Roboto Condensed", cursive;
-    font-weight: 300;
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
 }
 
 .emo-text-dropdown {
-    color: #3f1e27 !important;
+    color: #000000 !important;
 }
 
 .middle-box {
@@ -81,22 +74,23 @@
 }
 
 .emo-cont {
-    border: 2px solid #3f1e27;
+    /* border: 2px solid #b15b51; */
     margin: 3px 0px;
     text-align: center;
     display: inline-block;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
-    color: #3f1e27;
+    color: #b15b51;
 }
 
 .clicked-emo-cont {
-    border: 3px #3f1e27 solid !important;
-    background: #3f1e2745;
+    border: 0.5px #b15b51 solid !important;
+    background: #b15b5145;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
+    font-size: 7pt !important;
 }
 
 .emo-ico img {
@@ -105,20 +99,45 @@
     text-align: center;
     max-width: 55px;
     margin: 5px;
+    filter: drop-shadow(0 0 0 10px #000000) !important;
+
+    /* Add the shake animation */
+    /* animation: shake 0.6s infinite; */
 }
 
-.btn {
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
 
-    color: ed1c24;
+    20% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
 
+    40% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    60% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
+
+    80% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
 }
+
 
 .btn-next {
-    color: #fa9f1b;
+    color: #6b2f28;
 }
 
 .btn-submit {
-    color: #fa9f1b;
+    color: #6b2f28;
 }
 
 .btn-prev {
@@ -143,7 +162,7 @@
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     padding: 9px 25px;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 12pt;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
@@ -182,7 +201,7 @@
 }
 
 .loyalty-redeem-button {
-    border-color: #fa9f1b;
+    border-color: #6b2f28;
 }
 
 .logo-cust {
@@ -191,12 +210,13 @@
 }
 
 .sensor-title {
-    color: #3f1e27;
-    font-size: 30pt;
-    font-family: "Roboto Condensed", cursive;
+    color: #b15b51;
+    font-size: 20pt;
+    font-family: "Nunito Sans", sans-serif;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 900;
+    text-align: center;
 }
 
 .form-control {
@@ -217,7 +237,7 @@
 .panel-group .panel-heading {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    color: #3f1e27;
+    color: #b15b51;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -230,7 +250,7 @@
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
     line-height: 1.6;
 }
 
@@ -250,11 +270,15 @@
     color: white !important;
 }
 
+.flex {
+    justify-content: center !important;
+}
+
 #headerCompanyInfo>.access-user {
     text-align: center;
     float: right;
     text-shadow: 1px 1px 1px #000;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
     font-style: italic;
     font-size: 15px;
     background-size: 120px 80px;
@@ -264,7 +288,14 @@
 }
 
 .access-user-name {
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    display: none !important;
+}
+
+.user-icon {
+    display: none !important;
 }
 
 .company-logo {
@@ -272,11 +303,12 @@
 }
 
 .company-logo img {
-    height: 100px;
+    height: 80px;
 }
 
 .footer {
-    background: #3f1e27 !important;
+    /* background: #b15b51 !important; */
+    background: linear-gradient(135deg, #e2b2a8, #b15b51, #5a2c25) !important;
     color: #fff;
     position: absolute;
     right: 10px;
@@ -287,17 +319,19 @@
     padding: 12px 13px;
     font-size: 8pt;
     margin: 0 -10px 0px 0;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
+
 .form-group label {
     columns: #fff !important;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 12pt;
 }
 
 .loyalty-message {
-    color: #3f1e27;
+    color: #000000;
     font-size: 16pt;
+    font-weight: 500;
 }
 
 .loyalty-bottom {
@@ -311,12 +345,31 @@
 }
 
 #progressfill {
-    background-color: #3f1e27;
+    background-color: #b15b51;
+    animation: colorShift 3s infinite alternate ease-in-out;
 }
 
+.media-uploaded {
+
+    border: 2px solid #6b2f28;
+    background: #ff10ef20;
+
+}
+
+@keyframes colorShift {
+    from {
+        background-color: #b15b51;
+    }
+
+    to {
+        background-color: #6b2f28;
+    }
+}
+
+
 .progress_bar .progress_number {
-    font-family: "Roboto Condensed", cursive;
-    color: #3f1e27;
+    font-family: "Nunito Sans", sans-serif;
+    color: #b15b51;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -345,7 +398,7 @@
 }
 
 .thank-you-note {
-    color: #3f1e27 !important;
+    color: #b15b51 !important;
     font-size: 15px !important;
 }
 
@@ -362,20 +415,20 @@
     font-weight: bold;
     top: 100%;
     transform: translateY(8px);
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .nps-bar::before {
     content: "Less Likely";
     left: 10px;
-    color: #3f1e27;
+    color: #b15b51;
     margin-left: 5px;
 }
 
 .nps-bar::after {
     content: "More Likely";
     right: 10px;
-    color: #3f1e27;
+    color: #b15b51;
     margin-right: 5px;
 }
 
@@ -414,19 +467,31 @@
     font-weight: 500 !important;
 }
 
+
+div.col-xs-7.ng-scope {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+.pdGroupTitle {
+    font-size: 12pt;
+    margin-left: 0 !important;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
+
     .emote-title,
     .form-group label {
         font-size: 12pt !important;
     }
 
     .emo-text {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
-    .sensor-title {
-        font-size: 26pt !important;
-        line-height: 34px !important;
+    .emo-text-only {
+        font-size: 8pt !important;
     }
 
     .panel-title {
@@ -465,8 +530,7 @@
 
     .company-logo img,
     .logo-cust {
-        margin-bottom: 15pt !important;
-        height: 70px !important;
+        height: 40px !important;
     }
 
     .emo-ico img {
@@ -479,9 +543,9 @@
     }
 
     .loyalty-message {
-    font-size: 12pt;
-    color: #3f1e27;
-    font-family: "Roboto Condensed", cursive;
-    font-weight: 300;
-}
+        font-size: 12pt;
+        color: #150014;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 500;
+    }
 }
