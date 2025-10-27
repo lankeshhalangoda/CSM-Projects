@@ -1,0 +1,223 @@
+<div style="display:flex;justify-content:center;align-items:center;text-align:center;font-family:sans-serif;">
+  Saving your response and redirecting...
+</div>
+
+<style>
+  .access-user-name { display: none !important; }
+</style>
+
+<script>
+(function () {
+  let hasSkipped = false;
+
+  // helper: get ngModel controller for element
+  function getNgModelCtrl(el) {
+    try {
+      if (!window.angular || !angular.element) return null;
+      const $el = angular.element(el);
+      return ($el.controller && $el.controller('ngModel')) || $el.data('$ngModelController') || null;
+    } catch { return null; }
+  }
+
+  const observer = new MutationObserver(() => {
+    const loyaltyForm = document.querySelector('#loyalty-form');
+    const skipBtnSel = 'button.btn-skip, button.btn.btn-primary.btn-skip';
+    const okBtnSel   = 'button.btn.btn-primary.btn-ok'; // ✅ correct OK selector from page source
+
+    if (!hasSkipped && loyaltyForm && loyaltyForm.offsetParent !== null) {
+      hasSkipped = true;
+      console.log("✅ Loyalty/Profile page detected — saving Name+Telephone only (email optional)…");
+
+      const nameEl  = loyaltyForm.querySelector('#Name');
+      const telEl   = loyaltyForm.querySelector('#Telephone');
+      const emailEl = loyaltyForm.querySelector('#Email');
+
+      // Visual dim
+      loyaltyForm.style.opacity = '0.3';
+      loyaltyForm.style.pointerEvents = 'none';
+      document.querySelectorAll('#facebook-login-section, .loyalty-bottom')
+        .forEach(el => { el.style.opacity = '0.3'; el.style.pointerEvents = 'none'; });
+
+      // Wait until Angular has initialized ngModel
+      function waitForAngularAndSave(attempt = 0) {
+        const nameCtrl  = getNgModelCtrl(nameEl);
+        const telCtrl   = getNgModelCtrl(telEl);
+        const emailCtrl = getNgModelCtrl(emailEl);
+        const angularReady = nameCtrl && telCtrl;
+
+        if (angularReady || attempt > 10) {
+
+          // ✅ Re-fetch LIVE values (don’t rely on early snapshot)
+          const nameVal  = (nameEl?.value  || '').trim();
+          const telVal   = (telEl?.value   || '').trim();
+          const emailVal = (emailEl?.value || '').trim();
+
+          // If Name or Tel missing → auto-click OK (no save)
+          if (!nameVal || !telVal) {
+            console.log("ℹ️ Missing Name/Telephone — auto-clicking OK instead of Skip");
+            const okBtn = document.querySelector(okBtnSel);
+            if (okBtn) { okBtn.click(); }
+            else { document.querySelector(skipBtnSel)?.click(); }
+            return;
+          }
+
+          try {
+            const $form = angular.element(loyaltyForm);
+            const scope = $form.scope?.() || $form.scope();
+
+            // Sync Name & Tel into Angular models
+            [[nameCtrl, nameVal], [telCtrl, telVal]].forEach(([ctrl, val]) => {
+              if (ctrl) {
+                ctrl.$setViewValue(val);
+                ctrl.$commitViewValue?.();
+                ctrl.$validate?.();
+              }
+            });
+
+            // Email optional → mark valid if empty
+            if (emailCtrl && !emailVal) {
+              emailCtrl.$setViewValue('');
+              ['required','email','pattern'].forEach(v => emailCtrl.$setValidity(v, true));
+              emailCtrl.$commitViewValue?.();
+              emailCtrl.$validate?.();
+              console.log('✅ Email validity forced TRUE (email optional)');
+            }
+
+            console.log(`💾 Saving Loyalty Data → Name: "${nameVal}", Telephone: "${telVal}", Email: "${emailVal || '(empty)'}"`);
+
+            // Force digest, then save
+            if (typeof scope.saveLoyaltyData === 'function') {
+              if (!scope.$$phase && scope.$apply) scope.$apply();
+              scope.saveLoyaltyData();
+            } else if (typeof window.saveLoyaltyData === 'function') {
+              window.saveLoyaltyData();
+            }
+
+            // After save, click OK (fallback to Skip)
+            setTimeout(() => {
+              const okBtn = document.querySelector(okBtnSel);
+              if (okBtn) {
+                console.log("⚡ Clicking OK after save (Name+Tel mode)");
+                okBtn.click();
+              } else {
+                console.log("⚠️ OK not found; clicking SKIP after save");
+                document.querySelector(skipBtnSel)?.click();
+              }
+            }, 4500);
+
+          } catch (err) {
+            console.warn("⚠️ Angular save error:", err);
+            setTimeout(() => document.querySelector(skipBtnSel)?.click(), 2000);
+          }
+
+        } else {
+          setTimeout(() => waitForAngularAndSave(attempt + 1), 100);
+        }
+      }
+
+      waitForAngularAndSave();
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+
+// --- Submit-time validator (Name + Telephone required for YES) ---
+(function () {
+  const observer = new MutationObserver(() => {
+    const yesButton    = document.querySelector('div#ec_0_0q7281.emo-cont.clickable.ng-scope');
+    const submitButton = document.querySelector('button#CampaignLastPageSubmit.btn-submit.btn.btn-default.ng-binding.ng-scope');
+
+    if (yesButton && submitButton && !submitButton.dataset.listenerAttached) {
+      submitButton.dataset.listenerAttached = "true";
+      console.log("🎯 Submit-time validator attached");
+
+      submitButton.addEventListener("click", (e) => {
+        const isYesSelected = yesButton.classList.contains("clicked-emo-cont");
+        const nameField = document.querySelector("#Name");
+        const telField  = document.querySelector("#Telephone");
+
+        const nameEmpty = !nameField || !nameField.value.trim();
+        const telEmpty  = !telField  || !telField.value.trim();
+
+        if (isYesSelected && (nameEmpty || telEmpty)) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          showBanner("Please fill in your Name and Telephone or select 'No'.");
+          console.log("🚫 Submission blocked: Name/Telephone required for YES.");
+          return false;
+        }
+      }, true);
+
+      // --- Popup banner ---
+      function showBanner(message) {
+        let banner = document.querySelector(".emj-sampath-banner-v3");
+        if (banner) banner.remove();
+
+        banner = document.createElement("div");
+        banner.className = "emj-sampath-banner-v3";
+        banner.textContent = message;
+        document.body.appendChild(banner);
+
+        setTimeout(() => {
+          banner.classList.add("emj-fade-out-v3");
+          setTimeout(() => banner.remove(), 500);
+        }, 3000);
+      }
+
+      // --- Banner styles ---
+      const style = document.createElement("style");
+      style.textContent = `
+        .emj-sampath-banner-v3 {
+          position: fixed;
+          top: 25px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #FFA000 !important;
+          border: 1px solid #FFA000 !important;
+          color: #ffffff !important;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-size: 14px !important;
+          font-weight: 600 !important;
+          display: inline-flex !important;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px 28px !important;
+          border-radius: 8px !important;
+          margin-bottom: 2px !important;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          z-index: 999999;
+          max-width: 95% !important;
+          min-width: 320px !important;
+          width: fit-content;
+          opacity: 0.95 !important;
+          backdrop-filter: blur(2px);
+          animation: emj-slide-down-v3 0.3s forwards;
+        }
+        @keyframes emj-slide-down-v3 {
+          from { opacity: 0; transform: translate(-50%, -20px); }
+          to   { opacity: 0.95; transform: translate(-50%, 0); }
+        }
+        .emj-fade-out-v3 {
+          opacity: 0;
+          transition: opacity 0.5s ease-out;
+        }
+        @media (max-width: 480px) {
+          .emj-sampath-banner-v3 {
+            font-size: 13px !important;
+            padding: 8px 18px !important;
+            border-radius: 6px !important;
+            top: 20px;
+            width: 90% !important;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>

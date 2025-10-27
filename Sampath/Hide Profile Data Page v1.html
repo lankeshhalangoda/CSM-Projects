@@ -1,0 +1,54 @@
+<div style="display:flex;justify-content:center;align-items:center;text-align:center;font-family:sans-serif;">Saving your response and redirecting...</div><style>.access-user-name{display:none!important;}</style>
+<script>
+(function () {
+  let hasSkipped = false;
+
+  const observer = new MutationObserver(() => {
+    const loyaltyForm = document.querySelector('#loyalty-form');
+    const skipBtn = document.querySelector('button.btn-skip, button.btn.btn-primary.btn-skip');
+
+    if (!hasSkipped && loyaltyForm && loyaltyForm.offsetParent !== null) {
+      hasSkipped = true;
+      console.log("✅ Loyalty/Profile page detected — saving & skipping...");
+
+      // 🔹 Trigger data save safely within Angular digest
+      try {
+        if (window.angular && angular.element) {
+          const scope = angular.element(loyaltyForm).scope();
+          if (scope && typeof scope.saveLoyaltyData === "function") {
+            console.log("💾 Triggering Angular saveLoyaltyData...");
+            scope.$applyAsync(() => {
+              scope.saveLoyaltyData();
+            });
+          }
+        } else if (window.saveLoyaltyData) {
+          console.log("💾 Triggering global saveLoyaltyData...");
+          window.saveLoyaltyData();
+        }
+      } catch (err) {
+        console.warn("⚠️ Save call failed:", err);
+      }
+
+      // 🔹 Instantly hide UI but keep Angular active briefly
+      loyaltyForm.style.opacity = '0';
+      loyaltyForm.style.pointerEvents = 'none';
+      document.querySelectorAll('#facebook-login-section, .loyalty-bottom')
+        .forEach(el => {
+          el.style.opacity = '0';
+          el.style.pointerEvents = 'none';
+        });
+
+      // 🔹 Give Angular ~200ms to serialize save call before skip
+      setTimeout(() => {
+        const btn = document.querySelector('button.btn-skip, button.btn.btn-primary.btn-skip');
+        if (btn) {
+          console.log("⚡ Clicking SKIP button now (after background save)!");
+          btn.click();
+        }
+      }, 200);
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
