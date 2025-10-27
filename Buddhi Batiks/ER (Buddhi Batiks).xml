@@ -61,6 +61,10 @@ Comment: $$gp7457_c1_comment_value$$
               <value>$$q2462_emote$$</value>
             </field>
             <field>
+              <key>staff_member</key>
+              <value>$$gp7427_c1_comment_value$$</value>
+            </field>
+            <field>
               <key>comments</key>
               <value>$$gp7457_c1_comment_value$$</value>
             </field>

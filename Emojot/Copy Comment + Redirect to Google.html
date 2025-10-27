@@ -1,0 +1,114 @@
+<body style="font-family: 'Raleway', sans-serif !important; margin: 0; padding: 0;">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <div style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; margin-top: 40px;">
+    <p id="comment-text" style="
+      color: #000;
+      font-weight: 600;
+      font-size: 12pt;
+      font-family: 'Raleway', sans-serif !important;
+      text-align: left;
+      margin: 0;
+    ">
+      Click the emote and add a comment
+    </p>
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+
+    console.clear();
+    console.log('🚀 Auto-copy + save script started');
+
+    // Adjust font size dynamically based on screen width
+    const commentText = document.getElementById('comment-text');
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      commentText.style.fontSize = '15pt';
+    } else {
+      commentText.style.fontSize = '12pt';
+    }
+
+    let tries = 0;
+    const maxTries = 40;
+    const intervalMs = 400;
+    let searchInterval = null;
+
+    function tryLocate() {
+      tries++;
+      let textarea = document.querySelector('textarea#Comment.form-control');
+      if (!textarea) textarea = document.querySelector('#Comment');
+      if (!textarea) textarea = document.querySelector('textarea.form-control');
+
+      if (textarea) {
+        console.log('✅ Found textarea:', textarea);
+        attachListeners(textarea);
+        clearInterval(searchInterval);
+      } else {
+        console.log(`⏳ Searching for textarea... (attempt ${tries}/${maxTries})`);
+        if (tries >= maxTries) {
+          console.warn('⚠️ Comment box not found after max attempts.');
+          clearInterval(searchInterval);
+        }
+      }
+    }
+
+    function attachListeners(textarea) {
+      if (textarea.__listenerAttached) {
+        console.log('ℹ️ Listener already attached.');
+        return;
+      }
+      textarea.__listenerAttached = true;
+
+      textarea.addEventListener('input', () => {
+        const value = textarea.value.trim();
+        console.log('✏️ Input detected — length:', value.length);
+        if (value) {
+          saveAndCopy(value);
+        } else {
+          console.log('🟡 Input empty — skipping copy.');
+        }
+      });
+
+      textarea.addEventListener('blur', () => {
+        const value = textarea.value.trim();
+        if (value) saveAndCopy(value);
+      });
+
+      console.log('✅ Listeners attached to textarea (input + blur)');
+    }
+
+    function saveAndCopy(text) {
+      // ✅ Save comment for the next page
+      localStorage.setItem('latestComment', text);
+      console.log('💾 Saved latest comment to localStorage.');
+
+      // ✅ Copy to clipboard
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text)
+          .then(() => console.log('📋 Copied successfully using Clipboard API — text:', text))
+          .catch(err => {
+            console.warn('⚠️ Clipboard API failed, using fallback:', err);
+            fallbackCopy(text);
+          });
+      } else {
+        fallbackCopy(text);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      temp.style.position = 'fixed';
+      temp.style.left = '-9999px';
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      console.log('✅ Copied using execCommand fallback — text:', text);
+    }
+
+    searchInterval = setInterval(tryLocate, intervalMs);
+  })();
+  </script>
+</body>

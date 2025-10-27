@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #f6f6f6);
+      color: #1a1a1a;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .thankyou-container {
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 40px 32px;
+      max-width: 420px;
+      width: 90%;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .thankyou-container h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #781d7d;
+      margin-bottom: 12px;
+    }
+
+    .thankyou-container p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .review-button {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #000;
+      background-color: #fafafa;
+      transition: all 0.25s ease;
+      width: fit-content;
+      margin: 0 auto;
+      font-weight: 500;
+    }
+
+    .review-button:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .review-button img {
+      height: 22px;
+    }
+
+    .review-button span {
+      padding-left: 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <h1>Thank You for Your Feedback!</h1>
+    <p>We really appreciate you taking the time to share your thoughts with us. Your feedback helps us serve you better every day.</p>
+
+    <a href="#" class="review-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Review Icon">
+      <span>Share More Feedback</span>
+    </a>
+  </div>
+</body>
+</html>

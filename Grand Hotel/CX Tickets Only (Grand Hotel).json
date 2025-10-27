@@ -1,0 +1,301 @@
+{
+  "menu": [
+    {
+      "id": "orm",
+      "icon": "fa fa-users",
+      "header": "Improve Reviews",
+      "subs": [
+        {
+          "header": "Ticket Handling",
+          "id": "orm_tickets"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "ORM: Review Insights",
+      "type": "directReport",
+      "id": "orm_ris",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "hideTicketWidgets",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "ORM: Review Listing and Monitoring",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "ORM: Ticket Handling",
+      "type": "directReport",
+      "id": "orm_tickets",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentManagement/incidentManagement.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "workflowID",
+          "value": "679065bf5671a252b9a8fdfb"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Complaints Dashboard",
+      "desc": "Aggregated analytics for complaints",
+      "type": "directReport",
+      "id": "complaintmgmt_reports",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentOverview/incidentOverview.jsp"
+        },
+        {
+          "key": "workflowID",
+          "value": "679065bf5671a252b9a8fdfb"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "andun@emojot.com",
+      "id": "andun@emojot.com",
+      "title": "company_admin",
+      "email": "andun@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "sachintha@emojot.com",
+      "id": "sachintha@emojot.com",
+      "title": "company_admin",
+      "email": "sachintha@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "selinik@emojot.com",
+      "id": "selinik@emojot.com",
+      "title": "company_admin",
+      "email": "selinik@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "onels@emojot.com",
+      "id": "onels@emojot.com",
+      "title": "company_admin",
+      "email": "onels@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6434f1b2faf1a9000f7d381a.png",
+      "name": "demo@emojot.com",
+      "id": "demo@emojot.com",
+      "title": "company_admin",
+      "email": "demo@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6548520ffa82bb0020d2aa01.png",
+      "name": "tharushib@emojot.com",
+      "id": "tharushib@emojot.com",
+      "title": "company_admin",
+      "email": "tharushib@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6548520ffa82bb0020d2aa01.png",
+      "name": "salmanf@emojot.com",
+      "id": "salmanf@emojot.com",
+      "title": "company_admin",
+      "email": "salmanf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "fobdm@grandhotel.lk",
+      "id": "fobdm@grandhotel.lk",
+      "title": "company_admin",
+      "email": "fobdm@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "afom2@grandhotel.lk",
+      "id": "afom2@grandhotel.lk",
+      "title": "company_admin",
+      "email": "afom2@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "shaveenf@emojot.com",
+      "id": "shaveenf@emojot.com",
+      "title": "company_admin",
+      "email": "shaveenf@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "accountant@grandhotel.lk",
+      "id": "accountant@grandhotel.lk",
+      "title": "company_admin",
+      "email": "accountant@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "afom@grandhotel.lk",
+      "id": "afom@grandhotel.lk",
+      "title": "company_admin",
+      "email": "afom@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "ce@grandhotel.lk",
+      "id": "ce@grandhotel.lk",
+      "title": "company_admin",
+      "email": "ce@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "dmm@grandhotel.lk",
+      "id": "dmm@grandhotel.lk",
+      "title": "company_admin",
+      "email": "dmm@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "exchef@grandhotel.lk",
+      "id": "exchef@grandhotel.lk",
+      "title": "company_admin",
+      "email": "exchef@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "fbd@grandhotel.lk",
+      "id": "fbd@grandhotel.lk",
+      "title": "company_admin",
+      "email": "fbd@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "financial_controller@grandhotel.lk",
+      "id": "financial_controller@grandhotel.lk",
+      "title": "company_admin",
+      "email": "financial_controller@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "hk@grandhotel.lk",
+      "id": "hk@grandhotel.lk",
+      "title": "company_admin",
+      "email": "hk@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "ite@grandhotel.lk",
+      "id": "ite@grandhotel.lk",
+      "title": "company_admin",
+      "email": "ite@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "pastrychef@grandhotel.lk",
+      "id": "pastrychef@grandhotel.lk",
+      "title": "company_admin",
+      "email": "pastrychef@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "reservations@grandhotel.lk",
+      "id": "reservations@grandhotel.lk",
+      "title": "company_admin",
+      "email": "reservations@grandhotel.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/67887645655a4be87d8e61fc.png",
+      "name": "ehk@grandhotel.lk",
+      "id": "ehk@grandhotel.lk",
+      "title": "company_admin",
+      "email": "ehk@grandhotel.lk"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": false
+}

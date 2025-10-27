@@ -145,8 +145,12 @@
       "editable": true,
       "values": [
         {
-          "id": "Colombo",
-          "name": "Colombo"
+          "id": "Colombo 07",
+          "name": "Colombo 07"
+        },
+        {
+          "id": "OGF",
+          "name": "OGF"
         }
       ]
     },
@@ -185,6 +189,11 @@
       "type": "string",
       "readOnly": true,
       "hidden": true
+    },
+    "staff_member": {
+      "name": "Staff Member",
+      "type": "string",
+      "readOnly": true
     },
     "attachment": {
       "name": "Attachment",

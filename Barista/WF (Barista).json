@@ -503,6 +503,34 @@
         {
           "id": "Horana",
           "name": "Horana"
+        },
+        {
+          "id": "Mobile Truck",
+          "name": "Mobile Truck"
+        },
+        {
+          "id": "Kollupitiya",
+          "name": "Kollupitiya"
+        },
+        {
+          "id": "Narahenpita CP",
+          "name": "Narahenpita CP"
+        },
+        {
+          "id": "Unawatuna",
+          "name": "Unawatuna"
+        },
+        {
+          "id": "Kandy City",
+          "name": "Kandy City"
+        },
+        {
+          "id": "Narahenpita IOC",
+          "name": "Narahenpita IOC"
+        },
+        {
+          "id": "Wattala Kelly Felder",
+          "name": "Wattala Kelly Felder"
         }
       ]
     },

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+#master-section {
+    background: url("https://storage.emojot.com/pictures/skinImages/651b7c681663290074b39021-skin4.png");
+    min-height: 657px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+#headerCompanyInfo {
+    color: white !important;
+    background: none !important;
+}
+
+.access-user {
+    display: none !important;
+}
+
+.email-emote-message {
+    color: white !important;
+}
+
+.container[style] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.emote-title {
+    color: #333;
+    font-family: "Raleway", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.emo-text {
+    font-size: 11pt;
+    color: #333;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.middle-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+.emo-cont {
+    border: 2px solid #3330;
+    margin: 3px 0px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 7px 0;
+    border-radius: 4px;
+    color: #666;
+    background: transparent !important;
+}
+
+.clicked-emo-cont {
+    border: 3px #e95641 solid !important;
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 110px;
+    margin: 5px;
+}
+
+.btn {
+    color: #e95641;
+}
+
+.btn-next {
+    color: #41a5fd;
+}
+
+.btn-submit {
+    color: #41a5fd;
+}
+
+.btn-prev {
+    color: #333;
+}
+
+.btn-clear {
+    color: #333;
+}
+
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 10px 5px;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 9px 25px;
+    font-family: "Raleway", sans-serif;
+    font-size: 12pt;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+}
+
+.clear-submit-row {
+    text-align: center !important;
+}
+
+.btn:hover {
+    color: #59be86;
+    text-decoration: none;
+}
+
+.btn-ok {
+    color: #333;
+}
+
+.btn-skip {
+    color: #333;
+}
+
+.btn-fb {
+    color: white;
+}
+
+.loyalty-redeem-button {
+    border-color: #41a5fd;
+}
+
+.logo-cust {
+    margin: 3px 0 -3px 9px;
+    height: 50px;
+}
+
+.sensor-title {
+    color: #e95641;
+    text-align: center;
+    font-size: 17pt;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: -0.5px;
+    background: rgba(255, 255, 255, 0);
+    line-height: 40px;
+    font-weight: 800 !important;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.panel {
+    margin: 0 10px;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    background: rgba(250, 247, 247, 0.64);
+}
+
+.panel-group .panel-heading {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: black;
+    background: -moz-linear-gradient(top, #fdb741 0%, #f3f3f3 100%);
+    background: -webkit-linear-gradient(top, #fdb741 0%, #f3f3f3 100%);
+    background: linear-gradient(to bottom, #fdb741 0%, #f3f3f3 100%);
+}
+
+.panel-title {
+    font-size: 11pt;
+    max-width: 90%;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.6;
+}
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots {
+    display: none;
+}
+
+.panel-body {
+    background: transparent !important;
+}
+
+.thank-you-note {
+    color: #59be86 !important;
+}
+
+.footer {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    height: 40px;
+    padding: 12px 13px;
+    font-size: 8pt;
+    margin: 0 -10px 0px 0;
+    font-family: "Raleway" sans-serif;
+    background-color: #41a5fd !important;
+    background-image: linear-gradient(90deg, #59be86, #41a5fd) !important;
+}
+
+.form-group label {
+    columns: #fff !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 12pt;
+}
+
+#groupCommentBuzzModal .modal-header {
+    background: linear-gradient(135deg, #e95641, #fdb741);
+    color: #e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body {
+    background: #fff;
+    color: #333333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+    background: #fff;
+    color: white;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+    background: #f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #333333;
+}
+
+#barChart {
+    width: 100%;
+}
+
+.pdGroupTitle {
+    color: #323570;
+    margin-left: 0px;
+    font-weight: 100;
+}
+
+body {
+    color: #000 !important;
+}
+
+#groupCommentBuzzModal .modal-header {
+    background: linear-gradient(135deg, #e95641, #fdb741) !important;
+    color: white;
+}
+
+#commentBuzzModal .modal-body {
+    background: #f7f5f7;
+    color: white;
+}
+
+#commentBuzzModal .modal-footer {
+    background: #fdb741;
+    color: white;
+}
+
+#groupCommentBuzzModal .panel-body {
+    background: #f3f3f3 !important;
+    color: #333;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #394242;
+}
+
+#commentBuzzPanel i span {
+    font-size: 18px !important;
+    display: none;
+}
+
+#commentBuzzPanel {
+    text-align: center;
+    padding: 8px 10px;
+    background: linear-gradient(135deg, #e95641, #fdb741);
+    border-radius: 4px;
+    margin-top: 110px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    position: absolute;
+    width: max-content;
+    min-width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#commentBuzzPanel:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #fdb741, #e95641);
+}
+
+#commentBuzzPanel i:after {
+    content: ' View Questions & Upvote';
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.clear-submit-row {
+    text-align: center;
+}
+
+#myModalLabel:after {
+    content: ' Panel Questions | Please Upvote';
+}
+
+.thank-you-note {
+    text-align: center;
+    font-size: 17px;
+}
+
+a {
+    color: #e95641;
+    text-decoration: none;
+}
+
+.brand-logo {
+    height: 80px !important;
+}
+
+.btn-next,
+.btn-submit,
+.btn-ok,
+.loyalty-redeem-button {
+    background: #e95641 !important;
+    color: #ffffff !important;
+    border-color: #e95641 !important;
+}
+
+.btn-next:hover,
+.btn-submit:hover,
+.btn-ok:hover,
+.loyalty-redeem-button:hover {
+    background-color: #ffffff !important;
+    color: #e95641 !important;
+    border-color: #e95641 !important;
+}
+
+.btn-prev,
+.btn-clear,
+.btn-skip {
+    background: #41a5fd !important;
+    color: #ffffff !important;
+    border-color: #41a5fd !important;
+}
+
+.btn-prev:hover,
+.btn-clear:hover,
+.btn-skip:hover {
+    background-color: #ffffff !important;
+    color: #41a5fd !important;
+    border-color: #41a5fd !important;
+}

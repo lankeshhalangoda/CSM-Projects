@@ -1,0 +1,76 @@
+<body>
+  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h1 style="color: #000000 !important">Thank You for Your Response</h1>
+    <p style="color: #000000 !important">
+      AI Experience Partner<br><strong>Emojot</strong>
+    </p>
+
+    <img
+      src="https://storage.emojot.com/pictures/skinImages/68d4bf17891a828041238d7f-skin3.png"
+      alt="Emojot Logo"
+      style="max-width: 100px; height: auto; margin: 12px 0;"
+    />
+
+    <style>
+      .review-button {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px 16px;
+        width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #000;
+        margin: 12px auto;
+        background-color: #f9f9f9;
+        transition: background-color 0.2s ease;
+        font-weight: 500;
+      }
+      .review-button:hover { background-color: #eee; }
+      .note {
+        font-size: 14px;
+        color: #888;
+        margin-top: 10px;
+      }
+    </style>
+
+    <a
+      class="review-button"
+      id="reviewLink"
+      href="https://search.google.com/local/writereview?placeid=ChIJD7B3L99b4joRZ0RU25pYbJY"
+    >
+      Rate Emojot
+    </a>
+
+    <p class="note">(Redirecting you now...)</p>
+  </div>
+
+  <!-- Fallback redirect -->
+  <meta http-equiv="refresh" content="0;url=https://search.google.com/local/writereview?placeid=ChIJD7B3L99b4joRZ0RU25pYbJY">
+
+<script>
+console.log("🟢 Thank-you script running...");
+
+document.addEventListener("DOMContentLoaded", async () => {
+  console.log("✅ DOM ready — fetching stored comment...");
+  const latestComment = localStorage.getItem("latestComment");
+
+  if (latestComment) {
+    try {
+      await navigator.clipboard.writeText(latestComment);
+      console.log("✅ Copied stored comment to clipboard:", latestComment);
+    } catch (err) {
+      console.warn("⚠️ Clipboard write failed:", err);
+    }
+  } else {
+    console.log("⚠️ No stored comment found.");
+  }
+
+  console.log("➡️ Redirecting to Google Review page...");
+  window.location.href =
+    "https://search.google.com/local/writereview?placeid=ChIJD7B3L99b4joRZ0RU25pYbJY";
+});
+</script>
+
+</body>
