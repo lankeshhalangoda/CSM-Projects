@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 /* 
 
     =================|=================================
@@ -20,10 +20,10 @@
 */
 
 #master-section {
-  background: url("https://storage.emojot.com/pictures/skinImages/661ff4d4507538eb60267952-skin25.png");
+  /* background: url("https://storage.emojot.com/pictures/skinImages/67b33d208ed80658abca4e23-skin1.png"); */
   /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
-  /* background-color: #ffffff; */
-  /* min-height: 657px; */
+  background-color: #ffffff;
+  min-height: 657px;
   /* min-height: 100vh; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,14 +53,20 @@
 }
 
 .emote-title {
-  color: #ffffff;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14pt;
+  color: #1f1f1f;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+  font-size: 13pt;
   font-weight: 400;
   letter-spacing: 0.5px;
-  text-transform: uppercase !important;
 }
-  
+
+.emo-text {
+  font-size: 12pt;
+  color: #1f1f1f;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 .middle-box {
   margin-top: 10px;
   padding: 10px;
@@ -68,39 +74,29 @@
 }
 
 .progress_bar .progress_number {
-  color: #ffffff;
-  margin-top: 5px;
+  color: #000000;
 }
 
 .emo-cont {
-  border: none !important;
+  border: 1px solid rgb(241, 219, 219);
   margin: 3px 0px;
   text-align: center;
   display: inline-block;
-  box-shadow: none !important;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   padding: 7px 7px;
   border-radius: 0px;
-  color: #000000;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1 ); */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#e2e2e2', GradientType=1 );
 }
 
 .emo-cont:hover {
-  animation: zoomIn 0.5s forwards; /* Apply the zoom animation on hover */
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(1); /* Initial scale */
-  }
-  100% {
-    transform: scale(1.1); /* Final scale */
-  }
+  border: 2px solid #888888;
 }
 
 .clicked-emo-cont {
-  background: rgba(212, 207, 207, 0.31);
+  background: rgba(56, 50, 50, 0.1);
   border: 3px #000000 solid !important;
 }
 
@@ -111,16 +107,6 @@
   max-width: 55px;
   margin: 5px;
 }
-
-.emo-text {
-  font-size: 12pt;
-  color: #ffffff;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-
 .btn {
   color: #000000;
 }
@@ -137,87 +123,74 @@
   min-width: 90px;
   display: inline-block;
   padding: 9px 25px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
   font-size: 12pt;
   background: transparent;
   box-shadow: none;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 .btn-next {
+  border: 2px solid black;
   color: black;
-  background: white;
-  border: none;
 }
 
 .btn-next:hover {
   background: black;
   color: white;
-  border: none;
 }
 
 .btn-prev {
-  color: #ffffff;
-  background: #000000;
-  border: none;
+  border: 2px solid #888888;
+  color: #888888;
 }
 
 .btn-prev:hover {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
+  background: #888888;
+  color: white;
 }
 
 .btn-submit {
+  border: 2px solid black;
   color: black;
-  background: white;
-  border: none;
 }
 
 .btn-submit:hover {
   background: black;
   color: white;
-  border: none;
 }
 
 .btn-clear {
-  border: 2px solid #ffffff;
-  color: #000000;
+  border: 2px solid #888888;
+  color: #888888;
 }
 
 .btn-clear:hover {
-  background: #000000;
+  background: #888888;
   color: white;
-  border: none;
 }
 
 .btn-ok {
-  border: none;
+  border: 2px solid black;
   color: black;
-  background: #ffffff;
 }
 
 .btn-ok:hover {
   background: black;
   color: white;
-  border: none;
-}
-
-.btn-ok:active {
-  background: gray;
-  color: white;
-  border: none;
 }
 
 .btn-skip {
-  border: 2px solid #f0633f;
-  color: #f0633f;
+  border: 2px solid #888888;
+  color: #888888;
+  display: none;
 }
 
 .btn-skip:hover {
-  background: #f0633f;
+  background: #888888;
   color: white;
-  border: none;
 }
 
 .loyalty-redeem-button {
@@ -228,12 +201,10 @@
 .loyalty-redeem-button:hover {
   background: black;
   color: white;
-  border: none;
 }
 
 .btn-skip {
   color: #333;
-  display: none !important;
 }
 .btn-fb {
   color: white;
@@ -250,19 +221,19 @@
 }
 
 .sensor-title {
-  color: #ffffff;
-  font-size: 16pt;
-  font-weight: 700 !important;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-size: 15pt;
+  padding: 10px 10px 10px 10px;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
   background: rgba(255, 255, 255, 0);
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 500;
+  text-transform: uppercase;
   width: 100%;
-  /* max-width: fit-content; */
   display: block;
   position: relative;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: center !important;
 }
 
 .sensor-title::after {
@@ -294,7 +265,11 @@
 }
 
 form-control:focus {
-  border-color: #0c264b !important;
+  border-color: #c0926e !important;
+}
+
+.flex {
+    display: inline !important;
 }
 
 .panel {
@@ -348,7 +323,7 @@ form-control:focus {
 .panel-title {
   font-size: 11pt;
   max-width: 90%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 .row {
@@ -364,23 +339,13 @@ form-control:focus {
 #headerCompanyInfo > .access-user {
   text-align: center;
   float: right;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14pt;
-  font-weight: 500;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
   background-size: 120px 80px;
   background-repeat: no-repeat;
   background-position: right center;
   position: relative;
-  color: #ffffff !important;
-}
-
-.access-user-name {
-    font-family: "Roboto", Helvetica, Arial, sans-serif !important;
-    color: #ffffff !important;
-}
-
-.user-icon {
-    color: #ffffff !important;
 }
 
 .company-logo img {
@@ -389,71 +354,32 @@ form-control:focus {
 }
 
 .footer {
-    background: #000000 !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  /* Left-Side Footer Text */
-  .footer::before {
-    content: "POWERED BY EMOJOT";
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 12pt;
-    color: #ffffff;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    padding-left: 5px;
-  }
-
-  .emo-ico img {
-    max-width: 90px !important;
+  background: #c0926e !important;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  left: 0;
+  z-index: 800;
+  bottom: 0;
+  height: 40px;
+  padding: 12px 13px;
+  font-size: 8pt;
+  margin: 0 -10px 0px 0;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
 }
-
-  
-  /* Right-Side Logo */
-  .footer::after {
-    content: "";
-    position: relative;
-    width: 100px;
-    height: 40px;
-    background: url("https://storage.emojot.com/pictures/generalImages/64537af9821daf0010374150-skin1.png") no-repeat center;
-    background-size: contain;
-  }
-  
-  /* Hide Default Logo */
-  .footer .logo {
-    display: none !important;
-  }
-
-  div.col-xs-7.ng-scope {
-    display: none !important;
-  }
-  
 
 .form-group label {
-    color: #ffffff;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 14pt;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-}
-
-label.ng-binding  {
-  color: #000000 !important;
+  color: #1f1f1f !important;
+  font-family: "Jost", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .loyalty-message {
-  color: #ffffff;
+  color: #000000;
   font-size: 13pt;
   text-align: center;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .loyalty-bottom {
@@ -464,30 +390,12 @@ label.ng-binding  {
 }
 
 .email-emote-message {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 #progressfill {
-    background: linear-gradient(270deg, #f3643c, #6b1304, #d06824, #ffffff);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
-    height: 100%;
-    width: 100%;
+  background-color: #c0926e;
 }
-
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
 
 #groupCommentBuzzModal .modal-header {
   background: #fff;
@@ -513,7 +421,7 @@ label.ng-binding  {
 }
 
 .thank-you-note {
-  color: #000000 !important;
+  color: #f4f4f4 !important;
 }
 
 .pdGroupTitle {
@@ -534,6 +442,52 @@ label.ng-binding  {
   width: 80px;
   color: #ffffff;
 }
+
+div.col-xs-7.ng-scope {
+    display: none !important;
+  }
+  
+
+  .footer {
+    background: #c0926e !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Left-Side Footer Text */
+  .footer::before {
+    content: "POWERED BY EMOJOT";
+    font-family: "Cinzel", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 08pt;
+    letter-spacing: 2.1px;
+    color: #e2e2e2;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  /* Right-Side Logo */
+  .footer::after {
+    content: "";
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: url("https://storage.emojot.com/pictures/generalImages/64537af9821daf0010374150-skin1.png") no-repeat center;
+    background-size: contain;
+  }
+  
+  /* Hide Default Logo */
+  .footer .logo {
+    display: none !important;
+  }
+  
+  
 
 /*  view question - uncomment this to show big view question button if there are only one comment field */
 
@@ -581,21 +535,21 @@ label.ng-binding  {
 .evz-nps-position-4,
 .evz-nps-position-5,
 .evz-nps-position-6{
-    background: #d02030;
+    background: #ff2942;
     color: white;
     border: 1px solid rgba(255, 0, 55, 0.61);
 }
 
 .evz-nps-position-7,
 .evz-nps-position-8{
-    background: #f6b334;
+    background: #ff7924;
     color: white;
     border: 1px solid rgba(195, 117, 34, 0.61);
 }
 
 .evz-nps-position-9,
 .evz-nps-position-10{
-    background: #4b9e46;
+    background: #1ca757;
     color: white;
     border: 1px solid rgba(17, 144, 74, 0.61);
 }
@@ -617,59 +571,17 @@ label.ng-binding  {
   display: block;
 }
 
-.btnGoogle {
-  background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 10px 5px;
-  text-align: center;
-  min-width: 90px;
-  display: inline-block;
-  border-radius: 5px;
-  box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
-  padding: 9px 0px;
-  font-size: 12pt;
-  text-decoration: none;
-  color: white;
-  width: 300px;
-  height: 44px;
-  font-family: "Roboto", serif;
-}
-
-.btnGoogle:hover,
-.btnGoogle:focus {
-  background: #3d3d3d;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-img[src="https://storage.emojot.com/pictures/emoticonImages/ico459.png"] {
-  display: none !important;
-}
-
-div#ec_0_0q1175.emo-cont.clickable.ng-scope {
-  display: none !important;
-}
-
-div#qt_q1175.col-xs-12 {
-  display: none !important;
-}
-
-div#qe_q1175.col-xs-12.text-center.emoticonList.ng-scope {
-  display: none !important;
-}
-
 @media (max-width: 768px) {
-  .emo-cont {
+  .emo-text {
     font-size: 8pt !important;
   }
 
   .sensor-title {
-    font-size: 15pt;
-    line-height: 20px;
+    font-size: 12pt;
   }
 
   .emote-title {
-    font-size: 12pt;
+    font-size: 10pt;
   }
 
   .company-logo img {
@@ -678,22 +590,10 @@ div#qe_q1175.col-xs-12.text-center.emoticonList.ng-scope {
   }
 
   .form-group label {
-    font-size: 15pt !important;
+    font-size: 10pt !important;
   }
 
   .form-control {
     font-size: 9pt !important;
-  }
-
-  .emo-text {
-    font-size: 10pt !important;
-  }
-
-  .footer::before {
-    font-size: 10pt;
-  }
-
-  .emo-ico img {
-    max-width: 90px !important;
   }
 }

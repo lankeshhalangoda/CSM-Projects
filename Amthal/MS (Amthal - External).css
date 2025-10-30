@@ -20,7 +20,7 @@
 */
 
 #master-section {
-  background: url("https://storage.emojot.com/pictures/skinImages/661ff4d4507538eb60267952-skin25.png");
+  background: url("https://storage.emojot.com/pictures/skinImages/67761761cb917201e680c031-skin16.png");
   /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
   /* background-color: #ffffff; */
   /* min-height: 657px; */
@@ -388,55 +388,6 @@ form-control:focus {
   height: 80px;
 }
 
-.footer {
-    background: #000000 !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  /* Left-Side Footer Text */
-  .footer::before {
-    content: "POWERED BY EMOJOT";
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 12pt;
-    color: #ffffff;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    padding-left: 5px;
-  }
-
-  .emo-ico img {
-    max-width: 90px !important;
-}
-
-  
-  /* Right-Side Logo */
-  .footer::after {
-    content: "";
-    position: relative;
-    width: 100px;
-    height: 40px;
-    background: url("https://storage.emojot.com/pictures/generalImages/64537af9821daf0010374150-skin1.png") no-repeat center;
-    background-size: contain;
-  }
-  
-  /* Hide Default Logo */
-  .footer .logo {
-    display: none !important;
-  }
-
-  div.col-xs-7.ng-scope {
-    display: none !important;
-  }
-  
-
 .form-group label {
     color: #ffffff;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -447,6 +398,24 @@ form-control:focus {
 
 label.ng-binding  {
   color: #000000 !important;
+}
+
+
+
+.footer {
+    /* background: #781d7d !important; */
+    background: #000000 !important;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    height: 40px;
+    padding: 12px 13px;
+    font-size: 8pt;
+    margin: 0 -10px 0px 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .loyalty-message {
@@ -468,7 +437,7 @@ label.ng-binding  {
 }
 
 #progressfill {
-    background: linear-gradient(270deg, #f3643c, #6b1304, #d06824, #ffffff);
+    background: linear-gradient(270deg, #ff2828, #8f1515, #ff0000, #ffffff);
     background-size: 400% 400%;
     animation: gradientAnimation 5s ease infinite;
     height: 100%;
@@ -518,7 +487,8 @@ label.ng-binding  {
 
 .pdGroupTitle {
   margin-left: 10px;
-  color: #7b7b7b;
+  color: #ffffff;
+  font-weight: 800 !important;
 }
 
 .progress_bar .pro-bar {
