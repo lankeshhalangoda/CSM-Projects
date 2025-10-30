@@ -1,0 +1,152 @@
+{
+  "menu": [
+    {
+      "id": "orm",
+      "icon": "fa fa-users",
+      "header": "Improve Reviews",
+      "subs": [
+        {
+          "header": "View Reviews",
+          "id": "orm_rlm"
+        },
+        {
+          "header": "Review Analytics",
+          "id": "orm_ris"
+        },
+        {
+          "header": "Complaint Handling",
+          "id": "orm_tickets"
+        },
+        {
+          "header": "Complaints Analytics",
+          "id": "complaintmgmt_reports"
+        }
+      ]
+    },
+    {
+      "id": "myProfile",
+      "icon": "fa fa-user",
+      "header": "My Profile",
+      "subs": [
+        {
+          "header": "My Profile",
+          "id": "myProfile_profile"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "title": "ORM: Review Insights",
+      "type": "directReport",
+      "id": "orm_ris",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewsAndRatingBoard/reviewsAndRatingBoard.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "hideTicketWidgets",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "ORM: Review Listing and Monitoring",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "ORM: Complaint Handling",
+      "type": "directReport",
+      "id": "orm_tickets",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentManagement/incidentManagement.jsp"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        },
+        {
+          "key": "workflowID",
+          "value": "6902c1bb22d32b98a066db5a"
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "Complaints Dashboard",
+      "desc": "Aggregated analytics for complaints",
+      "type": "directReport",
+      "id": "complaintmgmt_reports",
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/incidentOverview/incidentOverview.jsp"
+        },
+        {
+          "key": "workflowID",
+          "value": "6902c1bb22d32b98a066db5a"
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "image": "https://storage.emojot.com/pictures/generalImages/6902bec3a285122b61fdbbad-skin1.png",
+      "name": "lankeshh@emojot.com",
+      "id": "lankeshh@emojot.com",
+      "title": "company_admin",
+      "email": "lankeshh@emojot.com"
+    }
+  ],
+  "assignmentAllowed": true,
+  "showAIAssistant": true
+}

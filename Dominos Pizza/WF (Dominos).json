@@ -1,226 +1,227 @@
 {
-    "reportNamePrefix": "Case",
-    "reporterNamePrefix": "Customer",
-    "descriptionFormat": "text",
-    "name": "Complaint Management System",
-    "nameTemplate": "Customer Complaint: $type$",
-    "descriptionTemplate": "Customer Complaint from $type$",
-    "type": {
-        "name": "Type",
-        "type": "enum",
-        "readOnly": true,
-        "values": [
-            {
-                "id": "googleMap",
-                "name": "Google"
-            },
-            {
-                "id": "facebook",
-                "name": "Facebook"
-            },
-            {
-                "id": "tripadvisor",
-                "name": "Tripadvisor"
-            }
-        ]
-    },
-    "status": {
-        "name": "Status",
-        "type": "enum",
-        "values": [
-            {
-                "id": "Open",
-                "name": "Open",
-                "backgroundColor": "#f4b000",
-                "textColor": "#ffffff",
-                "statusTextColor": "#f4b000",
-                "statusBackgroundColor": "#fef3c7"
-            },
-            {
-                "id": "In Progress",
-                "name": "In Progress",
-                "backgroundColor": "#0088cc",
-                "textColor": "#ffffff",
-                "statusTextColor": "#0088cc",
-                "statusBackgroundColor": "#dbeafe"
-            },
-            {
-                "id": "Resolved",
-                "name": "Resolved",
-                "backgroundColor": "#00aa55",
-                "textColor": "#ffffff",
-                "statusTextColor": "#00aa55",
-                "statusBackgroundColor": "#dcfce7",
-                "triggers": [
-                    {
-                        "channel": "email",
-                        "template": "complaintResolutionAlert_orm_email",
-                        "target": "admin",
-                        "contactFilters": [
-                            "ticketResolutionAlert"
-                        ],
-                        "adminUserQuery": {
-                            "condition": "and",
-                            "rules": [
-                                {
-                                    "field": "location",
-                                    "operator": "eq",
-                                    "value": "$location$"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        ],
-        "transitions": [
-            {
-                "sourceState": "Open",
-                "targetStates": [
-                    "In Progress"
-                ]
-            },
-            {
-                "sourceState": "In Progress",
-                "targetStates": [
-                    "Resolved"
-                ]
-            }
-        ]
-    },
-    "priority": {
-        "name": "Priority",
-        "type": "enum",
-        "values": [
-            {
-                "id": "Low",
-                "name": "Low"
-            },
-            {
-                "id": "Medium",
-                "name": "Medium"
-            },
-            {
-                "id": "High",
-                "name": "High"
-            }
-        ]
-    },
-    "customFields": {
-        "location": {
-            "name": "Location",
-            "type": "enum",
-            "required": true,
-            "readOnly": true,
-            "values": [
+  "descriptionFormat": "text",
+  "reportNamePrefix": "Case",
+  "name": "WF v1",
+  "nameTemplate": "Customer Complaint: $type$",
+  "descriptionTemplate": "Customer Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "googleMap",
+        "name": "Google"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook"
+      },
+      {
+        "id": "tripadvisor",
+        "name": "Tripadvisor"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7",
+        "triggers": [
+          {
+            "channel": "email",
+            "template": "complaintResolutionAlert_orm_email",
+            "target": "admin",
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
                 {
-                    "id": "Union Place",
-                    "name": "Union Place"
-                },
-                {
-                    "id": "Nawala",
-                    "name": "Nawala"
-                },
-                {
-                    "id": "Kolonnawa",
-                    "name": "Kolonnawa"
-                },
-                {
-                    "id": "Kotte",
-                    "name": "Kotte"
-                },
-                {
-                    "id": "Katugasthota",
-                    "name": "Katugasthota"
-                },
-                {
-                    "id": "Kandy",
-                    "name": "Kandy"
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
                 }
-            ]
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "location": {
+      "name": "Location",
+      "type": "enum",
+      "required": true,
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Union Place",
+          "name": "Union Place"
         },
-        "author": {
-            "name": "Customer Name",
-            "type": "string",
-            "required": true,
-            "readOnly": true
+        {
+          "id": "Nawala",
+          "name": "Nawala"
         },
-        "rating": {
-            "name": "Rating",
-            "type": "string",
-            "required": true,
-            "readOnly": true
+        {
+          "id": "Kolonnawa",
+          "name": "Kolonnawa"
         },
-        "comment": {
-            "name": "Comment",
-            "type": "textArea",
-            "required": false,
-            "readOnly": true
+        {
+          "id": "Kotte",
+          "name": "Kotte"
+        },
+        {
+          "id": "Katugasthota",
+          "name": "Katugasthota"
+        },
+        {
+          "id": "Kandy",
+          "name": "Kandy"
         }
+      ]
     },
-    "timeZone": -330,
-    "reportSensor": "inci1",
-    "adminHierarchy": {
-        "list": "admin",
-        "headers": [
-            {
-                "id": "location",
-                "name": "Location",
-                "type": "customField"
-            },
-            {
-                "id": "ticketAssignee",
-                "name": "Ticket Assignee",
-                "type": "contact"
-            },
-            {
-                "id": "ticketCreationAlert",
-                "name": "Ticket Creation Alert",
-                "type": "contact"
-            },
-            {
-                "id": "ticketResolutionAlert",
-                "name": "Ticket Resolution Alert",
-                "type": "contact"
-            }
-        ],
-        "id": "AHI_1761788481984_331141507"
+    "author": {
+      "name": "Customer Name",
+      "type": "string",
+      "required": true,
+      "readOnly": true
     },
-    "workflowCreation": {
-        "email": "bot@emojot.com",
-        "triggers": [
-            {
-                "channel": "email",
-                "template": "complaintCreationAlert_orm_email",
-                "target": "admin",
-                "contactFilters": [
-                    "ticketCreationAlert"
-                ],
-                "adminUserQuery": {
-                    "condition": "and",
-                    "rules": [
-                        {
-                            "field": "location",
-                            "operator": "eq",
-                            "value": "$location$"
-                        }
-                    ]
-                }
-            }
-        ]
+    "rating": {
+      "name": "Rating",
+      "type": "string",
+      "required": true,
+      "readOnly": true
     },
-    "assignment": {
-        "triggers": [
-            {
-                "channel": "email",
-                "template": "complaintAssignment_orm_email",
-                "target": "employee"
-            }
-        ]
-    },
-    "timeSpent": {
-        "name": "Time Spent",
-        "type": "number",
-        "hidden": true
+    "comment": {
+      "name": "Comment",
+      "type": "textArea",
+      "required": false,
+      "readOnly": true,
+      "hidden": true
     }
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "number",
+    "hidden": true
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintAssignment_orm_email",
+        "target": "employee"
+      }
+    ]
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com",
+    "triggers": [
+      {
+        "channel": "email",
+        "template": "complaintCreationAlert_orm_email",
+        "target": "admin",
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1761788481984_331141507"
+  },
+  "reportSensor": "inci1",
+  "reporterNamePrefix": "Customer",
+  "timeZone": -330
 }
