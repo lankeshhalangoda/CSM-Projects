@@ -377,10 +377,12 @@ form-control:focus {
 .access-user-name {
     font-family: "Roboto", Helvetica, Arial, sans-serif !important;
     color: #ffffff !important;
+    display: none !important;
 }
 
 .user-icon {
     color: #ffffff !important;
+    display: none !important;
 }
 
 .company-logo img {
