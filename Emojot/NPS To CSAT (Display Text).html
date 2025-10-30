@@ -1,0 +1,265 @@
+<style>
+
+/* CSAT container */
+.csat-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Question text */
+.csat-question {
+  text-align: left;
+  font-size: 22px;
+  color: #111;
+  font-weight: 700;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Hide default CSAT emote blocks */
+.emo-cont,
+.clicked-emo-cont {
+  display: none !important;
+}
+
+/* Slider container */
+.csat-slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slider styling */
+.csat-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff3b30 0%, #ff9500 50%, #34c759 100%);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Thumb styling */
+.csat-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.1s ease;
+}
+
+.csat-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Number inside the thumb */
+.thumb-value {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Labels 1–5 */
+.csat-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* Text labels */
+.csat-slider-container::before {
+  content: "Very Dissatisfied";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 13px;
+  color: #000;
+}
+
+.csat-slider-container::after {
+  content: "Very Satisfied";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  font-size: 13px;
+  color: #000;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .csat-question {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .csat-slider-container {
+    width: 96%;
+  }
+  .csat-slider::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+  }
+  .thumb-value {
+    font-size: 11px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <p class="csat-question">
+    How satisfied are you with the service provided?
+  </p>
+
+  <div class="csat-bar"></div>
+
+<script>
+(function () {
+  const LABELS = [
+    'Very Dissatisfied',
+    'Dissatisfied',
+    'Neutral',
+    'Satisfied',
+    'Very Satisfied'
+  ];
+  const DEFAULT_VALUE = 3; // Neutral
+
+  // Wait for emotes
+  function waitForEmotes(timeout = 10000) {
+    return new Promise((resolve, reject) => {
+      const start = Date.now();
+      const check = () => {
+        let emotes = Array.from(document.querySelectorAll('.emo-cont.clickable'));
+        if (emotes.length === 0)
+          emotes = Array.from(document.querySelectorAll('.emo-cont'));
+        if (emotes.length >= 5) return resolve(emotes.slice(0, 5));
+        if (Date.now() - start > timeout)
+          return reject('Timeout: Could not find 5 CSAT emotes.');
+        setTimeout(check, 250);
+      };
+      check();
+    });
+  }
+
+  // Wait for container
+  function waitForMount(timeout = 10000) {
+    return new Promise((resolve, reject) => {
+      const start = Date.now();
+      const check = () => {
+        const node = document.querySelector('.emoticonList')
+                  || document.querySelector('.csat-bar')
+                  || document.body;
+        if (node) return resolve(node);
+        if (Date.now() - start > timeout)
+          return reject('Timeout: No mount node found.');
+        setTimeout(check, 250);
+      };
+      check();
+    });
+  }
+
+  // Build slider UI
+  function buildSlider(mount, emotes) {
+    const container = document.createElement('div');
+    container.className = 'csat-slider-container';
+
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = 1;
+    slider.max = 5;
+    slider.step = 1;
+    slider.value = DEFAULT_VALUE;
+    slider.className = 'csat-slider';
+
+    const thumbValue = document.createElement('div');
+    thumbValue.className = 'thumb-value';
+    thumbValue.textContent = slider.value;
+
+    const labels = document.createElement('div');
+    labels.className = 'csat-slider-labels';
+    labels.innerHTML = '<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>';
+
+    container.appendChild(slider);
+    container.appendChild(thumbValue);
+    container.appendChild(labels);
+    mount.parentNode.insertBefore(container, mount.nextSibling);
+
+    // Position thumb value dynamically
+    const moveValue = () => {
+      const v = +slider.value;
+      const percent = ((v - 1) / 4) * 100;
+      const width = slider.offsetWidth;
+      const thumbWidth = 28;
+      const left = (percent / 100) * (width - thumbWidth) + thumbWidth / 2;
+      thumbValue.style.left = left + 'px';
+      thumbValue.style.top = (slider.offsetTop + 4) + 'px';
+      thumbValue.textContent = v;
+    };
+
+    const clickEmote = (v) => {
+      const idx = v - 1;
+      const label = LABELS[idx];
+      const node = emotes[idx];
+      if (!node) return;
+      ['mousedown', 'mouseup', 'click'].forEach(type => {
+        node.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true }));
+      });
+    };
+
+    slider.addEventListener('input', () => {
+      moveValue();
+      clickEmote(+slider.value);
+    });
+
+    window.addEventListener('resize', moveValue);
+
+    moveValue();
+    clickEmote(DEFAULT_VALUE);
+
+    // Hide emotes visually
+    emotes.forEach(e => {
+      e.style.opacity = '0';
+      e.style.pointerEvents = 'none';
+      e.style.position = 'absolute';
+      e.style.left = '-9999px';
+    });
+  }
+
+  (async function init() {
+    try {
+      const [mount, emotes] = await Promise.all([waitForMount(), waitForEmotes()]);
+      buildSlider(mount, emotes);
+    } catch (err) {
+      console.error('CSAT Slider Initialization Failed:', err);
+    }
+  })();
+})();
+</script>
+
+</body>

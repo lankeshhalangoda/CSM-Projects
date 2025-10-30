@@ -1,0 +1,214 @@
+<style>
+
+/* Center content inside Emjot container */
+.nps-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Question text */
+.nps-question {
+  text-align: left;
+  font-size: 22px;
+  color: #111;
+  font-weight: 700;
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide default NPS buttons */
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6,
+.evz-nps-position-7,
+.evz-nps-position-8,
+.evz-nps-position-9,
+.evz-nps-position-10 {
+  display: none !important;
+}
+
+/* Slider container */
+.nps-slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slider styling */
+.nps-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff2942 0%, #ff7924 70%, #1ca757 100%);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Numeric labels under slider */
+.nps-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* Descriptive labels */
+.nps-slider-container::before {
+  content: "Less Likely";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 13px;
+  color: #000;
+}
+
+.nps-slider-container::after {
+  content: "More Likely";
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  font-size: 13px;
+  color: #000;
+}
+
+/* Custom thumb with visible value */
+.nps-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.1s ease;
+}
+
+.nps-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Number inside the thumb */
+.thumb-value {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .nps-question {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .nps-slider-container {
+    width: 96%;
+  }
+  .nps-slider::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+  }
+  .thumb-value {
+    font-size: 11px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <p class="nps-question">
+    On a scale of 0 to 10, how likely are you to recommend this system to others?
+  </p>
+
+  <div class="nps-bar"></div>
+
+<script>
+(function waitForNPS() {
+  const npsBar = document.querySelector('.nps-bar');
+  if (!npsBar) return setTimeout(waitForNPS, 500);
+
+  // Avoid duplication
+  if (document.querySelector('.nps-slider-container')) return;
+
+  // Create container
+  const sliderContainer = document.createElement('div');
+  sliderContainer.classList.add('nps-slider-container');
+
+  // Slider input
+  const slider = document.createElement('input');
+  slider.type = 'range';
+  slider.min = 0;
+  slider.max = 10;
+  slider.step = 1;
+  slider.value = 5;
+  slider.classList.add('nps-slider');
+
+  // Visible number inside thumb
+  const thumbValue = document.createElement('div');
+  thumbValue.classList.add('thumb-value');
+  thumbValue.textContent = slider.value;
+  sliderContainer.appendChild(thumbValue);
+
+  // Labels 0–10
+  const labelContainer = document.createElement('div');
+  labelContainer.classList.add('nps-slider-labels');
+  for (let i = 0; i <= 10; i++) {
+    const lbl = document.createElement('span');
+    lbl.textContent = i;
+    labelContainer.appendChild(lbl);
+  }
+
+  // Append elements
+  sliderContainer.appendChild(slider);
+  sliderContainer.appendChild(labelContainer);
+  npsBar.appendChild(sliderContainer);
+
+  // Update value and thumb position
+  const updateThumbValue = () => {
+    thumbValue.textContent = slider.value;
+    const percent = (slider.value / 10) * 100;
+    thumbValue.style.left = `calc(${percent}% - 14px)`;
+  };
+
+  updateThumbValue();
+
+  slider.addEventListener('input', function() {
+    updateThumbValue();
+    const val = parseInt(this.value);
+    const targetBtn = document.querySelector(`.evz-nps-position-${val}`);
+    if (targetBtn) targetBtn.click();
+  });
+
+})();
+</script>
+
+</body>
