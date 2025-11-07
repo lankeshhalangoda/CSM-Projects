@@ -198,7 +198,7 @@
 /* Translations */
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .emj-media-upload-attach:before,
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) .emj-media-upload-attach:before {
-    content: "ගොනුවක් එකතු කරන්න";
+    content: "ගොනුවක් අමුණන්න";
 }
 
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .emj-media-upload-attach:before,
@@ -208,7 +208,7 @@ body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) .emj-media-
 
 /* Optional fallback */
 body.lang-si .emj-media-upload-attach:before {
-    content: "ගොනුවක් එකතු කරන්න";
+    content: "ගොනුවක් අමුණන්න";
 }
 
 body.lang-ta .emj-media-upload-attach:before {
@@ -604,7 +604,7 @@ form-control:focus {
 /* Translations */
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .nps-bar::before,
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) .nps-bar::before {
-    content: "අඩු ඉඩක් ඇත";
+    content: "ඉඩ අඩුයි";
 }
 
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .nps-bar::before,
@@ -614,7 +614,7 @@ body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) .nps-bar::b
 
 /* Optional fallback */
 body.lang-si .nps-bar::before {
-    content: "අඩු ඉඩක් ඇත";
+    content: "ඉඩ අඩුයි";
 }
 
 body.lang-ta .nps-bar::before {
@@ -625,7 +625,7 @@ body.lang-ta .nps-bar::before {
 /* Translations */
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .nps-bar::after,
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) .nps-bar::after {
-    content: "වැඩි ඉඩක් ඇත";
+    content: "ඉඩ වැඩියි";
 }
 
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .nps-bar::after,
@@ -635,7 +635,7 @@ body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) .nps-bar::a
 
 /* Optional fallback */
 body.lang-si .nps-bar::after {
-    content: "වැඩි ඉඩක් ඇත";
+    content: "ඉඩ වැඩියි";
 }
 
 body.lang-ta .nps-bar::after {

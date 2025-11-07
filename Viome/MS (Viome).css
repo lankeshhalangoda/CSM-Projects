@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+#master-section {
+    background: url("https://storage.emojot.com/pictures/skinImages/690d6d92af3edc09f7432cff-skin1.png");
+    /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
+    /* background-color: #ffffff; */
+    min-height: 657px;
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#headerCompanyInfo {
+    color: #ffffff !important;
+    min-height: 90px;
+    background: none !important;
+}
+
+.container[style] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.emote-title {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+
+
+.form-group label {
+    color: #ffffff !important;
+    font-family: "Inter", sans-serif;
+    font-size: 15pt !important;
+    font-weight: 400 !important;
+}
+
+.emo-text {
+    font-size: 11pt;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.emo-text-only {
+    font-size: 11pt;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.loyalty-message {
+    font-size: 13pt;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.emo-text-dropdown {
+    color: #ffffff !important;
+}
+
+.middle-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+.emo-cont {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 3px 0px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 7px 0;
+    border-radius: 8px;
+    color: #fff;
+
+    /* ✨ Blur background effect */
+    background: rgba(255, 255, 255, 0.1); /* translucent layer */
+    backdrop-filter: blur(8px); /* actual blur */
+    -webkit-backdrop-filter: blur(8px); /* for Safari */
+}
+
+
+.clicked-emo-cont {
+    border: 2px solid rgba(255, 255, 255);
+    margin: 3px 0px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 7px 0;
+    border-radius: 8px;
+    color: #fff;
+
+    /* ✨ Blur background effect */
+    background: rgba(0, 0, 0, 0.9); /* translucent layer */
+    backdrop-filter: blur(8px); /* actual blur */
+    -webkit-backdrop-filter: blur(8px); /* for Safari */
+}
+
+.emo-ico img {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    max-width: 55px;
+    margin: 5px;
+
+    /* Add the shake animation */
+    /* animation: shake 0.6s infinite; */
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
+
+    40% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    60% {
+        transform: translate(-2px, 0) rotate(-5deg);
+    }
+
+    80% {
+        transform: translate(2px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+    border: none !important;
+    margin: 10px 5px;
+    text-align: center;
+    min-width: 90px;
+    display: inline-block;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 6px 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    border-radius: 8px !important;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+}
+
+.clear-submit-row {
+    text-align: center !important;
+}
+
+.clear-submit-row,
+.draft-response-row {
+    padding-right: 0 !important;
+}
+
+
+.btn-next {
+    color: #000000;
+    background: #ffffff;
+}
+
+.btn-submit {
+    background: #ffffff;
+    color: #000000;
+}
+
+.btn-prev {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-clear {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn:hover {
+    color: #196d9e;
+    text-decoration: none;
+}
+
+.btn-ok {
+    color: #000000;
+    background: #ffffff;
+}
+
+.btn-skip {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-fb {
+    color: white;
+}
+
+.loyalty-redeem-button {
+    border-color: #ffffff;
+}
+
+.logo-cust {
+    margin: 3px 0 -3px 9px;
+    height: 50px;
+}
+
+.sensor-title {
+    color: #ffffff !important;
+    font-size: 20pt;
+    font-family: "Inter", sans-serif;
+    background: rgba(255, 255, 255, 0);
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* translucent layer */
+    backdrop-filter: blur(10px); /* blur whatever is behind */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 8px 12px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Optional: a focus effect for clarity */
+.form-control:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.panel {
+    margin: 0 10px;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    background: rgba(250, 247, 247, 0.64);
+}
+
+.panel-group .panel-heading {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: #ffffff;
+    background: rgba(249, 249, 249, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
+}
+
+.panel-title {
+    font-size: 11pt;
+    max-width: 90%;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots {
+    display: none;
+}
+
+.panel-body {
+    background: transparent !important;
+}
+
+.thank-you-note {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 16px !important;
+}
+
+.flex {
+    justify-content: center !important;
+}
+
+#headerCompanyInfo>.access-user {
+    text-align: center;
+    float: right;
+    text-shadow: 1px 1px 1px #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-size: 120px 80px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+.access-user-name {
+    font-family: "Inter", sans-serif;
+}
+
+.company-logo {
+    z-index: 2 !important;
+}
+
+.company-logo img {
+    height: 50px;
+}
+
+.footer {
+    /* background: #ffffff !important; */
+    background: #000000 !important;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    height: 40px;
+    padding: 12px 13px;
+    font-size: 8pt;
+    margin: 0 -10px 0px 0;
+    font-family: "Inter", sans-serif;
+}
+
+.form-group label {
+    columns: #fff !important;
+    font-family: "Inter", sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.loyalty-message {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+.loyalty-bottom {
+    text-align: center;
+}
+
+.loyalty-dialog div:nth-child(3) {}
+
+.email-emote-message {
+    color: white !important;
+}
+
+#progressfill {
+    background: linear-gradient(90deg, #e4077f, #097bc0, #e4077f);
+    background-size: 200% 100%; /* make gradient wider than the container */
+    animation: moveGradient 3s linear infinite;
+    border-radius: 3px;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.media-uploaded {
+    border: 2px solid #ffffff;
+    background: #ff10ef20;
+
+}
+
+
+.progress_bar .progress_number {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#groupCommentBuzzModal .modal-header {
+    background: #fff;
+    color: #e4e4e4;
+}
+
+#groupCommentBuzzModal .modal-body {
+    background: #fff;
+    color: #333333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+    background: #fff;
+    color: white;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+    background: #f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #333333;
+}
+
+.thank-you-note {
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
+
+#barChart {
+    width: 100%;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    top: 100%;
+    transform: translateY(8px);
+    font-family: "Inter", sans-serif;
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6 {
+    background: #ff2942;
+    color: white;
+    border: 1px solid rgba(255, 0, 55, 0.61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8 {
+    background: #ff7924;
+    color: white;
+    border: 1px solid rgba(195, 117, 34, 0.61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10 {
+    background: #1ca757;
+    color: white;
+    border: 1px solid rgba(17, 144, 74, 0.61);
+}
+
+.clicked-nps-icon {
+    border: 3px solid #ffffff;
+    box-shadow: 0px 2px 6px #ffffff;
+}
+
+.ui-select-container .ui-select-match span {
+    font-weight: 500 !important;
+}
+
+
+div.col-xs-7.ng-scope {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+}
+
+@media (max-width: 768px) {
+
+    .emote-title,
+    .form-group label {
+        font-size: 12pt !important;
+    }
+
+    .emo-text {
+        font-size: 8pt !important;
+    }
+
+    .emo-text-only {
+        font-size: 8pt !important;
+    }
+
+    .panel-title {
+        font-size: 8pt !important;
+    }
+
+    .loyalty-message {
+        font-size: 13pt !important;
+    }
+
+    .progress_bar .progress_number {
+        font-size: 10pt !important;
+    }
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
+    }
+
+    .btn-next,
+    .btn-submit,
+    .btn-prev,
+    .btn-clear,
+    .btn-skip,
+    .btn-ok,
+    .loyalty-redeem-button {
+        font-size: 10pt !important;
+        padding: 6px 32px !important;
+        min-width: 85px !important;
+        border-radius: 8px !important;
+    }
+
+    .access-user-name,
+    #headerCompanyInfo>.access-user {
+        font-size: 12pt !important;
+    }
+
+    .company-logo img,
+    .logo-cust {
+        height: 30px !important;
+    }
+
+    .emo-ico img {
+        max-width: 50px !important;
+        width: 75% !important;
+    }
+
+    .form-control {
+        font-size: 11pt !important;
+    }
+
+    .loyalty-message {
+        font-size: 12pt;
+        color: #150014;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+}
