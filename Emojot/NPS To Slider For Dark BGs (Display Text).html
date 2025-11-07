@@ -10,14 +10,13 @@
 /* Question text */
 .nps-question {
   text-align: left;
-  font-size: 22px;
-  color: #111;
-  font-weight: 700;
+  color: #ffffff;
+  font-size: 15pt;
+    font-weight: 400;
   width: 90%;
-  max-width: 700px;
   margin-bottom: 28px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* Hide default NPS buttons */
@@ -64,7 +63,7 @@
   justify-content: space-between;
   font-size: 14px;
   margin-top: 10px;
-  color: #000;
+  color: #ffffff;
 }
 
 /* Descriptive labels */
@@ -72,18 +71,20 @@
   content: "Less Likely";
   position: absolute;
   left: 0;
+  font-weight: 600;
   bottom: -25px;
   font-size: 13px;
-  color: #000;
+  color: #ffffffff;
 }
 
 .nps-slider-container::after {
   content: "More Likely";
   position: absolute;
   right: 0;
+  font-weight: 600;
   bottom: -25px;
   font-size: 13px;
-  color: #000;
+  color: #ffffff;
 }
 
 /* Custom thumb with visible value */
@@ -92,7 +93,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #000;
+  background: #ffffff;
   border: 3px solid white;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
   cursor: pointer;
@@ -104,7 +105,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #000;
+  background: #ffffff;
   border: 3px solid white;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
   cursor: pointer;
@@ -146,7 +147,7 @@
 <body>
 
   <p class="nps-question">
-    On a scale of 0 to 10, how likely are you to recommend this system to others?
+    How likely are you to recommend Viome to a friend or family member?
   </p>
 
   <div class="nps-bar"></div>

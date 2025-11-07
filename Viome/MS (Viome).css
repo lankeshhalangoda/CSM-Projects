@@ -64,6 +64,10 @@
     color: #ffffff !important;
 }
 
+.pdGroupTitle {
+    color: #ffffff !important;
+}
+
 .middle-box {
     margin-top: 10px;
     padding: 10px;
@@ -437,32 +441,6 @@
 
 #barChart {
     width: 100%;
-}
-
-.nps-bar::before,
-.nps-bar::after {
-    content: "";
-    position: absolute;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: 500;
-    top: 100%;
-    transform: translateY(8px);
-    font-family: "Inter", sans-serif;
-}
-
-.nps-bar::before {
-    content: "Less Likely";
-    left: 10px;
-    color: #ffffff;
-    margin-left: 5px;
-}
-
-.nps-bar::after {
-    content: "More Likely";
-    right: 10px;
-    color: #ffffff;
-    margin-right: 5px;
 }
 
 .evz-nps-position-0,
