@@ -1,0 +1,81 @@
+<div id="thankyou-container"
+  style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;box-sizing:border-box;font-family:'Be Vietnam Pro',sans-serif;">
+
+  <h1 style="color:#8B4513;font-size:2.6rem;margin-bottom:16px;font-weight:700;">
+    Thank You for Your Response
+  </h1>
+
+  <p style="color:#333;font-size:1.4rem;max-width:640px;line-height:1.8;margin-bottom:34px;">
+    We’d love your feedback on Google — and it’s easy!
+    Your comment has already been copied, so just paste and post when redirected.
+  </p>
+
+  <div id="thankyou-card"
+    style="background-color:#faf7fb;border:1px solid #e9d8ec;border-radius:16px;padding:30px;max-width:520px;width:100%;box-shadow:0 4px 16px rgba(139,69,19,0.15);margin-bottom:36px;box-sizing:border-box;">
+
+    <div style="width:100%;height:10px;background-color:#e0e0e0;border-radius:5px;overflow:hidden;margin-bottom: 10px;">
+      <div id="progress" style="height:10px;background-color:#8B4513;width:0%;transition:width 1s linear;"></div>
+    </div>
+
+    <div class="steps" style="display:flex;flex-direction:column;gap:16px;margin-bottom:24px;">
+      <div class="step"
+        style="display:flex;align-items:flex-start;background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 18px;">
+        <span
+          style="background:#8B4513;color:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-right:14px;flex-shrink:0;font-weight:600;">1</span>
+        <span style="color:#333;font-size:1.2rem;line-height:1.6;text-align:left;">Your comment is copied
+          automatically.</span>
+      </div>
+
+      <div class="step"
+        style="display:flex;align-items:flex-start;background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 18px;">
+        <span
+          style="background:#8B4513;color:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-right:14px;flex-shrink:0;font-weight:600;">2</span>
+        <span style="color:#333;font-size:1.2rem;line-height:1.6;text-align:left;">Redirecting in <span id="countdown"
+            style="font-weight:700;">15</span> seconds...</span>
+      </div>
+
+      <div class="step"
+        style="display:flex;align-items:flex-start;background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 18px;">
+        <span
+          style="background:#8B4513;color:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-right:14px;flex-shrink:0;font-weight:600;">3</span>
+        <span style="color:#333;font-size:1.2rem;line-height:1.6;text-align:left;">Paste and post your review when the
+          page opens.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <a id="reviewLink" href="{tpEmoSig_Google}"
+    style="display:inline-block;border:none;border-radius:10px;padding:18px 26px;width:260px;text-align:center;text-decoration:none;color:#fff;background-color:#8B4513;transition:background-color 0.2s ease,transform 0.2s ease;font-weight:600;font-size:1.3rem;">
+    Go Now
+  </a>
+</div>
+
+<script>
+  (function () {
+    const reviewUrl = "{tpEmoSig_Google}";
+    const countdownElement = document.getElementById("countdown");
+    const progress = document.getElementById("progress");
+    let countdown = 15;
+    let elapsed = 0;
+    const total = 15;
+
+    // Try to copy comment if available
+    const latestComment = localStorage.getItem("latestComment");
+    if (latestComment && navigator.clipboard) {
+      navigator.clipboard.writeText(latestComment).catch(() => { });
+    }
+
+    const interval = setInterval(() => {
+      elapsed++;
+      const remaining = total - elapsed;
+      countdownElement.textContent = remaining >= 0 ? remaining : 0;
+      progress.style.width = ((elapsed / total) * 100) + "%";
+
+      if (remaining <= 0) {
+        clearInterval(interval);
+        window.location.href = reviewUrl; // same tab redirect
+      }
+    }, 1000);
+  })();
+</script>

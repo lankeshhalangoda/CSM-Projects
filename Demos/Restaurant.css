@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 #master-section {
-    /* background: url("https://storage.emojot.com/pictures/skinImages/6791d6ad94210ae8d23f93ae-skin3.png"); */
+    background: url("https://storage.emojot.com/pictures/skinImages/63f718c2eb0830000fdb7360-skin2.png");
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     min-height: 657px;
     /* min-height: 100vh; */
     background-size: cover;
@@ -11,12 +15,25 @@
     background-position: center;
     position: relative;
 }
-
 #headerCompanyInfo {
-    color: #ffffff !important;
-    min-height: 90px;
-    background: none !important;
+    position: relative;
+    background-color: #fa9f1b !important;
+    color: #3f1e27 !important;
+    overflow: hidden;
 }
+
+#headerCompanyInfo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 150' xmlns='http://www.w3.org/2000/svg'><path fill='%23ffffff' d='M0,0 C360,150 1080,150 1440,0 V150 H0 Z'/></svg>") no-repeat bottom;
+    pointer-events: none;
+}
+
+
 
 .container[style] {
     padding-left: 0px !important;
@@ -24,44 +41,37 @@
 }
 
 .emote-title {
-    color: #000000;
-    font-family: "Roboto", sans-serif;
+    color: #3f1e27;
+    font-family: "Roboto Condensed", cursive;
     font-size: 15pt;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
 
 .form-group label {
-    color: #000000 !important;
-    font-family: "Roboto", sans-serif;
+    color: #3f1e27 !important;
+    font-family: "Roboto Condensed", cursive;
     font-size: 15pt !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
 }
 
 .emo-text {
     font-size: 13pt;
-    color: #626262;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-}
-
-.emo-text-only {
-    font-size: 13pt;
-    color: #626262;
-    font-family: "Roboto", sans-serif;
+    color: #3f1e27;
+    font-family: "Roboto Condensed", cursive;
     font-weight: 500;
 }
 
 .loyalty-message {
     font-size: 13pt;
-    color: #000000;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    color: #3f1e27;
+    font-family: "Roboto Condensed", cursive;
+    font-weight: 300;
 }
 
 .emo-text-dropdown {
-    color: #626262 !important;
+    color: #3f1e27 !important;
 }
 
 .middle-box {
@@ -71,19 +81,19 @@
 }
 
 .emo-cont {
-    border: 2px solid #781d7d;
+    border: 2px solid #3f1e27;
     margin: 3px 0px;
     text-align: center;
     display: inline-block;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
-    color: #781d7d;
+    color: #3f1e27;
 }
 
 .clicked-emo-cont {
-    border: 3px #781d7d solid !important;
-    background: #781d7d45;
+    border: 3px #3f1e27 solid !important;
+    background: #3f1e2745;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
@@ -95,35 +105,28 @@
     text-align: center;
     max-width: 55px;
     margin: 5px;
-
-    /* Add the shake animation */
-    /* animation: shake 0.6s infinite; */
 }
 
-@keyframes shake {
-    0% {
-        transform: translate(0, 0) rotate(0);
-    }
+.btn {
 
-    20% {
-        transform: translate(-2px, 0) rotate(-5deg);
-    }
+    color: ed1c24;
 
-    40% {
-        transform: translate(2px, 0) rotate(5deg);
-    }
+}
 
-    60% {
-        transform: translate(-2px, 0) rotate(-5deg);
-    }
+.btn-next {
+    color: #fa9f1b;
+}
 
-    80% {
-        transform: translate(2px, 0) rotate(5deg);
-    }
+.btn-submit {
+    color: #fa9f1b;
+}
 
-    100% {
-        transform: translate(0, 0) rotate(0);
-    }
+.btn-prev {
+    color: #333;
+}
+
+.btn-clear {
+    color: #333;
 }
 
 .btn-next,
@@ -139,10 +142,9 @@
     min-width: 90px;
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-    padding: 6px 32px;
-    font-family: "Roboto", sans-serif;
+    padding: 9px 25px;
+    font-family: "Roboto Condensed", cursive;
     font-size: 12pt;
-    border-radius: 50px !important;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -161,37 +163,18 @@
     padding-right: 0 !important;
 }
 
-
-.btn-next {
-    color: #ffffff;
-    background: #781d7d;
-}
-
-.btn-submit {
-    background: #781d7d;
-    color: #ffffff;
-}
-
-.btn-prev {
-    color: #333;
-}
-
-.btn-clear {
-    color: #333;
-}
-
 .btn:hover {
     color: #196d9e;
     text-decoration: none;
 }
 
 .btn-ok {
-    color: #ffffff;
-    background: #781d7d;
+    color: #333
 }
 
 .btn-skip {
     color: #333;
+    display: none !important;
 }
 
 .btn-fb {
@@ -199,7 +182,7 @@
 }
 
 .loyalty-redeem-button {
-    border-color: #ffffff;
+    border-color: #fa9f1b;
 }
 
 .logo-cust {
@@ -208,9 +191,9 @@
 }
 
 .sensor-title {
-    color: #781d7d !important;
-    font-size: 20pt;
-    font-family: "Roboto", sans-serif;
+    color: #3f1e27;
+    font-size: 30pt;
+    font-family: "Roboto Condensed", cursive;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
     font-weight: 700;
@@ -234,7 +217,7 @@
 .panel-group .panel-heading {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    color: #781d7d;
+    color: #3f1e27;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -247,7 +230,7 @@
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", cursive;
     line-height: 1.6;
 }
 
@@ -267,15 +250,11 @@
     color: white !important;
 }
 
-.flex {
-    justify-content: center !important;
-}
-
 #headerCompanyInfo>.access-user {
     text-align: center;
     float: right;
     text-shadow: 1px 1px 1px #000;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", cursive;
     font-style: italic;
     font-size: 15px;
     background-size: 120px 80px;
@@ -285,7 +264,7 @@
 }
 
 .access-user-name {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", cursive;
 }
 
 .company-logo {
@@ -293,12 +272,11 @@
 }
 
 .company-logo img {
-    height: 70px;
+    height: 100px;
 }
 
 .footer {
-    /* background: #781d7d !important; */
-    background: #781d7d !important;
+    background: #3f1e27 !important;
     color: #fff;
     position: absolute;
     right: 10px;
@@ -309,19 +287,17 @@
     padding: 12px 13px;
     font-size: 8pt;
     margin: 0 -10px 0px 0;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-
 .form-group label {
     columns: #fff !important;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", cursive;
     font-size: 12pt;
 }
 
 .loyalty-message {
-    color: #000000;
+    color: #3f1e27;
     font-size: 16pt;
-    font-weight: 500;
 }
 
 .loyalty-bottom {
@@ -335,31 +311,12 @@
 }
 
 #progressfill {
-    background-color: #781d7d;
-    animation: colorShift 3s infinite alternate ease-in-out;
+    background-color: #3f1e27;
 }
-
-.media-uploaded {
-
-    border: 2px solid #ffffff;
-    background: #ff10ef20;
-
-}
-
-@keyframes colorShift {
-    from {
-        background-color: #781d7d;
-    }
-
-    to {
-        background-color: #421144;
-    }
-}
-
 
 .progress_bar .progress_number {
-    font-family: "Roboto", sans-serif;
-    color: #781d7d;
+    font-family: "Roboto Condensed", cursive;
+    color: #3f1e27;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -388,12 +345,38 @@
 }
 
 .thank-you-note {
-    color: #781d7d !important;
+    color: #3f1e27 !important;
     font-size: 15px !important;
 }
 
 #barChart {
     width: 100%;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+    font-family: "Roboto Condensed", cursive;
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #3f1e27;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: #3f1e27;
+    margin-right: 5px;
 }
 
 .evz-nps-position-0,
@@ -431,13 +414,11 @@
     font-weight: 500 !important;
 }
 
-
-div.col-xs-7.ng-scope {
-    font-family: "Roboto", sans-serif !important;
+.flex {
+    justify-content: center !important;
 }
 
 @media (max-width: 768px) {
-
     .emote-title,
     .form-group label {
         font-size: 12pt !important;
@@ -447,8 +428,9 @@ div.col-xs-7.ng-scope {
         font-size: 10pt !important;
     }
 
-    .emo-text-only {
-        font-size: 10pt !important;
+    .sensor-title {
+        font-size: 26pt !important;
+        line-height: 34px !important;
     }
 
     .panel-title {
@@ -463,6 +445,11 @@ div.col-xs-7.ng-scope {
         font-size: 10pt !important;
     }
 
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
+    }
+
     .btn-next,
     .btn-submit,
     .btn-prev,
@@ -471,9 +458,8 @@ div.col-xs-7.ng-scope {
     .btn-ok,
     .loyalty-redeem-button {
         font-size: 10pt !important;
-        padding: 6px 32px !important;
+        padding: 8px 20px !important;
         min-width: 85px !important;
-        border-radius: 50px !important;
     }
 
     .access-user-name,
@@ -483,7 +469,8 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        height: 40px !important;
+        margin-bottom: 15pt !important;
+        height: 70px !important;
     }
 
     .emo-ico img {
@@ -496,9 +483,9 @@ div.col-xs-7.ng-scope {
     }
 
     .loyalty-message {
-        font-size: 12pt;
-        color: #150014;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-    }
+    font-size: 12pt;
+    color: #3f1e27;
+    font-family: "Roboto Condensed", cursive;
+    font-weight: 300;
+}
 }

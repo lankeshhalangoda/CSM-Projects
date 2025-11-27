@@ -433,8 +433,8 @@
           "name": "Shanthipura"
         },
         {
-          "id": "Papiliyana",
-          "name": "Papiliyana"
+          "id": "Pepiliyana",
+          "name": "Pepiliyana"
         },
         {
           "id": "Kadawatha",
@@ -531,6 +531,14 @@
         {
           "id": "Wattala Kelly Felder",
           "name": "Wattala Kelly Felder"
+        },
+        {
+          "id": "Kochchikade",
+          "name": "Kochchikade"
+        },
+        {
+          "id": "Arcade",
+          "name": "Arcade"
         }
       ]
     },

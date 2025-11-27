@@ -5,18 +5,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Question text */
-.nps-question {
-  text-align: left;
-  color: #ffffff;
-  font-size: 15pt;
-    font-weight: 400;
-  width: 90%;
-  margin-bottom: 28px;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+/* Question text — match .emote-title exactly */
+.nps-question {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15pt;
+  font-weight: 600;
+  text-align: left;
+  max-width: 700px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .nps-question {
+    font-size: 12pt !important;
+  }
 }
 
 /* Hide default NPS buttons */
@@ -63,7 +72,7 @@
   justify-content: space-between;
   font-size: 14px;
   margin-top: 10px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Descriptive labels */
@@ -71,20 +80,18 @@
   content: "Less Likely";
   position: absolute;
   left: 0;
-  font-weight: 600;
   bottom: -25px;
   font-size: 13px;
-  color: #ffffffff;
+  color: #fff;
 }
 
 .nps-slider-container::after {
   content: "More Likely";
   position: absolute;
   right: 0;
-  font-weight: 600;
   bottom: -25px;
   font-size: 13px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Custom thumb with visible value */
@@ -93,7 +100,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #000;
   border: 3px solid white;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
   cursor: pointer;
@@ -105,7 +112,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #000;
   border: 3px solid white;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
   cursor: pointer;
@@ -122,6 +129,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
   user-select: none;
+  display: none !important;
 }
 
 /* Responsive tweaks */
@@ -147,7 +155,7 @@
 <body>
 
   <p class="nps-question">
-    How likely are you to recommend Viome to a friend or family member?
+    How likely are you to recommend Abans to a friend or colleague?
   </p>
 
   <div class="nps-bar"></div>
@@ -310,9 +318,5 @@
   }, true);
 })();
 </script>
-
-
-
-
 
 </body>

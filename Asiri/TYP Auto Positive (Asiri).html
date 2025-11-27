@@ -1,0 +1,134 @@
+<div class="lnksh-thankyou-positive">
+  <div class="lnksh-card">
+    <h1>Thank You for Your Feedback!</h1>
+    <p>
+      We appreciate your time and support. Please leave us a quick review on
+      <b>Google</b>. You’ll be redirected shortly.
+    </p>
+
+    <div class="lnksh-progress-bar">
+      <div class="lnksh-progress"></div>
+    </div>
+
+    <a
+      href="https://search.google.com/local/writereview?placeid=ChIJTYhMqyxa4joRFBbnLOWhNNg"
+      class="lnksh-btn"
+    >
+      <img
+        src="https://storage.emojot.com/pictures/skinImages/5bd724b312df06000f5cddad-skin75.png"
+        alt="Google"
+      />
+      Open Google Review
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      const url =
+        "https://search.google.com/local/writereview?placeid=ChIJTYhMqyxa4joRFBbnLOWhNNg";
+      const bar = document.querySelector(".lnksh-progress");
+      let total = 5,
+        elapsed = 0;
+      const timer = setInterval(() => {
+        elapsed++;
+        bar.style.width = (elapsed / total) * 100 + "%";
+        if (elapsed >= total) {
+          clearInterval(timer);
+          window.location.href = url;
+        }
+      }, 1000);
+    })();
+  </script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+    .lnksh-thankyou-positive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      padding: 3vw 5vw;
+      box-sizing: border-box;
+      font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    }
+
+    .lnksh-card {
+      background: #fff;
+      border: 1px solid #e3e8ef;
+      border-radius: 1.5rem;
+      padding: 3vw 4vw;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 10px 28px rgba(0, 80, 141, 0.15);
+    }
+
+    .lnksh-card h1 {
+      color: #00508d;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .lnksh-card p {
+      color: #333;
+      font-size: clamp(1rem, 1.6vw, 1.25rem);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .lnksh-progress-bar {
+      width: 100%;
+      background-color: #e0e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .lnksh-progress {
+      width: 0%;
+      height: 0.7rem;
+      background: linear-gradient(
+        90deg,
+        #00508d 0%,
+        #34a853 40%,
+        #fbbc05 70%,
+        #ea4335 100%
+      );
+      transition: width 1s linear;
+    }
+
+    .lnksh-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 0.9rem;
+      padding: 0.9rem 1.8rem;
+      font-weight: 600;
+      font-size: clamp(1rem, 1.6vw, 1.2rem);
+      color: #fff;
+      background-color: #00508d;
+      box-shadow: 0 6px 18px rgba(0, 80, 141, 0.25);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .lnksh-btn:hover {
+      background-color: #0363ad;
+      transform: translateY(-2px);
+    }
+
+    .lnksh-btn img {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 6px;
+      background: #fff;
+      padding: 2px;
+      object-fit: contain;
+    }
+  </style>
+</div>

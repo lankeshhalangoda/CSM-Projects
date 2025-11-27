@@ -1,0 +1,125 @@
+SLT_StormAlert
+
+Storm Alert: Sudden Increase in Online Activity - CDB - $stormAlertDate$
+
+<!--
+    Header - This the place which we add banner image. User can change banner image by changing src value in img tag inside the header section.
+
+    Content - This the place which we add content of the email.
+
+    Sensor Load Button  -  In here we can add sensor link to the href attribute. If you no need button you can remove this.
+
+    Footer - This the place we add footer element like company logo and 'power by emojot' text
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>Email template</title>
+</head>
+<style>
+  .main_container {
+    width: 100% !important;
+  }
+
+  .desc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer_paragraph {
+    margin: 30px auto;
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 640px) {
+    .desc {
+      margin: 40px 30px;
+    }
+
+    .card {
+      margin: 40px 30px;
+      width: auto;
+    }
+
+    .footer_paragraph {
+      margin: 30px 30px;
+      font-size: 13px;
+    }
+
+    .gif {
+      width: 90%;
+      height: auto;
+    }
+
+    .powered_by {
+      padding-bottom: 0 ! important;
+    }
+
+    .main_container {
+      margin: 20px !important;
+      background: #ffffff !important;
+      width: auto !important;
+      font-size: 18px;
+    }
+
+    .content_container {
+      margin: 20px !important;
+      max-width: 90% !important;
+    }
+
+    .body {
+      background: #ffffff !important;
+    }
+  }
+</style>
+
+<body style="background: #f1f1f1;" class="body">
+  <div
+    style="mso-line-height-rule: exactly; margin: 0 auto !important; height: 100% !important; background: #f1f1f1; font-family: Roboto, sans-serif; line-height: 25px; color: #050505;"
+    class="main_container">&nbsp;<center
+      style="max-width: 600px; margin: 0 auto; background-color: #ffffff; color: #050505;">
+      <div style="max-width: 90%; background-color: #ffffff;" class="content_container">
+        <div
+          style="padding-top: 2rem; padding-left: 2.5rem; padding-right: 2.5rem; text-align: center; background-color: #ffffff; margin-top: 20px;">
+          <img src="https://storage.emojot.com/logos/emojot/emojot2019.png" alt="logo" width="120" /></div>
+        <div style="color: #050505; font-size: 16px;">
+          <p style="text-align: left; font-size: 14px;">Hello there,</p>
+          <p style="text-align: left; font-size: 14px;"><span>We've detected a surge in online activity related to brand
+              on social media. This could indicate a crisis or viral event. Please check the report:&nbsp;</span></p>
+          <p style="text-align: center; font-size: 14px; padding: 16px;"><strong><a class="embededSensor"
+                style="border-radius: 4px; font-weight: bold; border-width: 10px 20px 8px; border: solid #017ABF; padding: 10px 20px; background: #017ABF; color: white; text-decoration: none;"
+                href="https://emojot.com/emojotDashboard/$stormAlertLink$" target="_blank" rel="noopener">View
+                Report</a></strong></p>
+          <p style="text-align: left; font-size: 14px;"><span>We'll continue to monitor and provide
+              updates.&nbsp;</span>If you have any questions or need further assistance with your report, or if you'd
+            like to explore more about Emojot SLT's capabilities, please don't hesitate to contact us at<span
+              style="font-size: 14px;">&nbsp;<a href="mailto:info@emojot.com">info@emojot.com</a>.</span></p>
+          <p style="text-align: left; font-size: 14px;">Cheers,<br /><strong>Emojot</strong></p>
+        </div>
+        <footer style="margin: 20px auto; color: #808080; font-size: 15px; background-color: #ffffff;">
+          <p style="margin: 30px auto; font-size: 13px;">&copy; 2023 Emojot Inc. All rights reserved.</p>
+          <p style="margin: 30px auto; font-size: 13px;"><a class="unsubscribeLink" style="font-size: 14px;"
+              href="https://emojot.com/emojot_mobile/unsubscribe?id=$$emojot_email_ph$$&amp;idField=Email&amp;companyID=5845229efa98230000633117&amp;embeddedEmailID=$$emailID$$">Unsubscribe</a>
+          </p>
+          <div style="padding-top: 30px; padding-bottom: 50px; margin: 0 10%; align-items: center; background: #ffffff;"
+            class="powered_by">
+            <p style="float: left; font-size: 13px;">Powered by Emojot</p>
+            <div style="float: right; padding-top: 6px;"><img
+                src="https://storage.emojot.com/logos/emojot/emojot2019.png" alt="logo" width="90" /></div>
+          </div>
+        </footer>
+      </div>
+    </center>
+  </div>

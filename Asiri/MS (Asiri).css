@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 #master-section {
-    /* background: url("https://storage.emojot.com/pictures/skinImages/6791d6ad94210ae8d23f93ae-skin3.png"); */
+    background: #ffffff;
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     min-height: 657px;
     /* min-height: 100vh; */
     background-size: cover;
@@ -25,7 +25,7 @@
 
 .emote-title {
     color: #000000;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 15pt;
     font-weight: 600;
 }
@@ -34,29 +34,29 @@
 
 .form-group label {
     color: #000000 !important;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 15pt !important;
     font-weight: 600 !important;
 }
 
 .emo-text {
-    font-size: 13pt;
+    font-size: 11pt;
     color: #626262;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 500;
 }
 
 .emo-text-only {
-    font-size: 13pt;
+    font-size: 11pt;
     color: #626262;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 500;
 }
 
 .loyalty-message {
     font-size: 13pt;
     color: #000000;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 500;
 }
 
@@ -71,19 +71,19 @@
 }
 
 .emo-cont {
-    border: 2px solid #781d7d;
+    border: 2px solid #00508d;
     margin: 3px 0px;
     text-align: center;
     display: inline-block;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
-    color: #781d7d;
+    color: #00508d;
 }
 
 .clicked-emo-cont {
-    border: 3px #781d7d solid !important;
-    background: #781d7d45;
+    border: 3px #00508d solid !important;
+    background: #00508d45;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
@@ -140,7 +140,7 @@
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     padding: 6px 32px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 12pt;
     border-radius: 50px !important;
     background: rgba(249, 249, 249, 1);
@@ -164,20 +164,22 @@
 
 .btn-next {
     color: #ffffff;
-    background: #781d7d;
+    background: #00508d;
 }
 
 .btn-submit {
-    background: #781d7d;
+    background: #00508d;
     color: #ffffff;
 }
 
 .btn-prev {
-    color: #333;
+    background: #00acef;
+    color: #ffffff;
 }
 
 .btn-clear {
-    color: #333;
+    background: #00acef;
+    color: #000000;
 }
 
 .btn:hover {
@@ -187,7 +189,7 @@
 
 .btn-ok {
     color: #ffffff;
-    background: #781d7d;
+    background: #00508d;
 }
 
 .btn-skip {
@@ -208,12 +210,13 @@
 }
 
 .sensor-title {
-    color: #781d7d !important;
+    color: #00508d !important;
     font-size: 20pt;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
     font-weight: 700;
+    text-align: center;
 }
 
 .form-control {
@@ -234,7 +237,7 @@
 .panel-group .panel-heading {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    color: #781d7d;
+    color: #00508d;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -247,7 +250,7 @@
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     line-height: 1.6;
 }
 
@@ -275,8 +278,7 @@
     text-align: center;
     float: right;
     text-shadow: 1px 1px 1px #000;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
+    font-family: "Noto Sans", sans-serif;
     font-size: 15px;
     background-size: 120px 80px;
     background-repeat: no-repeat;
@@ -285,7 +287,7 @@
 }
 
 .access-user-name {
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .company-logo {
@@ -293,12 +295,11 @@
 }
 
 .company-logo img {
-    height: 70px;
+    height: 120px;
 }
 
 .footer {
-    /* background: #781d7d !important; */
-    background: #781d7d !important;
+    background: #00508d !important;
     color: #fff;
     position: absolute;
     right: 10px;
@@ -309,12 +310,12 @@
     padding: 12px 13px;
     font-size: 8pt;
     margin: 0 -10px 0px 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .form-group label {
     columns: #fff !important;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 12pt;
 }
 
@@ -335,7 +336,7 @@
 }
 
 #progressfill {
-    background-color: #781d7d;
+    background-color: #00508d;
     animation: colorShift 3s infinite alternate ease-in-out;
 }
 
@@ -348,20 +349,21 @@
 
 @keyframes colorShift {
     from {
-        background-color: #781d7d;
+        background-color: #00508d;
     }
 
     to {
-        background-color: #421144;
+        background-color: #00acef;
     }
 }
 
 
 .progress_bar .progress_number {
-    font-family: "Roboto", sans-serif;
-    color: #781d7d;
+    font-family: "Noto Sans", sans-serif;
+    color: #00508d;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 #groupCommentBuzzModal .modal-header {
@@ -388,12 +390,38 @@
 }
 
 .thank-you-note {
-    color: #781d7d !important;
+    color: #00508d !important;
     font-size: 15px !important;
 }
 
 #barChart {
     width: 100%;
+}
+
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: #00508d;
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: #00508d;
+    margin-right: 5px;
 }
 
 .evz-nps-position-0,
@@ -433,8 +461,18 @@
 
 
 div.col-xs-7.ng-scope {
-    font-family: "Roboto", sans-serif !important;
+    font-family: "Noto Sans", sans-serif !important;
 }
+
+    .btn-nps {
+    padding: 10px 5px !important;
+    min-width: 25px;
+    margin: 0 !important;
+    font-weight: 700;
+    text-align: center;
+    font-size: 10pt;
+    border-radius: 5px;
+    }
 
 @media (max-width: 768px) {
 
@@ -444,11 +482,11 @@ div.col-xs-7.ng-scope {
     }
 
     .emo-text {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
     .emo-text-only {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
     .panel-title {
@@ -461,6 +499,11 @@ div.col-xs-7.ng-scope {
 
     .progress_bar .progress_number {
         font-size: 10pt !important;
+    }
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
     }
 
     .btn-next,
@@ -483,7 +526,7 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        height: 40px !important;
+        height: 80px !important;
     }
 
     .emo-ico img {
@@ -498,7 +541,7 @@ div.col-xs-7.ng-scope {
     .loyalty-message {
         font-size: 12pt;
         color: #150014;
-        font-family: "Roboto", sans-serif;
+        font-family: "Noto Sans", sans-serif;
         font-weight: 500;
     }
 }

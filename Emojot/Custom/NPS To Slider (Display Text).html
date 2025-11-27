@@ -5,19 +5,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-/* Question text */
+/* Question text — match .emote-title exactly */
 .nps-question {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 15pt;
+  font-weight: 600;
   text-align: left;
-  font-size: 22px;
-  color: #111;
-  font-weight: 700;
-  width: 90%;
   max-width: 700px;
-  margin-bottom: 28px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .nps-question {
+    font-size: 12pt !important;
+  }
 }
 
 /* Hide default NPS buttons */
@@ -146,7 +154,7 @@
 <body>
 
   <p class="nps-question">
-    On a scale of 0 to 10, how likely are you to recommend this system to others?
+    How likely are you to recommend Abans to a friend or colleague?
   </p>
 
   <div class="nps-bar"></div>
@@ -309,9 +317,5 @@
   }, true);
 })();
 </script>
-
-
-
-
 
 </body>

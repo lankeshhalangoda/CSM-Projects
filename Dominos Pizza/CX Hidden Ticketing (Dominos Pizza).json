@@ -12,14 +12,21 @@
         {
           "header": "Review Analytics",
           "id": "orm_ris"
+        }
+      ]
+    },
+    {
+      "id": "slt",
+      "icon": "fa fa-users",
+      "header": "Social Listening Tool",
+      "subs": [
+        {
+          "header": "Dashboard",
+          "id": "slt_dashboard"
         },
         {
-          "header": "Complaint Handling",
-          "id": "orm_tickets"
-        },
-        {
-          "header": "Complaints Analytics",
-          "id": "complaintmgmt_reports"
+          "header": "Competitor Analysis",
+          "id": "slt_comp"
         }
       ]
     },
@@ -37,7 +44,35 @@
   ],
   "pages": [
     {
-      "title": "ORM: Review Insights",
+      "title": "ORM: View Reviews",
+      "desc": "Review replies",
+      "type": "directReport",
+      "id": "orm_rlm",
+      "hideTicketWidgets": true,
+      "params": [
+        {
+          "key": "redirectPage",
+          "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
+        },
+        {
+          "key": "newLocationHide",
+          "value": false
+        },
+        {
+          "key": "trimOut",
+          "value": true
+        }
+      ],
+      "styles": [
+        {
+          "id": ".container",
+          "key": "width",
+          "value": "100%"
+        }
+      ]
+    },
+    {
+      "title": "ORM: Review Analytics",
       "type": "directReport",
       "id": "orm_ris",
       "params": [
@@ -62,20 +97,15 @@
         }
       ]
     },
-        {
-      "title": "View reviews",
-      "desc": "Review replies",
+    {
+      "title": "SLT: Social Listening Dashboard",
       "type": "directReport",
-      "id": "orm_rlm",
-      "hideTicketWidgets":true,
+      "id": "slt_dashboard",
+      "openInNewTabButton": true,
       "params": [
         {
           "key": "redirectPage",
-          "value": "reports/reviewMonitor/reviewMonitorV3.jsp"
-        },
-        {
-          "key": "newLocationHide",
-          "value": false
+          "value": "reports/socialListenerV3/socialListenerV3.jsp"
         },
         {
           "key": "trimOut",
@@ -91,44 +121,14 @@
       ]
     },
     {
-      "title": "ORM: Complaint Handling",
+      "title": "SLT: Competitor Analysis",
       "type": "directReport",
-      "id": "orm_tickets",
+      "id": "slt_comp",
+      "openInNewTabButton": true,
       "params": [
         {
           "key": "redirectPage",
-          "value": "reports/incidentManagement/incidentManagement.jsp"
-        },
-        {
-          "key": "trimOut",
-          "value": true
-        },
-        {
-          "key": "workflowID",
-          "value": "6902c1bb22d32b98a066db5a"
-        }
-      ],
-      "styles": [
-        {
-          "id": ".container",
-          "key": "width",
-          "value": "100%"
-        }
-      ]
-    },
-    {
-      "title": "Complaints Dashboard",
-      "desc": "Aggregated analytics for complaints",
-      "type": "directReport",
-      "id": "complaintmgmt_reports",
-      "params": [
-        {
-          "key": "redirectPage",
-          "value": "reports/incidentOverview/incidentOverview.jsp"
-        },
-        {
-          "key": "workflowID",
-          "value": "6902c1bb22d32b98a066db5a"
+          "value": "https://emojot.com/emojotDashboard/reports/socialListener/competitorAnalysis.jsp"
         },
         {
           "key": "trimOut",
@@ -151,8 +151,22 @@
       "id": "lankeshh@emojot.com",
       "title": "company_admin",
       "email": "lankeshh@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6902bec3a285122b61fdbbad.png",
+      "name": "dewshi2@emojot.com",
+      "id": "dewshi2@emojot.com",
+      "title": "company_admin",
+      "email": "dewshi2@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/6902bec3a285122b61fdbbad.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
     }
   ],
   "assignmentAllowed": true,
-  "showAIAssistant": true
+  "showAIAssistant": false
 }

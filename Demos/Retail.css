@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =====================================================
+   Modern Variables
+   ===================================================== */
+:root {
+    --primary: #781d7d;
+    --primary-600: #6a1b9a;
+    --primary-700: #5a178a;
+    --text: #111827;
+    --text-soft: #444;
+    --muted: #f6f6f8;
+    --border: #e7e7ec;
+    --shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, .18);
+    --radius: 12px;
+}
+
+/* =====================================================
+   Base / Resets
+   ===================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =====================================================
+   Layout Containers
+   ===================================================== */
+#master-section {
+    background: url("https://storage.emojot.com/pictures/skinImages/6791d6ad94210ae8d23f93ae-skin3.png");
+    /* background:
+      radial-gradient(1000px 400px at 0% 0%, rgba(120,29,125,.06), transparent 60%),
+      radial-gradient(800px 300px at 100% 0%, rgba(120,29,125,.05), transparent 60%),
+      #ffffff; */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#headerCompanyInfo {
+    color: #000 !important;
+    min-height: 70px;
+    position: relative;
+    background: linear-gradient(135deg, #9b27b022, #6a1b9a22) !important;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container[style] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* =====================================================
+   Typography
+   ===================================================== */
+.emote-title,
+.form-group label {
+    color: #000 !important;
+    font-size: 15pt !important;
+    font-weight: 600 !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.emo-text {
+    font-size: 13pt;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.loyalty-message {
+    font-size: 16pt;
+    color: #000;
+    font-weight: 500;
+}
+
+.emo-text-dropdown {
+    color: #000 !important;
+}
+
+/* =====================================================
+   Card / Boxes
+   ===================================================== */
+.middle-box {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+/* =====================================================
+   Emote Options
+   ===================================================== */
+.emo-cont {
+    /* container */
+    border: 2px solid transparent;
+    margin: 6px 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: var(--radius);
+    background: #fff;
+    color: var(--primary);
+    transition: all .25s ease;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.emo-cont:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.clicked-emo-cont {
+    border: 2px solid var(--primary) !important;
+    background: linear-gradient(135deg, #f6ebfb, #e6cef0);
+    box-shadow: var(--shadow-lg);
+}
+
+.emo-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+}
+
+.emo-ico img {
+    width: 60%;
+    max-width: 70px;
+    margin: 2px 4px;
+}
+
+/* fun but toned-down animation (optional) */
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0)
+    }
+
+    20% {
+        transform: translate(-1px, 0) rotate(-3deg)
+    }
+
+    40% {
+        transform: translate(1px, 0) rotate(3deg)
+    }
+
+    60% {
+        transform: translate(-1px, 0) rotate(-3deg)
+    }
+
+    80% {
+        transform: translate(1px, 0) rotate(3deg)
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+/* uncomment to re-enable animation */
+.emo-ico img {
+    /* animation:shake .6s infinite; */
+}
+
+/* =====================================================
+   Buttons
+   ===================================================== */
+.btn-next,
+.btn-submit,
+.btn-prev,
+.btn-clear,
+.btn-skip,
+.btn-ok,
+.loyalty-redeem-button {
+    border: none;
+    margin: 10px 6px;
+    text-align: center;
+    min-width: 110px;
+    display: inline-block;
+    padding: 11px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+.btn-next:hover,
+.btn-submit:hover,
+.btn-prev:hover,
+.btn-clear:hover,
+.btn-ok:hover,
+.loyalty-redeem-button:hover {
+    background: transparent;
+    border: 2px solid #6a1b9a;
+    background-image: linear-gradient(135deg, #9c27b0, #6a1b9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-next:active,
+.btn-submit:active,
+.btn-prev:active,
+.btn-clear:active,
+.btn-ok:active,
+.loyalty-redeem-button:active {
+    transform: translateY(0);
+    filter: brightness(.98);
+}
+
+.btn-prev {
+    background: linear-gradient(135deg, #e5e7eb, #c7cbd3);
+    color: #111;
+}
+
+.btn-clear {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #7a5a00;
+}
+
+.btn-ok {
+    background: linear-gradient(135deg, #ff0044, #cc0036);
+    /* updated gradient */
+    color: #fff;
+}
+
+/* .btn-skip {
+    display: none !important;
+} */
+
+/* legacy hover rule retained */
+.btn:hover {
+    text-decoration: none;
+}
+
+.btn-fb {
+    color: #fff;
+}
+
+.btn-prev {
+    font-size: 0;
+}
+
+.btn-prev::after {
+    content: "Go Back";
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* =====================================================
+   Brand & Header Bits
+   ===================================================== */
+.logo-cust {
+    margin: 3px 0 -3px 9px;
+    height: 50px;
+}
+
+.sensor-title {
+    color: var(--primary);
+    font-size: 20pt;
+    background: transparent;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.brand-logo {
+    height: auto;
+}
+
+.clear-submit-row {
+    padding-right: 0 !important;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+/* =====================================================
+   Panels (Bootstrap-like)
+   ===================================================== */
+.panel {
+    margin: 0 10px;
+    border: none;
+    background: transparent;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: var(--radius);
+    box-shadow: none;
+    background: transparent;
+}
+
+.panel-group .panel-heading {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    color: var(--primary);
+    background: #fff;
+}
+
+.panel-title {
+    font-size: 11pt;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+.row {
+    background: transparent !important;
+}
+
+.my-emojots {
+    display: none;
+}
+
+.panel-body {
+    background: transparent !important;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+.footer {
+    background: linear-gradient(135deg, #6a1b9a40, #9c27b040) !important;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+    padding-top: 20px;
+    padding: 14px 16px;
+    font-size: 12px;
+    margin: 0 -10px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer .logo {
+    height: 25px !important;
+}
+
+
+
+/* =====================================================
+   Misc / Utility
+   ===================================================== */
+.thank-you-note {
+    color: var(--primary) !important;
+    font-size: 15px !important;
+}
+
+#headerCompanyInfo>.access-user {
+    text-align: center;
+    float: right;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+    font-style: normal;
+    font-size: 15px;
+    background-size: 120px 80px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+.access-user-name {
+    font-weight: 500;
+}
+
+.company-logo {
+    z-index: 2 !important;
+}
+
+.flex {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* =====================================================
+   Progress
+   ===================================================== */
+#progressfill {
+    background: linear-gradient(270deg, #9c27b0, #6a1b9a, #5a178a, #9c27b0);
+    background-size: 300% 300%;
+    animation: gradientMove 4s ease infinite;
+    height: 8px;
+    border-radius: 6px;
+    transition: width .5s ease-in-out;
+}
+
+.progress_bar .pro-bar {
+    height: 8px;
+    border-radius: 6px;
+    background-size: 300% 300%;
+}
+
+/* progress numbers */
+.progress_bar .progress_number {
+    color: var(--primary);
+    margin: 4pt 0;
+    font-weight: 400;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* uploads */
+.media-uploaded {
+    border: 2px solid var(--primary);
+    background: #ff10ef20;
+}
+
+/* Modals */
+#groupCommentBuzzModal .modal-header {
+    background: #fff;
+    color: #444;
+}
+
+#groupCommentBuzzModal .modal-body {
+    background: #fff;
+    color: #333;
+}
+
+#groupCommentBuzzModal .modal-footer {
+    background: #fff;
+    color: #333;
+}
+
+#groupCommentBuzzModal .panel-body.comment-panel {
+    background: #f6f6f6 !important;
+}
+
+#groupCommentBuzzModal .panel-footer.comment-footer {
+    color: #333;
+}
+
+#barChart {
+    width: 100%;
+}
+
+/* NPS bar helpers */
+.nps-bar::before,
+.nps-bar::after {
+    content: "";
+    position: absolute;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    top: 100%;
+    transform: translateY(8px);
+}
+
+.nps-bar::before {
+    content: "Less Likely";
+    left: 10px;
+    color: var(--primary);
+    margin-left: 5px;
+}
+
+.nps-bar::after {
+    content: "More Likely";
+    right: 10px;
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.evz-nps-position-0,
+.evz-nps-position-1,
+.evz-nps-position-2,
+.evz-nps-position-3,
+.evz-nps-position-4,
+.evz-nps-position-5,
+.evz-nps-position-6 {
+    background: #ff2942;
+    color: #fff;
+    border: 1px solid rgba(255, 0, 55, .61);
+}
+
+.evz-nps-position-7,
+.evz-nps-position-8 {
+    background: #ff7924;
+    color: #fff;
+    border: 1px solid rgba(195, 117, 34, .61);
+}
+
+.evz-nps-position-9,
+.evz-nps-position-10 {
+    background: #1ca757;
+    color: #fff;
+    border: 1px solid rgba(17, 144, 74, .61);
+}
+
+.clicked-nps-icon {
+    border: 3px solid #333;
+    box-shadow: 0 2px 6px #716868;
+}
+
+.ui-select-container .ui-select-match span {
+    font-weight: 500 !important;
+}
+
+div.col-xs-7.ng-scope {
+    font-family: "Roboto", sans-serif !important;
+    color: #000000;
+}
+
+.col-xs-12 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+    .company-logo img,
+    .logo-cust {
+        max-height: 80px !important;
+    }
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+@media (max-width: 768px) {
+
+    .emote-title,
+    .form-group label {
+        font-size: 14pt !important;
+    }
+
+    .emo-text {
+        font-size: 12pt !important;
+    }
+
+    .panel-title {
+        font-size: 10pt !important;
+    }
+
+    .loyalty-message {
+        font-size: 14pt !important;
+    }
+
+    .progress_bar .progress_number {
+        font-size: 12pt !important;
+    }
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
+    }
+
+    .btn-next,
+    .btn-submit,
+    .btn-prev,
+    .btn-clear,
+    .btn-skip,
+    .btn-ok,
+    .loyalty-redeem-button {
+        font-size: 14px !important;
+        padding: 12px 18px !important;
+        min-width: 100% !important;
+        margin: 6px 0 !important;
+    }
+
+    .access-user-name,
+    #headerCompanyInfo>.access-user {
+        font-size: 12pt !important;
+    }
+
+
+    .emo-ico img {
+        max-width: 60px !important;
+        width: 55% !important;
+    }
+
+    .form-control {
+        font-size: 14px !important;
+    }
+
+    .company-logo img,
+    .logo-cust {
+        max-height: 50px !important;
+    }
+
+    .btn-prev {
+        font-size: 0 !important;
+    }
+
+}

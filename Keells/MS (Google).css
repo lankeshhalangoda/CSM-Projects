@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 #master-section {
-    /* background: url("https://storage.emojot.com/pictures/skinImages/6791d6ad94210ae8d23f93ae-skin3.png"); */
+    background: url("https://storage.emojot.com/pictures/skinImages/60537e5f830a3f0010bae459-skin15.png");
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     min-height: 657px;
     /* min-height: 100vh; */
     background-size: cover;
@@ -16,6 +16,7 @@
     color: #ffffff !important;
     min-height: 90px;
     background: none !important;
+    display: none !important;
 }
 
 .container[style] {
@@ -71,19 +72,19 @@
 }
 
 .emo-cont {
-    border: 2px solid #781d7d;
+    border: 2px solid #337abb;
     margin: 3px 0px;
     text-align: center;
     display: inline-block;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
-    color: #781d7d;
+    color: #337abb;
 }
 
 .clicked-emo-cont {
-    border: 3px #781d7d solid !important;
-    background: #781d7d45;
+    border: 3px #337abb solid !important;
+    background: #337abb45;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
@@ -164,11 +165,11 @@
 
 .btn-next {
     color: #ffffff;
-    background: #781d7d;
+    background: linear-gradient(135deg, #61b7e5, #337abb);
 }
 
 .btn-submit {
-    background: #781d7d;
+    background: linear-gradient(135deg, #61b7e5, #337abb);
     color: #ffffff;
 }
 
@@ -181,13 +182,13 @@
 }
 
 .btn:hover {
-    color: #196d9e;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .btn-ok {
     color: #ffffff;
-    background: #781d7d;
+    background: linear-gradient(135deg, #61b7e5, #337abb);
 }
 
 .btn-skip {
@@ -208,7 +209,7 @@
 }
 
 .sensor-title {
-    color: #781d7d !important;
+    color: #337abb !important;
     font-size: 20pt;
     font-family: "Roboto", sans-serif;
     background: rgba(255, 255, 255, 0);
@@ -234,7 +235,7 @@
 .panel-group .panel-heading {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    color: #781d7d;
+    color: #337abb;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -297,8 +298,8 @@
 }
 
 .footer {
-    /* background: #781d7d !important; */
-    background: #781d7d !important;
+    /* background: linear-gradient(135deg, #61b7e5, #337abb) !important; */
+    background: linear-gradient(135deg, #61b7e5, #337abb) !important;
     color: #fff;
     position: absolute;
     right: 10px;
@@ -335,7 +336,7 @@
 }
 
 #progressfill {
-    background-color: #781d7d;
+    background-color: #337abb;
     animation: colorShift 3s infinite alternate ease-in-out;
 }
 
@@ -348,18 +349,18 @@
 
 @keyframes colorShift {
     from {
-        background-color: #781d7d;
+        background-color: #337abb;
     }
 
     to {
-        background-color: #421144;
+        background-color: #61b7e5;
     }
 }
 
 
 .progress_bar .progress_number {
     font-family: "Roboto", sans-serif;
-    color: #781d7d;
+    color: #337abb;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -388,14 +389,13 @@
 }
 
 .thank-you-note {
-    color: #781d7d !important;
+    color: #337abb !important;
     font-size: 15px !important;
 }
 
 #barChart {
     width: 100%;
 }
-
 .evz-nps-position-0,
 .evz-nps-position-1,
 .evz-nps-position-2,
@@ -461,6 +461,11 @@ div.col-xs-7.ng-scope {
 
     .progress_bar .progress_number {
         font-size: 10pt !important;
+    }
+
+    .nps-bar::before,
+    .nps-bar::after {
+        font-size: 12pt !important;
     }
 
     .btn-next,

@@ -1,0 +1,123 @@
+<body style="font-family: 'Raleway', sans-serif !important; margin: 0; padding: 0;">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    div#qt_q4414.col-xs-12,
+    div#qe_q4414.col-xs-12.text-center.emoticonList.ng-scope{
+      display: none !important;
+    }
+  </style>
+
+  <div style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; margin-top: 40px;">
+    <p id="comment-text" style="
+      color: #000;
+      font-weight: 600;
+      font-size: 12pt;
+      font-family: 'Raleway', sans-serif !important;
+      text-align: left;
+      margin: 0;
+    ">
+      Select Time Slot
+    </p>
+  </div>
+
+<script>
+(function () {
+  'use strict';
+
+  console.log("Starting multi-emote detection for ec_*_0q5999…");
+
+  let tries = 0;
+  const maxTries = 40;
+  const intervalMs = 400;
+
+  let searchInterval = setInterval(() => {
+    tries++;
+
+    let allFound = true;
+    let emoteSlots = [];
+
+    // Collect all 10 emote divs
+    for (let i = 0; i <= 9; i++) {
+      const selector = "div#ec_" + i + "_0q5999.emo-cont.clickable.ng-scope";
+      const slot = document.querySelector(selector);
+
+      if (slot) {
+        emoteSlots.push(slot);
+      } else {
+        allFound = false;
+      }
+    }
+
+    if (allFound) {
+      console.log("All emote slots FOUND:", emoteSlots);
+      clearInterval(searchInterval);
+
+      // Now detect + evaluate pulse data for each slot
+      evaluatePulseValues(emoteSlots);
+
+    } else {
+      console.log("Searching for emote slots… attempt " + tries + "/" + maxTries);
+      if (tries >= maxTries) {
+        console.warn("Not all emote slots found after max attempts.");
+        clearInterval(searchInterval);
+      }
+    }
+
+  }, intervalMs);
+
+
+
+  // -----------------------------
+  // Evaluate pulse for each emote
+  // -----------------------------
+  function evaluatePulseValues(slots) {
+    console.log("Starting pulse-value search for each emote…");
+
+    let pulseCheck = setInterval(() => {
+
+      let totalChecked = 0;
+
+      slots.forEach((slot, index) => {
+
+        // Find pulse element inside THIS slot
+        const pulse = slot.querySelector(
+          "div.emote-pulse-data.ng-pristine.ng-untouched.ng-valid.ng-binding.ng-not-empty"
+        );
+
+        if (pulse) {
+          const value = parseInt(pulse.textContent.trim(), 10);
+
+          console.log("Emote #" + index + " pulse value:", value);
+
+          // Disable if >= 10
+          if (!isNaN(value) && value >= 10) {
+            console.log("Disabling emote #" + index + " (value >= 10)");
+
+            slot.style.pointerEvents = "none";
+            slot.style.opacity = "0.4";
+            slot.style.backgroundColor = "#cccccc";
+            slot.style.filter = "grayscale(100%)";
+            slot.style.cursor = "not-allowed";
+          }
+
+          totalChecked++;
+        }
+      });
+
+      // Stop when all emotes had their pulse found and processed
+      if (totalChecked === slots.length) {
+        console.log("All emote pulse values processed.");
+        clearInterval(pulseCheck);
+      }
+
+    }, 400);
+  }
+
+})();
+</script>
+
+
+
+
+</body>

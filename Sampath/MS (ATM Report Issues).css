@@ -83,6 +83,7 @@
     padding: 10px;
     border: 1px solid #000000;
 }
+
 .progress_bar {
     padding: 15px 9px !important;
 }
@@ -399,6 +400,15 @@ form-control:focus {
     font-family: "Be Vietnam Pro", sans-serif;
     font-style: italic;
     font-weight: 400;
+    display: none !important;
+}
+
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .access-user-name {
+    display: none !important;
+}
+
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .access-user-name {
+    display: none !important;
 }
 
 .user-icon {
@@ -609,7 +619,7 @@ body:has(.localisation-cont.clicked-emo-cont img[src*="ico123.png"]) .nps-bar::b
 
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .nps-bar::before,
 body:has(.localisation-cont.clicked-emo-cont img[src*="ico125.png"]) .nps-bar::before {
-    content: "குறைந்த  வாய்ப்பு";
+    content: "குறைவான வாய்ப்பு";
 }
 
 /* Optional fallback */
@@ -618,7 +628,7 @@ body.lang-si .nps-bar::before {
 }
 
 body.lang-ta .nps-bar::before {
-    content: "குறைந்த  வாய்ப்பு";
+    content: "குறைவான வாய்ப்பு";
 }
 
 
@@ -730,6 +740,23 @@ body {
     margin-bottom: -250px !important;
 }
 
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-valid-email {
+    top: -495px;
+}
+
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-valid-email {
+    top: -495px;
+}
+
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-invalid-email {
+    top: -495px;
+}
+
+body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-invalid-email {
+    top: -495px;
+}
+
+
 .ng-invalid-email {
     position: inherit !important;
     top: -510px !important;
@@ -756,7 +783,7 @@ div#er_0q5645.col-xs-12.text-center.emoticonList.ng-scope {
 
 
 
-@media (max-width: 768px) {
+@media screen and (min-width: 1px) and (max-width: 768px) {
     .emo-text {
         font-size: 6pt !important;
     }
@@ -788,7 +815,7 @@ div#er_0q5645.col-xs-12.text-center.emoticonList.ng-scope {
 
     .pdGroupTitle {
         font-family: "Be Vietnam Pro", sans-serif !important;
-        font-size: 15pt;
+        font-size: 15px;
         padding-left: 9px !important;
         padding-bottom: 20px !important;
     }
@@ -812,10 +839,53 @@ div#er_0q5645.col-xs-12.text-center.emoticonList.ng-scope {
     }
 
     .ng-valid-email {
-    top: -480px !important;
-}
+        top: -490px !important;
+    }
 
     .ng-invalid-email {
-        top: -480px !important;
+        top: -490px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-valid-email {
+        top: -460px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-valid-email {
+        top: -450px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-invalid-email {
+        top: -460px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-invalid-email {
+        top: -450px !important;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ng-valid-email {
+        top: -520px !important;
+    }
+
+    .ng-invalid-email {
+        top: -520px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-valid-email {
+        top: -500px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-valid-email {
+        top: -500px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico7.png"]) .ng-invalid-email {
+        top: -500px !important;
+    }
+
+    body:has(.localisation-cont.clicked-emo-cont img[src*="ico8.png"]) .ng-invalid-email {
+        top: -500px !important;
     }
 }
