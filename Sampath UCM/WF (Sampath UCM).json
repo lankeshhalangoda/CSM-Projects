@@ -1,0 +1,160 @@
+{
+  "reportNamePrefix": "Complaint",
+  "reporterNamePrefix": "Customer",
+  "descriptionFormat": "text",
+  "name": "Internal Complaint Submission",
+  "nameTemplate": "Internal Complaint: $type$",
+  "descriptionTemplate": "Internal Complaint from $type$",
+  "type": {
+    "name": "Type",
+    "type": "enum",
+    "readOnly": true,
+    "values": [
+      {
+        "id": "complaintManagementSurvey",
+        "name": "Complaint Management Survey"
+      }
+    ]
+  },
+  "status": {
+    "name": "Status",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Open",
+        "name": "Open",
+        "backgroundColor": "#f4b000",
+        "textColor": "#ffffff",
+        "statusTextColor": "#f4b000",
+        "statusBackgroundColor": "#fef3c7"
+      },
+      {
+        "id": "In Progress",
+        "name": "In Progress",
+        "backgroundColor": "#0088cc",
+        "textColor": "#ffffff",
+        "statusTextColor": "#0088cc",
+        "statusBackgroundColor": "#dbeafe"
+      },
+      {
+        "id": "Resolved",
+        "name": "Resolved",
+        "backgroundColor": "#00aa55",
+        "textColor": "#ffffff",
+        "statusTextColor": "#00aa55",
+        "statusBackgroundColor": "#dcfce7"
+      }
+    ],
+    "transitions": [
+      {
+        "sourceState": "Open",
+        "targetStates": [
+          "In Progress"
+        ]
+      },
+      {
+        "sourceState": "In Progress",
+        "targetStates": [
+          "Resolved"
+        ]
+      }
+    ]
+  },
+  "priority": {
+    "name": "Priority",
+    "type": "enum",
+    "values": [
+      {
+        "id": "Low",
+        "name": "Low"
+      },
+      {
+        "id": "Medium",
+        "name": "Medium"
+      },
+      {
+        "id": "High",
+        "name": "High"
+      }
+    ]
+  },
+  "customFields": {
+    "complaint_category": {
+      "name": "Complaint Category",
+      "type": "enum",
+      "readOnly": true,
+      "values": [
+        {
+          "id": "Service Issue",
+          "name": "Service Issue"
+        },
+        {
+          "id": "Technical Failure",
+          "name": "Technical Failure"
+        },
+        {
+          "id": "Fraud Alert",
+          "name": "Fraud Alert"
+        },
+        {
+          "id": "General Inquiry",
+          "name": "General Inquiry"
+        }
+      ]
+    },
+      "uuid_no": {
+      "name": "UUID",
+      "type": "string",
+      "readOnly": true
+    },
+    "comments": {
+      "name": "Comment",
+      "type": "textArea",
+      "hidden": true
+    }
+  },
+  "timeZone": -330,
+  "adminHierarchy": {
+    "list": "admin",
+    "headers": [
+      {
+        "id": "location",
+        "name": "Location",
+        "type": "customField"
+      },
+      {
+        "id": "ticketAssignee",
+        "name": "Ticket Assignee",
+        "type": "contact"
+      },
+      {
+        "id": "ticketCreationAlert",
+        "name": "Ticket Creation Alert",
+        "type": "contact"
+      },
+      {
+        "id": "ticketResolutionAlert",
+        "name": "Ticket Resolution Alert",
+        "type": "contact"
+      }
+    ],
+    "id": "AHI_1765976303144_164813031"
+  },
+  "workflowCreation": {
+    "email": "bot@emojot.com"
+  },
+  "assignment": {
+    "triggers": [
+      {
+        "template": "intComplaintAssignment_email",
+        "channel": "email",
+        "target": "employee",
+        "appendEditUrl": false
+      }
+    ]
+  },
+  "timeSpent": {
+    "name": "Time Spent",
+    "type": "time_accumulation"
+  }
+}

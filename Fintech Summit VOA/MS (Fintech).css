@@ -258,6 +258,20 @@
     font-size: 12pt;
 }
 
+#barChart {
+    width: 100%;
+}
+
+.pdGroupTitle {
+    color: #323570;
+    margin-left: 0px;
+    font-weight: 100;
+}
+
+body {
+    color: #000 !important;
+}
+
 #groupCommentBuzzModal .modal-header {
     background: linear-gradient(135deg, #1862af, #24b1e6);
     color: #e4e4e4;
@@ -280,21 +294,6 @@
 #groupCommentBuzzModal .panel-footer.comment-footer {
     color: #333333;
 }
-
-#barChart {
-    width: 100%;
-}
-
-.pdGroupTitle {
-    color: #323570;
-    margin-left: 0px;
-    font-weight: 100;
-}
-
-body {
-    color: #000 !important;
-}
-
 
 #groupCommentBuzzModal .modal-header {
     background: linear-gradient(135deg, #1862af, #24b1e6);

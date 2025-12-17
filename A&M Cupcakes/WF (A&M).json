@@ -281,7 +281,7 @@
     },
     "comments": {
       "name": "Comment",
-      "type": "string",
+      "type": "textArea",
       "readOnly": true,
       "hidden": true
     }
@@ -485,6 +485,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number"
+    "type": "time_accumulation"
   }
 }

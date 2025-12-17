@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 #master-section {
-    background: url("https://storage.emojot.com/pictures/generalImages/62dbd30494167f0034a4dff0-skin4.png");
+    background: url("https://d11m1m35uzfps.cloudfront.net/pictures/skinImages/59747e53cd90e9231b90de48-skin210.png");
     /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
     /* background-color: #ffffff; */
     min-height: 657px;
@@ -16,6 +16,11 @@
     color: #ffffff !important;
     min-height: 90px;
     background: none !important;
+    display: none !important;
+}
+
+#accordionContainer {
+    display: none !important;
 }
 
 .container[style] {
@@ -25,53 +30,44 @@
 
 .emote-title {
     color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 15pt;
+    font-family: "Inter", sans-serif;
+    font-size: 13pt;
     font-weight: 600;
+    padding: 5px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
-
-
 
 .form-group label {
     color: #000000 !important;
-    font-family: "Poppins", sans-serif;
-    font-size: 15pt !important;
+    font-family: "Inter", sans-serif;
+    font-size: 13pt !important;
     font-weight: 600 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
 .emo-text {
-    font-size: 13pt;
+    font-size: 10pt;
     color: #626262;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 
 .emo-text-only {
-    font-size: 13pt;
+    font-size: 10pt;
     color: #626262;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 
 .loyalty-message {
-    font-size: 13pt;
+    font-size: 10pt;
     color: #000000;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 
 .emo-text-dropdown {
     color: #626262 !important;
-}
-
-.pdGroupTitle {
-    margin-left: 0 !important;
-    margin-top: 10px !important;
-    
-}
-
-div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
-    font-size: 5px !important;
 }
 
 .middle-box {
@@ -81,29 +77,43 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 }
 
 .emo-cont {
-    border: 2px solid #1269b2;
-    margin: 3px 0px;
-    text-align: center;
-    display: inline-block;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 7px 0;
-    border-radius: 3px;
-    color: #1269b2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 6px;
+    border: 2px solid #f37205;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #f37205;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+}
+
+.emo-cont:hover {
+    background-color: #f37205;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
 .clicked-emo-cont {
-    border: 3px solid #1269b2 !important;
-    background: linear-gradient(135deg, #1269b25e, #88a2d456) !important;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 7px 0;
-    border-radius: 3px;
+    border: 2px solid #f37205 !important;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f37205, #ec852e) !important;
+    color: #ffffff !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.97);
 }
+
 
 .emo-ico img {
     width: 80%;
     display: inline-block;
     text-align: center;
-    max-width: 95px;
+    max-width: 55px;
     margin: 5px;
 
     /* Add the shake animation */
@@ -150,9 +160,9 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     padding: 6px 32px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 12pt;
-    border-radius: 50px !important;
+    border-radius: 8px !important;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -174,12 +184,17 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 .btn-next {
     color: #ffffff;
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
+    background: linear-gradient(135deg, #f37205, #ec852e);
 }
 
 .btn-submit {
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
-    color: #ffffff;
+    background: linear-gradient(135deg, #f37205, #ec852e);
+    color: #ffffff !important;
+}
+
+.btn-submit:hover {
+    background: #000000;
+    color: #ffffff !important;
 }
 
 .btn-prev {
@@ -197,7 +212,7 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 .btn-ok {
     color: #ffffff;
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
+    background: linear-gradient(135deg, #f37205, #ec852e);
 }
 
 .btn-skip {
@@ -218,16 +233,36 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 }
 
 .sensor-title {
-    color: #1269b2 !important;
-    font-size: 18pt;
-    font-family: "Poppins", sans-serif;
+    color: #000000 !important;
+    font-size: 20pt;
+    font-family: "Inter", sans-serif;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
     font-weight: 700;
+    text-align: center !important;
+    margin-top: 30px !important;
+
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
+
 .form-control {
-    border-radius: 3px;
+    border-radius: 8px !important;
+    border: 1.5px solid rgba(180, 180, 180, 0.6) !important;
+    background: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #000000;
+    padding: 8px 12px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #f37205;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .panel {
@@ -244,7 +279,7 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 .panel-group .panel-heading {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    color: #1269b2;
+    color: #f37205;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 249, 1)), color-stop(100%, rgba(227, 227, 227, 1)));
@@ -257,7 +292,7 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
 
@@ -279,23 +314,24 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 .flex {
     justify-content: center !important;
-    margin-bottom: 25px !important;
 }
 
 #headerCompanyInfo>.access-user {
-    color: #1269b2;
     text-align: center;
     float: right;
-    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 1px 1px #000;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
     font-size: 15px;
     background-size: 120px 80px;
     background-repeat: no-repeat;
     background-position: right center;
     position: relative;
+    display: none !important;
 }
 
 .access-user-name {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .company-logo {
@@ -303,31 +339,42 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 }
 
 .company-logo img {
-    height: 120px;
+    height: 70px;
 }
 
 .footer {
-    /* background: linear-gradient(135deg, #1269b2, #88a2d4) !important; */
-    background: linear-gradient(135deg, #1269b2, #88a2d4) !important;
+    background: transparent !important;
     color: #fff;
     position: absolute;
     right: 10px;
     left: 0;
-    z-index: 1030;
     bottom: 0;
+    z-index: 1030;
     height: 40px;
-    padding: 12px 13px;
-    font-size: 8pt;
-    margin: 0 -10px 0px 0;
-    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 -10px 0 0;
+    font-family: "Inter", sans-serif;
 
-        border-top: 2px solid #1269b2;
-    box-shadow: 0 -4px 8px rgba(102, 150, 255, 0.6);
+    /* Center content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer::before {
+    content: "";
+    width: 10000px;
+    height: 80px !important;
+    background-image: url("https://storage.emojot.com/pictures/generalImages/67ca7d8244a092407d279491-skin1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 20px !important;
 }
 
 .form-group label {
     columns: #fff !important;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 12pt;
 }
 
@@ -348,7 +395,7 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 }
 
 #progressfill {
-    background-color: #1269b2;
+    background-color: #f37205;
     animation: colorShift 3s infinite alternate ease-in-out;
 }
 
@@ -361,24 +408,24 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 @keyframes colorShift {
     from {
-        background-color: #1269b2;
+        background-color: #f37205;
     }
 
     to {
-        background-color: #88a2d4;
+        background-color: #ec852e;
     }
 }
 
 
 .progress_bar .progress_number {
-    font-family: "Poppins", sans-serif;
-    color: #1269b2;
+    font-family: "Inter", sans-serif;
+    color: #f37205;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #groupCommentBuzzModal .modal-header {
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
+    background: #fff;
     color: #e4e4e4;
 }
 
@@ -398,108 +445,17 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 #groupCommentBuzzModal .panel-footer.comment-footer {
     color: #333333;
-}
-
-#groupCommentBuzzModal .modal-header {
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
-    color: #e4e4e4;
-}
-
-#groupCommentBuzzModal .modal-body {
-    background: #fff;
-    color: #333333;
-}
-
-#groupCommentBuzzModal .modal-footer {
-    background: #fff;
-    color: white;
-}
-
-#groupCommentBuzzModal .panel-body.comment-panel {
-    background: #f6f6f6 !important;
-}
-
-#groupCommentBuzzModal .panel-footer.comment-footer {
-    color: #333333;
-}
-
-#groupCommentBuzzModal .modal-header {
-    background: linear-gradient(135deg, #1269b2, #88a2d4) !important;
-    color: white;
-}
-
-#commentBuzzModal .modal-body {
-    background: #f7f5f7;
-    color: white;
-}
-
-#commentBuzzModal .modal-footer {
-    background: #ff8722;
-    color: white;
-}
-
-#groupCommentBuzzModal .panel-body {
-    background: #f3f3f3 !important;
-    color: #333;
-}
-
-#groupCommentBuzzModal .panel-footer.comment-footer {
-    color: #394242;
-}
-
-#commentBuzzPanel i span {
-    font-size: 18px !important;
-    display: none;
-}
-
-#commentBuzzPanel {
-    text-align: center;
-    padding: 8px 10px;
-    /* minimal padding */
-    background: linear-gradient(135deg, #1269b2, #88a2d4);
-    border-radius: 4px;
-    margin-top: 110px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    border: none;
-    position: absolute;
-    width: max-content;
-    /* auto-fit to text instead of full row */
-    min-width: 250px;
-    /* prevents it from being too tiny */
-    left: 50%;
-    /* center horizontally */
-    transform: translateX(-50%);
-    z-index: 100;
-    color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    line-height: 1.3;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-}
-
-#commentBuzzPanel:hover {
-    transform: translateX(-50%) translateY(-2px);
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(135deg, #88a2d4, #1269b2);
-}
-
-#commentBuzzPanel i:after {
-    content: ' View Questions & Upvote';
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
 }
 
 .thank-you-note {
-    color: #1269b2 !important;
+    color: #f37205 !important;
     font-size: 15px !important;
 }
 
 #barChart {
     width: 100%;
 }
+
 .evz-nps-position-0,
 .evz-nps-position-1,
 .evz-nps-position-2,
@@ -537,22 +493,99 @@ div#gt_0.col-xs-12.pdGroupTitle.ng-binding.ng-scope {
 
 
 div.col-xs-7.ng-scope {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
+    display: none !important;
 }
+
+.footer .logo {
+    display: none !important;
+}
+
+#er_0q8275.col-xs-12.flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#er_0q8275.col-xs-12.flex .emo-cont {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    min-width: 150px;
+    height: 44px;
+    padding: 0 22px !important;
+    margin: 0 !important;
+
+    border-radius: 999px !important;
+    border: 1.5px solid rgba(180, 180, 180, 0.6) !important;
+    background: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* text */
+#er_0q8275.col-xs-12.flex .emo-cont .emo-text,
+#er_0q8275.col-xs-12.flex .emo-cont .emo-text-only {
+    color: #7a7a7a !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+}
+
+/* === Hover: solid orange (NO glass) === */
+#er_0q8275.col-xs-12.flex .emo-cont:hover {
+    background: linear-gradient(135deg, #f37205, #ec852e) !important;
+    border-color: #f37205 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+#er_0q8275.col-xs-12.flex .emo-cont:hover .emo-text,
+#er_0q8275.col-xs-12.flex .emo-cont:hover .emo-text-only {
+    color: #ffffff !important;
+}
+
+/* === Selected: solid orange (NO glass) === */
+#er_0q8275.col-xs-12.flex .clicked-emo-cont {
+    background: linear-gradient(135deg, #f37205, #ec852e) !important;
+    border-color: #f37205 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 4px 10px rgba(243, 114, 5, 0.35) !important;
+}
+
+#er_0q8275.col-xs-12.flex .clicked-emo-cont .emo-text,
+#er_0q8275.col-xs-12.flex .clicked-emo-cont .emo-text-only {
+    color: #ffffff !important;
+}
+
+.rating {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
 
     .emote-title,
     .form-group label {
-        font-size: 12pt !important;
+        font-size: 10pt !important;
     }
 
     .emo-text {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
     .emo-text-only {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
     .panel-title {
@@ -560,16 +593,16 @@ div.col-xs-7.ng-scope {
     }
 
     .loyalty-message {
-        font-size: 13pt !important;
+        font-size: 11pt !important;
     }
 
     .progress_bar .progress_number {
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
 
     .nps-bar::before,
     .nps-bar::after {
-        font-size: 12pt !important;
+        font-size: 10pt !important;
     }
 
     .btn-next,
@@ -592,11 +625,11 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        height: 80px !important;
+        height: 60px !important;
     }
 
     .emo-ico img {
-        max-width: 80px !important;
+        max-width: 50px !important;
         width: 75% !important;
     }
 
@@ -607,12 +640,21 @@ div.col-xs-7.ng-scope {
     .loyalty-message {
         font-size: 12pt;
         color: #150014;
-        font-family: "Poppins", sans-serif;
+        font-family: "Inter", sans-serif;
         font-weight: 500;
     }
 
+    #er_0q8275.col-xs-12.flex .emo-cont {
+        flex: 1 1 calc(50% - 12px) !important;
+        max-width: calc(50% - 12px) !important;
+        min-width: 0 !important;
+    }
+
+    .footer::before {
+        height: 40px;
+    }
+
     .sensor-title {
-    font-size: 14pt !important;
-    line-height: 30px !important;
-}
+        font-size: 16pt;
+    }
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<cepRules>
+  <cepRule id="1" timeWindow="5">
+    <params>
+      <param>
+        <name>percepticDrillDown</name>
+        <operator>eq</operator>
+        <value>"q8275"</value>
+      </param>
+    </params>
+    <engagementActions>
+      <action>
+        <type>incident</type>
+        <data>
+          <workflowID>6942a92f0e81d80129b537fa</workflowID>
+          <name>Internal Complaint Submission</name>
+          <assignee>defaultassignee@emojot.com</assignee>
+          <type>Complaint Management Survey</type>
+          <priority>High</priority>
+          <status>Open</status>
+          <description>
+$$gp8400_c1_comment_value$$
+          </description>
+          <customFields>
+            <field>
+              <key>complaint_category</key>
+              <value>$$q8275_emote$$</value>
+            </field>
+            <field>
+              <key>comments</key>
+              <value>$$gp8400_c1_comment_value$$</value>
+            </field>
+            <field>
+              <key>uuid_no</key>
+              <value>$$loyalty_UUID_value$$</value>
+            </field>
+          </customFields>
+        </data>
+        <validityPeriod>5</validityPeriod>
+      </action>
+    </engagementActions>
+  </cepRule>
+</cepRules>
