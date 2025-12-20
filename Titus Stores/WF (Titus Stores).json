@@ -2,7 +2,7 @@
   "reportNamePrefix": "Case",
   "reporterNamePrefix": "Customer",
   "descriptionFormat": "text",
-  "name": "Fullr v1",
+  "name": "Titus v1",
   "nameTemplate": "Customer Complaint: $type$",
   "descriptionTemplate": "Customer Complaint from $type$",
   "type": {
@@ -199,7 +199,7 @@
       "name": "Net Promoter Score",
       "type": "string",
       "readOnly": true,
-      "hidden":true
+      "hidden": true
     },
     "csat": {
       "name": "Experience",
@@ -335,6 +335,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number"
+    "type": "time_accumulation"
   }
 }

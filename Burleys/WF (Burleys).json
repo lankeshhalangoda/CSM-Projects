@@ -852,6 +852,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number"
+    "type": "time_accumulation"
   }
 }

@@ -569,7 +569,7 @@ div.col-xs-7.ng-scope {
 }
 
 .rating {
-    display: none;
+    display: none !important;
 }
 
 

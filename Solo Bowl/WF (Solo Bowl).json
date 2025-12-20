@@ -21,6 +21,10 @@
       {
         "id": "facebook",
         "name": "Facebook"
+      },
+      {
+        "id": "tripadvisor",
+        "name": "Tripadvisor"
       }
     ]
   },
@@ -79,63 +83,9 @@
             }
           },
           {
-            "channel": "sms",
-            "template": "complaintResolutionAlert_sms",
-            "target": "admin",
-            "appendEditUrl": true,
-            "condition": {
-              "==": [
-                {
-                  "var": "type"
-                },
-                "customerSatisfactionSurvey"
-              ]
-            },
-            "contactFilters": [
-              "ticketResolutionAlert"
-            ],
-            "adminUserQuery": {
-              "condition": "and",
-              "rules": [
-                {
-                  "field": "location",
-                  "operator": "eq",
-                  "value": "$location$"
-                }
-              ]
-            }
-          },
-          {
             "channel": "email",
             "template": "complaintResolutionAlert_orm_email",
             "target": "admin",
-            "condition": {
-              "!=": [
-                {
-                  "var": "type"
-                },
-                "customerSatisfactionSurvey"
-              ]
-            },
-            "contactFilters": [
-              "ticketResolutionAlert"
-            ],
-            "adminUserQuery": {
-              "condition": "and",
-              "rules": [
-                {
-                  "field": "location",
-                  "operator": "eq",
-                  "value": "$location$"
-                }
-              ]
-            }
-          },
-          {
-            "channel": "sms",
-            "template": "complaintResolutionAlert_orm_sms",
-            "target": "admin",
-            "appendEditUrl": true,
             "condition": {
               "!=": [
                 {
@@ -198,27 +148,46 @@
     "location": {
       "name": "Location",
       "type": "enum",
-      "required": true,
-      "readOnly": false,
-      "editable": true,
+      "readOnly": true,
       "values": [
         {
-          "id": "Colpetty",
-          "name": "Colpetty"
+          "id": "CCC",
+          "name": "CCC"
         },
         {
-          "id": "Havelock",
-          "name": "Havelock"
+          "id": "Crescat Food Court",
+          "name": "Crescat Food Court"
         },
         {
-          "id": "Pelawatte",
-          "name": "Pelawatte"
+          "id": "Mount Lavinia",
+          "name": "Mount Lavinia"
         },
         {
-          "id": "Delivery",
-          "name": "Delivery"
+          "id": "Maharagama",
+          "name": "Maharagama"
+        },
+        {
+          "id": "Nawala",
+          "name": "Nawala"
+        },
+        {
+          "id": "Thalawathugoda",
+          "name": "Thalawathugoda"
+        },
+        {
+          "id": "Welisara",
+          "name": "Welisara"
+        },
+        {
+          "id": "Kiribathgoda",
+          "name": "Kiribathgoda"
         }
       ]
+    },
+    "order_method": {
+      "name": "Order Method",
+      "type": "string",
+      "readOnly": true
     },
     "issue_type": {
       "name": "Issue Type(s)",
@@ -312,7 +281,7 @@
         "type": "contact"
       }
     ],
-    "id": "AHI_1756445104607_779860794"
+    "id": "AHI_1766120138143_740078339"
   },
   "workflowCreation": {
     "email": "bot@emojot.com",
@@ -321,33 +290,6 @@
         "channel": "email",
         "template": "complaintCreationAlert_email",
         "target": "admin",
-        "contactFilters": [
-          "ticketCreationAlert"
-        ],
-        "adminUserQuery": {
-          "condition": "and",
-          "rules": [
-            {
-              "field": "location",
-              "operator": "eq",
-              "value": "$location$"
-            }
-          ]
-        },
-        "condition": {
-          "==": [
-            {
-              "var": "type"
-            },
-            "customerSatisfactionSurvey"
-          ]
-        }
-      },
-      {
-        "channel": "sms",
-        "template": "complaintCreationAlert_sms",
-        "target": "admin",
-        "appendEditUrl": true,
         "contactFilters": [
           "ticketCreationAlert"
         ],
@@ -395,33 +337,6 @@
             "customerSatisfactionSurvey"
           ]
         }
-      },
-      {
-        "channel": "sms",
-        "template": "complaintCreationAlert_orm_sms",
-        "target": "admin",
-        "appendEditUrl": true,
-        "contactFilters": [
-          "ticketCreationAlert"
-        ],
-        "adminUserQuery": {
-          "condition": "and",
-          "rules": [
-            {
-              "field": "location",
-              "operator": "eq",
-              "value": "$location$"
-            }
-          ]
-        },
-        "condition": {
-          "!=": [
-            {
-              "var": "type"
-            },
-            "customerSatisfactionSurvey"
-          ]
-        }
       }
     ]
   },
@@ -441,37 +356,9 @@
         }
       },
       {
-        "channel": "sms",
-        "template": "complaintAssignment_sms",
-        "target": "employee",
-        "appendEditUrl": true,
-        "condition": {
-          "==": [
-            {
-              "var": "type"
-            },
-            "customerSatisfactionSurvey"
-          ]
-        }
-      },
-      {
         "channel": "email",
         "template": "complaintAssignment_orm_email",
         "target": "employee",
-        "condition": {
-          "!=": [
-            {
-              "var": "type"
-            },
-            "customerSatisfactionSurvey"
-          ]
-        }
-      },
-      {
-        "channel": "sms",
-        "template": "complaintAssignment_orm_sms",
-        "target": "employee",
-        "appendEditUrl": true,
         "condition": {
           "!=": [
             {

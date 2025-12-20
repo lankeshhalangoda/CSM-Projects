@@ -378,7 +378,6 @@
   },
   "timeSpent": {
     "name": "Time Spent",
-    "type": "number",
-    "hidden": true
+    "type": "time_accumulation"
   }
 }
