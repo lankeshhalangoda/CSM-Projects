@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 #master-section {
-    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin4.png') !important;
-    min-height: 657px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
+  background: url("https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin5.png");
+  /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
+  /* background-color: #ffffff; */
+  min-height: 657px;
+  /* min-height: 100vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 #headerCompanyInfo {
     color: white !important;
-    background: #ea1e35 !important;
+    background: linear-gradient(to right, #2a61a5, #00b7b7) !important;
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
 }
@@ -26,7 +27,7 @@
 
 .emote-title {
     color: #000000;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15pt;
 }
 
@@ -34,7 +35,7 @@
 
 .form-group label {
     color: #000000 !important;
-    font-family: "Nunito", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 15pt !important;
     font-weight: 400 !important;
 }
@@ -42,14 +43,14 @@
 .emo-text {
     font-size: 13pt;
     color: #000000;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 
 .loyalty-message {
     font-size: 13pt;
     color: #000000;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .clicked-emo-cont {
-    border: 3px #ea1e35 solid !important;
+    border: 3px linear-gradient(to right, #2a61a5, #00b7b7) solid !important;
     background: #ffffff15;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
@@ -97,11 +98,11 @@
 }
 
 .btn-next {
-    color: #ea1e35;
+    color: linear-gradient(to right, #2a61a5, #00b7b7);
 }
 
 .btn-submit {
-    color: #ea1e35;
+    color: linear-gradient(to right, #2a61a5, #00b7b7);
 }
 
 .btn-prev {
@@ -126,7 +127,7 @@
     display: inline-block;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     padding: 9px 25px;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 12pt;
     background: rgba(249, 249, 249, 1);
     background: -moz-linear-gradient(top, rgba(249, 249, 249, 1) 0%, rgba(227, 227, 227, 1) 100%);
@@ -165,7 +166,7 @@
 }
 
 .loyalty-redeem-button {
-    border-color: #ea1e35;
+    border-color: linear-gradient(to right, #2a61a5, #00b7b7);
 }
 
 .logo-cust {
@@ -176,7 +177,7 @@
 .sensor-title {
     color: #000000;
     font-size: 30pt;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
     font-weight: 700;
@@ -213,7 +214,7 @@
 .panel-title {
     font-size: 11pt;
     max-width: 90%;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
 }
 
@@ -237,7 +238,7 @@
     text-align: center;
     float: right;
     text-shadow: 1px 1px 1px #000;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     font-style: italic;
     font-size: 15px;
     background-size: 120px 80px;
@@ -247,68 +248,38 @@
 }
 
 .access-user-name {
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
 }
 
 .company-logo img {
-    height: 50px;
+    height: 70px;
+    border-radius: 10px !important;
+}
+
+
+.footer {
+  /* background: linear-gradient(135deg, #61BC47, #4C9E35) !important; */
+  background: linear-gradient(to right, #2a61a5, #00b7b7) !important;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  left: 0;
+  z-index: 1030;
+  bottom: 0;
+  height: 40px;
+  padding: 12px 13px;
+  font-size: 8pt;
+  margin: 0 -10px 0px 0;
+  font-family: "Asap", sans-serif;
 }
 
 div.col-xs-7.ng-scope {
-    display: none !important;
-}
-
-.footer {
-    right: 10px;
-    left: 0;
-    z-index: 800;
-    bottom: 0;
-    height: 40px;
-    padding: 12px 13px;
-    font-size: 8pt;
-    margin: 0 -10px 0px 0;
-    font-family: "Nunito", sans-serif;
-    background: url('https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin3.png') !important;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
-    color: #fff;
-    position: absolute;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.footer::before {
-    content: "Powered by Emojot";
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
-    font-size: 08pt;
-    color: #ffffff;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-}
-
-.footer::after {
-    content: "";
-    position: relative;
-    width: 100px;
-    height: 40px;
-    background: url("https://storage.emojot.com/pictures/skinImages/683409094d8e0caef523d63f-skin1.png") no-repeat center;
-    background-size: contain;
-}
-
-.footer .logo {
-    display: none !important;
+  font-family: "Poppins", Helvetica, Arial, sans-serif !important;
 }
 
 .form-group label {
     columns: #fff !important;
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 12pt;
 }
 
@@ -328,11 +299,22 @@ div.col-xs-7.ng-scope {
 }
 
 #progressfill {
-    background-color: #ea1e35;
+    background-color: #2a61a5;
+    animation: colorShift 3s infinite alternate ease-in-out;
+}
+
+@keyframes colorShift {
+    from {
+        background-color: #2a61a5;
+    }
+
+    to {
+        background-color: #00b7b7;
+    }
 }
 
 .progress_bar .progress_number {
-    font-family: "Roboto Condensed", cursive;
+    font-family: "Poppins", sans-serif;
     color: #000000;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -379,7 +361,7 @@ div.col-xs-7.ng-scope {
     font-weight: bold;
     top: 100%;
     transform: translateY(8px);
-    font-family: "Nunito", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .nps-bar::before {
@@ -484,7 +466,7 @@ div.col-xs-7.ng-scope {
 
     .company-logo img,
     .logo-cust {
-        height: 45px !important;
+        height: 65px !important;
     }
 
     .emo-ico img {
@@ -499,7 +481,7 @@ div.col-xs-7.ng-scope {
     .loyalty-message {
     font-size: 12pt;
     color: #000000;
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 }
