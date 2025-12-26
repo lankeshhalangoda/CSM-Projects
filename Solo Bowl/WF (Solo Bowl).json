@@ -243,6 +243,12 @@
       "readOnly": true,
       "hidden": true
     },
+    "nps": {
+      "name": "Net Promoter Score",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
     "author": {
       "name": "Author",
       "type": "string",

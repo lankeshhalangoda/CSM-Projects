@@ -49,7 +49,7 @@
 
 .loyalty-message {
     font-size: 13pt;
-    color: #000000;
+    color: #000000 !important;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
@@ -76,8 +76,8 @@
 }
 
 .clicked-emo-cont {
-    border: 3px linear-gradient(to right, #2a61a5, #00b7b7) solid !important;
-    background: #ffffff15;
+    border: 3px solid #2a61a5 !important;
+    background: #00cbff45;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     padding: 7px 0;
     border-radius: 3px;
@@ -284,7 +284,7 @@ div.col-xs-7.ng-scope {
 }
 
 .loyalty-message {
-    color: #ffffff;
+    color: #000000;
     font-size: 16pt;
 }
 

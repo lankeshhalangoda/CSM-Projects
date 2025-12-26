@@ -29,6 +29,7 @@ Customer Name: $$loyalty_Name_value$$
 Customer Telephone: $$loyalty_Telephone_value$$
 Location: $$emoSignature_Location_value$$
 Satisfaction Level: $$q871_emote$$
+Net Promoter Score: $$q5749_emote$$
 Comment: $$gp557_c1_comment_value$$
           </description>
           <customFields>
@@ -51,6 +52,10 @@ Comment: $$gp557_c1_comment_value$$
             <field>
               <key>rating</key>
               <value>$$q871_emote$$</value>
+            </field>
+            <field>
+              <key>nps</key>
+              <value>$$q5749_emote$$</value>
             </field>
             <field>
               <key>comments</key>

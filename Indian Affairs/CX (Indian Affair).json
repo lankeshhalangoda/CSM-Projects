@@ -170,7 +170,7 @@
         },
         {
           "key": "selectedReportName",
-          "value": "Fullr_v1"
+          "value": "IndianAffair_v1"
         },
         {
           "key": "trimOut",
@@ -211,7 +211,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce193a9d955268e4edb59"
+                  "value": "694e30dad10354d5bb157255"
                 }
               ],
               "styles": [
@@ -243,7 +243,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "694a675eb2297e54b1513a68"
                 },
                 {
                   "key": "trimOut",
@@ -271,7 +271,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce2d3a9d955268e4edb92"
+                  "value": "694e317441fb3bc9e07dae27"
                 },
                 {
                   "key": "drillDownType",
@@ -315,7 +315,7 @@
                 },
                 {
                   "key": "savedReportId",
-                  "value": "686ce23ea9d955268e4edb70"
+                  "value": "694e30dad10354d5bb157255"
                 }
               ],
               "styles": [
@@ -339,7 +339,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "694a675eb2297e54b1513a68"
                 },
                 {
                   "key": "trimOut",
@@ -380,7 +380,7 @@
                 },
                 {
                   "key": "sensorID",
-                  "value": "68664487e18487d3d2efe34f"
+                  "value": "694a675eb2297e54b1513a68"
                 },
                 {
                   "key": "sensorPages",
@@ -413,7 +413,7 @@
               "params": [
                 {
                   "key": "redirectPage",
-                  "value": "reports/360OverviewReport/report.jsp"
+                  "value": "reports/scoreOverviewReport/report.jsp"
                 },
                 {
                   "key": "trimOut",
@@ -421,7 +421,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "score_v1"
+                  "value": "scoreOverview_v1"
                 }
               ],
               "styles": [
@@ -449,7 +449,7 @@
                 },
                 {
                   "key": "reportName",
-                  "value": "scoresegct"
+                  "value": "scoreSegment_v1"
                 },
                 {
                   "key": "hideUIComponents",
@@ -481,7 +481,7 @@
               "titleStyle": "color:white; background:#26619c;",
               "type": "direct",
               "desc": "Click below to access the survey.",
-              "target": "https://emo.run/fullr",
+              "target": "https://emo.run/indianaffairs",
               "openInNewPage": true,
               "id": "cxm_links_1",
               "launchButtonText": "Launch Survey"
@@ -490,52 +490,7 @@
         }
       ]
     },
-    {
-      "title": "Social Listening",
-      "type": "directReport",
-      "id": "slt_dashboard",
-      "openInNewTabButton": true,
-      "params": [
-        {
-          "key": "redirectPage",
-          "value": "reports/socialListener/socialListener.jsp"
-        },
-        {
-          "key": "trimOut",
-          "value": true
-        }
-      ],
-      "styles": [
-        {
-          "id": ".container",
-          "key": "width",
-          "value": "100%"
-        }
-      ]
-    },
-    {
-      "title": "Social Listening - Competitor Analysis",
-      "type": "directReport",
-      "id": "slt_comp",
-      "openInNewTabButton": true,
-      "params": [
-        {
-          "key": "redirectPage",
-          "value": "https://emojot.com/emojotDashboard/reports/socialListener/competitorAnalysis.jsp"
-        },
-        {
-          "key": "trimOut",
-          "value": true
-        }
-      ],
-      "styles": [
-        {
-          "id": ".container",
-          "key": "width",
-          "value": "100%"
-        }
-      ]
-    },
+
     {
       "title": "My Profile",
       "desc": "Update profile settings",
@@ -562,13 +517,6 @@
   ],
   "profiles": [
     {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "vikashar@emojot.com",
-      "id": "vikashar@emojot.com",
-      "title": "company_admin",
-      "email": "vikashar@emojot.com"
-    },
-    {
       "image": "https://storage.emojot.com/logos/company_logo/660cf4f4ed63e0dbb1f5d963.png",
       "name": "andun@emojot.com",
       "id": "andun@emojot.com",
@@ -581,13 +529,6 @@
       "id": "viraj@emojot.com",
       "title": "company_admin",
       "email": "viraj@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
-      "name": "sachintha@emojot.com",
-      "id": "sachintha@emojot.com",
-      "title": "company_admin",
-      "email": "sachintha@emojot.com"
     },
     {
       "image": "https://storage.emojot.com/logos/company_logo/668b9c106734e015ae1a4d04.png",
@@ -619,73 +560,17 @@
     },
     {
       "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
-      "name": "vikashar@emojot.com",
-      "id": "vikashar@emojot.com",
-      "title": "company_admin",
-      "email": "vikashar@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
       "name": "dewshi2@emojot.com",
       "id": "dewshi2@emojot.com",
       "title": "company_admin",
       "email": "dewshi2@emojot.com"
     },
     {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "shifaz@gigafoods.lk",
-      "id": "shifaz@gigafoods.lk",
-      "title": "company_admin",
-      "email": "shifaz@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "udara@gigafoods.lk",
-      "id": "udara@gigafoods.lk",
-      "title": "company_admin",
-      "email": "udara@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "yakoob.n@gigafoods.lk",
-      "id": "yakoob.n@gigafoods.lk",
-      "title": "company_admin",
-      "email": "yakoob.n@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "marshan@gigafoods.lk",
-      "id": "marshan@gigafoods.lk",
-      "title": "company_admin",
-      "email": "marshan@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "image": "https://storage.emojot.com/logos/company_logo/694a675eb2297e54b1513a68.png",
       "name": "shaveenf@emojot.com",
       "id": "shaveenf@emojot.com",
       "title": "company_admin",
       "email": "shaveenf@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "dilini@gigafoods.lk",
-      "id": "dilini@gigafoods.lk",
-      "title": "company_admin",
-      "email": "dilini@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "revan@gigafoods.lk",
-      "id": "revan@gigafoods.lk",
-      "title": "company_admin",
-      "email": "revan@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "ziyath@gigafoods.lk",
-      "id": "ziyath@gigafoods.lk",
-      "title": "company_admin",
-      "email": "ziyath@gigafoods.lk"
     }
   ],
   "assignmentAllowed": true,

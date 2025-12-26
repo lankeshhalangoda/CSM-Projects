@@ -413,7 +413,7 @@
               "params": [
                 {
                   "key": "redirectPage",
-                  "value": "reports/360OverviewReport/report.jsp"
+                  "value": "reports/scoreOverviewReport/report.jsp"
                 },
                 {
                   "key": "trimOut",
@@ -625,34 +625,6 @@
       "email": "vikashar@emojot.com"
     },
     {
-      "image": "https://storage.emojot.com/logos/company_logo/679369170bf0386ac6daafb6.png",
-      "name": "dewshi2@emojot.com",
-      "id": "dewshi2@emojot.com",
-      "title": "company_admin",
-      "email": "dewshi2@emojot.com"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "shifaz@gigafoods.lk",
-      "id": "shifaz@gigafoods.lk",
-      "title": "company_admin",
-      "email": "shifaz@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "udara@gigafoods.lk",
-      "id": "udara@gigafoods.lk",
-      "title": "company_admin",
-      "email": "udara@gigafoods.lk"
-    },
-    {
-      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "yakoob.n@gigafoods.lk",
-      "id": "yakoob.n@gigafoods.lk",
-      "title": "company_admin",
-      "email": "yakoob.n@gigafoods.lk"
-    },
-    {
       "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
       "name": "marshan@gigafoods.lk",
       "id": "marshan@gigafoods.lk",
@@ -675,6 +647,27 @@
     },
     {
       "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "ziyath@gigafoods.lk",
+      "id": "ziyath@gigafoods.lk",
+      "title": "company_admin",
+      "email": "ziyath@gigafoods.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "onels@emojot.com",
+      "id": "onels@emojot.com",
+      "title": "company_admin",
+      "email": "onels@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "manura@emojot.com",
+      "id": "manura@emojot.com",
+      "title": "company_admin",
+      "email": "manura@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
       "name": "revan@gigafoods.lk",
       "id": "revan@gigafoods.lk",
       "title": "company_admin",
@@ -682,12 +675,47 @@
     },
     {
       "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
-      "name": "ziyath@gigafoods.lk",
-      "id": "ziyath@gigafoods.lk",
+      "name": "udara@gigafoods.lk",
+      "id": "udara@gigafoods.lk",
       "title": "company_admin",
-      "email": "ziyath@gigafoods.lk"
+      "email": "udara@gigafoods.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "yakoob.n@gigafoods.lk",
+      "id": "yakoob.n@gigafoods.lk",
+      "title": "company_admin",
+      "email": "yakoob.n@gigafoods.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "shifaz@gigafoods.lk",
+      "id": "shifaz@gigafoods.lk",
+      "title": "company_admin",
+      "email": "shifaz@gigafoods.lk"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "dewminil@emojot.com",
+      "id": "dewminil@emojot.com",
+      "title": "company_admin",
+      "email": "dewminil@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "sarangag@emojot.com",
+      "id": "sarangag@emojot.com",
+      "title": "company_admin",
+      "email": "sarangag@emojot.com"
+    },
+    {
+      "image": "https://storage.emojot.com/logos/company_logo/68664487e18487d3d2efe34f.png",
+      "name": "rashmi@gigafoods.lk",
+      "id": "rashmi@gigafoods.lk",
+      "title": "company_admin",
+      "email": "rashmi@gigafoods.lk"
     }
   ],
   "assignmentAllowed": true,
-  "showAIAssistant": false
+  "showAIAssistant": true
 }

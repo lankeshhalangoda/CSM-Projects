@@ -2,7 +2,7 @@
   "reportNamePrefix": "Case",
   "reporterNamePrefix": "Customer",
   "descriptionFormat": "text",
-  "name": "Fullr v1",
+  "name": "WF v1",
   "nameTemplate": "Customer Complaint: $type$",
   "descriptionTemplate": "Customer Complaint from $type$",
   "type": {
@@ -243,6 +243,12 @@
       "readOnly": true,
       "hidden": true
     },
+    "nps": {
+      "name": "Net Promoter Score",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
     "author": {
       "name": "Author",
       "type": "string",
@@ -281,7 +287,7 @@
         "type": "contact"
       }
     ],
-    "id": "AHI_1766120138143_740078339"
+    "id": "AHI_1766730418141_345011870"
   },
   "workflowCreation": {
     "email": "bot@emojot.com",
