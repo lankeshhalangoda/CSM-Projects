@@ -2,7 +2,7 @@
 
 
 #master-section {
-  background: url("https://storage.emojot.com/pictures/skinImages/68664487e18487d3d2efe34f-skin5.png");
+  background: url("https://storage.emojot.com/pictures/skinImages/69439ed442b0f5e8d7f2a19c-skin2.png");
   /* background: linear-gradient(to bottom, #ffffff, #f0f0f0); White to light gray gradient */
   /* background-color: #ffffff; */
   min-height: 657px;
@@ -181,6 +181,7 @@
     background: rgba(255, 255, 255, 0);
     line-height: 40px;
     font-weight: 700;
+    margin-top: 5px !important;
 }
 
 .form-control {
@@ -259,7 +260,7 @@
 
 .footer {
   /* background: linear-gradient(135deg, #61BC47, #4C9E35) !important; */
-  background: linear-gradient(to right, #2a61a5, #00b7b7) !important;
+  background: #2a61a5 !important;
   color: #ffffff;
   position: absolute;
   right: 10px;

@@ -23,8 +23,11 @@
         .body-wrap {
             width: 100% !important;
             height: 100%;
-            background: linear-gradient(to right, #ff6b6b, #ffe6e6, #ff6b6b);
-            /* Light purple gradient for both sides */
+            /* Subtle gradient background with #ea1e35 */
+            background: linear-gradient(to right,
+                    rgba(234, 30, 53, 0.18),
+                    rgba(255, 255, 255, 0.9),
+                    rgba(234, 30, 53, 0.18));
             color: black;
         }
 
@@ -47,10 +50,10 @@
         .button {
             display: inline-block;
             color: white;
-            background: #ed1b34;
-            /* Purple button color */
-            border: solid #ed1b34;
-            border-width: 10px 20px 8px;
+            /* Blue gradient button derived from MS (Solo Bowl) */
+            background: #ea1e35;
+            border: none;
+            padding: 10px !important;
             font-weight: bold;
             border-radius: 4px;
         }
@@ -127,7 +130,8 @@
         }
 
         .container .content.footer {
-            background: #ed1b34;
+            /* Blue gradient footer derived from MS (Solo Bowl) */
+            background: #ea1e35;
             height: 42px;
             padding-top: 2px;
             padding-bottom: 5px;
@@ -189,9 +193,21 @@
                         <table class="container" style="border-spacing: 0px;">
                             <tbody><!-- Header -->
                                 <tr>
-                                    <td align="left" class="masthead"><img
-                                            src="https://storage.emojot.com/pictures/emailImages/68664487e18487d3d2efe34f-skin1.png"
-                                            alt="Abans Logo" /></td>
+                                    <td align="left" class="masthead">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" style="vertical-align: middle;">
+                                                        <img src="https://storage.emojot.com/pictures/emailImages/68664487e18487d3d2efe34f-skin1.png"
+                                                            alt="Client Logo" />
+                                                    </td>
+                                                    <td align="right" style="vertical-align: middle; font-family: 'Roboto', Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 1.3;">
+                                                        Emojot<br />Complaint Management
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
                                 </tr>
                                 <tr style="background: white;">
                                     <td>
@@ -207,6 +223,7 @@
                                         <p><strong>Customer Name:&nbsp;</strong>$client_name$</p>
                                         <p><strong>Customer Telephone:&nbsp;</strong>$client_telephone$</p>
                                         <p><strong>Satisfaction Level:</strong>&nbsp;$incident_customFields_rating$</p>
+                                        <p><strong>Net Promoter Score:</strong>&nbsp;$incident_customFields_nps$ / 10</p>
                                         <p><strong>Location:</strong>&nbsp;$emoSignature_Location$</p>
                                         <p><strong>Category:</strong>&nbsp;$incident_customFields_issue_type$</p>
                                         <p><strong>Comment:</strong>&nbsp;$incident_customFields_comments$</p>
@@ -218,7 +235,7 @@
                                                         <td align="center">
                                                             <p><a href="https://emojot.com/emojotDashboard/samlsso?redirectPage=reports/incidentManagement/incidentEdit.jsp&amp;workflowID=$workflow_id$&amp;incidentID=$incident_id$&amp;trimOut=true&amp;companyID=68664487e18487d3d2efe34f&amp;unmask=true"
                                                                     class="button"
-                                                                    style="padding: 5px; background: #ed1b34; color: white; text-decoration: none;"
+                                                                    style="padding: 5px; color: white; text-decoration: none;"
                                                                     target="_blank" rel="noopener">Click here to
                                                                     review</a></p>
                                                         </td>

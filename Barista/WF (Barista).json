@@ -357,10 +357,6 @@
           "name": "Negombo Diner"
         },
         {
-          "id": "Negombo Express",
-          "name": "Negombo Express"
-        },
-        {
           "id": "Nugegoda Diner",
           "name": "Nugegoda Diner"
         },
@@ -539,6 +535,18 @@
         {
           "id": "Arcade",
           "name": "Arcade"
+        },
+        {
+          "id": "Wennappuwa",
+          "name": "Wennappuwa"
+        },
+        {
+          "id": "Battaramulla",
+          "name": "Battaramulla"
+        },
+        {
+          "id": "Ahangama",
+          "name": "Ahangama"
         }
       ]
     },

@@ -157,10 +157,6 @@
           "name": "Crescat"
         },
         {
-          "id": "Colombo 05",
-          "name": "Colombo 05"
-        },
-        {
           "id": "Mount Lavinia",
           "name": "Mount Lavinia"
         },
@@ -187,6 +183,18 @@
         {
           "id": "Colombo City Centre (CCC)",
           "name": "Colombo City Centre (CCC)"
+        },
+        {
+          "id": "Port City Colombo",
+          "name": "Port City Colombo"
+        },
+        {
+          "id": "Negombo",
+          "name": "Negombo"
+        },
+        {
+          "id": "Thalahena",
+          "name": "Thalahena"
         }
       ]
     },
@@ -245,6 +253,12 @@
     },
     "rating": {
       "name": "Satisfaction Level",
+      "type": "string",
+      "readOnly": true,
+      "hidden": true
+    },
+    "nps": {
+      "name": "Net Promoter Score",
       "type": "string",
       "readOnly": true,
       "hidden": true
