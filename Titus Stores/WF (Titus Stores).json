@@ -103,6 +103,60 @@
                 }
               ]
             }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_sms",
+            "target": "admin",
+            "appendEditUrl": true,
+            "condition": {
+              "==": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
+          },
+          {
+            "channel": "sms",
+            "template": "complaintResolutionAlert_orm_sms",
+            "target": "admin",
+            "appendEditUrl": true,
+            "condition": {
+              "!=": [
+                {
+                  "var": "type"
+                },
+                "customerSatisfactionSurvey"
+              ]
+            },
+            "contactFilters": [
+              "ticketResolutionAlert"
+            ],
+            "adminUserQuery": {
+              "condition": "and",
+              "rules": [
+                {
+                  "field": "location",
+                  "operator": "eq",
+                  "value": "$location$"
+                }
+              ]
+            }
           }
         ]
       }
@@ -300,6 +354,60 @@
             "customerSatisfactionSurvey"
           ]
         }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_sms",
+        "target": "admin",
+        "appendEditUrl": true,
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintCreationAlert_orm_sms",
+        "target": "admin",
+        "appendEditUrl": true,
+        "contactFilters": [
+          "ticketCreationAlert"
+        ],
+        "adminUserQuery": {
+          "condition": "and",
+          "rules": [
+            {
+              "field": "location",
+              "operator": "eq",
+              "value": "$location$"
+            }
+          ]
+        },
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
       }
     ]
   },
@@ -322,6 +430,34 @@
         "channel": "email",
         "template": "complaintAssignment_orm_email",
         "target": "employee",
+        "condition": {
+          "!=": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_sms",
+        "target": "employee",
+        "appendEditUrl": true,
+        "condition": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "customerSatisfactionSurvey"
+          ]
+        }
+      },
+      {
+        "channel": "sms",
+        "template": "complaintAssignment_orm_sms",
+        "target": "employee",
+        "appendEditUrl": true,
         "condition": {
           "!=": [
             {
